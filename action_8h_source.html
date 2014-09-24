@@ -38,9 +38,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -69,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,28 +101,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>QueryEngine {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>Internal {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TQuery, <span class="keyword">class</span> TData, <span class="keyword">class</span> TResponse&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html">IAction</a> {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#aefcff21350b6084303e23795d43fd985">read</a>(<span class="keyword">const</span> TQuery&amp;);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">virtual</span> TResponse <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#a8d7b71e0a1479b1a6b83c6e94c1907cd">execute</a>(TData&amp;) = 0;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> TResponse <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#a3e2e9667a44c808ed8f31b7d2a9cf593">execute_</a>(<span class="keyword">const</span> TData&amp;) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> Query::Query <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#ae5399d19372993b772d889bb948f25d5">getReverse</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TQuery, <span class="keyword">class</span> TData, <span class="keyword">class</span> TResponse&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html">IAction</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#aefcff21350b6084303e23795d43fd985">read</a>(<span class="keyword">const</span> TQuery&amp;);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> TResponse <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#a8d7b71e0a1479b1a6b83c6e94c1907cd">execute</a>(TData&amp;) = 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> TResponse <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#a3e2e9667a44c808ed8f31b7d2a9cf593">execute_</a>(<span class="keyword">const</span> TData&amp;) <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> ~Action() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Action() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}  <span class="comment">// namespace Internal</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}  <span class="comment">// namespace QueryEngine</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_INTERNAL_ACTION_H_</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> Query::Query <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#ae5399d19372993b772d889bb948f25d5">getReverse</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> ~Action() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Action() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}  <span class="comment">// namespace Internal</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}  <span class="comment">// namespace QueryEngine</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_INTERNAL_ACTION_H_</span></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_i_action_html_a3e2e9667a44c808ed8f31b7d2a9cf593"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#a3e2e9667a44c808ed8f31b7d2a9cf593">You::QueryEngine::Internal::IAction::execute_</a></div><div class="ttdeci">virtual TResponse execute_(const TData &amp;) const =0</div><div class="ttdoc">Execute without mutating data. </div></div>
-<div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_i_action_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html">You::QueryEngine::Internal::IAction</a></div><div class="ttdoc">An interface for all You command (addTask, deleteTask, etc.) Example usage. </div><div class="ttdef"><b>Definition:</b> action.h:21</div></div>
+<div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_i_action_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html">You::QueryEngine::Internal::IAction</a></div><div class="ttdoc">An interface for all You command (addTask, deleteTask, etc.) Example usage. </div><div class="ttdef"><b>Definition:</b> action.h:24</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_i_action_html_aefcff21350b6084303e23795d43fd985"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#aefcff21350b6084303e23795d43fd985">You::QueryEngine::Internal::IAction::read</a></div><div class="ttdeci">virtual void read(const TQuery &amp;)</div><div class="ttdoc">Read from a query and modify internal state. </div></div>
 <div class="ttc" id="query_8h_html"><div class="ttname"><a href="query_8h.html">query.h</a></div><div class="ttdoc">Defines the API for Query Engine. </div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_i_action_html_ae5399d19372993b772d889bb948f25d5"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#ae5399d19372993b772d889bb948f25d5">You::QueryEngine::Internal::IAction::getReverse</a></div><div class="ttdeci">virtual Query::Query getReverse() const =0</div><div class="ttdoc">Get a query as a representation of the reverse of this action. </div></div>
@@ -129,7 +131,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 24 2014 08:43:25 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 24 2014 08:49:40 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

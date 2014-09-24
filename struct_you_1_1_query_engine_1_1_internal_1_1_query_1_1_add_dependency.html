@@ -38,9 +38,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -72,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,6 +96,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">You::QueryEngine::Internal::Query::AddDependency Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Schema for <a class="el" href="struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_add_dependency.html" title="Schema for AddDependency command. ">AddDependency</a> command.  
+ <a href="struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_add_dependency.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="schema_8h_source.html">schema.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for You::QueryEngine::Internal::Query::AddDependency:</div>
 <div class="dyncontent">
@@ -106,20 +113,23 @@ Inheritance diagram for You::QueryEngine::Internal::Query::AddDependency:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a92e6bc4846ac266fcd19499d6db20d62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92e6bc4846ac266fcd19499d6db20d62"></a>
-std::wstring&#160;</td><td class="memItemRight" valign="bottom"><b>taskID</b></td></tr>
-<tr class="separator:a92e6bc4846ac266fcd19499d6db20d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a359f936e9fbbfad026e0ff8c1e99955b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a359f936e9fbbfad026e0ff8c1e99955b"></a>
-std::wstring&#160;</td><td class="memItemRight" valign="bottom"><b>dependencyID</b></td></tr>
-<tr class="separator:a359f936e9fbbfad026e0ff8c1e99955b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d152dffaa19e945f7d0791771a8fbe1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d152dffaa19e945f7d0791771a8fbe1"></a>
+Task::ID&#160;</td><td class="memItemRight" valign="bottom"><b>taskID</b></td></tr>
+<tr class="separator:a2d152dffaa19e945f7d0791771a8fbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ab5819418fb10a25bf80411cc0fa52"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96ab5819418fb10a25bf80411cc0fa52"></a>
+Task::ID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_add_dependency.html#a96ab5819418fb10a25bf80411cc0fa52">dependencyID</a></td></tr>
+<tr class="memdesc:a96ab5819418fb10a25bf80411cc0fa52"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID. <br /></td></tr>
+<tr class="separator:a96ab5819418fb10a25bf80411cc0fa52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Schema for <a class="el" href="struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_add_dependency.html" title="Schema for AddDependency command. ">AddDependency</a> command. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>You-QueryEngine/internal/<a class="el" href="schema_8h_source.html">schema.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 24 2014 08:43:26 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 24 2014 08:49:40 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -38,9 +38,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -72,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,6 +96,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">You::QueryEngine::Internal::Query::AddTask Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Schema for <a class="el" href="struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_add_task.html" title="Schema for AddTask command. ">AddTask</a> command.  
+ <a href="struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_add_task.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="schema_8h_source.html">schema.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for You::QueryEngine::Internal::Query::AddTask:</div>
 <div class="dyncontent">
@@ -106,26 +113,31 @@ Inheritance diagram for You::QueryEngine::Internal::Query::AddTask:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a23f6319aaeed333ba6b129995b144a1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23f6319aaeed333ba6b129995b144a1b"></a>
-std::wstring&#160;</td><td class="memItemRight" valign="bottom"><b>description</b></td></tr>
-<tr class="separator:a23f6319aaeed333ba6b129995b144a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9dd7ec4fa108fc8faf30439ad18e8ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9dd7ec4fa108fc8faf30439ad18e8ba"></a>
-std::wstring&#160;</td><td class="memItemRight" valign="bottom"><b>deadline</b></td></tr>
-<tr class="separator:af9dd7ec4fa108fc8faf30439ad18e8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ffc3e26eefb70ea76fdb2a2b9eb9372"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ffc3e26eefb70ea76fdb2a2b9eb9372"></a>
-std::wstring&#160;</td><td class="memItemRight" valign="bottom"><b>priority</b></td></tr>
-<tr class="separator:a7ffc3e26eefb70ea76fdb2a2b9eb9372"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e6b8e94881be4f9f526c5c23d9e323c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e6b8e94881be4f9f526c5c23d9e323c"></a>
-std::wstring&#160;</td><td class="memItemRight" valign="bottom"><b>dependencies</b></td></tr>
-<tr class="separator:a1e6b8e94881be4f9f526c5c23d9e323c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42c511cfec4d289b6bd536cb474a123c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42c511cfec4d289b6bd536cb474a123c"></a>
+Task::Description&#160;</td><td class="memItemRight" valign="bottom"><b>description</b></td></tr>
+<tr class="separator:a42c511cfec4d289b6bd536cb474a123c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e60c93dd457af98f56d5a0b88fbc933"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e60c93dd457af98f56d5a0b88fbc933"></a>
+Task::Time&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_add_task.html#a6e60c93dd457af98f56d5a0b88fbc933">deadline</a></td></tr>
+<tr class="memdesc:a6e60c93dd457af98f56d5a0b88fbc933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description. <br /></td></tr>
+<tr class="separator:a6e60c93dd457af98f56d5a0b88fbc933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a385f527d22b4b8ee7ef98c9beee52d9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a385f527d22b4b8ee7ef98c9beee52d9e"></a>
+Task::Priority&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_add_task.html#a385f527d22b4b8ee7ef98c9beee52d9e">priority</a></td></tr>
+<tr class="memdesc:a385f527d22b4b8ee7ef98c9beee52d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deadline. <br /></td></tr>
+<tr class="separator:a385f527d22b4b8ee7ef98c9beee52d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72826eb08813b829ff6f6a31441a20d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa72826eb08813b829ff6f6a31441a20d"></a>
+Task::Dependencies&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_add_task.html#aa72826eb08813b829ff6f6a31441a20d">dependencies</a></td></tr>
+<tr class="memdesc:aa72826eb08813b829ff6f6a31441a20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Priority. <br /></td></tr>
+<tr class="separator:aa72826eb08813b829ff6f6a31441a20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Schema for <a class="el" href="struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_add_task.html" title="Schema for AddTask command. ">AddTask</a> command. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>You-QueryEngine/internal/<a class="el" href="schema_8h_source.html">schema.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 24 2014 08:43:26 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 24 2014 08:49:40 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

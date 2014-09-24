@@ -38,9 +38,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -72,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -125,7 +127,22 @@ class You::QueryEngine::Internal::IAction&lt; TQuery, TData, TResponse &gt;</h3>
 
 <p>An interface for all You command (addTask, deleteTask, etc.) Example usage. </p>
 <div class="fragment"><div class="line"><span class="keyword">class </span>AddTask : <span class="keyword">public</span> IAction&lt;ADD_QUERY, TaskList, Task&gt;;</div>
-</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
+</div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TQuery</td><td>The type of the query, </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="schema_8h.html" title="Defines several query schema. ">internal/schema.h</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TData</td><td>The type of the data to be executed upon. </td></tr>
+    <tr><td class="paramname">TResponse</td><td>The type of the response. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="query_8h.html" title="Defines the API for Query Engine. ">query.h</a> </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a8d7b71e0a1479b1a6b83c6e94c1907cd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -153,7 +170,7 @@ template&lt;class TQuery , class TData , class TResponse &gt; </div>
 <p>Execute and mutate data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">[TData,TResponse]</td><td>unnamed The mutable data to be executed upon. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unnamed</td><td>The mutable data to be executed upon. </td></tr>
   </table>
   </dd>
 </dl>
@@ -188,7 +205,7 @@ template&lt;class TQuery , class TData , class TResponse &gt; </div>
 <p>Execute without mutating data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">[TData&amp;]</td><td>unnamed The immutable data to be executed upon. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unnamed</td><td>The immutable data to be executed upon. </td></tr>
   </table>
   </dd>
 </dl>
@@ -223,7 +240,7 @@ template&lt;class TQuery , class TData , class TResponse &gt; </div>
 <p>Read from a query and modify internal state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">[TQuery&amp;,void]</td><td>unnamed <a class="el" href="namespace_you_1_1_query_engine_1_1_internal_1_1_query.html" title="Defines schema for raw queries from NLP parser that will be converted to real queries, executed, and converted back to string to be displayed in the GUI. ">Query</a> to be read </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">unnamed</td><td><a class="el" href="namespace_you_1_1_query_engine_1_1_internal_1_1_query.html" title="Defines schema for raw queries from NLP parser that will be converted to real queries, executed, and converted back to string to be displayed in the GUI. ">Query</a> to be read </td></tr>
   </table>
   </dd>
 </dl>
@@ -236,7 +253,7 @@ template&lt;class TQuery , class TData , class TResponse &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 24 2014 08:43:26 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 24 2014 08:49:40 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -38,9 +38,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -72,7 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,7 +91,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_you_1_1_query_engine_1_1_internal_1_1_task-members.html">List of all members</a>  </div>
@@ -111,6 +112,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Typedefs</div></td></tr>
 <tr class="memitem:af7ae2e03080ebf5e057d04f28a298ec3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7ae2e03080ebf5e057d04f28a298ec3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Priority</b> { <b>IMPORTANT</b>, 
 <b>NORMAL</b>
  }</td></tr>
@@ -130,6 +132,13 @@ typedef std::vector&lt; Task::ID &gt;&#160;</td><td class="memItemRight" valign=
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:affec98a543154714fdcb262c1a2fc4a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affec98a543154714fdcb262c1a2fc4a2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Task</b> (const <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_1_1_builder.html">Task::Builder</a> &amp;builder)</td></tr>
+<tr class="separator:affec98a543154714fdcb262c1a2fc4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12e1abca73e6afa88d62ed079e6198f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12e1abca73e6afa88d62ed079e6198f4"></a>
+<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task.html">Task</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_1_1_builder.html">Task::Builder</a> &amp;builder)</td></tr>
+<tr class="separator:a12e1abca73e6afa88d62ed079e6198f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Getters</div></td></tr>
 <tr class="memitem:aea5e3a085a6643ddced0609ece4d4aa2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea5e3a085a6643ddced0609ece4d4aa2"></a>
 ID&#160;</td><td class="memItemRight" valign="bottom"><b>getID</b> () const </td></tr>
 <tr class="separator:aea5e3a085a6643ddced0609ece4d4aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +154,7 @@ Dependencies&#160;</td><td class="memItemRight" valign="bottom"><b>getDependenci
 <tr class="memitem:a9ff1353444e4af16993e6c78e0f1615f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ff1353444e4af16993e6c78e0f1615f"></a>
 Priority&#160;</td><td class="memItemRight" valign="bottom"><b>getPriority</b> () const </td></tr>
 <tr class="separator:a9ff1353444e4af16993e6c78e0f1615f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Setters</div></td></tr>
 <tr class="memitem:ada2ea0fce958a13f1c3aaf610e0eaef0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada2ea0fce958a13f1c3aaf610e0eaef0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setDescription</b> (const Description &amp;)</td></tr>
 <tr class="separator:ada2ea0fce958a13f1c3aaf610e0eaef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,12 +167,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setDependencies</b> (
 <tr class="memitem:a3a068f3839b5b952bc5db1fbd74162cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a068f3839b5b952bc5db1fbd74162cc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setPriority</b> (Priority)</td></tr>
 <tr class="separator:a3a068f3839b5b952bc5db1fbd74162cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affec98a543154714fdcb262c1a2fc4a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affec98a543154714fdcb262c1a2fc4a2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Task</b> (const <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_1_1_builder.html">Task::Builder</a> &amp;builder)</td></tr>
-<tr class="separator:affec98a543154714fdcb262c1a2fc4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12e1abca73e6afa88d62ed079e6198f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12e1abca73e6afa88d62ed079e6198f4"></a>
-<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task.html">Task</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_1_1_builder.html">Task::Builder</a> &amp;builder)</td></tr>
-<tr class="separator:a12e1abca73e6afa88d62ed079e6198f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -208,7 +212,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 24 2014 08:43:26 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 24 2014 08:49:40 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

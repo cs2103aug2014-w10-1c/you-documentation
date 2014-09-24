@@ -6,5 +6,5 @@ var searchData=
   ['parser',['Parser',['../class_you_1_1_n_l_p_1_1_internal_1_1_parser.html',1,'You::NLP::Internal']]],
   ['parserexception',['ParserException',['../class_you_1_1_n_l_p_1_1_parser_exception.html',1,'You::NLP']]],
   ['populatetaskpanel',['populateTaskPanel',['../class_you_main_g_u_i.html#a01d0e488206ec37e4c491064e4a42b56',1,'YouMainGUI']]],
-  ['priority',['priority',['../class_you_1_1_query_engine_1_1_internal_1_1_task_1_1_builder.html#a68790a476ff58195aef70f5762634090',1,'You::QueryEngine::Internal::Task::Builder']]]
+  ['priority',['priority',['../struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_add_task.html#a385f527d22b4b8ee7ef98c9beee52d9e',1,'You::QueryEngine::Internal::Query::AddTask::priority()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_1_1_builder.html#a68790a476ff58195aef70f5762634090',1,'You::QueryEngine::Internal::Task::Builder::priority()']]]
 ];
