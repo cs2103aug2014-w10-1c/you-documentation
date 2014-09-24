@@ -113,55 +113,55 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">typedef</span> ParserCharTraits::space_type ParserSkipperType;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html">Parser</a> : <span class="keyword">public</span> qi::grammar&lt;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    ParserIteratorType,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    QUERY(),</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    ParserSkipperType&gt; {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#ab485597629febc70814a76248f562fb9">   34</a></span>&#160;    <span class="keyword">typedef</span> ParserIteratorType <a class="code" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#ab485597629febc70814a76248f562fb9">IteratorType</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a54f6f4b0ac98cf6322e7ed744d55aa42">   37</a></span>&#160;    <span class="keyword">typedef</span> ParserSkipperType <a class="code" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a54f6f4b0ac98cf6322e7ed744d55aa42">SkipperType</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a38303ca4c99b2e530675420aee4c6cf6">   40</a></span>&#160;    <span class="keyword">typedef</span> std::vector&lt;ParserCharEncoding::char_type&gt; <a class="code" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a38303ca4c99b2e530675420aee4c6cf6">LexemeType</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a450a8274f59df13553322c77527f059a">   43</a></span>&#160;    <span class="keyword">typedef</span> std::basic_string&lt;ParserCharEncoding::char_type&gt; <a class="code" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a450a8274f59df13553322c77527f059a">StringType</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html">Parser</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">static</span> QUERY parse(<span class="keyword">const</span> StringType&amp; <span class="keywordtype">string</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_internal_1_1_a_d_d___q_u_e_r_y.html">ADD_QUERY</a> constructAddQuery(<span class="keyword">const</span> LexemeType&amp; lexme);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> onFailure(ParserIteratorType begin, ParserIteratorType end,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        ParserIteratorType errorPos, <span class="keyword">const</span> spirit::info&amp; message);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    start_type start;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    qi::rule&lt;IteratorType, QUERY(), SkipperType&gt; explicitCommand;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    qi::rule&lt;IteratorType, ADD_QUERY(), SkipperType&gt; addCommand;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}  <span class="comment">// namespace Internal</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}  <span class="comment">// namespace NLP</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif  // YOU_NLP_INTERNAL_PARSER_H_</span></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_internal_1_1_parser_html_a54f6f4b0ac98cf6322e7ed744d55aa42"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a54f6f4b0ac98cf6322e7ed744d55aa42">You::NLP::Internal::Parser::SkipperType</a></div><div class="ttdeci">ParserSkipperType SkipperType</div><div class="ttdoc">The type of the skipper used in this grammar. </div><div class="ttdef"><b>Definition:</b> parser.h:37</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html">Parser</a> : <span class="keyword">public</span> qi::grammar&lt;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    ParserIteratorType,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    QUERY(),</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    ParserSkipperType&gt; {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#ab485597629febc70814a76248f562fb9">   35</a></span>&#160;    <span class="keyword">typedef</span> ParserIteratorType <a class="code" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#ab485597629febc70814a76248f562fb9">IteratorType</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a54f6f4b0ac98cf6322e7ed744d55aa42">   38</a></span>&#160;    <span class="keyword">typedef</span> ParserSkipperType <a class="code" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a54f6f4b0ac98cf6322e7ed744d55aa42">SkipperType</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a38303ca4c99b2e530675420aee4c6cf6">   41</a></span>&#160;    <span class="keyword">typedef</span> std::vector&lt;ParserCharEncoding::char_type&gt; <a class="code" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a38303ca4c99b2e530675420aee4c6cf6">LexemeType</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a450a8274f59df13553322c77527f059a">   44</a></span>&#160;    <span class="keyword">typedef</span> std::basic_string&lt;ParserCharEncoding::char_type&gt; <a class="code" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a450a8274f59df13553322c77527f059a">StringType</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html">Parser</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">static</span> QUERY parse(<span class="keyword">const</span> StringType&amp; <span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_internal_1_1_a_d_d___q_u_e_r_y.html">ADD_QUERY</a> constructAddQuery(<span class="keyword">const</span> LexemeType&amp; lexme);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> onFailure(ParserIteratorType begin, ParserIteratorType end,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        ParserIteratorType errorPos, <span class="keyword">const</span> spirit::info&amp; message);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    start_type start;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    qi::rule&lt;IteratorType, QUERY(), SkipperType&gt; explicitCommand;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    qi::rule&lt;IteratorType, ADD_QUERY(), SkipperType&gt; addCommand;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}  <span class="comment">// namespace Internal</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}  <span class="comment">// namespace NLP</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif  // YOU_NLP_INTERNAL_PARSER_H_</span></div>
+<div class="ttc" id="class_you_1_1_n_l_p_1_1_internal_1_1_parser_html_a54f6f4b0ac98cf6322e7ed744d55aa42"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a54f6f4b0ac98cf6322e7ed744d55aa42">You::NLP::Internal::Parser::SkipperType</a></div><div class="ttdeci">ParserSkipperType SkipperType</div><div class="ttdoc">The type of the skipper used in this grammar. </div><div class="ttdef"><b>Definition:</b> parser.h:38</div></div>
 <div class="ttc" id="namespaceqi_1_1standard__wide_html"><div class="ttname"><a href="namespaceqi_1_1standard__wide.html">standard_wide</a></div></div>
 <div class="ttc" id="struct_you_1_1_n_l_p_1_1_internal_1_1_a_d_d___q_u_e_r_y_html"><div class="ttname"><a href="struct_you_1_1_n_l_p_1_1_internal_1_1_a_d_d___q_u_e_r_y.html">You::NLP::Internal::ADD_QUERY</a></div><div class="ttdoc">Defines the synthesised value type of an add query. </div><div class="ttdef"><b>Definition:</b> add_query.h:13</div></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_internal_1_1_parser_html_ab485597629febc70814a76248f562fb9"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#ab485597629febc70814a76248f562fb9">You::NLP::Internal::Parser::IteratorType</a></div><div class="ttdeci">ParserIteratorType IteratorType</div><div class="ttdoc">The type of the iterator used in this grammar. </div><div class="ttdef"><b>Definition:</b> parser.h:34</div></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_internal_1_1_parser_html_a450a8274f59df13553322c77527f059a"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a450a8274f59df13553322c77527f059a">You::NLP::Internal::Parser::StringType</a></div><div class="ttdeci">std::basic_string&lt; ParserCharEncoding::char_type &gt; StringType</div><div class="ttdoc">The type of input strings accepted by this parser. </div><div class="ttdef"><b>Definition:</b> parser.h:43</div></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_internal_1_1_parser_html_a38303ca4c99b2e530675420aee4c6cf6"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a38303ca4c99b2e530675420aee4c6cf6">You::NLP::Internal::Parser::LexemeType</a></div><div class="ttdeci">std::vector&lt; ParserCharEncoding::char_type &gt; LexemeType</div><div class="ttdoc">The type of the lexeme buffer provided in a lexing semantic action. </div><div class="ttdef"><b>Definition:</b> parser.h:40</div></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_internal_1_1_parser_html"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html">You::NLP::Internal::Parser</a></div><div class="ttdef"><b>Definition:</b> parser.h:28</div></div>
+<div class="ttc" id="class_you_1_1_n_l_p_1_1_internal_1_1_parser_html_ab485597629febc70814a76248f562fb9"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#ab485597629febc70814a76248f562fb9">You::NLP::Internal::Parser::IteratorType</a></div><div class="ttdeci">ParserIteratorType IteratorType</div><div class="ttdoc">The type of the iterator used in this grammar. </div><div class="ttdef"><b>Definition:</b> parser.h:35</div></div>
+<div class="ttc" id="class_you_1_1_n_l_p_1_1_internal_1_1_parser_html_a450a8274f59df13553322c77527f059a"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a450a8274f59df13553322c77527f059a">You::NLP::Internal::Parser::StringType</a></div><div class="ttdeci">std::basic_string&lt; ParserCharEncoding::char_type &gt; StringType</div><div class="ttdoc">The type of input strings accepted by this parser. </div><div class="ttdef"><b>Definition:</b> parser.h:44</div></div>
+<div class="ttc" id="class_you_1_1_n_l_p_1_1_internal_1_1_parser_html_a38303ca4c99b2e530675420aee4c6cf6"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a38303ca4c99b2e530675420aee4c6cf6">You::NLP::Internal::Parser::LexemeType</a></div><div class="ttdeci">std::vector&lt; ParserCharEncoding::char_type &gt; LexemeType</div><div class="ttdoc">The type of the lexeme buffer provided in a lexing semantic action. </div><div class="ttdef"><b>Definition:</b> parser.h:41</div></div>
+<div class="ttc" id="class_you_1_1_n_l_p_1_1_internal_1_1_parser_html"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html">You::NLP::Internal::Parser</a></div><div class="ttdoc">The query parser that recognises our input syntax. </div><div class="ttdef"><b>Definition:</b> parser.h:29</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 24 2014 08:49:40 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 24 2014 09:24:29 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
