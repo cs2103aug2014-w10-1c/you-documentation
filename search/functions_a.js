@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['youmaingui',['YouMainGUI',['../class_you_main_g_u_i.html#ae2a92125ab23eda4479333a0c9c4b74a',1,'YouMainGUI']]]
+  ['tostring',['toString',['../struct_you_1_1_n_l_p_1_1_internal_1_1_a_d_d___q_u_e_r_y.html#a2c1732bf0ea3865b1c0d60b2c0aea148',1,'You::NLP::Internal::ADD_QUERY']]]
 ];
