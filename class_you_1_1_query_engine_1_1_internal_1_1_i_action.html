@@ -38,11 +38,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -74,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,8 +102,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aefcff21350b6084303e23795d43fd985"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#aefcff21350b6084303e23795d43fd985">read</a> (const TQuery &amp;)</td></tr>
-<tr class="memdesc:aefcff21350b6084303e23795d43fd985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from a query and modify internal state.  <a href="#aefcff21350b6084303e23795d43fd985">More...</a><br /></td></tr>
+<tr class="memitem:aefcff21350b6084303e23795d43fd985"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefcff21350b6084303e23795d43fd985"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#aefcff21350b6084303e23795d43fd985">read</a> (const TQuery &amp;)</td></tr>
+<tr class="memdesc:aefcff21350b6084303e23795d43fd985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from a query and modify internal state. <br /></td></tr>
 <tr class="separator:aefcff21350b6084303e23795d43fd985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d7b71e0a1479b1a6b83c6e94c1907cd"><td class="memItemLeft" align="right" valign="top">virtual TResponse&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#a8d7b71e0a1479b1a6b83c6e94c1907cd">execute</a> (TData &amp;)=0</td></tr>
 <tr class="memdesc:a8d7b71e0a1479b1a6b83c6e94c1907cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute and mutate data.  <a href="#a8d7b71e0a1479b1a6b83c6e94c1907cd">More...</a><br /></td></tr>
@@ -117,9 +116,6 @@ Public Member Functions</h2></td></tr>
 virtual Query::Query&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#ae5399d19372993b772d889bb948f25d5">getReverse</a> () const =0</td></tr>
 <tr class="memdesc:ae5399d19372993b772d889bb948f25d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a query as a representation of the reverse of this action. <br /></td></tr>
 <tr class="separator:ae5399d19372993b772d889bb948f25d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a640db1a9d886986983896225f9f5f96d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a640db1a9d886986983896225f9f5f96d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Action</b> ()=default</td></tr>
-<tr class="separator:a640db1a9d886986983896225f9f5f96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class TQuery, class TData, class TResponse&gt;<br />
@@ -133,7 +129,7 @@ class You::QueryEngine::Internal::IAction&lt; TQuery, TData, TResponse &gt;</h3>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="schema_8h.html" title="Defines several query schema. ">internal/schema.h</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>internal/schema.h </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">TData</td><td>The type of the data to be executed upon. </td></tr>
@@ -168,12 +164,6 @@ template&lt;class TQuery , class TData , class TResponse &gt; </div>
 </div><div class="memdoc">
 
 <p>Execute and mutate data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">unnamed</td><td>The mutable data to be executed upon. </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd>A response object of type TResponse </dd></dl>
 
 </div>
@@ -203,47 +193,7 @@ template&lt;class TQuery , class TData , class TResponse &gt; </div>
 </div><div class="memdoc">
 
 <p>Execute without mutating data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">unnamed</td><td>The immutable data to be executed upon. </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd>A response object of type TResponse </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aefcff21350b6084303e23795d43fd985"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TQuery , class TData , class TResponse &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_i_action.html">You::QueryEngine::Internal::IAction</a>&lt; TQuery, TData, TResponse &gt;::read </td>
-          <td>(</td>
-          <td class="paramtype">const TQuery &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Read from a query and modify internal state. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">unnamed</td><td><a class="el" href="namespace_you_1_1_query_engine_1_1_internal_1_1_query.html" title="Defines schema for raw queries from NLP parser that will be converted to real queries, executed, and converted back to string to be displayed in the GUI. ">Query</a> to be read </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -253,7 +203,7 @@ template&lt;class TQuery , class TData , class TResponse &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 24 2014 21:52:19 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 25 2014 04:24:39 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

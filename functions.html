@@ -38,11 +38,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -102,7 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -115,6 +113,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>comparatorField
+: <a class="el" href="struct_you_1_1_query_engine_1_1_query_1_1_sort.html#a97d1a893482416e4730dd1f4e4d08fe1">You::QueryEngine::Query::Sort</a>
+</li>
 <li>Context()
 : <a class="el" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#af3b2a4de89797c58f884612715719f0b">You::NLP::Controller::Context</a>
 </li>
@@ -125,24 +126,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
-<li>deadline
-: <a class="el" href="struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_add_task.html#a6e60c93dd457af98f56d5a0b88fbc933">You::QueryEngine::Internal::Query::AddTask</a>
-, <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_1_1_builder.html#ab4d8e4151b6d8cef900ca5c5431fd4ad">You::QueryEngine::Internal::Task::Builder</a>
+<li>deadline()
+: <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a2e960e16c31473e9c488f002d1ec227e">You::QueryEngine::Internal::TaskBuilder</a>
+, <a class="el" href="struct_you_1_1_query_engine_1_1_query_1_1_add_task.html#ae1914c50ac6fd65dff801693a8762966">You::QueryEngine::Query::AddTask</a>
 </li>
 <li>DEFAULT
 : <a class="el" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#ab1fbfaba3978a18690cfedcb85458fd0">You::NLP::Controller::Context</a>
 </li>
-<li>dependencies
-: <a class="el" href="struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_add_task.html#aa72826eb08813b829ff6f6a31441a20d">You::QueryEngine::Internal::Query::AddTask</a>
-, <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_1_1_builder.html#ab60c2ba994a48f503f6198b80c1cdcb2">You::QueryEngine::Internal::Task::Builder</a>
+<li>dependencies()
+: <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a3a34506739441ea71eaef517a551535b">You::QueryEngine::Internal::TaskBuilder</a>
+, <a class="el" href="struct_you_1_1_query_engine_1_1_query_1_1_add_task.html#a33b2de38a6a251e7284c2ac29d3ebc52">You::QueryEngine::Query::AddTask</a>
 </li>
 <li>dependencyID
-: <a class="el" href="struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_add_dependency.html#a96ab5819418fb10a25bf80411cc0fa52">You::QueryEngine::Internal::Query::AddDependency</a>
-, <a class="el" href="struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_remove_dependency.html#a6a20dae83e921d7223f839958dc0466b">You::QueryEngine::Internal::Query::RemoveDependency</a>
+: <a class="el" href="struct_you_1_1_query_engine_1_1_query_1_1_add_dependency.html#a15c03ad92dc5c422b2b684818ff91e0f">You::QueryEngine::Query::AddDependency</a>
+, <a class="el" href="struct_you_1_1_query_engine_1_1_query_1_1_remove_dependency.html#a3dd3cfd091feb6987727967e4ac42982">You::QueryEngine::Query::RemoveDependency</a>
 </li>
 <li>description
 : <a class="el" href="struct_you_1_1_n_l_p_1_1_internal_1_1_a_d_d___q_u_e_r_y.html#a1f6c0568be5b1e6783ddaa92963ea065">You::NLP::Internal::ADD_QUERY</a>
-, <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_1_1_builder.html#a70ba75c021b900a4da43891ae012ff5d">You::QueryEngine::Internal::Task::Builder</a>
+, <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a78497582f6b112727d381be31cca258a">You::QueryEngine::Internal::TaskBuilder</a>
+, <a class="el" href="struct_you_1_1_query_engine_1_1_query_1_1_add_task.html#a6595eecd64bd1aee12f5afffebce7b0e">You::QueryEngine::Query::AddTask</a>
 </li>
 <li>due
 : <a class="el" href="struct_you_1_1_n_l_p_1_1_internal_1_1_a_d_d___q_u_e_r_y.html#a645d980d68a023806f28e84a486313b0">You::NLP::Internal::ADD_QUERY</a>
@@ -163,8 +165,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
 <li>get()
 : <a class="el" href="class_you_1_1_n_l_p_1_1_controller.html#a6dff4631b6f2abd86eff6158da3a721a">You::NLP::Controller</a>
-, <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_1_1_builder.html#ae16f015a822ea446f5bfc6c3b6c2e543">You::QueryEngine::Internal::Task::Builder</a>
-, <a class="el" href="class_you_1_1_query_engine_1_1_state.html#a030ae8c050208ace43036a4c499f685a">You::QueryEngine::State</a>
+, <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a2c22da8a9939b360b62a5a3ca7b9d425">You::QueryEngine::Internal::TaskBuilder</a>
 </li>
 <li>getAffectedCount()
 : <a class="el" href="class_you_1_1_n_l_p_1_1_result.html#a0a8445b223c946baa28a9db1f9dd47dc">You::NLP::Result</a>
@@ -215,18 +216,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
 <li>newDeadline
-: <a class="el" href="struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_edit_deadline.html#acc583267169ee96d8c1398e87b2af0d2">You::QueryEngine::Internal::Query::EditDeadline</a>
+: <a class="el" href="struct_you_1_1_query_engine_1_1_query_1_1_edit_deadline.html#a76d505ed5a81d629424442ed82f3cb15">You::QueryEngine::Query::EditDeadline</a>
 </li>
 <li>newDescription
-: <a class="el" href="struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_edit_description.html#a3bb0616e88de1b5fcc10fc3f48647660">You::QueryEngine::Internal::Query::EditDescription</a>
+: <a class="el" href="struct_you_1_1_query_engine_1_1_query_1_1_edit_description.html#a23c1ab60428d5e2d79726c0cde5cd4c6">You::QueryEngine::Query::EditDescription</a>
 </li>
 <li>nextNewTask()
-: <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task.html#aebd86789e86f7654ef5fd674fb928c9d">You::QueryEngine::Internal::Task</a>
+: <a class="el" href="class_you_1_1_query_engine_1_1_task.html#a54d90c89adbdc5eca4e900820c9fc560">You::QueryEngine::Task</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>operator Task()
+: <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a5376c54ef9be92cc78cab554e864ed16">You::QueryEngine::Internal::TaskBuilder</a>
+</li>
 <li>operator==()
 : <a class="el" href="struct_you_1_1_n_l_p_1_1_internal_1_1_a_d_d___q_u_e_r_y.html#affe8bb946de2e575098228e46b065ac2">You::NLP::Internal::ADD_QUERY</a>
 </li>
@@ -243,9 +247,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>populateTaskPanel()
 : <a class="el" href="class_you_main_g_u_i.html#a01d0e488206ec37e4c491064e4a42b56">YouMainGUI</a>
 </li>
-<li>priority
-: <a class="el" href="struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_add_task.html#a385f527d22b4b8ee7ef98c9beee52d9e">You::QueryEngine::Internal::Query::AddTask</a>
-, <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_1_1_builder.html#a68790a476ff58195aef70f5762634090">You::QueryEngine::Internal::Task::Builder</a>
+<li>priority()
+: <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#ae4df8891d703178ee0339546aa2cb06e">You::QueryEngine::Internal::TaskBuilder</a>
+, <a class="el" href="struct_you_1_1_query_engine_1_1_query_1_1_add_task.html#aee17c6d7c94231a2e9e11612ed95692b">You::QueryEngine::Query::AddTask</a>
 </li>
 </ul>
 
@@ -265,6 +269,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>searchKeyword
+: <a class="el" href="struct_you_1_1_query_engine_1_1_query_1_1_find_task.html#a88ca70457bf6739e83e5f64b5ab5dcdc">You::QueryEngine::Query::FindTask</a>
+</li>
 <li>SkipperType
 : <a class="el" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a54f6f4b0ac98cf6322e7ed744d55aa42">You::NLP::Internal::Parser</a>
 </li>
@@ -280,6 +287,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>TASK_COLUMN_COUNT
 : <a class="el" href="class_you_main_g_u_i.html#ad06524754d6820391b49a36d2cdc70d9">YouMainGUI</a>
+</li>
+<li>taskID
+: <a class="el" href="struct_you_1_1_query_engine_1_1_query_1_1_add_dependency.html#a556876c5ce2c4c6287cae017f9e53f20">You::QueryEngine::Query::AddDependency</a>
+, <a class="el" href="struct_you_1_1_query_engine_1_1_query_1_1_delete_task.html#a8c5a3e1b10e46be95969ef2dcc80bce3">You::QueryEngine::Query::DeleteTask</a>
+, <a class="el" href="struct_you_1_1_query_engine_1_1_query_1_1_edit_deadline.html#a39c2632f6aa1beea048402a0edf55fd6">You::QueryEngine::Query::EditDeadline</a>
+, <a class="el" href="struct_you_1_1_query_engine_1_1_query_1_1_edit_description.html#ac0da70d0487b655a7413626b58b2c0e0">You::QueryEngine::Query::EditDescription</a>
+, <a class="el" href="struct_you_1_1_query_engine_1_1_query_1_1_get_task.html#ae7643fa37a563c3c9a021de89ba58d6d">You::QueryEngine::Query::GetTask</a>
+, <a class="el" href="struct_you_1_1_query_engine_1_1_query_1_1_remove_dependency.html#a7153cb5d71ce4617cac4f2a474e7332d">You::QueryEngine::Query::RemoveDependency</a>
 </li>
 <li>taskList
 : <a class="el" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a43b287449ec959f0e1d61daac3b8c399">You::NLP::Controller::Context</a>
@@ -306,7 +321,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 24 2014 21:52:19 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 25 2014 04:24:39 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

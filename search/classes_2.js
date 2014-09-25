@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['context',['Context',['../class_you_1_1_n_l_p_1_1_controller_1_1_context.html',1,'You::NLP::Controller']]],
-  ['contextrequiredexception',['ContextRequiredException',['../class_you_1_1_n_l_p_1_1_context_required_exception.html',1,'You::NLP']]],
-  ['controller',['Controller',['../class_you_1_1_n_l_p_1_1_controller.html',1,'You::NLP']]]
+  ['datastore',['DataStore',['../class_you_1_1_data_store_1_1_data_store.html',1,'You::DataStore']]],
+  ['deletetask',['DeleteTask',['../struct_you_1_1_query_engine_1_1_query_1_1_delete_task.html',1,'You::QueryEngine::Query']]]
 ];

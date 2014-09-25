@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['read',['read',['../class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#aefcff21350b6084303e23795d43fd985',1,'You::QueryEngine::Internal::IAction']]],
-  ['removedependency',['RemoveDependency',['../struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_remove_dependency.html',1,'You::QueryEngine::Internal::Query']]],
-  ['result',['Result',['../class_you_1_1_n_l_p_1_1_result.html',1,'You::NLP']]],
-  ['result_5fset',['RESULT_SET',['../class_you_1_1_n_l_p_1_1_result.html#a823efb64a3e9e8a791f3e6d7e8daec88a865a4d1fb32b2264c09172a4543b384b',1,'You::NLP::Result']]]
+  ['schema_2eh',['schema.h',['../schema_8h.html',1,'']]],
+  ['searchkeyword',['searchKeyword',['../struct_you_1_1_query_engine_1_1_query_1_1_find_task.html#a88ca70457bf6739e83e5f64b5ab5dcdc',1,'You::QueryEngine::Query::FindTask']]],
+  ['skippertype',['SkipperType',['../class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a54f6f4b0ac98cf6322e7ed744d55aa42',1,'You::NLP::Internal::Parser']]],
+  ['sort',['Sort',['../struct_you_1_1_query_engine_1_1_query_1_1_sort.html',1,'You::QueryEngine::Query']]],
+  ['stringtype',['StringType',['../class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a450a8274f59df13553322c77527f059a',1,'You::NLP::Internal::Parser']]]
 ];

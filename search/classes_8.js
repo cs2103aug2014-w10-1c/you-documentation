@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['parseerrorexception',['ParseErrorException',['../class_you_1_1_n_l_p_1_1_parse_error_exception.html',1,'You::NLP']]],
-  ['parser',['Parser',['../class_you_1_1_n_l_p_1_1_internal_1_1_parser.html',1,'You::NLP::Internal']]],
-  ['parserexception',['ParserException',['../class_you_1_1_n_l_p_1_1_parser_exception.html',1,'You::NLP']]]
+  ['removedependency',['RemoveDependency',['../struct_you_1_1_query_engine_1_1_query_1_1_remove_dependency.html',1,'You::QueryEngine::Query']]],
+  ['result',['Result',['../class_you_1_1_n_l_p_1_1_result.html',1,'You::NLP']]]
 ];

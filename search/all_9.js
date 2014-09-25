@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['newdeadline',['newDeadline',['../struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_edit_deadline.html#acc583267169ee96d8c1398e87b2af0d2',1,'You::QueryEngine::Internal::Query::EditDeadline']]],
-  ['newdescription',['newDescription',['../struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_edit_description.html#a3bb0616e88de1b5fcc10fc3f48647660',1,'You::QueryEngine::Internal::Query::EditDescription']]],
-  ['nextnewtask',['nextNewTask',['../class_you_1_1_query_engine_1_1_internal_1_1_task.html#aebd86789e86f7654ef5fd674fb928c9d',1,'You::QueryEngine::Internal::Task']]]
+  ['operator_20task',['operator Task',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a5376c54ef9be92cc78cab554e864ed16',1,'You::QueryEngine::Internal::TaskBuilder']]],
+  ['operator_3d_3d',['operator==',['../struct_you_1_1_n_l_p_1_1_internal_1_1_a_d_d___q_u_e_r_y.html#affe8bb946de2e575098228e46b065ac2',1,'You::NLP::Internal::ADD_QUERY']]]
 ];

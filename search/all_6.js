@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['get',['get',['../class_you_1_1_n_l_p_1_1_controller.html#a6dff4631b6f2abd86eff6158da3a721a',1,'You::NLP::Controller::get()'],['../class_you_1_1_query_engine_1_1_state.html#a030ae8c050208ace43036a4c499f685a',1,'You::QueryEngine::State::get()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_1_1_builder.html#ae16f015a822ea446f5bfc6c3b6c2e543',1,'You::QueryEngine::Internal::Task::Builder::get()']]],
-  ['getaffectedcount',['getAffectedCount',['../class_you_1_1_n_l_p_1_1_result.html#a0a8445b223c946baa28a9db1f9dd47dc',1,'You::NLP::Result']]],
-  ['getaffectedobject',['getAffectedObject',['../class_you_1_1_n_l_p_1_1_result.html#a59749eabff9e6a0713db0903dbaf4296',1,'You::NLP::Result']]],
-  ['getresultset',['getResultSet',['../class_you_1_1_n_l_p_1_1_result.html#aba594d9eda49dd280017523d6a7cd6b2',1,'You::NLP::Result']]],
-  ['getreverse',['getReverse',['../class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#ae5399d19372993b772d889bb948f25d5',1,'You::QueryEngine::Internal::IAction']]],
-  ['gettask',['GetTask',['../struct_you_1_1_query_engine_1_1_internal_1_1_query_1_1_get_task.html',1,'You::QueryEngine::Internal::Query']]],
-  ['gettasklist',['getTaskList',['../class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a64e5ec19cc827ef2d3572db4fd8263db',1,'You::NLP::Controller::Context']]]
+  ['iaction',['IAction',['../class_you_1_1_query_engine_1_1_internal_1_1_i_action.html',1,'You::QueryEngine::Internal']]],
+  ['isaffectedcountresult',['isAffectedCountResult',['../class_you_1_1_n_l_p_1_1_result.html#a1e16edcf9a9bb2d9f5b7d89942687861',1,'You::NLP::Result']]],
+  ['isaffectedobjectresult',['isAffectedObjectResult',['../class_you_1_1_n_l_p_1_1_result.html#a6c3fcb29d1778ee6cbda8c6b3bc9ed02',1,'You::NLP::Result']]],
+  ['isdefault',['isDefault',['../class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a8bb5aae386ee1d0254fec69e822aba91',1,'You::NLP::Controller::Context']]],
+  ['isresultsetresult',['isResultSetResult',['../class_you_1_1_n_l_p_1_1_result.html#aabd7875de091328c7b3f459c4c24d2c2',1,'You::NLP::Result']]],
+  ['istasklist',['isTaskList',['../class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a4c327fffb59c3ad802140ffe6d611df0',1,'You::NLP::Controller::Context']]],
+  ['iteratortype',['IteratorType',['../class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#ab485597629febc70814a76248f562fb9',1,'You::NLP::Internal::Parser']]]
 ];
