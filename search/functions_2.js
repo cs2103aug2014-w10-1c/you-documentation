@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['execute',['execute',['../class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#a8d7b71e0a1479b1a6b83c6e94c1907cd',1,'You::QueryEngine::Internal::IAction']]],
-  ['execute_5f',['execute_',['../class_you_1_1_query_engine_1_1_internal_1_1_i_action.html#a3e2e9667a44c808ed8f31b7d2a9cf593',1,'You::QueryEngine::Internal::IAction']]]
+  ['deadline',['deadline',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a2e960e16c31473e9c488f002d1ec227e',1,'You::QueryEngine::Internal::TaskBuilder']]],
+  ['dependencies',['dependencies',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a3a34506739441ea71eaef517a551535b',1,'You::QueryEngine::Internal::TaskBuilder']]],
+  ['description',['description',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a78497582f6b112727d381be31cca258a',1,'You::QueryEngine::Internal::TaskBuilder']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['context',['Context',['../class_you_1_1_n_l_p_1_1_controller_1_1_context.html#af3b2a4de89797c58f884612715719f0b',1,'You::NLP::Controller::Context']]]
+  ['addtask',['AddTask',['../class_you_1_1_query_engine_1_1_internal_1_1_add_task.html#ac6f424b7d6144e227f72e848917ee45e',1,'You::QueryEngine::Internal::AddTask']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['operator_20task',['operator Task',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a5376c54ef9be92cc78cab554e864ed16',1,'You::QueryEngine::Internal::TaskBuilder']]],
-  ['operator_3d_3d',['operator==',['../struct_you_1_1_n_l_p_1_1_internal_1_1_a_d_d___q_u_e_r_y.html#affe8bb946de2e575098228e46b065ac2',1,'You::NLP::Internal::ADD_QUERY']]]
+  ['query',['Query',['../class_you_1_1_query_engine_1_1_query.html',1,'You::QueryEngine']]],
+  ['query',['query',['../class_you_1_1_n_l_p_1_1_controller.html#a7c17b94244f985b75d9e06f686c99b74',1,'You::NLP::Controller']]]
 ];

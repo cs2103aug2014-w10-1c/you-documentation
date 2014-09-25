@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['query',['query',['../class_you_1_1_n_l_p_1_1_controller.html#a7c17b94244f985b75d9e06f686c99b74',1,'You::NLP::Controller']]],
-  ['query_2eh',['query.h',['../query_8h.html',1,'']]]
+  ['skippertype',['SkipperType',['../class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a54f6f4b0ac98cf6322e7ed744d55aa42',1,'You::NLP::Internal::Parser']]],
+  ['stringtype',['StringType',['../class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a450a8274f59df13553322c77527f059a',1,'You::NLP::Internal::Parser']]]
 ];

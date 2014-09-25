@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['newdeadline',['newDeadline',['../struct_you_1_1_query_engine_1_1_query_1_1_edit_deadline.html#a76d505ed5a81d629424442ed82f3cb15',1,'You::QueryEngine::Query::EditDeadline']]],
-  ['newdescription',['newDescription',['../struct_you_1_1_query_engine_1_1_query_1_1_edit_description.html#a23c1ab60428d5e2d79726c0cde5cd4c6',1,'You::QueryEngine::Query::EditDescription']]]
+  ['task',['task',['../class_you_1_1_n_l_p_1_1_result.html#aa1bb3e28c9ac574e6c83a0dac036e2d3',1,'You::NLP::Result']]],
+  ['task_5fcolumn_5fcount',['TASK_COLUMN_COUNT',['../class_you_main_g_u_i.html#ad06524754d6820391b49a36d2cdc70d9',1,'YouMainGUI']]],
+  ['tasklist',['taskList',['../class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a43b287449ec959f0e1d61daac3b8c399',1,'You::NLP::Controller::Context::taskList()'],['../class_you_1_1_n_l_p_1_1_result.html#a11349c6ca55d941360d15325f307eee2',1,'You::NLP::Result::taskList()']]]
 ];

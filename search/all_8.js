@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['newdeadline',['newDeadline',['../struct_you_1_1_query_engine_1_1_query_1_1_edit_deadline.html#a76d505ed5a81d629424442ed82f3cb15',1,'You::QueryEngine::Query::EditDeadline']]],
-  ['newdescription',['newDescription',['../struct_you_1_1_query_engine_1_1_query_1_1_edit_description.html#a23c1ab60428d5e2d79726c0cde5cd4c6',1,'You::QueryEngine::Query::EditDescription']]],
-  ['nextnewtask',['nextNewTask',['../class_you_1_1_query_engine_1_1_task.html#a54d90c89adbdc5eca4e900820c9fc560',1,'You::QueryEngine::Task']]]
+  ['parse',['parse',['../class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a1dac2fec650dc388d1d08c280659f3ba',1,'You::NLP::Internal::Parser']]],
+  ['parseerrorexception',['ParseErrorException',['../class_you_1_1_n_l_p_1_1_parse_error_exception.html',1,'You::NLP']]],
+  ['parseerrorexception',['ParseErrorException',['../class_you_1_1_n_l_p_1_1_parse_error_exception.html#ad83700acfda393d1d00c022a33bedeec',1,'You::NLP::ParseErrorException']]],
+  ['parser',['Parser',['../class_you_1_1_n_l_p_1_1_internal_1_1_parser.html',1,'You::NLP::Internal']]],
+  ['parserexception',['ParserException',['../class_you_1_1_n_l_p_1_1_parser_exception.html',1,'You::NLP']]],
+  ['populatetaskpanel',['populateTaskPanel',['../class_you_main_g_u_i.html#a01d0e488206ec37e4c491064e4a42b56',1,'YouMainGUI']]],
+  ['priority',['priority',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#ae4df8891d703178ee0339546aa2cb06e',1,'You::QueryEngine::Internal::TaskBuilder']]]
 ];

@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_you_1_1_query_engine_1_1_task-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -114,9 +114,9 @@ typedef int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>ID</b></td
 <tr class="memitem:a4faab9411fbee44eddb23671a7e105de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4faab9411fbee44eddb23671a7e105de"></a>
 typedef std::wstring&#160;</td><td class="memItemRight" valign="bottom"><b>Description</b></td></tr>
 <tr class="separator:a4faab9411fbee44eddb23671a7e105de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bc7c89e6b1993f21c26b414d8b98782"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bc7c89e6b1993f21c26b414d8b98782"></a>
-typedef boost::gregorian::date&#160;</td><td class="memItemRight" valign="bottom"><b>Time</b></td></tr>
-<tr class="separator:a0bc7c89e6b1993f21c26b414d8b98782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52800c87f89a19e0470165c83297f58d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52800c87f89a19e0470165c83297f58d"></a>
+typedef boost::posix_time::ptime&#160;</td><td class="memItemRight" valign="bottom"><b>Time</b></td></tr>
+<tr class="separator:a52800c87f89a19e0470165c83297f58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dd67461ee555aafb5cc80a5a4d54096"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2dd67461ee555aafb5cc80a5a4d54096"></a>
 typedef std::vector&lt; Task::ID &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Dependencies</b></td></tr>
 <tr class="separator:a2dd67461ee555aafb5cc80a5a4d54096"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,11 +153,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setDependencies</b> (
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setPriority</b> (Priority)</td></tr>
 <tr class="separator:ab632d8bedfbf8c38f6546d491dcd51ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a54d90c89adbdc5eca4e900820c9fc560"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_task.html#a54d90c89adbdc5eca4e900820c9fc560">nextNewTask</a> ()</td></tr>
-<tr class="memdesc:a54d90c89adbdc5eca4e900820c9fc560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a task with using default values for all its fields.  <a href="#a54d90c89adbdc5eca4e900820c9fc560">More...</a><br /></td></tr>
-<tr class="separator:a54d90c89adbdc5eca4e900820c9fc560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a59b4fa4b4e57666a3342b6fb66fae951"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59b4fa4b4e57666a3342b6fb66fae951"></a>
+static const ID&#160;</td><td class="memItemRight" valign="bottom"><b>DUMMY_ID</b> = 42L</td></tr>
+<tr class="separator:a59b4fa4b4e57666a3342b6fb66fae951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Default Values</div></td></tr>
+<tr class="memitem:a46f12509564e1076847e99846b63c99d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46f12509564e1076847e99846b63c99d"></a>
+static const Description&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_DESCRIPTION</b> = L&quot;&quot;</td></tr>
+<tr class="separator:a46f12509564e1076847e99846b63c99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a82188bb4be5edea1ada353fa52ede"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78a82188bb4be5edea1ada353fa52ede"></a>
+static const Time&#160;</td><td class="memItemRight" valign="bottom"><b>NEVER</b> = ptime(date(max_date_time), hours(0))</td></tr>
+<tr class="separator:a78a82188bb4be5edea1ada353fa52ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ec65917598d661c5fb5f34ee15fd64e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ec65917598d661c5fb5f34ee15fd64e"></a>
+static const Time&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_DEADLINE</b> = Task::NEVER</td></tr>
+<tr class="separator:a1ec65917598d661c5fb5f34ee15fd64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91e2c0da3ee117c43768ad7636880abd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91e2c0da3ee117c43768ad7636880abd"></a>
+static const Dependencies&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_DEPENDENCIES</b></td></tr>
+<tr class="separator:a91e2c0da3ee117c43768ad7636880abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9201fc2c0342443b02d3785fb2ef860b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9201fc2c0342443b02d3785fb2ef860b"></a>
+static const Priority&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_PRIORITY</b> = Task::Priority::NORMAL</td></tr>
+<tr class="separator:a9201fc2c0342443b02d3785fb2ef860b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -168,41 +184,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Internal::TaskBuilde
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The task model The task instances must be created using builder pattern. </p>
 <dl class="section see"><dt>See also</dt><dd>[<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html" title="Builder for tasks New instance of task should be created using this builder. ">Internal::TaskBuilder</a>] </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a54d90c89adbdc5eca4e900820c9fc560"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> You::QueryEngine::Task::nextNewTask </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return a task with using default values for all its fields. </p>
-<p>The ID of the task created is LAST_ID + 1 </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>You-QueryEngine/<a class="el" href="task__model_8h_source.html">task_model.h</a></li>
 <li>You-QueryEngine/task_model.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 25 2014 04:24:38 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 25 2014 16:07:08 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
