@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_you_1_1_n_l_p_1_1_controller_1_1_context-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">You::NLP::Controller::Context Class Reference</div>  </div>
@@ -99,13 +100,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Represents a context of a query.  
  <a href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="controller_8h_source.html">controller.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="controller__context_8h_source.html">controller_context.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af3b2a4de89797c58f884612715719f0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3b2a4de89797c58f884612715719f0b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#af3b2a4de89797c58f884612715719f0b">Context</a> (const <a class="el" href="class_you_1_1_n_l_p_1_1_task_list.html">TaskList</a> &amp;<a class="el" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a43b287449ec959f0e1d61daac3b8c399">taskList</a>)</td></tr>
-<tr class="memdesc:af3b2a4de89797c58f884612715719f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_you_1_1_n_l_p_1_1_task.html">Task</a> List conversion constructor. <br /></td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#af3b2a4de89797c58f884612715719f0b">Context</a> (const TaskList &amp;taskList)</td></tr>
+<tr class="memdesc:af3b2a4de89797c58f884612715719f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Task List conversion constructor. <br /></td></tr>
 <tr class="separator:af3b2a4de89797c58f884612715719f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bb5aae386ee1d0254fec69e822aba91"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a8bb5aae386ee1d0254fec69e822aba91">isDefault</a> () const </td></tr>
 <tr class="memdesc:a8bb5aae386ee1d0254fec69e822aba91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given context is the default context.  <a href="#a8bb5aae386ee1d0254fec69e822aba91">More...</a><br /></td></tr>
@@ -113,7 +114,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c327fffb59c3ad802140ffe6d611df0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a4c327fffb59c3ad802140ffe6d611df0">isTaskList</a> () const </td></tr>
 <tr class="memdesc:a4c327fffb59c3ad802140ffe6d611df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given context is a task list context.  <a href="#a4c327fffb59c3ad802140ffe6d611df0">More...</a><br /></td></tr>
 <tr class="separator:a4c327fffb59c3ad802140ffe6d611df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64e5ec19cc827ef2d3572db4fd8263db"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_you_1_1_n_l_p_1_1_task_list.html">TaskList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a64e5ec19cc827ef2d3572db4fd8263db">getTaskList</a> () const </td></tr>
+<tr class="memitem:a64e5ec19cc827ef2d3572db4fd8263db"><td class="memItemLeft" align="right" valign="top">const TaskList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a64e5ec19cc827ef2d3572db4fd8263db">getTaskList</a> () const </td></tr>
 <tr class="memdesc:a64e5ec19cc827ef2d3572db4fd8263db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the task list if the current context is a task list context.  <a href="#a64e5ec19cc827ef2d3572db4fd8263db">More...</a><br /></td></tr>
 <tr class="separator:a64e5ec19cc827ef2d3572db4fd8263db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -122,6 +123,12 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:ab1fbfaba3978a18690cfedcb85458fd0"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html">Context</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#ab1fbfaba3978a18690cfedcb85458fd0">DEFAULT</a></td></tr>
 <tr class="memdesc:ab1fbfaba3978a18690cfedcb85458fd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the global default context.  <a href="#ab1fbfaba3978a18690cfedcb85458fd0">More...</a><br /></td></tr>
 <tr class="separator:ab1fbfaba3978a18690cfedcb85458fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a700005300f8ede939d0ba06675f732fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a700005300f8ede939d0ba06675f732fc"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::ControllerContextTests</b></td></tr>
+<tr class="separator:a700005300f8ede939d0ba06675f732fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a context of a query. </p>
@@ -132,7 +139,7 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class_you_1_1_n_l_p_1_1_task_list.html">TaskList</a>&amp; You::NLP::Controller::Context::getTaskList </td>
+          <td class="memname">const TaskList&amp; You::NLP::Controller::Context::getTaskList </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -207,13 +214,13 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>You-NLP/<a class="el" href="controller_8h_source.html">controller.h</a></li>
+<li>You-NLP/<a class="el" href="controller__context_8h_source.html">controller_context.h</a></li>
 <li>You-NLP/controller_context.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 27 2014 07:24:28 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 27 2014 07:35:33 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

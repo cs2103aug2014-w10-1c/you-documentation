@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -93,37 +93,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define YOU_NLP_EXCEPTIONS_PARSE_ERROR_EXCEPTION_H_</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;parser_exception.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../internal/parser.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../internal/query_parser.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>NLP {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>spirit = boost::spirit;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using</span> Parser = Internal::Parser;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_parse_error_exception.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_n_l_p_1_1_parse_error_exception.html">ParseErrorException</a> : <span class="keyword">public</span> <a class="code" href="class_you_1_1_n_l_p_1_1_parser_exception.html">ParserException</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_you_1_1_n_l_p_1_1_parse_error_exception.html#ad83700acfda393d1d00c022a33bedeec">ParseErrorException</a>(spirit::info message, <a class="code" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a450a8274f59df13553322c77527f059a">Parser::StringType</a> token);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    spirit::info message;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a450a8274f59df13553322c77527f059a">Parser::StringType</a> token;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}  <span class="comment">// namespace NLP</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif  // YOU_NLP_EXCEPTIONS_PARSE_ERROR_EXCEPTION_H_</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_parse_error_exception.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_n_l_p_1_1_parse_error_exception.html">ParseErrorException</a> : <span class="keyword">public</span> <a class="code" href="class_you_1_1_n_l_p_1_1_parser_exception.html">ParserException</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_you_1_1_n_l_p_1_1_parse_error_exception.html#a28b6e7b51b4128f68407f95d0888440a">ParseErrorException</a>(</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        boost::spirit::info message,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="class_you_1_1_n_l_p_1_1_internal_1_1_query_parser.html#a6b76617bb17d21ae40bf286960f47870">Internal::QueryParser::StringType</a> token);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    boost::spirit::info message;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_you_1_1_n_l_p_1_1_internal_1_1_query_parser.html#a6b76617bb17d21ae40bf286960f47870">Internal::QueryParser::StringType</a> token;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}  <span class="comment">// namespace NLP</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif  // YOU_NLP_EXCEPTIONS_PARSE_ERROR_EXCEPTION_H_</span></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_parser_exception_html"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_parser_exception.html">You::NLP::ParserException</a></div><div class="ttdef"><b>Definition:</b> parser_exception.h:10</div></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_parse_error_exception_html"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_parse_error_exception.html">You::NLP::ParseErrorException</a></div><div class="ttdoc">Represents a parse error in the NLP engine. </div><div class="ttdef"><b>Definition:</b> parse_error_exception.h:15</div></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_parse_error_exception_html_ad83700acfda393d1d00c022a33bedeec"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_parse_error_exception.html#ad83700acfda393d1d00c022a33bedeec">You::NLP::ParseErrorException::ParseErrorException</a></div><div class="ttdeci">ParseErrorException(spirit::info message, Parser::StringType token)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> parse_error_exception.cpp:10</div></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_internal_1_1_parser_html_a450a8274f59df13553322c77527f059a"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_internal_1_1_parser.html#a450a8274f59df13553322c77527f059a">You::NLP::Internal::Parser::StringType</a></div><div class="ttdeci">std::basic_string&lt; ParserCharEncoding::char_type &gt; StringType</div><div class="ttdoc">The type of input strings accepted by this parser. </div><div class="ttdef"><b>Definition:</b> parser.h:44</div></div>
+<div class="ttc" id="class_you_1_1_n_l_p_1_1_parse_error_exception_html"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_parse_error_exception.html">You::NLP::ParseErrorException</a></div><div class="ttdoc">Represents a parse error in the NLP engine. </div><div class="ttdef"><b>Definition:</b> parse_error_exception.h:12</div></div>
+<div class="ttc" id="class_you_1_1_n_l_p_1_1_parse_error_exception_html_a28b6e7b51b4128f68407f95d0888440a"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_parse_error_exception.html#a28b6e7b51b4128f68407f95d0888440a">You::NLP::ParseErrorException::ParseErrorException</a></div><div class="ttdeci">ParseErrorException(boost::spirit::info message, Internal::QueryParser::StringType token)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> parse_error_exception.cpp:10</div></div>
+<div class="ttc" id="class_you_1_1_n_l_p_1_1_internal_1_1_query_parser_html_a6b76617bb17d21ae40bf286960f47870"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_internal_1_1_query_parser.html#a6b76617bb17d21ae40bf286960f47870">You::NLP::Internal::QueryParser::StringType</a></div><div class="ttdeci">std::basic_string&lt; ParserCharEncoding::char_type &gt; StringType</div><div class="ttdoc">The type of input strings accepted by this parser. </div><div class="ttdef"><b>Definition:</b> query_parser.h:30</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> datastore.cpp:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 27 2014 07:24:28 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 27 2014 07:35:33 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

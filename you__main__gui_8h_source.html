@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -121,9 +121,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_main_g_u_i.html#a01d0e488206ec37e4c491064e4a42b56">populateTaskPanel</a>();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_you_1_1_n_l_p_1_1_result.html">You::NLP::Result</a> queryNLP();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    You::NLP::Result queryNLP();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> updateTreeWidget(<a class="code" href="class_you_1_1_n_l_p_1_1_result.html">You::NLP::Result</a> result);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> updateTreeWidget(You::NLP::Result result);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> taskPanelSetup();</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
@@ -159,7 +159,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif  // YOU_GUI_YOU_MAIN_GUI_H_</span></div>
 <div class="ttc" id="class_you_main_g_u_i_html_af16d4cee1097de3fb257e98c2ba84837"><div class="ttname"><a href="class_you_main_g_u_i.html#af16d4cee1097de3fb257e98c2ba84837">YouMainGUI::TASK_COLUMN_5</a></div><div class="ttdeci">const std::wstring TASK_COLUMN_5</div><div class="ttdoc">Header string for column 5. </div><div class="ttdef"><b>Definition:</b> you_main_gui.h:41</div></div>
 <div class="ttc" id="class_you_main_g_u_i_html_ae5f18ebf6da2d1cff5ed1ff65f031b2d"><div class="ttname"><a href="class_you_main_g_u_i.html#ae5f18ebf6da2d1cff5ed1ff65f031b2d">YouMainGUI::TASK_COLUMN_4</a></div><div class="ttdeci">const std::wstring TASK_COLUMN_4</div><div class="ttdoc">Header string for column 4. </div><div class="ttdef"><b>Definition:</b> you_main_gui.h:38</div></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_result_html"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_result.html">You::NLP::Result</a></div><div class="ttdoc">Defines the result of a natural language query. </div><div class="ttdef"><b>Definition:</b> result.h:11</div></div>
 <div class="ttc" id="class_you_main_g_u_i_html_a61ad936ffda3da1a0af4ff227ff5cb75"><div class="ttname"><a href="class_you_main_g_u_i.html#a61ad936ffda3da1a0af4ff227ff5cb75">YouMainGUI::TASK_COLUMN_3</a></div><div class="ttdeci">const std::wstring TASK_COLUMN_3</div><div class="ttdoc">Header string for column 3. </div><div class="ttdef"><b>Definition:</b> you_main_gui.h:35</div></div>
 <div class="ttc" id="class_you_main_g_u_i_html_a01d0e488206ec37e4c491064e4a42b56"><div class="ttname"><a href="class_you_main_g_u_i.html#a01d0e488206ec37e4c491064e4a42b56">YouMainGUI::populateTaskPanel</a></div><div class="ttdeci">void populateTaskPanel()</div><div class="ttdoc">Populates the task panel with data. </div><div class="ttdef"><b>Definition:</b> you_main_gui.cpp:37</div></div>
 <div class="ttc" id="class_you_main_g_u_i_html_abff0bd774f9047715b1321246db5a574"><div class="ttname"><a href="class_you_main_g_u_i.html#abff0bd774f9047715b1321246db5a574">YouMainGUI::TASK_COLUMN_1</a></div><div class="ttdeci">const std::wstring TASK_COLUMN_1</div><div class="ttdoc">Header string for column 1. </div><div class="ttdef"><b>Definition:</b> you_main_gui.h:29</div></div>
@@ -171,7 +170,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 27 2014 07:24:28 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 27 2014 07:35:33 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

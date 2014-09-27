@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,6 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_you_1_1_n_l_p_1_1_controller-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">You::NLP::Controller Class Reference</div>  </div>
@@ -107,12 +108,15 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html">Context</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a context of a query.  <a href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_n_l_p_1_1_controller_1_1_query_builder_visitor.html">QueryBuilderVisitor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The query builder that will send the query to the appropriate builder in the controller class.  <a href="class_you_1_1_n_l_p_1_1_controller_1_1_query_builder_visitor.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c17b94244f985b75d9e06f686c99b74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_you_1_1_n_l_p_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_n_l_p_1_1_controller.html#a7c17b94244f985b75d9e06f686c99b74">query</a> (const std::wstring &amp;query, const <a class="el" href="class_you_1_1_n_l_p_1_1_task_list.html">TaskList</a> &amp;context) const </td></tr>
-<tr class="memdesc:a7c17b94244f985b75d9e06f686c99b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the given natural language query.  <a href="#a7c17b94244f985b75d9e06f686c99b74">More...</a><br /></td></tr>
-<tr class="separator:a7c17b94244f985b75d9e06f686c99b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed38b0098885659d23f05374bd16c607"><td class="memItemLeft" align="right" valign="top">Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_n_l_p_1_1_controller.html#aed38b0098885659d23f05374bd16c607">query</a> (const std::wstring &amp;query, const <a class="el" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html">Context</a> &amp;context) const </td></tr>
+<tr class="memdesc:aed38b0098885659d23f05374bd16c607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the given natural language query.  <a href="#aed38b0098885659d23f05374bd16c607">More...</a><br /></td></tr>
+<tr class="separator:aed38b0098885659d23f05374bd16c607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -120,17 +124,23 @@ Static Public Member Functions</h2></td></tr>
 static <a class="el" href="class_you_1_1_n_l_p_1_1_controller.html">Controller</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_n_l_p_1_1_controller.html#a6dff4631b6f2abd86eff6158da3a721a">get</a> ()</td></tr>
 <tr class="memdesc:a6dff4631b6f2abd86eff6158da3a721a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the singleton instance for the controller. <br /></td></tr>
 <tr class="separator:a6dff4631b6f2abd86eff6158da3a721a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a700005300f8ede939d0ba06675f732fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a700005300f8ede939d0ba06675f732fc"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::ControllerContextTests</b></td></tr>
+<tr class="separator:a700005300f8ede939d0ba06675f732fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The entry-point for all communications with the rest of the You framework. </p>
 <p>This is a singleton class. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7c17b94244f985b75d9e06f686c99b74"></a>
+<a class="anchor" id="aed38b0098885659d23f05374bd16c607"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_you_1_1_n_l_p_1_1_result.html">Result</a> You::NLP::Controller::query </td>
+          <td class="memname">Result You::NLP::Controller::query </td>
           <td>(</td>
           <td class="paramtype">const std::wstring &amp;&#160;</td>
           <td class="paramname"><em>query</em>, </td>
@@ -138,7 +148,7 @@ static <a class="el" href="class_you_1_1_n_l_p_1_1_controller.html">Controller</
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_you_1_1_n_l_p_1_1_task_list.html">TaskList</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html">Context</a> &amp;&#160;</td>
           <td class="paramname"><em>context</em>&#160;</td>
         </tr>
         <tr>
@@ -164,17 +174,18 @@ static <a class="el" href="class_you_1_1_n_l_p_1_1_controller.html">Controller</
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_you_1_1_n_l_p_1_1_result.html" title="Defines the result of a natural language query. ">Result</a> The result is polymorphic. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>Result The result is polymorphic. </dd></dl>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>You-NLP/<a class="el" href="controller_8h_source.html">controller.h</a></li>
+<li>You-NLP/controller.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 27 2014 07:24:28 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 27 2014 07:35:33 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
