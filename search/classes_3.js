@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['emptytaskdescriptionexception',['EmptyTaskDescriptionException',['../class_you_1_1_query_engine_1_1_internal_1_1_empty_task_description_exception.html',1,'You::QueryEngine::Internal']]],
-  ['exception',['Exception',['../class_you_1_1_n_l_p_1_1_exception.html',1,'You::NLP']]],
-  ['exception',['Exception',['../class_you_1_1_query_engine_1_1_internal_1_1_exception.html',1,'You::QueryEngine::Internal']]]
+  ['datastore',['DataStore',['../class_you_1_1_data_store_1_1_data_store.html',1,'You::DataStore']]],
+  ['datetimeparser',['DateTimeParser',['../class_you_1_1_n_l_p_1_1_internal_1_1_date_time_parser.html',1,'You::NLP::Internal']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['task',['Task',['../class_you_1_1_query_engine_1_1_task.html',1,'You::QueryEngine']]],
-  ['taskbuilder',['TaskBuilder',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html',1,'You::QueryEngine::Internal']]],
-  ['tostringvisitor',['ToStringVisitor',['../struct_you_1_1_n_l_p_1_1_unit_tests_1_1_to_string_visitor.html',1,'You::NLP::UnitTests']]]
+  ['query',['Query',['../class_you_1_1_query_engine_1_1_query.html',1,'You::QueryEngine']]],
+  ['querybuildervisitor',['QueryBuilderVisitor',['../class_you_1_1_n_l_p_1_1_controller_1_1_query_builder_visitor.html',1,'You::NLP::Controller']]],
+  ['queryparser',['QueryParser',['../class_you_1_1_n_l_p_1_1_internal_1_1_query_parser.html',1,'You::NLP::Internal']]]
 ];

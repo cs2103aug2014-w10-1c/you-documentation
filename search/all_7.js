@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['operator_20task',['operator Task',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a5376c54ef9be92cc78cab554e864ed16',1,'You::QueryEngine::Internal::TaskBuilder']]],
-  ['operator_28_29',['operator()',['../class_you_1_1_n_l_p_1_1_controller_1_1_query_builder_visitor.html#a106bb97932dfdffc910395703f1642c7',1,'You::NLP::Controller::QueryBuilderVisitor']]],
-  ['operator_3d_3d',['operator==',['../struct_you_1_1_n_l_p_1_1_internal_1_1_a_d_d___q_u_e_r_y.html#affe8bb946de2e575098228e46b065ac2',1,'You::NLP::Internal::ADD_QUERY']]]
+  ['lexemetype',['LexemeType',['../class_you_1_1_n_l_p_1_1_internal_1_1_date_time_parser.html#a47f9bd83c5defe3c14054a6b60b38d21',1,'You::NLP::Internal::DateTimeParser::LexemeType()'],['../class_you_1_1_n_l_p_1_1_internal_1_1_query_parser.html#afc943a3df1b642c1f83192c3921e1d2a',1,'You::NLP::Internal::QueryParser::LexemeType()']]]
 ];

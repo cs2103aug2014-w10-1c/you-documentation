@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['get',['get',['../class_you_1_1_n_l_p_1_1_controller.html#a6dff4631b6f2abd86eff6158da3a721a',1,'You::NLP::Controller::get()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a2c22da8a9939b360b62a5a3ca7b9d425',1,'You::QueryEngine::Internal::TaskBuilder::get()']]],
-  ['gettasklist',['getTaskList',['../class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a64e5ec19cc827ef2d3572db4fd8263db',1,'You::NLP::Controller::Context']]]
+  ['emptytaskdescriptionexception',['EmptyTaskDescriptionException',['../class_you_1_1_query_engine_1_1_internal_1_1_empty_task_description_exception.html',1,'You::QueryEngine::Internal']]],
+  ['exception',['Exception',['../class_you_1_1_query_engine_1_1_internal_1_1_exception.html',1,'You::QueryEngine::Internal']]],
+  ['exception',['Exception',['../class_you_1_1_n_l_p_1_1_exception.html',1,'You::NLP']]],
+  ['exception_2eh',['exception.h',['../_you-_query_engine_2internal_2exception_8h.html',1,'']]],
+  ['executequery',['executeQuery',['../class_you_1_1_query_engine_1_1_query.html#ab0c291eba3380b3e3470b63bf43d923b',1,'You::QueryEngine::Query']]]
 ];
