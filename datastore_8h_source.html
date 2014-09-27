@@ -92,33 +92,61 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef YOU_DATASTORE_DATASTORE_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define YOU_DATASTORE_DATASTORE_H_</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;pugixml.hpp&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>DataStore {</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;boost\variant.hpp&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_you_1_1_data_store_1_1_data_store.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_data_store_1_1_data_store.html">DataStore</a> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_you_1_1_data_store_1_1_data_store.html">DataStore</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    ~<a class="code" href="class_you_1_1_data_store_1_1_data_store.html">DataStore</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;pugixml.hpp&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>DataStore {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::wstring FILE_PATH;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    pugi::xml_document document;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> saveData();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> loadData();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}  <span class="comment">// namespace DataStore</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif  // YOU_DATASTORE_DATASTORE_H_</span></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_data_store_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_data_store.html">You::DataStore::DataStore</a></div><div class="ttdef"><b>Definition:</b> datastore.h:10</div></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_you_1_1_data_store_1_1_data_store.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_data_store_1_1_data_store.html">DataStore</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_you_1_1_data_store_1_1_data_store.html#aaf9685c75f66e40d0023b293cd325f61">   18</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_you_1_1_data_store_1_1_data_store.html#aaf9685c75f66e40d0023b293cd325f61">DataStoreAPITest</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_you_1_1_data_store_1_1_data_store.html#afa7bf1b9022964e8dd4b7367b8c556ce">   22</a></span>&#160;    <span class="keyword">typedef</span> std::unordered_map&lt;std::wstring, std::wstring&gt; <a class="code" href="class_you_1_1_data_store_1_1_data_store.html#afa7bf1b9022964e8dd4b7367b8c556ce">STask</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_you_1_1_data_store_1_1_data_store.html#a66854ab2691e2954877008dad24ff4f9">   24</a></span>&#160;    <span class="keyword">typedef</span> int64_t <a class="code" href="class_you_1_1_data_store_1_1_data_store.html#a66854ab2691e2954877008dad24ff4f9">TaskId</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_you_1_1_data_store_1_1_data_store.html">DataStore</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    ~<a class="code" href="class_you_1_1_data_store_1_1_data_store.html">DataStore</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_data_store_1_1_data_store.html#ac8ec57185ff036b3af5bc92c981470a6">post</a>(TaskId, STask&amp;);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_data_store_1_1_data_store.html#ab2479d63d725875a27926d259dbfc4e6">put</a>(TaskId, STask&amp;);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    boost::variant&lt;bool, STask&gt; <span class="keyword">get</span>(<a class="code" href="class_you_1_1_data_store_1_1_data_store.html#a66854ab2691e2954877008dad24ff4f9">TaskId</a>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_data_store_1_1_data_store.html#a441a0bde02ac59d40eeec636ea9ccf2f">erase</a>(TaskId);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::vector&lt;STask&gt; <a class="code" href="class_you_1_1_data_store_1_1_data_store.html#a5e2d1e5601ef28a2dfdf480b7b3cb494">filter</a>(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">bool</span>(STask)&gt;&amp;);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::wstring FILE_PATH;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    pugi::xml_document document;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">bool</span> saveData();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> loadData();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}  <span class="comment">// namespace DataStore</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif  // YOU_DATASTORE_DATASTORE_H_</span></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_data_store_html_ac8ec57185ff036b3af5bc92c981470a6"><div class="ttname"><a href="class_you_1_1_data_store_1_1_data_store.html#ac8ec57185ff036b3af5bc92c981470a6">You::DataStore::DataStore::post</a></div><div class="ttdeci">bool post(TaskId, STask &amp;)</div><div class="ttdoc">Insert a task into the datastore. </div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_data_store_html_aaf9685c75f66e40d0023b293cd325f61"><div class="ttname"><a href="class_you_1_1_data_store_1_1_data_store.html#aaf9685c75f66e40d0023b293cd325f61">You::DataStore::DataStore::DataStoreAPITest</a></div><div class="ttdeci">friend class DataStoreAPITest</div><div class="ttdoc">Test classes. </div><div class="ttdef"><b>Definition:</b> datastore.h:18</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_data_store_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_data_store.html">You::DataStore::DataStore</a></div><div class="ttdef"><b>Definition:</b> datastore.h:15</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_data_store_html_ab2479d63d725875a27926d259dbfc4e6"><div class="ttname"><a href="class_you_1_1_data_store_1_1_data_store.html#ab2479d63d725875a27926d259dbfc4e6">You::DataStore::DataStore::put</a></div><div class="ttdeci">bool put(TaskId, STask &amp;)</div><div class="ttdoc">Update the content of a task. </div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_data_store_html_a441a0bde02ac59d40eeec636ea9ccf2f"><div class="ttname"><a href="class_you_1_1_data_store_1_1_data_store.html#a441a0bde02ac59d40eeec636ea9ccf2f">You::DataStore::DataStore::erase</a></div><div class="ttdeci">bool erase(TaskId)</div><div class="ttdoc">Delete a task. </div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_data_store_html_afa7bf1b9022964e8dd4b7367b8c556ce"><div class="ttname"><a href="class_you_1_1_data_store_1_1_data_store.html#afa7bf1b9022964e8dd4b7367b8c556ce">You::DataStore::DataStore::STask</a></div><div class="ttdeci">std::unordered_map&lt; std::wstring, std::wstring &gt; STask</div><div class="ttdoc">typedefs typedef for Serialized Task </div><div class="ttdef"><b>Definition:</b> datastore.h:22</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_data_store_html_a66854ab2691e2954877008dad24ff4f9"><div class="ttname"><a href="class_you_1_1_data_store_1_1_data_store.html#a66854ab2691e2954877008dad24ff4f9">You::DataStore::DataStore::TaskId</a></div><div class="ttdeci">int64_t TaskId</div><div class="ttdoc">typedef for Task ID </div><div class="ttdef"><b>Definition:</b> datastore.h:24</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_data_store_html_a5e2d1e5601ef28a2dfdf480b7b3cb494"><div class="ttname"><a href="class_you_1_1_data_store_1_1_data_store.html#a5e2d1e5601ef28a2dfdf480b7b3cb494">You::DataStore::DataStore::filter</a></div><div class="ttdeci">std::vector&lt; STask &gt; filter(const std::function&lt; bool(STask)&gt; &amp;)</div><div class="ttdoc">Get a list of tasks that passes the filter. </div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> datastore.cpp:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 27 2014 11:13:05 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 27 2014 11:24:26 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

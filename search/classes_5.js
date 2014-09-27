@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['parseerrorexception',['ParseErrorException',['../class_you_1_1_n_l_p_1_1_parse_error_exception.html',1,'You::NLP']]],
-  ['parserexception',['ParserException',['../class_you_1_1_n_l_p_1_1_parser_exception.html',1,'You::NLP']]]
+  ['ioperation',['IOperation',['../class_you_1_1_data_store_1_1_i_operation.html',1,'You::DataStore']]]
 ];

@@ -88,11 +88,150 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_you_1_1_data_store_1_1_data_store-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">You::DataStore::DataStore Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:afa7bf1b9022964e8dd4b7367b8c556ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa7bf1b9022964e8dd4b7367b8c556ce"></a>
+typedef std::unordered_map<br class="typebreak" />
+&lt; std::wstring, std::wstring &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#afa7bf1b9022964e8dd4b7367b8c556ce">STask</a></td></tr>
+<tr class="memdesc:afa7bf1b9022964e8dd4b7367b8c556ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">typedefs typedef for Serialized Task <br /></td></tr>
+<tr class="separator:afa7bf1b9022964e8dd4b7367b8c556ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66854ab2691e2954877008dad24ff4f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66854ab2691e2954877008dad24ff4f9"></a>
+typedef int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#a66854ab2691e2954877008dad24ff4f9">TaskId</a></td></tr>
+<tr class="memdesc:a66854ab2691e2954877008dad24ff4f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">typedef for Task ID <br /></td></tr>
+<tr class="separator:a66854ab2691e2954877008dad24ff4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac8ec57185ff036b3af5bc92c981470a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#ac8ec57185ff036b3af5bc92c981470a6">post</a> (<a class="el" href="class_you_1_1_data_store_1_1_data_store.html#a66854ab2691e2954877008dad24ff4f9">TaskId</a>, <a class="el" href="class_you_1_1_data_store_1_1_data_store.html#afa7bf1b9022964e8dd4b7367b8c556ce">STask</a> &amp;)</td></tr>
+<tr class="memdesc:ac8ec57185ff036b3af5bc92c981470a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a task into the datastore.  <a href="#ac8ec57185ff036b3af5bc92c981470a6">More...</a><br /></td></tr>
+<tr class="separator:ac8ec57185ff036b3af5bc92c981470a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2479d63d725875a27926d259dbfc4e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#ab2479d63d725875a27926d259dbfc4e6">put</a> (<a class="el" href="class_you_1_1_data_store_1_1_data_store.html#a66854ab2691e2954877008dad24ff4f9">TaskId</a>, <a class="el" href="class_you_1_1_data_store_1_1_data_store.html#afa7bf1b9022964e8dd4b7367b8c556ce">STask</a> &amp;)</td></tr>
+<tr class="memdesc:ab2479d63d725875a27926d259dbfc4e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the content of a task.  <a href="#ab2479d63d725875a27926d259dbfc4e6">More...</a><br /></td></tr>
+<tr class="separator:ab2479d63d725875a27926d259dbfc4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62e786ee7cb6b7429b6ab5c63ae74051"><td class="memItemLeft" align="right" valign="top">boost::variant&lt; bool, <a class="el" href="class_you_1_1_data_store_1_1_data_store.html#afa7bf1b9022964e8dd4b7367b8c556ce">STask</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#a62e786ee7cb6b7429b6ab5c63ae74051">get</a> (<a class="el" href="class_you_1_1_data_store_1_1_data_store.html#a66854ab2691e2954877008dad24ff4f9">TaskId</a>)</td></tr>
+<tr class="memdesc:a62e786ee7cb6b7429b6ab5c63ae74051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a task.  <a href="#a62e786ee7cb6b7429b6ab5c63ae74051">More...</a><br /></td></tr>
+<tr class="separator:a62e786ee7cb6b7429b6ab5c63ae74051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a441a0bde02ac59d40eeec636ea9ccf2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#a441a0bde02ac59d40eeec636ea9ccf2f">erase</a> (<a class="el" href="class_you_1_1_data_store_1_1_data_store.html#a66854ab2691e2954877008dad24ff4f9">TaskId</a>)</td></tr>
+<tr class="memdesc:a441a0bde02ac59d40eeec636ea9ccf2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a task.  <a href="#a441a0bde02ac59d40eeec636ea9ccf2f">More...</a><br /></td></tr>
+<tr class="separator:a441a0bde02ac59d40eeec636ea9ccf2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2d1e5601ef28a2dfdf480b7b3cb494"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e2d1e5601ef28a2dfdf480b7b3cb494"></a>
+std::vector&lt; <a class="el" href="class_you_1_1_data_store_1_1_data_store.html#afa7bf1b9022964e8dd4b7367b8c556ce">STask</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#a5e2d1e5601ef28a2dfdf480b7b3cb494">filter</a> (const std::function&lt; bool(<a class="el" href="class_you_1_1_data_store_1_1_data_store.html#afa7bf1b9022964e8dd4b7367b8c556ce">STask</a>)&gt; &amp;)</td></tr>
+<tr class="memdesc:a5e2d1e5601ef28a2dfdf480b7b3cb494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of tasks that passes the filter. <br /></td></tr>
+<tr class="separator:a5e2d1e5601ef28a2dfdf480b7b3cb494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:aaf9685c75f66e40d0023b293cd325f61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf9685c75f66e40d0023b293cd325f61"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#aaf9685c75f66e40d0023b293cd325f61">DataStoreAPITest</a></td></tr>
+<tr class="memdesc:aaf9685c75f66e40d0023b293cd325f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test classes. <br /></td></tr>
+<tr class="separator:aaf9685c75f66e40d0023b293cd325f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a441a0bde02ac59d40eeec636ea9ccf2f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool You::DataStore::DataStore::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#a66854ab2691e2954877008dad24ff4f9">TaskId</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delete a task. </p>
+<p>Returns true if erase successful, false if task id specified does not exist </p>
+
+</div>
+</div>
+<a class="anchor" id="a62e786ee7cb6b7429b6ab5c63ae74051"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::variant&lt;bool, <a class="el" href="class_you_1_1_data_store_1_1_data_store.html#afa7bf1b9022964e8dd4b7367b8c556ce">STask</a>&gt; You::DataStore::DataStore::get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#a66854ab2691e2954877008dad24ff4f9">TaskId</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a task. </p>
+<p>Returns false and an empty STask if task id does not exist </p>
+
+</div>
+</div>
+<a class="anchor" id="ac8ec57185ff036b3af5bc92c981470a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool You::DataStore::DataStore::post </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#a66854ab2691e2954877008dad24ff4f9">TaskId</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#afa7bf1b9022964e8dd4b7367b8c556ce">STask</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insert a task into the datastore. </p>
+<p>Returns true if insertion successful, false if task id already exists </p>
+
+</div>
+</div>
+<a class="anchor" id="ab2479d63d725875a27926d259dbfc4e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool You::DataStore::DataStore::put </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#a66854ab2691e2954877008dad24ff4f9">TaskId</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#afa7bf1b9022964e8dd4b7367b8c556ce">STask</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the content of a task. </p>
+<p>Returns true if update successful, false if task id specified does not exist </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>You-DataStore/<a class="el" href="datastore_8h_source.html">datastore.h</a></li>
 <li>You-DataStore/datastore.cpp</li>
@@ -100,7 +239,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 27 2014 11:13:06 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 27 2014 11:24:27 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

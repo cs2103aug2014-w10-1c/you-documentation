@@ -1,6 +1,8 @@
 var searchData=
 [
   ['datastore',['DataStore',['../class_you_1_1_data_store_1_1_data_store.html',1,'You::DataStore']]],
+  ['datastoreapitest',['DataStoreApiTest',['../class_you_data_store_tests_1_1_data_store_api_test.html',1,'YouDataStoreTests']]],
+  ['datastoreapitest',['DataStoreAPITest',['../class_you_1_1_data_store_1_1_data_store.html#aaf9685c75f66e40d0023b293cd325f61',1,'You::DataStore::DataStore']]],
   ['datetimeparser',['DateTimeParser',['../class_you_1_1_n_l_p_1_1_internal_1_1_date_time_parser.html',1,'You::NLP::Internal']]],
   ['deadline',['deadline',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a2e960e16c31473e9c488f002d1ec227e',1,'You::QueryEngine::Internal::TaskBuilder']]],
   ['default',['DEFAULT',['../class_you_1_1_n_l_p_1_1_controller_1_1_context.html#ab1fbfaba3978a18690cfedcb85458fd0',1,'You::NLP::Controller::Context']]],

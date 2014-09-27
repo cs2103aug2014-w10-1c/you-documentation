@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['sessionmanager',['SessionManager',['../class_you_main_g_u_i_1_1_session_manager.html',1,'YouMainGUI']]],
-  ['systemtraymanager',['SystemTrayManager',['../class_you_main_g_u_i_1_1_system_tray_manager.html',1,'YouMainGUI']]]
+  ['query',['Query',['../class_you_1_1_query_engine_1_1_query.html',1,'You::QueryEngine']]],
+  ['querybuildervisitor',['QueryBuilderVisitor',['../class_you_1_1_n_l_p_1_1_controller_1_1_query_builder_visitor.html',1,'You::NLP::Controller']]],
+  ['queryparser',['QueryParser',['../class_you_1_1_n_l_p_1_1_internal_1_1_query_parser.html',1,'You::NLP::Internal']]]
 ];

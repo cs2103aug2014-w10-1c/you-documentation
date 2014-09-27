@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['you_20_5b_21_5bbuild_20status_5d_28https_3a_2f_2fci_2eappveyor_2ecom_2fapi_2fprojects_2fstatus_2fv0nblgg1fq3g0fnb_29_5d_28https_3a_2f_2fci_2eappveyor_2ecom_2fproject_2flowjoel_2fmain_29',['You [![Build status](https://ci.appveyor.com/api/projects/status/v0nblgg1fq3g0fnb)](https://ci.appveyor.com/project/lowjoel/main)',['../md__r_e_a_d_m_e.html',1,'']]],
-  ['parserchartraits',['ParserCharTraits',['../namespace_you_1_1_n_l_p_1_1_internal_1_1_parser_char_traits.html',1,'You::NLP::Internal']]],
-  ['youmaingui',['YouMainGUI',['../class_you_main_g_u_i.html',1,'YouMainGUI'],['../class_you_main_g_u_i.html#ae2a92125ab23eda4479333a0c9c4b74a',1,'YouMainGUI::YouMainGUI()']]]
+  ['sessionmanager',['SessionManager',['../class_you_main_g_u_i_1_1_session_manager.html',1,'YouMainGUI']]],
+  ['skippertype',['SkipperType',['../class_you_1_1_n_l_p_1_1_internal_1_1_date_time_parser.html#a9838ab5bf72a86f65cbeab3636302520',1,'You::NLP::Internal::DateTimeParser::SkipperType()'],['../class_you_1_1_n_l_p_1_1_internal_1_1_query_parser.html#a8675aafddb289a6d7bf14870a42a6ec5',1,'You::NLP::Internal::QueryParser::SkipperType()']]],
+  ['stask',['STask',['../class_you_1_1_data_store_1_1_data_store.html#afa7bf1b9022964e8dd4b7367b8c556ce',1,'You::DataStore::DataStore']]],
+  ['stringtype',['StringType',['../class_you_1_1_n_l_p_1_1_internal_1_1_date_time_parser.html#a5fba0bdc42a3972c92b13dc2af3d52f8',1,'You::NLP::Internal::DateTimeParser::StringType()'],['../class_you_1_1_n_l_p_1_1_internal_1_1_query_parser.html#a6b76617bb17d21ae40bf286960f47870',1,'You::NLP::Internal::QueryParser::StringType()']]],
+  ['systemtraymanager',['SystemTrayManager',['../class_you_main_g_u_i_1_1_system_tray_manager.html',1,'YouMainGUI']]]
 ];
