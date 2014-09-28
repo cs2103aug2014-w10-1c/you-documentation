@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>You: You-NLP/internal/parser.h Source File</title>
+<title>You: You-GUI/base_manager.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,41 +80,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_0752bd7ed268457d4c611116f7501aa8.html">You-NLP</a></li><li class="navelem"><a class="el" href="dir_bafe0331eccd533e894a2b61e0450f51.html">internal</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_5c2dd30564718c3f299487104304622d.html">You-GUI</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">parser.h</div>  </div>
+<div class="title">base_manager.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef YOU_NLP_INTERNAL_PARSER_H_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define YOU_NLP_INTERNAL_PARSER_H_</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;boost/spirit/include/qi.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>NLP {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>Internal {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespace_you_1_1_n_l_p_1_1_internal_1_1_parser_char_traits.html">   12</a></span>&#160;<span class="keyword">namespace </span>ParserCharTraits {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">using namespace </span><a class="code" href="namespaceboost_1_1spirit_1_1qi_1_1standard__wide.html">boost::spirit::qi::standard_wide</a>; <span class="comment">// NOLINT</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef YOU_GUI_BASE_MANAGER_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define YOU_GUI_BASE_MANAGER_H_</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;you_main_gui.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_you_main_g_u_i_1_1_base_manager.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_main_g_u_i_1_1_base_manager.html">YouMainGUI::BaseManager</a> : <span class="keyword">public</span> QObject{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_you_main_g_u_i.html">YouMainGUI</a> * <span class="keyword">const</span> parentGUI;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_you_main_g_u_i_1_1_base_manager.html">BaseManager</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_you_main_g_u_i_1_1_base_manager.html">BaseManager</a>(<a class="code" href="class_you_main_g_u_i.html">YouMainGUI</a> * parentGUI);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> setup();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">typedef</span> boost::spirit::char_encoding::standard_wide ParserCharEncoding;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">typedef</span> std::wstring::const_iterator ParserIteratorType;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">typedef</span> ParserCharTraits::space_type ParserSkipperType;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}  <span class="comment">// namespace Internal</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}  <span class="comment">// namespace NLP</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif  // YOU_NLP_INTERNAL_PARSER_H_</span></div>
-<div class="ttc" id="namespaceboost_1_1spirit_1_1qi_1_1standard__wide_html"><div class="ttname"><a href="namespaceboost_1_1spirit_1_1qi_1_1standard__wide.html">standard_wide</a></div></div>
-<div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> datastore.cpp:4</div></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif  // YOU_GUI_BASE_MANAGER_H_</span></div>
+<div class="ttc" id="class_you_main_g_u_i_1_1_base_manager_html"><div class="ttname"><a href="class_you_main_g_u_i_1_1_base_manager.html">YouMainGUI::BaseManager</a></div><div class="ttdoc">The class from which all components inherit. </div><div class="ttdef"><b>Definition:</b> base_manager.h:7</div></div>
+<div class="ttc" id="class_you_main_g_u_i_html"><div class="ttname"><a href="class_you_main_g_u_i.html">YouMainGUI</a></div><div class="ttdoc">The entity that deals with all GUI operations, and makes calls to the NLP engine. ...</div><div class="ttdef"><b>Definition:</b> you_main_gui.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
