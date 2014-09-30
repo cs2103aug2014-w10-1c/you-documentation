@@ -96,13 +96,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;boost/date_time/posix_time/posix_time.hpp&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>QueryEngine {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// Do a forward declaration on TaskBuilder</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// so that it can be</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;boost/date_time/posix_time/posix_time.hpp&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>QueryEngine {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// Forward declaration on TaskBuilder</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>Internal {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>TaskBuilder;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
@@ -127,42 +127,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> setDependencies(<span class="keyword">const</span> Dependencies&amp;);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> setPriority(Priority);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> Description DEFAULT_DESCRIPTION;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> Time NEVER;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> Time DEFAULT_DEADLINE;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> Dependencies DEFAULT_DEPENDENCIES;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> Priority DEFAULT_PRIORITY;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// TODO(evansb) Remove when getNextID() that talks to</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Data Storage is implemented.</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> ID DUMMY_ID;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="class_you_1_1_query_engine_1_1_task.html">Task</a>(ID <span class="keywordtype">id</span>, <span class="keyword">const</span> Description&amp; description, Time deadline,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">const</span> Dependencies&amp; dependencies, Priority priority) :</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        id(<span class="keywordtype">id</span>), description(description), deadline(deadline),</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        dependencies(dependencies), priority(priority) {}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_you_1_1_query_engine_1_1_task.html">Task</a> nextNewTask();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    ID id;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    Description description;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    Time deadline;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    Dependencies dependencies;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    Priority priority;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}  <span class="comment">// namespace QueryEngine</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_TASK_MODEL_H_</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_query_engine_1_1_task.html#a4e496f8c96b482eb2687d5890f3b24c6">isStrictEqual</a>(<span class="keyword">const</span> <a class="code" href="class_you_1_1_query_engine_1_1_task.html">Task</a>&amp; task) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> ID DEFAULT_ID;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> Description DEFAULT_DESCRIPTION;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> Time NEVER;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> Time DEFAULT_DEADLINE;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> Dependencies DEFAULT_DEPENDENCIES;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> Priority DEFAULT_PRIORITY;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_you_1_1_query_engine_1_1_task.html#afc582759f4ec0c844d3a250470cf9949">   72</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_query_engine_1_1_task.html#afc582759f4ec0c844d3a250470cf9949">operator==</a>(<span class="keyword">const</span> <a class="code" href="class_you_1_1_query_engine_1_1_task.html">Task</a>&amp; rhs)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> <span class="keywordtype">id</span> == rhs.id;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="class_you_1_1_query_engine_1_1_task.html">Task</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_you_1_1_query_engine_1_1_task.html">Task</a>(ID <span class="keywordtype">id</span>, <span class="keyword">const</span> Description&amp; description, Time deadline,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">const</span> Dependencies&amp; dependencies, Priority priority) :</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        id(id), description(description), deadline(deadline),</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        dependencies(dependencies), priority(priority) {}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    ID id;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    Description description;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    Time deadline;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    Dependencies dependencies;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    Priority priority;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}  <span class="comment">// namespace QueryEngine</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_TASK_MODEL_H_</span></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_task_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_task.html">You::QueryEngine::Task</a></div><div class="ttdoc">The task model The task instances must be created using builder pattern. </div><div class="ttdef"><b>Definition:</b> task_model.h:26</div></div>
+<div class="ttc" id="class_you_1_1_query_engine_1_1_task_html_a4e496f8c96b482eb2687d5890f3b24c6"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_task.html#a4e496f8c96b482eb2687d5890f3b24c6">You::QueryEngine::Task::isStrictEqual</a></div><div class="ttdeci">bool isStrictEqual(const Task &amp;task) const </div><div class="ttdoc">Check if the task is strictly equal with another task Two taks are strictly equal if all fields are e...</div><div class="ttdef"><b>Definition:</b> task_model.cpp:36</div></div>
+<div class="ttc" id="class_you_1_1_query_engine_1_1_task_html_afc582759f4ec0c844d3a250470cf9949"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_task.html#afc582759f4ec0c844d3a250470cf9949">You::QueryEngine::Task::operator==</a></div><div class="ttdeci">bool operator==(const Task &amp;rhs) const </div><div class="ttdoc">Equality of task is determined by its unique ID For stricter equality,. </div><div class="ttdef"><b>Definition:</b> task_model.h:72</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_task_builder_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html">You::QueryEngine::Internal::TaskBuilder</a></div><div class="ttdoc">Builder for tasks New instance of task should be created using this builder. </div><div class="ttdef"><b>Definition:</b> task_builder.h:24</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> datastore.cpp:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 28 2014 22:50:41 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 30 2014 11:35:41 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

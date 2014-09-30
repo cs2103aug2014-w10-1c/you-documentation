@@ -9,8 +9,11 @@ var searchData=
   ['task_5fcolumn_5f5',['TASK_COLUMN_5',['../class_you_main_g_u_i.html#af16d4cee1097de3fb257e98c2ba84837',1,'YouMainGUI']]],
   ['task_5fcolumn_5fcount',['TASK_COLUMN_COUNT',['../class_you_main_g_u_i.html#adcd10381c1a7fa3ad93db963a318230a',1,'YouMainGUI']]],
   ['task_5fmodel_2eh',['task_model.h',['../task__model_8h.html',1,'']]],
+  ['task_5fserializer_2eh',['task_serializer.h',['../task__serializer_8h.html',1,'']]],
   ['taskbuilder',['TaskBuilder',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html',1,'You::QueryEngine::Internal']]],
+  ['taskbuildertest',['TaskBuilderTest',['../class_you_1_1_query_engine_1_1_unit_tests_1_1_task_builder_test.html',1,'You::QueryEngine::UnitTests']]],
   ['taskid',['TaskId',['../class_you_1_1_data_store_1_1_data_store.html#a66854ab2691e2954877008dad24ff4f9',1,'You::DataStore::DataStore']]],
   ['taskpanelmanager',['TaskPanelManager',['../class_you_main_g_u_i_1_1_task_panel_manager.html',1,'YouMainGUI']]],
+  ['taskserializer',['TaskSerializer',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html',1,'You::QueryEngine::Internal']]],
   ['tostringvisitor',['ToStringVisitor',['../struct_you_1_1_n_l_p_1_1_unit_tests_1_1_to_string_visitor.html',1,'You::NLP::UnitTests']]]
 ];
