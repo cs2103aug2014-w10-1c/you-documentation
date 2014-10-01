@@ -115,21 +115,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_you_1_1_n_l_p_1_1_controller.html">Controller</a>(<span class="keyword">const</span> <a class="code" href="class_you_1_1_n_l_p_1_1_controller.html">Controller</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_you_1_1_n_l_p_1_1_controller.html">Controller</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_you_1_1_n_l_p_1_1_controller.html">Controller</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_you_1_1_n_l_p_1_1_controller.html">Controller</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}  <span class="comment">// namespace NLP</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif  // YOU_NLP_CONTROLLER_H_</span></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_controller_html_aed38b0098885659d23f05374bd16c607"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_controller.html#aed38b0098885659d23f05374bd16c607">You::NLP::Controller::query</a></div><div class="ttdeci">Result query(const std::wstring &amp;query, const Context &amp;context) const </div><div class="ttdoc">Executes the given natural language query. </div><div class="ttdef"><b>Definition:</b> controller.cpp:49</div></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_you_1_1_n_l_p_1_1_controller.html">Controller</a> instance;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}  <span class="comment">// namespace NLP</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif  // YOU_NLP_CONTROLLER_H_</span></div>
+<div class="ttc" id="class_you_1_1_n_l_p_1_1_controller_html_aed38b0098885659d23f05374bd16c607"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_controller.html#aed38b0098885659d23f05374bd16c607">You::NLP::Controller::query</a></div><div class="ttdeci">Result query(const std::wstring &amp;query, const Context &amp;context) const </div><div class="ttdoc">Executes the given natural language query. </div><div class="ttdef"><b>Definition:</b> controller.cpp:55</div></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_controller_1_1_context_html"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html">You::NLP::Controller::Context</a></div><div class="ttdoc">Represents a context of a query. </div><div class="ttdef"><b>Definition:</b> controller_context.h:14</div></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_controller_1_1_query_builder_visitor_html"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_controller_1_1_query_builder_visitor.html">You::NLP::Controller::QueryBuilderVisitor</a></div><div class="ttdoc">The query builder that will send the query to the appropriate builder in the controller class...</div><div class="ttdef"><b>Definition:</b> controller.cpp:18</div></div>
+<div class="ttc" id="class_you_1_1_n_l_p_1_1_controller_1_1_query_builder_visitor_html"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_controller_1_1_query_builder_visitor.html">You::NLP::Controller::QueryBuilderVisitor</a></div><div class="ttdoc">The query builder that will send the query to the appropriate builder in the controller class...</div><div class="ttdef"><b>Definition:</b> controller.cpp:20</div></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_controller_html"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_controller.html">You::NLP::Controller</a></div><div class="ttdoc">The entry-point for all communications with the rest of the You framework. </div><div class="ttdef"><b>Definition:</b> controller.h:16</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> datastore.cpp:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 30 2014 13:53:23 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 1 2014 00:28:52 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
