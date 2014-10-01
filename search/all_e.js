@@ -1,19 +1,11 @@
 var searchData=
 [
-  ['task',['Task',['../class_you_1_1_query_engine_1_1_task.html',1,'You::QueryEngine']]],
-  ['task_5fbuilder_2eh',['task_builder.h',['../task__builder_8h.html',1,'']]],
-  ['task_5fcolumn_5f1',['TASK_COLUMN_1',['../class_you_main_g_u_i.html#abff0bd774f9047715b1321246db5a574',1,'YouMainGUI']]],
-  ['task_5fcolumn_5f2',['TASK_COLUMN_2',['../class_you_main_g_u_i.html#a4c7f4bb2868378683cdeb3ea13dcecad',1,'YouMainGUI']]],
-  ['task_5fcolumn_5f3',['TASK_COLUMN_3',['../class_you_main_g_u_i.html#a61ad936ffda3da1a0af4ff227ff5cb75',1,'YouMainGUI']]],
-  ['task_5fcolumn_5f4',['TASK_COLUMN_4',['../class_you_main_g_u_i.html#ae5f18ebf6da2d1cff5ed1ff65f031b2d',1,'YouMainGUI']]],
-  ['task_5fcolumn_5f5',['TASK_COLUMN_5',['../class_you_main_g_u_i.html#af16d4cee1097de3fb257e98c2ba84837',1,'YouMainGUI']]],
-  ['task_5fcolumn_5fcount',['TASK_COLUMN_COUNT',['../class_you_main_g_u_i.html#adcd10381c1a7fa3ad93db963a318230a',1,'YouMainGUI']]],
-  ['task_5fmodel_2eh',['task_model.h',['../task__model_8h.html',1,'']]],
-  ['task_5fserializer_2eh',['task_serializer.h',['../task__serializer_8h.html',1,'']]],
-  ['taskbuilder',['TaskBuilder',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html',1,'You::QueryEngine::Internal']]],
-  ['taskbuildertest',['TaskBuilderTest',['../class_you_1_1_query_engine_1_1_unit_tests_1_1_task_builder_test.html',1,'You::QueryEngine::UnitTests']]],
-  ['taskid',['TaskId',['../class_you_1_1_data_store_1_1_data_store.html#a66854ab2691e2954877008dad24ff4f9',1,'You::DataStore::DataStore']]],
-  ['taskpanelmanager',['TaskPanelManager',['../class_you_main_g_u_i_1_1_task_panel_manager.html',1,'YouMainGUI']]],
-  ['taskserializer',['TaskSerializer',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html',1,'You::QueryEngine::Internal']]],
-  ['tostringvisitor',['ToStringVisitor',['../struct_you_1_1_n_l_p_1_1_unit_tests_1_1_to_string_visitor.html',1,'You::NLP::UnitTests']]]
+  ['serialize',['serialize',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a3ad4efb9e980b5ea89a0b1523018551b',1,'You::QueryEngine::Internal::TaskSerializer']]],
+  ['serializetask',['serializeTask',['../class_you_1_1_query_engine_1_1_unit_tests_1_1_task_builder_test.html#a8c5f8d7cf05c4da0d8ac540670e1868f',1,'You::QueryEngine::UnitTests::TaskBuilderTest']]],
+  ['sessionmanager',['SessionManager',['../class_you_main_g_u_i_1_1_session_manager.html',1,'YouMainGUI']]],
+  ['setup',['setup',['../class_you_main_g_u_i_1_1_n_l_p_manager.html#ae2486b4ab7889f253ae96353eb59a39f',1,'YouMainGUI::NLPManager::setup()'],['../class_you_main_g_u_i_1_1_session_manager.html#a21d143c285fa511afe5990b6d7518e9a',1,'YouMainGUI::SessionManager::setup()'],['../class_you_main_g_u_i_1_1_system_tray_manager.html#ad1b9974ec2c68ba605be7906225329f4',1,'YouMainGUI::SystemTrayManager::setup()'],['../class_you_main_g_u_i_1_1_task_panel_manager.html#ae592a92c4ef240e668e9a61a75f406f9',1,'YouMainGUI::TaskPanelManager::setup()']]],
+  ['skippertype',['SkipperType',['../class_you_1_1_n_l_p_1_1_internal_1_1_date_time_parser.html#a9838ab5bf72a86f65cbeab3636302520',1,'You::NLP::Internal::DateTimeParser::SkipperType()'],['../class_you_1_1_n_l_p_1_1_internal_1_1_query_parser.html#a8675aafddb289a6d7bf14870a42a6ec5',1,'You::NLP::Internal::QueryParser::SkipperType()']]],
+  ['stask',['STask',['../class_you_1_1_data_store_1_1_data_store.html#afa7bf1b9022964e8dd4b7367b8c556ce',1,'You::DataStore::DataStore']]],
+  ['stringtype',['StringType',['../class_you_1_1_n_l_p_1_1_internal_1_1_date_time_parser.html#a5fba0bdc42a3972c92b13dc2af3d52f8',1,'You::NLP::Internal::DateTimeParser::StringType()'],['../class_you_1_1_n_l_p_1_1_internal_1_1_query_parser.html#a6b76617bb17d21ae40bf286960f47870',1,'You::NLP::Internal::QueryParser::StringType()']]],
+  ['systemtraymanager',['SystemTrayManager',['../class_you_main_g_u_i_1_1_system_tray_manager.html',1,'YouMainGUI']]]
 ];

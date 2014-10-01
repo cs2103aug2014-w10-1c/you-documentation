@@ -88,27 +88,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">base_manager.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef YOU_GUI_BASE_MANAGER_H_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define YOU_GUI_BASE_MANAGER_H_</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;you_main_gui.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_you_main_g_u_i_1_1_base_manager.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_main_g_u_i_1_1_base_manager.html">YouMainGUI::BaseManager</a> : <span class="keyword">public</span> QObject{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_you_main_g_u_i.html">YouMainGUI</a> * <span class="keyword">const</span> parentGUI;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_you_main_g_u_i_1_1_base_manager.html">BaseManager</a>();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_you_main_g_u_i_1_1_base_manager.html">BaseManager</a>(<a class="code" href="class_you_main_g_u_i.html">YouMainGUI</a> * parentGUI);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> setup();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif  // YOU_GUI_BASE_MANAGER_H_</span></div>
-<div class="ttc" id="class_you_main_g_u_i_1_1_base_manager_html"><div class="ttname"><a href="class_you_main_g_u_i_1_1_base_manager.html">YouMainGUI::BaseManager</a></div><div class="ttdoc">The class from which all components inherit. </div><div class="ttdef"><b>Definition:</b> base_manager.h:7</div></div>
-<div class="ttc" id="class_you_main_g_u_i_html"><div class="ttname"><a href="class_you_main_g_u_i.html">YouMainGUI</a></div><div class="ttdoc">The entity that deals with all GUI operations, and makes calls to the NLP engine. ...</div><div class="ttdef"><b>Definition:</b> you_main_gui.h:13</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//@author A0094446X</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef YOU_GUI_BASE_MANAGER_H_</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define YOU_GUI_BASE_MANAGER_H_</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;you_main_gui.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_you_main_g_u_i_1_1_base_manager.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_main_g_u_i_1_1_base_manager.html">YouMainGUI::BaseManager</a> : <span class="keyword">public</span> QObject{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_you_main_g_u_i.html">YouMainGUI</a> * <span class="keyword">const</span> parentGUI;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_you_main_g_u_i_1_1_base_manager.html">BaseManager</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_you_main_g_u_i_1_1_base_manager.html">BaseManager</a>(<a class="code" href="class_you_main_g_u_i.html">YouMainGUI</a> * parentGUI);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> setup();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif  // YOU_GUI_BASE_MANAGER_H_</span></div>
+<div class="ttc" id="class_you_main_g_u_i_1_1_base_manager_html"><div class="ttname"><a href="class_you_main_g_u_i_1_1_base_manager.html">YouMainGUI::BaseManager</a></div><div class="ttdoc">The class from which all components inherit. </div><div class="ttdef"><b>Definition:</b> base_manager.h:8</div></div>
+<div class="ttc" id="class_you_main_g_u_i_html"><div class="ttname"><a href="class_you_main_g_u_i.html">YouMainGUI</a></div><div class="ttdoc">The entity that deals with all GUI operations, and makes calls to the NLP engine. ...</div><div class="ttdef"><b>Definition:</b> you_main_gui.h:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 1 2014 00:28:52 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 1 2014 02:11:03 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
