@@ -118,21 +118,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;std::unique_ptr&lt;Query&gt;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;AddTask(Task::Description description, Task::Time deadline,</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;Task::Priority priority, Task::Dependencies dependencies);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;Response executeQuery(std::unique_ptr&lt;Query&gt; query);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;std::unique_ptr&lt;Query&gt;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;FilterTask(<span class="keyword">const</span> std::function&lt;<span class="keywordtype">bool</span>(Task)&gt;&amp; filter);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}  <span class="comment">// namespace QueryEngine</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_API_H_</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;Response executeQuery(std::unique_ptr&lt;Query&gt; query);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}  <span class="comment">// namespace QueryEngine</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_API_H_</span></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_query_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_query.html">You::QueryEngine::Query</a></div><div class="ttdoc">Base class for all queries. </div><div class="ttdef"><b>Definition:</b> api.h:27</div></div>
-<div class="ttc" id="class_you_1_1_query_engine_1_1_query_html_ab0c291eba3380b3e3470b63bf43d923b"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_query.html#ab0c291eba3380b3e3470b63bf43d923b">You::QueryEngine::Query::executeQuery</a></div><div class="ttdeci">friend Response executeQuery(std::unique_ptr&lt; Query &gt; query)</div><div class="ttdoc">Execute the query and return a response. </div><div class="ttdef"><b>Definition:</b> api.cpp:20</div></div>
+<div class="ttc" id="class_you_1_1_query_engine_1_1_query_html_ab0c291eba3380b3e3470b63bf43d923b"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_query.html#ab0c291eba3380b3e3470b63bf43d923b">You::QueryEngine::Query::executeQuery</a></div><div class="ttdeci">friend Response executeQuery(std::unique_ptr&lt; Query &gt; query)</div><div class="ttdoc">Execute the query and return a response. </div><div class="ttdef"><b>Definition:</b> api.cpp:28</div></div>
 <div class="ttc" id="task__model_8h_html"><div class="ttname"><a href="task__model_8h.html">task_model.h</a></div><div class="ttdoc">Defines the task model class. </div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> datastore.cpp:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 1 2014 02:54:26 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 1 2014 03:19:44 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
