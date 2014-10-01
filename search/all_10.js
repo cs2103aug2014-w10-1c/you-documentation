@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['value_5fdelimiter',['VALUE_DELIMITER',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a4b086907d1e1f6155d987a634178cc64',1,'You::QueryEngine::Internal::TaskSerializer']]]
+  ['update_5ftask_2eh',['update_task.h',['../update__task_8h.html',1,'']]],
+  ['updatetask',['UpdateTask',['../class_you_1_1_query_engine_1_1_internal_1_1_update_task.html#a0deead6c33b9f763044e9e09f0c921c2',1,'You::QueryEngine::Internal::UpdateTask']]],
+  ['updatetask',['UpdateTask',['../class_you_1_1_query_engine_1_1_internal_1_1_update_task.html',1,'You::QueryEngine::Internal']]]
 ];

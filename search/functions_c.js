@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['youmaingui',['YouMainGUI',['../class_you_main_g_u_i.html#ae2a92125ab23eda4479333a0c9c4b74a',1,'YouMainGUI']]]
+  ['updatetask',['UpdateTask',['../class_you_1_1_query_engine_1_1_internal_1_1_update_task.html#a0deead6c33b9f763044e9e09f0c921c2',1,'You::QueryEngine::Internal::UpdateTask']]]
 ];

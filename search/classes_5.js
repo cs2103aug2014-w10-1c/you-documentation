@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ioperation',['IOperation',['../class_you_1_1_data_store_1_1_i_operation.html',1,'You::DataStore']]]
+  ['filtertask',['FilterTask',['../class_you_1_1_query_engine_1_1_internal_1_1_filter_task.html',1,'You::QueryEngine::Internal']]]
 ];

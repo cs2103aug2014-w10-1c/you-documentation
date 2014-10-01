@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['task_5fbuilder_2eh',['task_builder.h',['../task__builder_8h.html',1,'']]],
-  ['task_5fmodel_2eh',['task_model.h',['../task__model_8h.html',1,'']]],
-  ['task_5fserializer_2eh',['task_serializer.h',['../task__serializer_8h.html',1,'']]]
+  ['exception_2eh',['exception.h',['../_you-_query_engine_2internal_2exception_8h.html',1,'']]]
 ];

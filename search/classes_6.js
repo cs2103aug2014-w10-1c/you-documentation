@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nlpmanager',['NLPManager',['../class_you_main_g_u_i_1_1_n_l_p_manager.html',1,'YouMainGUI']]]
+  ['ioperation',['IOperation',['../class_you_1_1_data_store_1_1_i_operation.html',1,'You::DataStore']]]
 ];
