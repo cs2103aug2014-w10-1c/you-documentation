@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>You: You-NLP/controller_context.h Source File</title>
+<title>You: You-Controller/controller_context.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_0752bd7ed268457d4c611116f7501aa8.html">You-NLP</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a2db989e01167b57a61b8848911f6c67.html">You-Controller</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -89,54 +89,54 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef YOU_NLP_CONTROLLER_CONTEXT_H_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define YOU_NLP_CONTROLLER_CONTEXT_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef YOU_CONTROLLER_CONTROLLER_CONTEXT_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define YOU_CONTROLLER_CONTROLLER_CONTEXT_H_</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;controller.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;task_list.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;You-NLP/task_list.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>NLP {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>Controller {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>UnitTests { <span class="keyword">class </span>ControllerContextTests; }</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html">Controller::Context</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_you_1_1_controller_1_1_controller_1_1_context.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_controller_1_1_controller_1_1_context.html">Controller::Context</a> {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span>UnitTests::ControllerContextTests;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">typedef</span> boost::variant&lt;void*, TaskList&gt; Types;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html">Context</a>(<span class="keyword">const</span> TaskList&amp; taskList);  <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_you_1_1_controller_1_1_controller_1_1_context.html">Context</a>(<span class="keyword">const</span> TaskList&amp; taskList);  <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a8bb5aae386ee1d0254fec69e822aba91">isDefault</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_controller_1_1_controller_1_1_context.html#a13bce67432875dcb418ab6bf06fb7944">isDefault</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a4c327fffb59c3ad802140ffe6d611df0">isTaskList</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_controller_1_1_controller_1_1_context.html#a16e059b85037e9e95b4fe2f2fbe166e1">isTaskList</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> TaskList&amp; <a class="code" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a64e5ec19cc827ef2d3572db4fd8263db">getTaskList</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> TaskList&amp; <a class="code" href="class_you_1_1_controller_1_1_controller_1_1_context.html#a8572ff4163a063d70948f7584245f42c">getTaskList</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#ab1fbfaba3978a18690cfedcb85458fd0">   44</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html">Context</a> <a class="code" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#ab1fbfaba3978a18690cfedcb85458fd0">DEFAULT</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_you_1_1_controller_1_1_controller_1_1_context.html#aaacfd93404478cd1fa40f8c063a3c0e6">   44</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class_you_1_1_controller_1_1_controller_1_1_context.html">Context</a> <a class="code" href="class_you_1_1_controller_1_1_controller_1_1_context.html#aaacfd93404478cd1fa40f8c063a3c0e6">DEFAULT</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html">Context</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_you_1_1_controller_1_1_controller_1_1_context.html">Context</a>();</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    Types context;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}  <span class="comment">// namespace NLP</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}  <span class="comment">// namespace Controller</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}  <span class="comment">// namespace You</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif  // YOU_NLP_CONTROLLER_CONTEXT_H_</span></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_controller_1_1_context_html_a64e5ec19cc827ef2d3572db4fd8263db"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a64e5ec19cc827ef2d3572db4fd8263db">You::NLP::Controller::Context::getTaskList</a></div><div class="ttdeci">const TaskList &amp; getTaskList() const </div><div class="ttdoc">Gets the task list if the current context is a task list context. </div></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_controller_1_1_context_html"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html">You::NLP::Controller::Context</a></div><div class="ttdoc">Represents a context of a query. </div><div class="ttdef"><b>Definition:</b> controller_context.h:14</div></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_controller_1_1_context_html_a4c327fffb59c3ad802140ffe6d611df0"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a4c327fffb59c3ad802140ffe6d611df0">You::NLP::Controller::Context::isTaskList</a></div><div class="ttdeci">bool isTaskList() const </div><div class="ttdoc">Checks if the given context is a task list context. </div></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_controller_1_1_context_html_ab1fbfaba3978a18690cfedcb85458fd0"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#ab1fbfaba3978a18690cfedcb85458fd0">You::NLP::Controller::Context::DEFAULT</a></div><div class="ttdeci">static const Context DEFAULT</div><div class="ttdoc">This is the global default context. </div><div class="ttdef"><b>Definition:</b> controller_context.h:44</div></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_controller_1_1_context_html_a8bb5aae386ee1d0254fec69e822aba91"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a8bb5aae386ee1d0254fec69e822aba91">You::NLP::Controller::Context::isDefault</a></div><div class="ttdeci">bool isDefault() const </div><div class="ttdoc">Checks if the given context is the default context. </div><div class="ttdef"><b>Definition:</b> controller_context.cpp:18</div></div>
-<div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> internal_datastore.cpp:4</div></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif  // YOU_CONTROLLER_CONTROLLER_CONTEXT_H_</span></div>
+<div class="ttc" id="class_you_1_1_controller_1_1_controller_1_1_context_html_aaacfd93404478cd1fa40f8c063a3c0e6"><div class="ttname"><a href="class_you_1_1_controller_1_1_controller_1_1_context.html#aaacfd93404478cd1fa40f8c063a3c0e6">You::Controller::Controller::Context::DEFAULT</a></div><div class="ttdeci">static const Context DEFAULT</div><div class="ttdoc">This is the global default context. </div><div class="ttdef"><b>Definition:</b> controller_context.h:44</div></div>
+<div class="ttc" id="class_you_1_1_controller_1_1_controller_1_1_context_html_a16e059b85037e9e95b4fe2f2fbe166e1"><div class="ttname"><a href="class_you_1_1_controller_1_1_controller_1_1_context.html#a16e059b85037e9e95b4fe2f2fbe166e1">You::Controller::Controller::Context::isTaskList</a></div><div class="ttdeci">bool isTaskList() const </div><div class="ttdoc">Checks if the given context is a task list context. </div></div>
+<div class="ttc" id="class_you_1_1_controller_1_1_controller_1_1_context_html_a8572ff4163a063d70948f7584245f42c"><div class="ttname"><a href="class_you_1_1_controller_1_1_controller_1_1_context.html#a8572ff4163a063d70948f7584245f42c">You::Controller::Controller::Context::getTaskList</a></div><div class="ttdeci">const TaskList &amp; getTaskList() const </div><div class="ttdoc">Gets the task list if the current context is a task list context. </div></div>
+<div class="ttc" id="class_you_1_1_controller_1_1_controller_1_1_context_html_a13bce67432875dcb418ab6bf06fb7944"><div class="ttname"><a href="class_you_1_1_controller_1_1_controller_1_1_context.html#a13bce67432875dcb418ab6bf06fb7944">You::Controller::Controller::Context::isDefault</a></div><div class="ttdeci">bool isDefault() const </div><div class="ttdoc">Checks if the given context is the default context. </div><div class="ttdef"><b>Definition:</b> controller_context.cpp:18</div></div>
+<div class="ttc" id="class_you_1_1_controller_1_1_controller_1_1_context_html"><div class="ttname"><a href="class_you_1_1_controller_1_1_controller_1_1_context.html">You::Controller::Controller::Context</a></div><div class="ttdoc">Represents a context of a query. </div><div class="ttdef"><b>Definition:</b> controller_context.h:14</div></div>
+<div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 5 2014 12:46:48 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 5 2014 14:43:39 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

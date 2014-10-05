@@ -1,8 +1,8 @@
 var searchData=
 [
   ['parentgui',['parentGUI',['../class_you_main_g_u_i_1_1_base_manager.html#aabea248a40b8c4a6a01d16ff21751af1',1,'YouMainGUI::BaseManager']]],
-  ['parse',['parse',['../class_you_1_1_n_l_p_1_1_internal_1_1_date_time_parser.html#a70cb99936ef5e71bc56a885b75731f22',1,'You::NLP::Internal::DateTimeParser::parse()'],['../class_you_1_1_n_l_p_1_1_internal_1_1_query_parser.html#a6ca9aa5ff0bd067ad90a6a553b852949',1,'You::NLP::Internal::QueryParser::parse()']]],
-  ['parseerrorexception',['ParseErrorException',['../class_you_1_1_n_l_p_1_1_parse_error_exception.html#a28b6e7b51b4128f68407f95d0888440a',1,'You::NLP::ParseErrorException']]],
+  ['parse',['parse',['../class_you_1_1_n_l_p_1_1_date_time_parser.html#ae3f33f59c8a9c975da7cf0b198776cfb',1,'You::NLP::DateTimeParser::parse()'],['../class_you_1_1_n_l_p_1_1_query_parser.html#a15387b3664c14a273fc24e0244920080',1,'You::NLP::QueryParser::parse()']]],
+  ['parseerrorexception',['ParseErrorException',['../class_you_1_1_n_l_p_1_1_parse_error_exception.html#a0c1b35ff9e6776e4b566e8ef95cce8fc',1,'You::NLP::ParseErrorException']]],
   ['parseerrorexception',['ParseErrorException',['../class_you_1_1_n_l_p_1_1_parse_error_exception.html',1,'You::NLP']]],
   ['parserexception',['ParserException',['../class_you_1_1_n_l_p_1_1_parser_exception.html',1,'You::NLP']]],
   ['populatetaskpanel',['populateTaskPanel',['../class_you_main_g_u_i.html#a01d0e488206ec37e4c491064e4a42b56',1,'YouMainGUI']]],

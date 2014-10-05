@@ -12,11 +12,12 @@ var searchData=
   ['task_5fserializer_2eh',['task_serializer.h',['../task__serializer_8h.html',1,'']]],
   ['taskbuilder',['TaskBuilder',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html',1,'You::QueryEngine::Internal']]],
   ['taskbuildertest',['TaskBuilderTest',['../class_you_1_1_query_engine_1_1_unit_tests_1_1_task_builder_test.html',1,'You::QueryEngine::UnitTests']]],
-  ['taskid',['taskID',['../struct_you_1_1_n_l_p_1_1_internal_1_1_d_e_l_e_t_e___q_u_e_r_y.html#af96fb06e2dd4d0a68105a049b49f272f',1,'You::NLP::Internal::DELETE_QUERY::taskID()'],['../struct_you_1_1_n_l_p_1_1_internal_1_1_e_d_i_t___q_u_e_r_y.html#a472e02ad9438bfe143875add30e9fd4d',1,'You::NLP::Internal::EDIT_QUERY::taskID()']]],
+  ['taskid',['taskID',['../struct_you_1_1_n_l_p_1_1_d_e_l_e_t_e___q_u_e_r_y.html#a03b892dc91f8a37227cc00dab813c2ee',1,'You::NLP::DELETE_QUERY::taskID()'],['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#ab6d4f24aa18b8c094104993464510979',1,'You::NLP::EDIT_QUERY::taskID()']]],
   ['taskids',['taskIDs',['../class_you_main_g_u_i_1_1_session_manager.html#a890cd444d4575ae7c4c8641d51afa57a',1,'YouMainGUI::SessionManager']]],
   ['taskpanelmanager',['TaskPanelManager',['../class_you_main_g_u_i_1_1_task_panel_manager.html#abeca62039696373e8c69717d526483a7',1,'YouMainGUI::TaskPanelManager']]],
   ['taskpanelmanager',['TaskPanelManager',['../class_you_main_g_u_i_1_1_task_panel_manager.html',1,'YouMainGUI']]],
   ['taskserializer',['TaskSerializer',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html',1,'You::QueryEngine::Internal']]],
+  ['tostringvisitor',['ToStringVisitor',['../struct_you_1_1_controller_1_1_unit_tests_1_1_to_string_visitor.html',1,'You::Controller::UnitTests']]],
   ['tostringvisitor',['ToStringVisitor',['../struct_you_1_1_n_l_p_1_1_unit_tests_1_1_to_string_visitor.html',1,'You::NLP::UnitTests']]],
   ['tpm',['tpm',['../class_you_main_g_u_i.html#abd9ebc23f33d93ebafe73705765731ea',1,'YouMainGUI']]]
 ];
