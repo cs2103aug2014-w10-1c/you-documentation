@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['filter',['filter',['../class_you_1_1_data_store_1_1_internal_1_1_internal_data_store.html#acda783111e2aef9cc2f25285f646c9d5',1,'You::DataStore::Internal::InternalDataStore']]],
-  ['filtertask',['FilterTask',['../class_you_1_1_query_engine_1_1_internal_1_1_filter_task.html#a5a5ac46d6cd9072a7e845e4b2081c3c1',1,'You::QueryEngine::Internal::FilterTask']]]
+  ['erase',['erase',['../class_you_1_1_data_store_1_1_internal_1_1_internal_data_store.html#a5434ba25544f02cd5c1b5fa36db2242f',1,'You::DataStore::Internal::InternalDataStore']]],
+  ['eraseexistingtask',['eraseExistingTask',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html#ad18331de611c4b9cebc7d3d0cb32177a',1,'You::DataStore::UnitTests::DataStoreTest']]],
+  ['erasenonexistenttask',['eraseNonExistentTask',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html#aa739293a7427b74b0a2424ec4578aa26',1,'You::DataStore::UnitTests::DataStoreTest']]]
 ];

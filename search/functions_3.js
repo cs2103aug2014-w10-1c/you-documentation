@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['erase',['erase',['../class_you_1_1_data_store_1_1_internal_1_1_internal_data_store.html#a5434ba25544f02cd5c1b5fa36db2242f',1,'You::DataStore::Internal::InternalDataStore']]],
-  ['eraseexistingtask',['eraseExistingTask',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html#ad18331de611c4b9cebc7d3d0cb32177a',1,'You::DataStore::UnitTests::DataStoreTest']]],
-  ['erasenonexistenttask',['eraseNonExistentTask',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html#aa739293a7427b74b0a2424ec4578aa26',1,'You::DataStore::UnitTests::DataStoreTest']]]
+  ['deadline',['deadline',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a180f358649421f95a9788b183816a5bc',1,'You::QueryEngine::Internal::TaskBuilder']]],
+  ['deletetask',['DeleteTask',['../class_you_1_1_query_engine_1_1_internal_1_1_delete_task.html#a76528fae997abe66e2cf644c08883eda',1,'You::QueryEngine::Internal::DeleteTask']]],
+  ['dependencies',['dependencies',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a3a34506739441ea71eaef517a551535b',1,'You::QueryEngine::Internal::TaskBuilder']]],
+  ['description',['description',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a78497582f6b112727d381be31cca258a',1,'You::QueryEngine::Internal::TaskBuilder']]],
+  ['deserialize',['deserialize',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a6390575e523ec23be6430cf6533d068d',1,'You::QueryEngine::Internal::TaskSerializer']]],
+  ['deserializetask',['deserializeTask',['../class_you_1_1_query_engine_1_1_unit_tests_1_1_task_builder_test.html#acd2232185428d7648cf1abdff591a80b',1,'You::QueryEngine::UnitTests::TaskBuilderTest']]]
 ];

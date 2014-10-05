@@ -108,22 +108,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_update_task.html">UpdateTask</a>&amp; <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_update_task.html#a82d9a1f8adf66c3166acd6d0c7553c6c">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_update_task.html">UpdateTask</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Response execute() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">const</span> Task::ID id;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">const</span> Task::Description description;  </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">const</span> Task::Time deadline;  </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> Task::Priority priority;  </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> Task::Dependencies dependencies;  </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}  <span class="comment">// namespace Internal</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}  <span class="comment">// namespace QueryEngine</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_INTERNAL_ACTION_UPDATE_TASK_H_</span></div>
-<div class="ttc" id="class_you_1_1_query_engine_1_1_query_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_query.html">You::QueryEngine::Query</a></div><div class="ttdoc">Base class for all queries. </div><div class="ttdef"><b>Definition:</b> api.h:27</div></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_update_task.html#ab987f2b8e4eaaf972d056bb64e9f453a">~UpdateTask</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    Response execute(State&amp; <span class="keyword">const</span> tasks) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">const</span> Task::ID id;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> Task::Description description;  </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> Task::Time deadline;  </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">const</span> Task::Priority priority;  </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">const</span> Task::Dependencies dependencies;  </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}  <span class="comment">// namespace Internal</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}  <span class="comment">// namespace QueryEngine</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_INTERNAL_ACTION_UPDATE_TASK_H_</span></div>
+<div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_update_task_html_ab987f2b8e4eaaf972d056bb64e9f453a"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_update_task.html#ab987f2b8e4eaaf972d056bb64e9f453a">You::QueryEngine::Internal::UpdateTask::~UpdateTask</a></div><div class="ttdeci">virtual ~UpdateTask()=default</div><div class="ttdoc">Destructor. </div></div>
+<div class="ttc" id="class_you_1_1_query_engine_1_1_query_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_query.html">You::QueryEngine::Query</a></div><div class="ttdoc">Base class for all queries. </div><div class="ttdef"><b>Definition:</b> api.h:25</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_update_task_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_update_task.html">You::QueryEngine::Internal::UpdateTask</a></div><div class="ttdoc">Define action for updating task. </div><div class="ttdef"><b>Definition:</b> update_task.h:16</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_update_task_html_a82d9a1f8adf66c3166acd6d0c7553c6c"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_update_task.html#a82d9a1f8adf66c3166acd6d0c7553c6c">You::QueryEngine::Internal::UpdateTask::operator=</a></div><div class="ttdeci">UpdateTask &amp; operator=(const UpdateTask &amp;)=delete</div><div class="ttdoc">Disable assignment operator. </div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_update_task_html_a0deead6c33b9f763044e9e09f0c921c2"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_update_task.html#a0deead6c33b9f763044e9e09f0c921c2">You::QueryEngine::Internal::UpdateTask::UpdateTask</a></div><div class="ttdeci">UpdateTask(Task::ID id, Task::Description description, Task::Time deadline, Task::Priority priority, Task::Dependencies dependencies)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> update_task.h:19</div></div>
@@ -131,7 +133,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 5 2014 07:01:40 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 5 2014 07:12:31 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['operator_20task',['operator Task',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a5376c54ef9be92cc78cab554e864ed16',1,'You::QueryEngine::Internal::TaskBuilder']]],
-  ['operator_28_29',['operator()',['../class_you_1_1_n_l_p_1_1_controller_1_1_query_builder_visitor.html#a106bb97932dfdffc910395703f1642c7',1,'You::NLP::Controller::QueryBuilderVisitor::operator()()'],['../struct_you_1_1_n_l_p_1_1_unit_tests_1_1_to_string_visitor.html#a675fb5cec45961d08be4f57174d201a7',1,'You::NLP::UnitTests::ToStringVisitor::operator()()']]],
-  ['operator_3d',['operator=',['../class_you_1_1_query_engine_1_1_internal_1_1_add_task.html#a09199ec62977d1dba27efd921fbaf9e8',1,'You::QueryEngine::Internal::AddTask::operator=()'],['../class_you_1_1_query_engine_1_1_internal_1_1_delete_task.html#acd5100392a251a7215939ac7c414662d',1,'You::QueryEngine::Internal::DeleteTask::operator=()'],['../class_you_1_1_query_engine_1_1_internal_1_1_filter_task.html#a61c2aabeb99196224043fc48dcd67b07',1,'You::QueryEngine::Internal::FilterTask::operator=()'],['../class_you_1_1_query_engine_1_1_internal_1_1_update_task.html#a82d9a1f8adf66c3166acd6d0c7553c6c',1,'You::QueryEngine::Internal::UpdateTask::operator=()']]],
-  ['operator_3d_3d',['operator==',['../struct_you_1_1_n_l_p_1_1_internal_1_1_a_d_d___q_u_e_r_y.html#affe8bb946de2e575098228e46b065ac2',1,'You::NLP::Internal::ADD_QUERY::operator==()'],['../class_you_1_1_query_engine_1_1_task.html#afc582759f4ec0c844d3a250470cf9949',1,'You::QueryEngine::Task::operator==()']]]
+  ['id',['id',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a70ff62ba9f887ce8be9efd37508a89ce',1,'You::QueryEngine::Internal::TaskBuilder']]],
+  ['ioperation',['IOperation',['../class_you_1_1_data_store_1_1_i_operation.html#a5bf6ab339af4105089090401d5b4de87',1,'You::DataStore::IOperation']]],
+  ['isdefault',['isDefault',['../class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a8bb5aae386ee1d0254fec69e822aba91',1,'You::NLP::Controller::Context']]],
+  ['isstrictequal',['isStrictEqual',['../class_you_1_1_query_engine_1_1_task.html#a4e496f8c96b482eb2687d5890f3b24c6',1,'You::QueryEngine::Task']]],
+  ['istasklist',['isTaskList',['../class_you_1_1_n_l_p_1_1_controller_1_1_context.html#a4c327fffb59c3ad802140ffe6d611df0',1,'You::NLP::Controller::Context']]]
 ];

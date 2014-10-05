@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['filter',['Filter',['../class_you_1_1_query_engine_1_1_internal_1_1_filter_task.html#aa0d335369a4389e04d5e3e5b34111cbd',1,'You::QueryEngine::Internal::FilterTask']]]
+  ['ffilter',['FFilter',['../class_you_1_1_query_engine_1_1_filter.html#a1b6f2f164a823cf680f5bdf97bacdd3b',1,'You::QueryEngine::Filter']]]
 ];
