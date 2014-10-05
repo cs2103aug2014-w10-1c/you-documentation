@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>You: You-DataStore/operation.h Source File</title>
+<title>You: You-DataStore/internal/operation.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_c2b2259a21b9b6df3c6fd30e9c7692c3.html">You-DataStore</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_c2b2259a21b9b6df3c6fd30e9c7692c3.html">You-DataStore</a></li><li class="navelem"><a class="el" href="dir_8f7722605346f27d9c11f99c1b93907f.html">internal</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -89,35 +89,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef YOU_DATASTORE_OPERATION_H_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define YOU_DATASTORE_OPERATION_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef YOU_DATASTORE_INTERNAL_OPERATION_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define YOU_DATASTORE_INTERNAL_OPERATION_H_</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;datastore.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../ds_task_typedefs.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>DataStore {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_you_1_1_data_store_1_1_i_operation.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_data_store_1_1_i_operation.html">IOperation</a> {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_you_1_1_data_store_1_1_i_operation.html">IOperation</a>();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_you_1_1_data_store_1_1_i_operation.html">IOperation</a>();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_data_store_1_1_i_operation.html#a1e4fd4a573b3908e28b2fe84312bb65c">run</a>(<a class="code" href="class_you_1_1_data_store_1_1_data_store.html#afa7bf1b9022964e8dd4b7367b8c556ce">DataStore::STask</a>&amp;) = 0;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}   <span class="comment">// namespace DataStore</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}   <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif  // YOU_DATASTORE_OPERATION_H_</span></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_i_operation_html_a1e4fd4a573b3908e28b2fe84312bb65c"><div class="ttname"><a href="class_you_1_1_data_store_1_1_i_operation.html#a1e4fd4a573b3908e28b2fe84312bb65c">You::DataStore::IOperation::run</a></div><div class="ttdeci">virtual void run(DataStore::STask &amp;)=0</div><div class="ttdoc">Executes the operation. </div></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_you_1_1_data_store_1_1_i_operation.html#a5bf6ab339af4105089090401d5b4de87">IOperation</a>(SerializedTask&amp; stask);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_you_1_1_data_store_1_1_i_operation.html">IOperation</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_data_store_1_1_i_operation.html#a1490953b978593e9a722fbb8271be72b">run</a>() = 0;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}   <span class="comment">// namespace DataStore</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}   <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif  // YOU_DATASTORE_INTERNAL_OPERATION_H_</span></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_i_operation_html_a1490953b978593e9a722fbb8271be72b"><div class="ttname"><a href="class_you_1_1_data_store_1_1_i_operation.html#a1490953b978593e9a722fbb8271be72b">You::DataStore::IOperation::run</a></div><div class="ttdeci">virtual void run()=0</div><div class="ttdoc">Executes the operation. </div></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_i_operation_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_i_operation.html">You::DataStore::IOperation</a></div><div class="ttdoc">A pure virtual class of operations to be put into transaction stack. </div><div class="ttdef"><b>Definition:</b> operation.h:12</div></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_data_store_html_afa7bf1b9022964e8dd4b7367b8c556ce"><div class="ttname"><a href="class_you_1_1_data_store_1_1_data_store.html#afa7bf1b9022964e8dd4b7367b8c556ce">You::DataStore::DataStore::STask</a></div><div class="ttdeci">std::unordered_map&lt; std::wstring, std::wstring &gt; STask</div><div class="ttdoc">typedefs typedef for Serialized Task </div><div class="ttdef"><b>Definition:</b> datastore.h:22</div></div>
-<div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> datastore.cpp:4</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_i_operation_html_a5bf6ab339af4105089090401d5b4de87"><div class="ttname"><a href="class_you_1_1_data_store_1_1_i_operation.html#a5bf6ab339af4105089090401d5b4de87">You::DataStore::IOperation::IOperation</a></div><div class="ttdeci">IOperation(SerializedTask &amp;stask)</div><div class="ttdoc">The constructor. </div></div>
+<div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> internal_datastore.cpp:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 3 2014 01:04:29 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 5 2014 07:01:40 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

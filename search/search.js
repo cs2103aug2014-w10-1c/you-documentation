@@ -13,8 +13,8 @@ var indexSectionsWithContent =
   3: "adetu",
   4: "acdefgiopqrsuy~",
   5: "dtv",
-  6: "filst",
-  7: "de",
+  6: "fils",
+  7: "ey",
   8: "y"
 };
 
