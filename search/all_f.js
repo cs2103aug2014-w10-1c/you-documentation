@@ -12,7 +12,10 @@ var searchData=
   ['task_5fserializer_2eh',['task_serializer.h',['../task__serializer_8h.html',1,'']]],
   ['taskbuilder',['TaskBuilder',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html',1,'You::QueryEngine::Internal']]],
   ['taskbuildertest',['TaskBuilderTest',['../class_you_1_1_query_engine_1_1_unit_tests_1_1_task_builder_test.html',1,'You::QueryEngine::UnitTests']]],
+  ['taskids',['taskIDs',['../class_you_main_g_u_i_1_1_session_manager.html#a890cd444d4575ae7c4c8641d51afa57a',1,'YouMainGUI::SessionManager']]],
+  ['taskpanelmanager',['TaskPanelManager',['../class_you_main_g_u_i_1_1_task_panel_manager.html#abeca62039696373e8c69717d526483a7',1,'YouMainGUI::TaskPanelManager']]],
   ['taskpanelmanager',['TaskPanelManager',['../class_you_main_g_u_i_1_1_task_panel_manager.html',1,'YouMainGUI']]],
   ['taskserializer',['TaskSerializer',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html',1,'You::QueryEngine::Internal']]],
-  ['tostringvisitor',['ToStringVisitor',['../struct_you_1_1_n_l_p_1_1_unit_tests_1_1_to_string_visitor.html',1,'You::NLP::UnitTests']]]
+  ['tostringvisitor',['ToStringVisitor',['../struct_you_1_1_n_l_p_1_1_unit_tests_1_1_to_string_visitor.html',1,'You::NLP::UnitTests']]],
+  ['tpm',['tpm',['../class_you_main_g_u_i.html#abd9ebc23f33d93ebafe73705765731ea',1,'YouMainGUI']]]
 ];

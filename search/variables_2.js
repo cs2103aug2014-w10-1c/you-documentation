@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_5fdelimiter',['VALUE_DELIMITER',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a4b086907d1e1f6155d987a634178cc64',1,'You::QueryEngine::Internal::TaskSerializer']]]
+  ['nlpm',['nlpm',['../class_you_main_g_u_i.html#a61fe7dccebc433c2dccc3de3ef1d6958',1,'YouMainGUI']]]
 ];

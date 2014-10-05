@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['task_5fcolumn_5f1',['TASK_COLUMN_1',['../class_you_main_g_u_i.html#abff0bd774f9047715b1321246db5a574',1,'YouMainGUI']]],
-  ['task_5fcolumn_5f2',['TASK_COLUMN_2',['../class_you_main_g_u_i.html#a4c7f4bb2868378683cdeb3ea13dcecad',1,'YouMainGUI']]],
-  ['task_5fcolumn_5f3',['TASK_COLUMN_3',['../class_you_main_g_u_i.html#a61ad936ffda3da1a0af4ff227ff5cb75',1,'YouMainGUI']]],
-  ['task_5fcolumn_5f4',['TASK_COLUMN_4',['../class_you_main_g_u_i.html#ae5f18ebf6da2d1cff5ed1ff65f031b2d',1,'YouMainGUI']]],
-  ['task_5fcolumn_5f5',['TASK_COLUMN_5',['../class_you_main_g_u_i.html#af16d4cee1097de3fb257e98c2ba84837',1,'YouMainGUI']]],
-  ['task_5fcolumn_5fcount',['TASK_COLUMN_COUNT',['../class_you_main_g_u_i.html#adcd10381c1a7fa3ad93db963a318230a',1,'YouMainGUI']]]
+  ['default',['DEFAULT',['../class_you_1_1_n_l_p_1_1_controller_1_1_context.html#ab1fbfaba3978a18690cfedcb85458fd0',1,'You::NLP::Controller::Context']]],
+  ['description',['description',['../struct_you_1_1_n_l_p_1_1_internal_1_1_a_d_d___q_u_e_r_y.html#a1f6c0568be5b1e6783ddaa92963ea065',1,'You::NLP::Internal::ADD_QUERY']]],
+  ['due',['due',['../struct_you_1_1_n_l_p_1_1_internal_1_1_a_d_d___q_u_e_r_y.html#ae881f020e84a3c183b7ff3df2a1bd640',1,'You::NLP::Internal::ADD_QUERY']]]
 ];
