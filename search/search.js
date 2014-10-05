@@ -12,10 +12,12 @@ var indexSectionsWithContent =
   2: "y",
   3: "adetu",
   4: "abcdefginopqrstuy~",
-  5: "cdnpstv",
+  5: "cdfnpstv",
   6: "fils",
-  7: "ey",
-  8: "y"
+  7: "f",
+  8: "cdn",
+  9: "ey",
+  10: "y"
 };
 
 var indexSectionNames =
@@ -27,8 +29,10 @@ var indexSectionNames =
   4: "functions",
   5: "variables",
   6: "typedefs",
-  7: "related",
-  8: "pages"
+  7: "enums",
+  8: "enumvalues",
+  9: "related",
+  10: "pages"
 };
 
 function convertToId(search)

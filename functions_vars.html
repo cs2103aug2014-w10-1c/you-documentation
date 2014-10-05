@@ -73,6 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li class="current"><a href="functions_vars.html"><span>Variables</span></a></li>
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
+      <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -101,9 +102,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>description
 : <a class="el" href="struct_you_1_1_n_l_p_1_1_internal_1_1_a_d_d___q_u_e_r_y.html#a1f6c0568be5b1e6783ddaa92963ea065">You::NLP::Internal::ADD_QUERY</a>
+, <a class="el" href="struct_you_1_1_n_l_p_1_1_internal_1_1_e_d_i_t___q_u_e_r_y.html#aa997209021e0efddf8b8e9d2fc1e8615">You::NLP::Internal::EDIT_QUERY</a>
 </li>
 <li>due
 : <a class="el" href="struct_you_1_1_n_l_p_1_1_internal_1_1_a_d_d___q_u_e_r_y.html#ae881f020e84a3c183b7ff3df2a1bd640">You::NLP::Internal::ADD_QUERY</a>
+, <a class="el" href="struct_you_1_1_n_l_p_1_1_internal_1_1_e_d_i_t___q_u_e_r_y.html#a03d6c9eb16d6a5c8d0ec3cfc1bb86f79">You::NLP::Internal::EDIT_QUERY</a>
+</li>
+<li>fieldsToChange
+: <a class="el" href="struct_you_1_1_n_l_p_1_1_internal_1_1_e_d_i_t___q_u_e_r_y.html#a54b77bddd26de82b0dafdf7fc16581b3">You::NLP::Internal::EDIT_QUERY</a>
 </li>
 <li>nlpm
 : <a class="el" href="class_you_main_g_u_i.html#a61fe7dccebc433c2dccc3de3ef1d6958">YouMainGUI</a>
@@ -135,6 +141,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>TASK_COLUMN_COUNT
 : <a class="el" href="class_you_main_g_u_i.html#adcd10381c1a7fa3ad93db963a318230a">YouMainGUI</a>
 </li>
+<li>taskID
+: <a class="el" href="struct_you_1_1_n_l_p_1_1_internal_1_1_d_e_l_e_t_e___q_u_e_r_y.html#af96fb06e2dd4d0a68105a049b49f272f">You::NLP::Internal::DELETE_QUERY</a>
+, <a class="el" href="struct_you_1_1_n_l_p_1_1_internal_1_1_e_d_i_t___q_u_e_r_y.html#a472e02ad9438bfe143875add30e9fd4d">You::NLP::Internal::EDIT_QUERY</a>
+</li>
 <li>taskIDs
 : <a class="el" href="class_you_main_g_u_i_1_1_session_manager.html#a890cd444d4575ae7c4c8641d51afa57a">YouMainGUI::SessionManager</a>
 </li>
@@ -148,7 +158,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 5 2014 09:19:43 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 5 2014 09:33:42 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
