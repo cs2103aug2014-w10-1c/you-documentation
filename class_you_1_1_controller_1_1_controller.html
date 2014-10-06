@@ -108,21 +108,18 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_controller_1_1_controller_1_1_context.html">Context</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a context of a query.  <a href="class_you_1_1_controller_1_1_controller_1_1_context.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_controller_1_1_controller_1_1_query_builder_visitor.html">QueryBuilderVisitor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The query builder that will send the query to the appropriate builder in the controller class.  <a href="class_you_1_1_controller_1_1_controller_1_1_query_builder_visitor.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a556e94e66610181dc386c054441ae754"><td class="memItemLeft" align="right" valign="top">Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_controller_1_1_controller.html#a556e94e66610181dc386c054441ae754">query</a> (const std::wstring &amp;query, const <a class="el" href="class_you_1_1_controller_1_1_controller_1_1_context.html">Context</a> &amp;context) const </td></tr>
 <tr class="memdesc:a556e94e66610181dc386c054441ae754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the given natural language query.  <a href="#a556e94e66610181dc386c054441ae754">More...</a><br /></td></tr>
 <tr class="separator:a556e94e66610181dc386c054441ae754"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03ba7142aa7750a3b597878566f186ef"><td class="memItemLeft" align="right" valign="top">Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_controller_1_1_controller.html#a03ba7142aa7750a3b597878566f186ef">getTasks</a> (const std::vector&lt; Task::ID &gt; &amp;taskIDs) const </td></tr>
-<tr class="memdesc:a03ba7142aa7750a3b597878566f186ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all tasks with their IDs in the given list.  <a href="#a03ba7142aa7750a3b597878566f186ef">More...</a><br /></td></tr>
-<tr class="separator:a03ba7142aa7750a3b597878566f186ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1525bb53921e5586bfeef9b729d6848f"><td class="memItemLeft" align="right" valign="top">Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_controller_1_1_controller.html#a1525bb53921e5586bfeef9b729d6848f">getTasks</a> () const </td></tr>
-<tr class="memdesc:a1525bb53921e5586bfeef9b729d6848f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all tasks.  <a href="#a1525bb53921e5586bfeef9b729d6848f">More...</a><br /></td></tr>
-<tr class="separator:a1525bb53921e5586bfeef9b729d6848f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2077f4b38822094ba145eeb08a11054c"><td class="memItemLeft" align="right" valign="top">TaskList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_controller_1_1_controller.html#a2077f4b38822094ba145eeb08a11054c">getTasks</a> (const std::vector&lt; Task::ID &gt; &amp;taskIDs) const </td></tr>
+<tr class="memdesc:a2077f4b38822094ba145eeb08a11054c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all tasks with their IDs in the given list.  <a href="#a2077f4b38822094ba145eeb08a11054c">More...</a><br /></td></tr>
+<tr class="separator:a2077f4b38822094ba145eeb08a11054c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709e8cb25a30b3cc9e2b8e47b25406cf"><td class="memItemLeft" align="right" valign="top">TaskList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_controller_1_1_controller.html#a709e8cb25a30b3cc9e2b8e47b25406cf">getTasks</a> () const </td></tr>
+<tr class="memdesc:a709e8cb25a30b3cc9e2b8e47b25406cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all tasks.  <a href="#a709e8cb25a30b3cc9e2b8e47b25406cf">More...</a><br /></td></tr>
+<tr class="separator:a709e8cb25a30b3cc9e2b8e47b25406cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -141,12 +138,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::Controlle
 <div class="textblock"><p>The entry-point for all communications with the rest of the <a class="el" href="namespace_you.html">You</a> framework. </p>
 <p>This is a singleton class. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a03ba7142aa7750a3b597878566f186ef"></a>
+<a class="anchor" id="a2077f4b38822094ba145eeb08a11054c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Result You::Controller::Controller::getTasks </td>
+          <td class="memname">TaskList You::Controller::Controller::getTasks </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; Task::ID &gt; &amp;&#160;</td>
           <td class="paramname"><em>taskIDs</em></td><td>)</td>
@@ -167,12 +164,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::Controlle
 
 </div>
 </div>
-<a class="anchor" id="a1525bb53921e5586bfeef9b729d6848f"></a>
+<a class="anchor" id="a709e8cb25a30b3cc9e2b8e47b25406cf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Result You::Controller::Controller::getTasks </td>
+          <td class="memname">TaskList You::Controller::Controller::getTasks </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -235,7 +232,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::Controlle
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 6 2014 02:37:29 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 6 2014 03:20:11 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

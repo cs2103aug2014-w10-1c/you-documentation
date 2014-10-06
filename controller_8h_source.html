@@ -88,19 +88,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">controller.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef YOU_CONTROLLER_CONTROLLER_H_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define YOU_CONTROLLER_CONTROLLER_H_</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;result.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>Controller {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>UnitTests { <span class="keyword">class </span>ControllerContextTests; }</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_you_1_1_controller_1_1_controller.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_controller_1_1_controller.html">Controller</a> {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">class </span><a class="code" href="class_you_1_1_controller_1_1_controller_1_1_query_builder_visitor.html">QueryBuilderVisitor</a>;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//@author A0097630B</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef YOU_CONTROLLER_CONTROLLER_H_</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define YOU_CONTROLLER_CONTROLLER_H_</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;result.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>Controller {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>UnitTests { <span class="keyword">class </span>ControllerContextTests; }</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_you_1_1_controller_1_1_controller.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_controller_1_1_controller.html">Controller</a> {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span>UnitTests::ControllerContextTests;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
@@ -111,9 +111,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Result <a class="code" href="class_you_1_1_controller_1_1_controller.html#a556e94e66610181dc386c054441ae754">query</a>(<span class="keyword">const</span> std::wstring&amp; <a class="code" href="class_you_1_1_controller_1_1_controller.html#a556e94e66610181dc386c054441ae754">query</a>, <span class="keyword">const</span> <a class="code" href="class_you_1_1_controller_1_1_controller_1_1_context.html">Context</a>&amp; context) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Result <a class="code" href="class_you_1_1_controller_1_1_controller.html#a1525bb53921e5586bfeef9b729d6848f">getTasks</a>(<span class="keyword">const</span> std::vector&lt;Task::ID&gt;&amp; taskIDs) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    TaskList <a class="code" href="class_you_1_1_controller_1_1_controller.html#a709e8cb25a30b3cc9e2b8e47b25406cf">getTasks</a>(<span class="keyword">const</span> std::vector&lt;Task::ID&gt;&amp; taskIDs) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    Result <a class="code" href="class_you_1_1_controller_1_1_controller.html#a1525bb53921e5586bfeef9b729d6848f">getTasks</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    TaskList <a class="code" href="class_you_1_1_controller_1_1_controller.html#a709e8cb25a30b3cc9e2b8e47b25406cf">getTasks</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_you_1_1_controller_1_1_controller.html">Controller</a>(<span class="keyword">const</span> <a class="code" href="class_you_1_1_controller_1_1_controller.html">Controller</a>&amp;) = <span class="keyword">delete</span>;</div>
@@ -128,16 +128,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}  <span class="comment">// namespace You</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif  // YOU_CONTROLLER_CONTROLLER_H_</span></div>
-<div class="ttc" id="class_you_1_1_controller_1_1_controller_1_1_query_builder_visitor_html"><div class="ttname"><a href="class_you_1_1_controller_1_1_controller_1_1_query_builder_visitor.html">You::Controller::Controller::QueryBuilderVisitor</a></div><div class="ttdoc">The query builder that will send the query to the appropriate builder in the controller class...</div><div class="ttdef"><b>Definition:</b> controller.cpp:21</div></div>
-<div class="ttc" id="class_you_1_1_controller_1_1_controller_html_a556e94e66610181dc386c054441ae754"><div class="ttname"><a href="class_you_1_1_controller_1_1_controller.html#a556e94e66610181dc386c054441ae754">You::Controller::Controller::query</a></div><div class="ttdeci">Result query(const std::wstring &amp;query, const Context &amp;context) const </div><div class="ttdoc">Executes the given natural language query. </div><div class="ttdef"><b>Definition:</b> controller.cpp:65</div></div>
-<div class="ttc" id="class_you_1_1_controller_1_1_controller_html"><div class="ttname"><a href="class_you_1_1_controller_1_1_controller.html">You::Controller::Controller</a></div><div class="ttdoc">The entry-point for all communications with the rest of the You framework. </div><div class="ttdef"><b>Definition:</b> controller.h:16</div></div>
+<div class="ttc" id="class_you_1_1_controller_1_1_controller_html_a556e94e66610181dc386c054441ae754"><div class="ttname"><a href="class_you_1_1_controller_1_1_controller.html#a556e94e66610181dc386c054441ae754">You::Controller::Controller::query</a></div><div class="ttdeci">Result query(const std::wstring &amp;query, const Context &amp;context) const </div><div class="ttdoc">Executes the given natural language query. </div><div class="ttdef"><b>Definition:</b> controller.cpp:22</div></div>
+<div class="ttc" id="class_you_1_1_controller_1_1_controller_html"><div class="ttname"><a href="class_you_1_1_controller_1_1_controller.html">You::Controller::Controller</a></div><div class="ttdoc">The entry-point for all communications with the rest of the You framework. </div><div class="ttdef"><b>Definition:</b> controller.h:17</div></div>
 <div class="ttc" id="class_you_1_1_controller_1_1_controller_1_1_context_html"><div class="ttname"><a href="class_you_1_1_controller_1_1_controller_1_1_context.html">You::Controller::Controller::Context</a></div><div class="ttdoc">Represents a context of a query. </div><div class="ttdef"><b>Definition:</b> controller_context.h:14</div></div>
-<div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:6</div></div>
-<div class="ttc" id="class_you_1_1_controller_1_1_controller_html_a1525bb53921e5586bfeef9b729d6848f"><div class="ttname"><a href="class_you_1_1_controller_1_1_controller.html#a1525bb53921e5586bfeef9b729d6848f">You::Controller::Controller::getTasks</a></div><div class="ttdeci">Result getTasks() const </div><div class="ttdoc">Gets all tasks. </div><div class="ttdef"><b>Definition:</b> controller.cpp:86</div></div>
+<div class="ttc" id="class_you_1_1_controller_1_1_controller_html_a709e8cb25a30b3cc9e2b8e47b25406cf"><div class="ttname"><a href="class_you_1_1_controller_1_1_controller.html#a709e8cb25a30b3cc9e2b8e47b25406cf">You::Controller::Controller::getTasks</a></div><div class="ttdeci">TaskList getTasks() const </div><div class="ttdoc">Gets all tasks. </div><div class="ttdef"><b>Definition:</b> controller.cpp:41</div></div>
+<div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 6 2014 02:37:28 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 6 2014 03:20:10 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
