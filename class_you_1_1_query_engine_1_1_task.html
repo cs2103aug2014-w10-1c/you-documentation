@@ -89,6 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_you_1_1_query_engine_1_1_task-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -123,11 +124,8 @@ typedef std::vector&lt; Task::ID &gt;&#160;</td><td class="memItemRight" valign=
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4e496f8c96b482eb2687d5890f3b24c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_task.html#a4e496f8c96b482eb2687d5890f3b24c6">isStrictEqual</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task) const </td></tr>
-<tr class="memdesc:a4e496f8c96b482eb2687d5890f3b24c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the task is strictly equal with another task Two taks are strictly equal if all fields are equal.  <a href="#a4e496f8c96b482eb2687d5890f3b24c6">More...</a><br /></td></tr>
-<tr class="separator:a4e496f8c96b482eb2687d5890f3b24c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc582759f4ec0c844d3a250470cf9949"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_task.html#afc582759f4ec0c844d3a250470cf9949">operator==</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;rhs) const </td></tr>
-<tr class="memdesc:afc582759f4ec0c844d3a250470cf9949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality of task is determined by its unique ID For stricter equality,.  <a href="#afc582759f4ec0c844d3a250470cf9949">More...</a><br /></td></tr>
+<tr class="memdesc:afc582759f4ec0c844d3a250470cf9949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check equality of two tasks by comparing field by field.  <a href="#afc582759f4ec0c844d3a250470cf9949">More...</a><br /></td></tr>
 <tr class="separator:afc582759f4ec0c844d3a250470cf9949"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Getters for Field Values.</div></td></tr>
 <tr class="memitem:a0e6642449c71cd4825a4392e0e3fb271"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e6642449c71cd4825a4392e0e3fb271"></a>
@@ -158,6 +156,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setDependencies</b> (
 <tr class="memitem:ab632d8bedfbf8c38f6546d491dcd51ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab632d8bedfbf8c38f6546d491dcd51ac"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setPriority</b> (Priority)</td></tr>
 <tr class="separator:ab632d8bedfbf8c38f6546d491dcd51ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae5fd9a2e21b7b35624799a9ff7698117"><td class="memItemLeft" align="right" valign="top">static std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_task.html#ae5fd9a2e21b7b35624799a9ff7698117">ToString</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;)</td></tr>
+<tr class="memdesc:ae5fd9a2e21b7b35624799a9ff7698117"><td class="mdescLeft">&#160;</td><td class="mdescRight">String representation of a task, for testing and logging.  <a href="#ae5fd9a2e21b7b35624799a9ff7698117">More...</a><br /></td></tr>
+<tr class="separator:ae5fd9a2e21b7b35624799a9ff7698117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -191,25 +195,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Internal::TaskBuilde
 <div class="textblock"><p>The task model The task instances must be created using builder pattern. </p>
 <dl class="section see"><dt>See also</dt><dd>[<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html" title="Builder for tasks New instance of task should be created using this builder. ">Internal::TaskBuilder</a>] </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a4e496f8c96b482eb2687d5890f3b24c6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool You::QueryEngine::Task::isStrictEqual </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;&#160;</td>
-          <td class="paramname"><em>task</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check if the task is strictly equal with another task Two taks are strictly equal if all fields are equal. </p>
-<dl class="section return"><dt>Returns</dt><dd>The strict equality of two tasks. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="afc582759f4ec0c844d3a250470cf9949"></a>
 <div class="memitem">
 <div class="memproto">
@@ -232,8 +217,46 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Internal::TaskBuilde
 </table>
 </div><div class="memdoc">
 
-<p>Equality of task is determined by its unique ID For stricter equality,. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_you_1_1_query_engine_1_1_task.html#a4e496f8c96b482eb2687d5890f3b24c6" title="Check if the task is strictly equal with another task Two taks are strictly equal if all fields are e...">isStrictEqual</a> </dd></dl>
+<p>Check equality of two tasks by comparing field by field. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>The task object to be compared </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae5fd9a2e21b7b35624799a9ff7698117"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::wstring You::QueryEngine::Task::ToString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>String representation of a task, for testing and logging. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">The</td><td>task object, assumed all fields are valid </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A string representation of the task </dd></dl>
 
 </div>
 </div>
@@ -244,7 +267,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Internal::TaskBuilde
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 6 2014 06:25:46 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 6 2014 07:24:00 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
