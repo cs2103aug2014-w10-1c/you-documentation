@@ -1,6 +1,7 @@
 var searchData=
 [
   ['task',['Task',['../class_you_1_1_query_engine_1_1_task.html',1,'You::QueryEngine']]],
+  ['task',['Task',['../class_you_1_1_query_engine_1_1_task.html#a27c41adfa99810a5635302646651b5b3',1,'You::QueryEngine::Task']]],
   ['task_5fbuilder_2eh',['task_builder.h',['../task__builder_8h.html',1,'']]],
   ['task_5fcolumn_5f1',['TASK_COLUMN_1',['../class_you_main_g_u_i.html#abff0bd774f9047715b1321246db5a574',1,'YouMainGUI']]],
   ['task_5fcolumn_5f2',['TASK_COLUMN_2',['../class_you_main_g_u_i.html#a4c7f4bb2868378683cdeb3ea13dcecad',1,'YouMainGUI']]],
@@ -16,6 +17,7 @@ var searchData=
   ['taskgraph',['TaskGraph',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html',1,'You::QueryEngine::Internal']]],
   ['taskid',['taskID',['../struct_you_1_1_n_l_p_1_1_d_e_l_e_t_e___q_u_e_r_y.html#a03b892dc91f8a37227cc00dab813c2ee',1,'You::NLP::DELETE_QUERY::taskID()'],['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#ab6d4f24aa18b8c094104993464510979',1,'You::NLP::EDIT_QUERY::taskID()']]],
   ['taskids',['taskIDs',['../class_you_main_g_u_i_1_1_session_manager.html#a5d26071ce268824c0deb43b195fa3eee',1,'YouMainGUI::SessionManager']]],
+  ['tasknotfoundexception',['TaskNotFoundException',['../class_you_1_1_query_engine_1_1_internal_1_1_task_not_found_exception.html',1,'You::QueryEngine::Internal']]],
   ['taskpanelmanager',['TaskPanelManager',['../class_you_main_g_u_i_1_1_task_panel_manager.html',1,'YouMainGUI']]],
   ['taskpanelmanager',['TaskPanelManager',['../class_you_main_g_u_i_1_1_task_panel_manager.html#abeca62039696373e8c69717d526483a7',1,'YouMainGUI::TaskPanelManager']]],
   ['taskserializer',['TaskSerializer',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html',1,'You::QueryEngine::Internal']]],
