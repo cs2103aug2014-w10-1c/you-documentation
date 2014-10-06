@@ -102,64 +102,70 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_you_1_1_utils_1_1_option.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_utils_1_1_option.html">Option</a> : <span class="keyword">protected</span> std::shared_ptr&lt;T&gt; {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_you_1_1_utils_1_1_option.html">Option</a>() {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_you_1_1_utils_1_1_option.html">Option</a>(T&amp;&amp; value)  <span class="comment">// NOLINT(runtime/explicit)</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    : std::shared_ptr&lt;T&gt;(<span class="keyword">new</span> T(value)) {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_you_1_1_utils_1_1_option.html">Option</a>(<span class="keyword">const</span> T&amp; value)  <span class="comment">// NOLINT(runtime/explicit)</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    : std::shared_ptr&lt;T&gt;(<span class="keyword">new</span> T(value)) {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">inline</span> <span class="keyword">operator</span> bool()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> std::shared_ptr&lt;T&gt;::get() != <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> T&amp; <span class="keyword">get</span>() <span class="keyword">const</span> {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        assert(<span class="keyword">operator</span> <span class="keywordtype">bool</span>());</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> *std::shared_ptr&lt;T&gt;::get();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">inline</span> T&amp; <span class="keyword">get</span>() {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        assert(<span class="keyword">operator</span> <span class="keywordtype">bool</span>());</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> *std::shared_ptr&lt;T&gt;::get();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="class_you_1_1_utils_1_1_option.html">Option&lt;T&gt;</a>&amp; rhs)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">bool</span> leftIsNull = !<span class="keyword">operator</span> bool();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">bool</span> rightIsNull = !rhs.operator bool();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">if</span> (leftIsNull == rightIsNull) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">return</span> leftIsNull || <span class="keyword">get</span>() == rhs.get();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="class_you_1_1_utils_1_1_option.html">Option&lt;T&gt;</a>&amp; rhs)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">bool</span> leftIsNull = !<span class="keyword">operator</span> bool();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">bool</span> rightIsNull = !rhs.operator bool();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span> (leftIsNull == rightIsNull) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">return</span> !leftIsNull &amp;&amp; <span class="keyword">get</span>() != rhs.get();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">return</span> leftIsNull != rightIsNull;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}  <span class="comment">// namespace Utils</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_you_1_1_utils_1_1_option.html#a5c212336d85d700fcfd42106a583291a">   20</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_you_1_1_utils_1_1_option.html#a5c212336d85d700fcfd42106a583291a">Option</a>() {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_you_1_1_utils_1_1_option.html#acdf21950e74b8233309f375f297f6e6e">   24</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_you_1_1_utils_1_1_option.html#acdf21950e74b8233309f375f297f6e6e">Option</a>(T&amp;&amp; value)  <span class="comment">// NOLINT(runtime/explicit)</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    : std::shared_ptr&lt;T&gt;(new T(value)) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_you_1_1_utils_1_1_option.html#af2225848527da4d9cb481fc688505424">   29</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_you_1_1_utils_1_1_option.html#af2225848527da4d9cb481fc688505424">Option</a>(<span class="keyword">const</span> T&amp; value)  <span class="comment">// NOLINT(runtime/explicit)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    : std::shared_ptr&lt;T&gt;(new T(value)) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_you_1_1_utils_1_1_option.html#a71746464f9c081e3af7428fb344e6737">   34</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">operator</span> bool()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> std::shared_ptr&lt;T&gt;::get() != <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_you_1_1_utils_1_1_option.html#a886cd375a5ed16ceda824fd31d1d2bd1">   40</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> T&amp; <span class="keyword">get</span>() <span class="keyword">const</span> {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        assert(<span class="keyword">operator</span> <span class="keywordtype">bool</span>());</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> *std::shared_ptr&lt;T&gt;::get();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_you_1_1_utils_1_1_option.html#a64c92f98050715a51805e4710fed8c9c">   47</a></span>&#160;    <span class="keyword">inline</span> T&amp; <span class="keyword">get</span>() {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        assert(<span class="keyword">operator</span> <span class="keywordtype">bool</span>());</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> *std::shared_ptr&lt;T&gt;::get();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_you_1_1_utils_1_1_option.html#afea3ed7b1f0c848b566a85e8f4ade128">   54</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_utils_1_1_option.html#afea3ed7b1f0c848b566a85e8f4ade128">operator==</a>(<span class="keyword">const</span> <a class="code" href="class_you_1_1_utils_1_1_option.html">Option&lt;T&gt;</a>&amp; rhs)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">bool</span> leftIsNull = !<span class="keyword">operator</span> bool();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">bool</span> rightIsNull = !rhs.operator bool();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span> (leftIsNull == rightIsNull) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> leftIsNull || <span class="keyword">get</span>() == rhs.<a class="code" href="class_you_1_1_utils_1_1_option.html#a886cd375a5ed16ceda824fd31d1d2bd1">get</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_you_1_1_utils_1_1_option.html#a6d512cd059385d630e16bccec5c0c4c9">   66</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_utils_1_1_option.html#a6d512cd059385d630e16bccec5c0c4c9">operator!=</a>(<span class="keyword">const</span> <a class="code" href="class_you_1_1_utils_1_1_option.html">Option&lt;T&gt;</a>&amp; rhs)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">bool</span> leftIsNull = !<span class="keyword">operator</span> bool();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">bool</span> rightIsNull = !rhs.operator bool();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif  // YOU_UTILS_OPTION_H_</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">if</span> (leftIsNull == rightIsNull) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">return</span> !leftIsNull &amp;&amp; <span class="keyword">get</span>() != rhs.<a class="code" href="class_you_1_1_utils_1_1_option.html#a886cd375a5ed16ceda824fd31d1d2bd1">get</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">return</span> leftIsNull != rightIsNull;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}  <span class="comment">// namespace Utils</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif  // YOU_UTILS_OPTION_H_</span></div>
+<div class="ttc" id="class_you_1_1_utils_1_1_option_html_afea3ed7b1f0c848b566a85e8f4ade128"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html#afea3ed7b1f0c848b566a85e8f4ade128">You::Utils::Option::operator==</a></div><div class="ttdeci">bool operator==(const Option&lt; T &gt; &amp;rhs) const </div><div class="ttdoc">Checks for equality with another Option value. </div><div class="ttdef"><b>Definition:</b> option.h:54</div></div>
+<div class="ttc" id="class_you_1_1_utils_1_1_option_html_a5c212336d85d700fcfd42106a583291a"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html#a5c212336d85d700fcfd42106a583291a">You::Utils::Option::Option</a></div><div class="ttdeci">Option()</div><div class="ttdoc">Default constructor. This initialises a None value. </div><div class="ttdef"><b>Definition:</b> option.h:20</div></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_option_html"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a></div><div class="ttdoc">Implements an option type. </div><div class="ttdef"><b>Definition:</b> option.h:17</div></div>
+<div class="ttc" id="class_you_1_1_utils_1_1_option_html_a886cd375a5ed16ceda824fd31d1d2bd1"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html#a886cd375a5ed16ceda824fd31d1d2bd1">You::Utils::Option::get</a></div><div class="ttdeci">const T &amp; get() const </div><div class="ttdoc">Retrieves the value of the option type. </div><div class="ttdef"><b>Definition:</b> option.h:40</div></div>
+<div class="ttc" id="class_you_1_1_utils_1_1_option_html_a6d512cd059385d630e16bccec5c0c4c9"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html#a6d512cd059385d630e16bccec5c0c4c9">You::Utils::Option::operator!=</a></div><div class="ttdeci">bool operator!=(const Option&lt; T &gt; &amp;rhs) const </div><div class="ttdoc">Inverse of Option<T>::operator==. </div><div class="ttdef"><b>Definition:</b> option.h:66</div></div>
+<div class="ttc" id="class_you_1_1_utils_1_1_option_html_af2225848527da4d9cb481fc688505424"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html#af2225848527da4d9cb481fc688505424">You::Utils::Option::Option</a></div><div class="ttdeci">Option(const T &amp;value)</div><div class="ttdoc">Copy constructor. This copies the value from an existing value. </div><div class="ttdef"><b>Definition:</b> option.h:29</div></div>
+<div class="ttc" id="class_you_1_1_utils_1_1_option_html_acdf21950e74b8233309f375f297f6e6e"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html#acdf21950e74b8233309f375f297f6e6e">You::Utils::Option::Option</a></div><div class="ttdeci">Option(T &amp;&amp;value)</div><div class="ttdoc">Move constructor. This initialises a value from an existing value. </div><div class="ttdef"><b>Definition:</b> option.h:24</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 6 2014 03:20:11 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 6 2014 06:25:45 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
