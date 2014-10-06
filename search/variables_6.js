@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['sm',['sm',['../class_you_main_g_u_i.html#a1613e71087dc9f2ad7550bdb062746c9',1,'YouMainGUI']]],
-  ['stm',['stm',['../class_you_main_g_u_i.html#a3c3e7ef5d8c18b5cd3374f82b70cd786',1,'YouMainGUI']]]
+  ['value_5fdelimiter',['VALUE_DELIMITER',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a4b086907d1e1f6155d987a634178cc64',1,'You::QueryEngine::Internal::TaskSerializer']]]
 ];

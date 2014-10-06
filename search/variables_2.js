@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fieldstochange',['fieldsToChange',['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#a338ca56466c9ee50d0cd70860da4a1db',1,'You::NLP::EDIT_QUERY']]]
+  ['nlpm',['nlpm',['../class_you_main_g_u_i.html#a61fe7dccebc433c2dccc3de3ef1d6958',1,'YouMainGUI']]]
 ];

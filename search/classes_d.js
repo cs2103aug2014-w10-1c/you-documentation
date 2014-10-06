@@ -4,6 +4,7 @@ var searchData=
   ['taskbuilder',['TaskBuilder',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html',1,'You::QueryEngine::Internal']]],
   ['taskbuildertest',['TaskBuilderTest',['../class_you_1_1_query_engine_1_1_unit_tests_1_1_task_builder_test.html',1,'You::QueryEngine::UnitTests']]],
   ['taskgraph',['TaskGraph',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html',1,'You::QueryEngine::Internal']]],
+  ['tasklist',['TaskList',['../class_you_1_1_controller_1_1_unit_tests_1_1_mocks_1_1_task_list.html',1,'You::Controller::UnitTests::Mocks']]],
   ['tasknotfoundexception',['TaskNotFoundException',['../class_you_1_1_query_engine_1_1_internal_1_1_task_not_found_exception.html',1,'You::QueryEngine::Internal']]],
   ['taskpanelmanager',['TaskPanelManager',['../class_you_main_g_u_i_1_1_task_panel_manager.html',1,'YouMainGUI']]],
   ['taskserializer',['TaskSerializer',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html',1,'You::QueryEngine::Internal']]],
