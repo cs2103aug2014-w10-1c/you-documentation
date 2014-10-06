@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['operator_20ffilter',['operator FFilter',['../class_you_1_1_query_engine_1_1_filter.html#aca295c7c2a6c28ca22535f90fdb396fd',1,'You::QueryEngine::Filter']]],
-  ['operator_20task',['operator Task',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a5376c54ef9be92cc78cab554e864ed16',1,'You::QueryEngine::Internal::TaskBuilder']]],
-  ['operator_21',['operator!',['../class_you_1_1_query_engine_1_1_filter.html#a06bfc3775e911215ca349e5a965b5c1d',1,'You::QueryEngine::Filter']]],
-  ['operator_26_26',['operator&amp;&amp;',['../class_you_1_1_query_engine_1_1_filter.html#a77cde7efb8387c04588e6d4f019608e0',1,'You::QueryEngine::Filter']]],
-  ['operator_28_29',['operator()',['../class_you_1_1_controller_1_1_controller_1_1_query_builder_visitor.html#ac2d3f94372be5ceb1e785fc2941a3425',1,'You::Controller::Controller::QueryBuilderVisitor::operator()()'],['../struct_you_1_1_controller_1_1_unit_tests_1_1_to_string_visitor.html#a93a7ceb3f31a313791a7fc0eec2e329a',1,'You::Controller::UnitTests::ToStringVisitor::operator()()'],['../struct_you_1_1_n_l_p_1_1_unit_tests_1_1_to_string_visitor.html#a675fb5cec45961d08be4f57174d201a7',1,'You::NLP::UnitTests::ToStringVisitor::operator()()'],['../class_you_1_1_query_engine_1_1_filter.html#a60e2735c7a64aa5d6e57526499f98896',1,'You::QueryEngine::Filter::operator()()']]],
-  ['operator_3d',['operator=',['../class_you_1_1_query_engine_1_1_internal_1_1_add_task.html#a09199ec62977d1dba27efd921fbaf9e8',1,'You::QueryEngine::Internal::AddTask::operator=()'],['../class_you_1_1_query_engine_1_1_internal_1_1_delete_task.html#acd5100392a251a7215939ac7c414662d',1,'You::QueryEngine::Internal::DeleteTask::operator=()'],['../class_you_1_1_query_engine_1_1_internal_1_1_update_task.html#a82d9a1f8adf66c3166acd6d0c7553c6c',1,'You::QueryEngine::Internal::UpdateTask::operator=()']]],
-  ['operator_3d_3d',['operator==',['../struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html#a157c5eb0b474530b5b9846d5e36c0d63',1,'You::NLP::ADD_QUERY::operator==()'],['../struct_you_1_1_n_l_p_1_1_d_e_l_e_t_e___q_u_e_r_y.html#a6cb3a16fa206d721e7ac0e9e327ce926',1,'You::NLP::DELETE_QUERY::operator==()'],['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#a73a8e57ca88168d6084f6919bb5666ec',1,'You::NLP::EDIT_QUERY::operator==()'],['../class_you_1_1_query_engine_1_1_task.html#afc582759f4ec0c844d3a250470cf9949',1,'You::QueryEngine::Task::operator==()']]],
-  ['operator_7c_7c',['operator||',['../class_you_1_1_query_engine_1_1_filter.html#a6f7d96ec14a7b286f658bbcfa4445dba',1,'You::QueryEngine::Filter']]]
+  ['nlpm',['nlpm',['../class_you_main_g_u_i.html#a61fe7dccebc433c2dccc3de3ef1d6958',1,'YouMainGUI']]],
+  ['nlpmanager',['NLPManager',['../class_you_main_g_u_i_1_1_n_l_p_manager.html',1,'YouMainGUI']]],
+  ['nlpmanager',['NLPManager',['../class_you_main_g_u_i_1_1_n_l_p_manager.html#a5451745c7aaa49c44d2f483f5b59aaff',1,'YouMainGUI::NLPManager']]],
+  ['none',['NONE',['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#aa7d18e007398aa3eaf6c8ec3feda45d1ab50339a10e1de285ac99d4c3990b8693',1,'You::NLP::EDIT_QUERY']]]
 ];

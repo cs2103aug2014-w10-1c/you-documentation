@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['_7eaddtask',['~AddTask',['../class_you_1_1_query_engine_1_1_internal_1_1_add_task.html#afe54d889155ded94b6c0ffacc3ce3ea6',1,'You::QueryEngine::Internal::AddTask']]],
-  ['_7edeletetask',['~DeleteTask',['../class_you_1_1_query_engine_1_1_internal_1_1_delete_task.html#a1645880055887b057175f85d2b529c07',1,'You::QueryEngine::Internal::DeleteTask']]],
-  ['_7efiltertask',['~FilterTask',['../class_you_1_1_query_engine_1_1_internal_1_1_filter_task.html#a0caab97eef9874d9bfd33dc9435e9ed2',1,'You::QueryEngine::Internal::FilterTask']]],
-  ['_7enlpmanager',['~NLPManager',['../class_you_main_g_u_i_1_1_n_l_p_manager.html#a4ff72ac40904d90b9c276a7ed13121d3',1,'YouMainGUI::NLPManager']]],
-  ['_7esessionmanager',['~SessionManager',['../class_you_main_g_u_i_1_1_session_manager.html#a6ac6598795baf548b2c07f4e489f25ae',1,'YouMainGUI::SessionManager']]],
-  ['_7esystemtraymanager',['~SystemTrayManager',['../class_you_main_g_u_i_1_1_system_tray_manager.html#a86fafd4e5bbf4a85ad23019e9e441157',1,'YouMainGUI::SystemTrayManager']]],
-  ['_7etaskpanelmanager',['~TaskPanelManager',['../class_you_main_g_u_i_1_1_task_panel_manager.html#ad2509fda1b1899e021f7b30d0e13f108',1,'YouMainGUI::TaskPanelManager']]],
-  ['_7eupdatetask',['~UpdateTask',['../class_you_1_1_query_engine_1_1_internal_1_1_update_task.html#ab987f2b8e4eaaf972d056bb64e9f453a',1,'You::QueryEngine::Internal::UpdateTask']]],
-  ['_7eyoumaingui',['~YouMainGUI',['../class_you_main_g_u_i.html#a6753e12e45581105c4798d4ba6f8e309',1,'YouMainGUI']]]
+  ['datastoretest',['DataStoreTest',['../class_you_1_1_data_store_1_1_internal_1_1_internal_data_store.html#a890745c181cd0cf00b03fef4272f1525',1,'You::DataStore::Internal::InternalDataStore']]],
+  ['internal',['Internal',['../namespace_you_1_1_data_store_1_1_internal.html',1,'You::DataStore']]],
+  ['you_20_5b_21_5bbuild_20status_5d_28https_3a_2f_2fci_2eappveyor_2ecom_2fapi_2fprojects_2fstatus_2fv0nblgg1fq3g0fnb_29_5d_28https_3a_2f_2fci_2eappveyor_2ecom_2fproject_2flowjoel_2fmain_29',['You [![Build status](https://ci.appveyor.com/api/projects/status/v0nblgg1fq3g0fnb)](https://ci.appveyor.com/project/lowjoel/main)',['../md__r_e_a_d_m_e.html',1,'']]],
+  ['parserchartraits',['ParserCharTraits',['../namespace_you_1_1_n_l_p_1_1_parser_char_traits.html',1,'You::NLP']]],
+  ['you',['You',['../namespace_you.html',1,'']]],
+  ['youmaingui',['YouMainGUI',['../class_you_main_g_u_i.html',1,'YouMainGUI'],['../class_you_main_g_u_i.html#ae2a92125ab23eda4479333a0c9c4b74a',1,'YouMainGUI::YouMainGUI()']]]
 ];
