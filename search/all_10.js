@@ -19,8 +19,6 @@ var searchData=
   ['taskpanelmanager',['TaskPanelManager',['../class_you_main_g_u_i_1_1_task_panel_manager.html',1,'YouMainGUI']]],
   ['taskpanelmanager',['TaskPanelManager',['../class_you_main_g_u_i_1_1_task_panel_manager.html#abeca62039696373e8c69717d526483a7',1,'YouMainGUI::TaskPanelManager']]],
   ['taskserializer',['TaskSerializer',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html',1,'You::QueryEngine::Internal']]],
-  ['tostring',['ToString',['../class_you_1_1_query_engine_1_1_task.html#ae5fd9a2e21b7b35624799a9ff7698117',1,'You::QueryEngine::Task']]],
-  ['tostringvisitor',['ToStringVisitor',['../struct_you_1_1_controller_1_1_unit_tests_1_1_to_string_visitor.html',1,'You::Controller::UnitTests']]],
   ['tostringvisitor',['ToStringVisitor',['../struct_you_1_1_n_l_p_1_1_unit_tests_1_1_to_string_visitor.html',1,'You::NLP::UnitTests']]],
   ['tpm',['tpm',['../class_you_main_g_u_i.html#abd9ebc23f33d93ebafe73705765731ea',1,'YouMainGUI']]]
 ];
