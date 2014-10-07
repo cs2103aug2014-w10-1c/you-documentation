@@ -111,7 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html#ae9f6aa0aa09169b3234f93ab4baf2544">~UpdateTask</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Response execute(State&amp; tasks) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Response execute(<a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">State</a>&amp; tasks) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> Task::ID id;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> Task::Description description;  </div>
@@ -126,16 +126,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}  <span class="comment">// namespace You</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_INTERNAL_ACTION_UPDATE_TASK_H_</span></div>
-<div class="ttc" id="class_you_1_1_query_engine_1_1_query_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_query.html">You::QueryEngine::Query</a></div><div class="ttdoc">Base class for all queries. </div><div class="ttdef"><b>Definition:</b> api.h:26</div></div>
+<div class="ttc" id="class_you_1_1_query_engine_1_1_query_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_query.html">You::QueryEngine::Query</a></div><div class="ttdoc">Base class for all queries. </div><div class="ttdef"><b>Definition:</b> api.h:24</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html">You::QueryEngine::Internal::Action::UpdateTask</a></div><div class="ttdoc">Define action for updating task. </div><div class="ttdef"><b>Definition:</b> update_task.h:17</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task_html_a97f009eb6588cb0c61f453b828f90289"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html#a97f009eb6588cb0c61f453b828f90289">You::QueryEngine::Internal::Action::UpdateTask::operator=</a></div><div class="ttdeci">UpdateTask &amp; operator=(const UpdateTask &amp;)=delete</div><div class="ttdoc">Disable assignment operator. </div></div>
+<div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_state_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">You::QueryEngine::Internal::State</a></div><div class="ttdoc">Static class to store DataStore and TaskGraph instances. </div><div class="ttdef"><b>Definition:</b> state.h:17</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task_html_ae9f6aa0aa09169b3234f93ab4baf2544"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html#ae9f6aa0aa09169b3234f93ab4baf2544">You::QueryEngine::Internal::Action::UpdateTask::~UpdateTask</a></div><div class="ttdeci">virtual ~UpdateTask()=default</div><div class="ttdoc">Destructor. </div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task_html_aa1c2615894e3c7470eafeb9230fc341b"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html#aa1c2615894e3c7470eafeb9230fc341b">You::QueryEngine::Internal::Action::UpdateTask::UpdateTask</a></div><div class="ttdeci">UpdateTask(Task::ID id, Task::Description description, Task::Time deadline, Task::Priority priority, Task::Dependencies dependencies)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> update_task.h:20</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 04:03:17 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 7 2014 06:40:43 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

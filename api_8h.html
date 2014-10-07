@@ -123,19 +123,12 @@ typedef boost::variant<br class="typebreak" />
 Task::ID, std::wstring &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>You::QueryEngine::Response</b></td></tr>
 <tr class="memdesc:a651f8867d13678410711e7f1c4672fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">A synthesized type for holding query responses. <br /></td></tr>
 <tr class="separator:a651f8867d13678410711e7f1c4672fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89537c8cb6fb60c6c5e5a05215387e8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89537c8cb6fb60c6c5e5a05215387e8a"></a>
-typedef std::vector&lt; Task &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>You::QueryEngine::State</b></td></tr>
-<tr class="memdesc:a89537c8cb6fb60c6c5e5a05215387e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is temporary fix, state should be a more complex class instead. <br /></td></tr>
-<tr class="separator:a89537c8cb6fb60c6c5e5a05215387e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae0443b492fc416ce29d74c03f9c69352"><td class="memItemLeft" align="right" valign="top">Response&#160;</td><td class="memItemRight" valign="bottom"><b>You::QueryEngine::executeQuery</b> (std::unique_ptr&lt; Query &gt; query)</td></tr>
 <tr class="memdesc:ae0443b492fc416ce29d74c03f9c69352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a query and return a response.  <a href="#ae0443b492fc416ce29d74c03f9c69352">More...</a><br /></td></tr>
 <tr class="separator:ae0443b492fc416ce29d74c03f9c69352"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c64e568d0909217fc15133f68ba76b9"><td class="memItemLeft" align="right" valign="top">Response&#160;</td><td class="memItemRight" valign="bottom"><b>You::QueryEngine::executeQuery</b> (std::unique_ptr&lt; Query &gt; query, State &amp;state)</td></tr>
-<tr class="memdesc:a1c64e568d0909217fc15133f68ba76b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a query on a state and return a response.  <a href="#a1c64e568d0909217fc15133f68ba76b9">More...</a><br /></td></tr>
-<tr class="separator:a1c64e568d0909217fc15133f68ba76b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Query Constructors</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Construct a query for adding a task</p>
 <dl class="section note"><dt>Note</dt><dd>Please use Task::DEFAULT_xxx to replace incomplete fields. </dd></dl>
@@ -159,7 +152,7 @@ std::unique_ptr&lt; Query &gt;&#160;</td><td class="memItemRight" valign="bottom
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 04:03:17 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 7 2014 06:40:43 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
