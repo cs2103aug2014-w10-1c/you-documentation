@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['parentgui',['parentGUI',['../class_you_main_g_u_i_1_1_base_manager.html#aabea248a40b8c4a6a01d16ff21751af1',1,'YouMainGUI::BaseManager']]]
+  ['value_5fdelimiter',['VALUE_DELIMITER',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a4b086907d1e1f6155d987a634178cc64',1,'You::QueryEngine::Internal::TaskSerializer']]]
 ];

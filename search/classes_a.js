@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['parseerrorexception',['ParseErrorException',['../class_you_1_1_n_l_p_1_1_parse_error_exception.html',1,'You::NLP']]],
-  ['parserexception',['ParserException',['../class_you_1_1_n_l_p_1_1_parser_exception.html',1,'You::NLP']]],
-  ['postoperation',['PostOperation',['../class_you_1_1_data_store_1_1_internal_1_1_post_operation.html',1,'You::DataStore::Internal']]],
-  ['putoperation',['PutOperation',['../class_you_1_1_data_store_1_1_internal_1_1_put_operation.html',1,'You::DataStore::Internal']]]
+  ['option',['Option',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]],
+  ['option_3c_20boost_3a_3aposix_5ftime_3a_3aptime_20_3e',['Option&lt; boost::posix_time::ptime &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]],
+  ['option_3c_20std_3a_3awstring_20_3e',['Option&lt; std::wstring &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>You: Member List</title>
+<title>You: boost::detail::lexical_converter_impl&lt; QString, Source &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,23 +81,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>boost</b></li><li class="navelem"><b>detail</b></li><li class="navelem"><a class="el" href="structboost_1_1detail_1_1lexical__converter__impl_3_01_q_string_00_01_source_01_4.html">lexical_converter_impl< QString, Source ></a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="structboost_1_1detail_1_1lexical__converter__impl_3_01_q_string_00_01_source_01_4-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">VariantHandler Member List</div>  </div>
+<div class="title">boost::detail::lexical_converter_impl&lt; QString, Source &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="struct_variant_handler.html">VariantHandler</a>, including all inherited members.</p>
-<table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator()</b>(You::Controller::ADD_RESULT addResult) (defined in <a class="el" href="struct_variant_handler.html">VariantHandler</a>)</td><td class="entry"><a class="el" href="struct_variant_handler.html">VariantHandler</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>operator()</b>(You::Controller::EDIT_RESULT editResult) (defined in <a class="el" href="struct_variant_handler.html">VariantHandler</a>)</td><td class="entry"><a class="el" href="struct_variant_handler.html">VariantHandler</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator()</b>(You::Controller::DELETE_RESULT deleteResult) (defined in <a class="el" href="struct_variant_handler.html">VariantHandler</a>)</td><td class="entry"><a class="el" href="struct_variant_handler.html">VariantHandler</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>parentGUI</b> (defined in <a class="el" href="struct_variant_handler.html">VariantHandler</a>)</td><td class="entry"><a class="el" href="struct_variant_handler.html">VariantHandler</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>Partial template specialisation for converting to QString.  
+ <a href="structboost_1_1detail_1_1lexical__converter__impl_3_01_q_string_00_01_source_01_4.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="qt__helpers_8h_source.html">qt_helpers.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac89b951d63b20e572878588573e558dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac89b951d63b20e572878588573e558dd"></a>
+typedef <br class="typebreak" />
+lexical_cast_stream_traits<br class="typebreak" />
+&lt; Source, QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stream_trait</b></td></tr>
+<tr class="separator:ac89b951d63b20e572878588573e558dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90282a50d0c1f080af94a39d4fdba900"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90282a50d0c1f080af94a39d4fdba900"></a>
+typedef <br class="typebreak" />
+detail::lexical_istream_limited_src<br class="typebreak" />
+&lt; BOOST_DEDUCED_TYPENAME <br class="typebreak" />
+stream_trait::char_type, <br class="typebreak" />
+BOOST_DEDUCED_TYPENAME <br class="typebreak" />
+stream_trait::traits, <br class="typebreak" />
+stream_trait::requires_stringbuf, <br class="typebreak" />
+stream_trait::len_t::value+1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>i_interpreter_type</b></td></tr>
+<tr class="separator:a90282a50d0c1f080af94a39d4fdba900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a0299d35511f2aa9c9311b53903b2d1fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0299d35511f2aa9c9311b53903b2d1fa"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1detail_1_1lexical__converter__impl_3_01_q_string_00_01_source_01_4.html#a0299d35511f2aa9c9311b53903b2d1fa">try_convert</a> (const Source &amp;arg, QString &amp;result)</td></tr>
+<tr class="memdesc:a0299d35511f2aa9c9311b53903b2d1fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the given argument to a QString. <br /></td></tr>
+<tr class="separator:a0299d35511f2aa9c9311b53903b2d1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename Source&gt;<br />
+struct boost::detail::lexical_converter_impl&lt; QString, Source &gt;</h3>
+
+<p>Partial template specialisation for converting to QString. </p>
+<p>This is modified from the boost::lexical_cast implementation. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>You-GUI/<a class="el" href="qt__helpers_8h_source.html">qt_helpers.h</a></li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 07:33:01 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 7 2014 08:05:35 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
