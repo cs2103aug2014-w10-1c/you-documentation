@@ -97,27 +97,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>DataStore {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_you_1_1_data_store_1_1_i_operation.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_data_store_1_1_i_operation.html">IOperation</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>Internal {</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html">IOperation</a> {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_you_1_1_data_store_1_1_i_operation.html">IOperation</a>();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_data_store_1_1_i_operation.html#ade071b92e2085f49904f52b1001d08ed">run</a>() = 0;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html">IOperation</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#a3661f39926b4d47b4194badaac2e4866">run</a>() = 0;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    TaskId taskId;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    SerializedTask task;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}  <span class="comment">// namespace Internal</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}   <span class="comment">// namespace DataStore</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}   <span class="comment">// namespace You</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif  // YOU_DATASTORE_INTERNAL_OPERATION_H_</span></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_i_operation_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_i_operation.html">You::DataStore::IOperation</a></div><div class="ttdoc">A pure virtual class of operations to be put into transaction stack. </div><div class="ttdef"><b>Definition:</b> operation.h:12</div></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_i_operation_html_ade071b92e2085f49904f52b1001d08ed"><div class="ttname"><a href="class_you_1_1_data_store_1_1_i_operation.html#ade071b92e2085f49904f52b1001d08ed">You::DataStore::IOperation::run</a></div><div class="ttdeci">virtual bool run()=0</div><div class="ttdoc">Executes the operation. </div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_i_operation_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html">You::DataStore::Internal::IOperation</a></div><div class="ttdoc">A pure virtual class of operations to be put into transaction stack. </div><div class="ttdef"><b>Definition:</b> operation.h:12</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_i_operation_html_a3661f39926b4d47b4194badaac2e4866"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#a3661f39926b4d47b4194badaac2e4866">You::DataStore::Internal::IOperation::run</a></div><div class="ttdeci">virtual bool run()=0</div><div class="ttdoc">Executes the operation. </div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 02:00:40 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 7 2014 03:47:45 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
