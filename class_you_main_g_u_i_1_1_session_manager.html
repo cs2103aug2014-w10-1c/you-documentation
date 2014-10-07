@@ -96,6 +96,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">YouMainGUI::SessionManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The component that handles all session-related data of the application.  
+ <a href="class_you_main_g_u_i_1_1_session_manager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="session__manager_8h_source.html">session_manager.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for YouMainGUI::SessionManager:</div>
 <div class="dyncontent">
@@ -136,10 +141,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a5d26071ce268824c0deb43b195fa3eee"><td class="memItemLeft" align="right" valign="top">std::vector<br class="typebreak" />
-&lt; You::Controller::Task::ID &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_main_g_u_i_1_1_session_manager.html#a5d26071ce268824c0deb43b195fa3eee">taskIDs</a></td></tr>
-<tr class="memdesc:a5d26071ce268824c0deb43b195fa3eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list of taskIDs that will be filled on program start from the session file, to be passed to the NLP manager.  <a href="#a5d26071ce268824c0deb43b195fa3eee">More...</a><br /></td></tr>
-<tr class="separator:a5d26071ce268824c0deb43b195fa3eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7094d869b14919da8884a89fa6db65f2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Task::ID &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_main_g_u_i_1_1_session_manager.html#a7094d869b14919da8884a89fa6db65f2">taskIDs</a></td></tr>
+<tr class="memdesc:a7094d869b14919da8884a89fa6db65f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list of taskIDs that will be filled on program start from the session file, to be passed to the NLP manager.  <a href="#a7094d869b14919da8884a89fa6db65f2">More...</a><br /></td></tr>
+<tr class="separator:a7094d869b14919da8884a89fa6db65f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_you_main_g_u_i_1_1_base_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_you_main_g_u_i_1_1_base_manager')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_you_main_g_u_i_1_1_base_manager.html">YouMainGUI::BaseManager</a></td></tr>
 <tr class="memitem:aabea248a40b8c4a6a01d16ff21751af1 inherit pub_attribs_class_you_main_g_u_i_1_1_base_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabea248a40b8c4a6a01d16ff21751af1"></a>
 <a class="el" href="class_you_main_g_u_i.html">YouMainGUI</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_main_g_u_i_1_1_base_manager.html#aabea248a40b8c4a6a01d16ff21751af1">parentGUI</a></td></tr>
@@ -152,13 +156,16 @@ Friends</h2></td></tr>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>YouMainGUI</b></td></tr>
 <tr class="separator:a2e0e84ff25619cd8cb7a2c52c2f40416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a5d26071ce268824c0deb43b195fa3eee"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The component that handles all session-related data of the application. </p>
+<p>It handles basics such as the window state of the application and task sets previously displayed, saving the state on program exit, and restoring them when the program is started again. It inherits from the <a class="el" href="class_you_main_g_u_i_1_1_base_manager.html" title="The class from which all components inherit. ">BaseManager</a> class. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a7094d869b14919da8884a89fa6db65f2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;You::Controller::Task::ID&gt; YouMainGUI::SessionManager::taskIDs</td>
+          <td class="memname">std::vector&lt;Task::ID&gt; YouMainGUI::SessionManager::taskIDs</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -175,7 +182,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>YouMainGUI</b></td><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 6 2014 14:02:56 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 7 2014 01:27:57 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

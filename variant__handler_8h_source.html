@@ -93,19 +93,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef YOU_GUI_VARIANT_HANDLER_H_</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define YOU_GUI_VARIANT_HANDLER_H_</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;you_main_gui.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="struct_variant_handler.html">    6</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_variant_handler.html">VariantHandler</a> : boost::static_visitor&lt;void&gt; {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_you_main_g_u_i.html">YouMainGUI</a>* parentGUI;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordtype">void</span> operator()(<a class="code" href="struct_you_1_1_controller_1_1_a_d_d___r_e_s_u_l_t.html">You::Controller::ADD_RESULT</a> addResult) {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        parentGUI-&gt;addTask(addResult.result);</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    }</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">void</span> operator()(<a class="code" href="struct_you_1_1_controller_1_1_e_d_i_t___r_e_s_u_l_t.html">You::Controller::EDIT_RESULT</a> editResult) {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    }</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> operator()(<a class="code" href="struct_you_1_1_controller_1_1_d_e_l_e_t_e___r_e_s_u_l_t.html">You::Controller::DELETE_RESULT</a> deleteResult) {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="struct_variant_handler.html">    7</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_variant_handler.html">VariantHandler</a> : boost::static_visitor&lt;void&gt; {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_you_main_g_u_i.html">YouMainGUI</a>* parentGUI;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">void</span> operator()(<a class="code" href="struct_you_1_1_controller_1_1_a_d_d___r_e_s_u_l_t.html">You::Controller::ADD_RESULT</a> addResult) {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        parentGUI-&gt;addTask(addResult.<a class="code" href="struct_you_1_1_controller_1_1_a_d_d___r_e_s_u_l_t.html#aaac76375df4639dd247f99c95ba86497">task</a>);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    }</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">void</span> operator()(<a class="code" href="struct_you_1_1_controller_1_1_e_d_i_t___r_e_s_u_l_t.html">You::Controller::EDIT_RESULT</a> editResult) {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        parentGUI-&gt;editTask(editResult.<a class="code" href="struct_you_1_1_controller_1_1_e_d_i_t___r_e_s_u_l_t.html#ac48d2598f935a7ea0887e19e9126e6ae">task</a>);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif  // YOU_GUI_VARIANT_HANDLER_H_</span></div>
-<div class="ttc" id="struct_variant_handler_html"><div class="ttname"><a href="struct_variant_handler.html">VariantHandler</a></div><div class="ttdef"><b>Definition:</b> variant_handler.h:6</div></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> operator()(<a class="code" href="struct_you_1_1_controller_1_1_d_e_l_e_t_e___r_e_s_u_l_t.html">You::Controller::DELETE_RESULT</a> deleteResult) {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        parentGUI-&gt;deleteTask(deleteResult.task);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif  // YOU_GUI_VARIANT_HANDLER_H_</span></div>
+<div class="ttc" id="struct_you_1_1_controller_1_1_e_d_i_t___r_e_s_u_l_t_html_ac48d2598f935a7ea0887e19e9126e6ae"><div class="ttname"><a href="struct_you_1_1_controller_1_1_e_d_i_t___r_e_s_u_l_t.html#ac48d2598f935a7ea0887e19e9126e6ae">You::Controller::EDIT_RESULT::task</a></div><div class="ttdeci">Task task</div><div class="ttdoc">The new, modified task. The task ID is guaranteed to be the same. </div><div class="ttdef"><b>Definition:</b> edit_result.h:12</div></div>
+<div class="ttc" id="struct_variant_handler_html"><div class="ttname"><a href="struct_variant_handler.html">VariantHandler</a></div><div class="ttdef"><b>Definition:</b> variant_handler.h:7</div></div>
+<div class="ttc" id="struct_you_1_1_controller_1_1_a_d_d___r_e_s_u_l_t_html_aaac76375df4639dd247f99c95ba86497"><div class="ttname"><a href="struct_you_1_1_controller_1_1_a_d_d___r_e_s_u_l_t.html#aaac76375df4639dd247f99c95ba86497">You::Controller::ADD_RESULT::task</a></div><div class="ttdeci">Task task</div><div class="ttdoc">The task which was added. </div><div class="ttdef"><b>Definition:</b> add_result.h:12</div></div>
 <div class="ttc" id="struct_you_1_1_controller_1_1_a_d_d___r_e_s_u_l_t_html"><div class="ttname"><a href="struct_you_1_1_controller_1_1_a_d_d___r_e_s_u_l_t.html">You::Controller::ADD_RESULT</a></div><div class="ttdoc">Defines the result of an Add query. </div><div class="ttdef"><b>Definition:</b> add_result.h:10</div></div>
 <div class="ttc" id="struct_you_1_1_controller_1_1_d_e_l_e_t_e___r_e_s_u_l_t_html"><div class="ttname"><a href="struct_you_1_1_controller_1_1_d_e_l_e_t_e___r_e_s_u_l_t.html">You::Controller::DELETE_RESULT</a></div><div class="ttdoc">Defines the result of a Delete query. </div><div class="ttdef"><b>Definition:</b> delete_result.h:10</div></div>
 <div class="ttc" id="struct_you_1_1_controller_1_1_e_d_i_t___r_e_s_u_l_t_html"><div class="ttname"><a href="struct_you_1_1_controller_1_1_e_d_i_t___r_e_s_u_l_t.html">You::Controller::EDIT_RESULT</a></div><div class="ttdoc">Defines the result of an Edit query. </div><div class="ttdef"><b>Definition:</b> edit_result.h:10</div></div>
@@ -113,7 +118,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 6 2014 14:02:55 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 7 2014 01:27:57 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
