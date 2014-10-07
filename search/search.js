@@ -12,10 +12,10 @@ var indexSectionsWithContent =
   2: "y",
   3: "adestu",
   4: "abcdefginopqrstuy~",
-  5: "dptv",
+  5: "cdptv",
   6: "fgilsv",
   7: "f",
-  8: "cdn",
+  8: "cdnp",
   9: "ey",
   10: "y"
 };
