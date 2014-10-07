@@ -138,34 +138,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_you_1_1_utils_1_1_option.html#a6d512cd059385d630e16bccec5c0c4c9">   66</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_utils_1_1_option.html#a6d512cd059385d630e16bccec5c0c4c9">operator!=</a>(<span class="keyword">const</span> <a class="code" href="class_you_1_1_utils_1_1_option.html">Option&lt;T&gt;</a>&amp; rhs)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">bool</span> leftIsNull = !<span class="keyword">operator</span> bool();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">bool</span> rightIsNull = !rhs.operator bool();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">if</span> (leftIsNull == rightIsNull) {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">return</span> !leftIsNull &amp;&amp; <span class="keyword">get</span>() != rhs.<a class="code" href="class_you_1_1_utils_1_1_option.html#a886cd375a5ed16ceda824fd31d1d2bd1">get</a>();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">return</span> leftIsNull != rightIsNull;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}  <span class="comment">// namespace Utils</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif  // YOU_UTILS_OPTION_H_</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_you_1_1_utils_1_1_option.html#a6d512cd059385d630e16bccec5c0c4c9">   67</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_utils_1_1_option.html#a6d512cd059385d630e16bccec5c0c4c9">operator!=</a>(<span class="keyword">const</span> <a class="code" href="class_you_1_1_utils_1_1_option.html">Option&lt;T&gt;</a>&amp; rhs)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">bool</span> leftIsNull = !<span class="keyword">operator</span> bool();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">bool</span> rightIsNull = !rhs.operator bool();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">if</span> (leftIsNull == rightIsNull) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">return</span> !leftIsNull &amp;&amp; <span class="keyword">get</span>() != rhs.<a class="code" href="class_you_1_1_utils_1_1_option.html#a886cd375a5ed16ceda824fd31d1d2bd1">get</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">return</span> leftIsNull != rightIsNull;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}  <span class="comment">// namespace Utils</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif  // YOU_UTILS_OPTION_H_</span></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_option_html_afea3ed7b1f0c848b566a85e8f4ade128"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html#afea3ed7b1f0c848b566a85e8f4ade128">You::Utils::Option::operator==</a></div><div class="ttdeci">bool operator==(const Option&lt; T &gt; &amp;rhs) const </div><div class="ttdoc">Checks for equality with another Option value. </div><div class="ttdef"><b>Definition:</b> option.h:54</div></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_option_html_a5c212336d85d700fcfd42106a583291a"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html#a5c212336d85d700fcfd42106a583291a">You::Utils::Option::Option</a></div><div class="ttdeci">Option()</div><div class="ttdoc">Default constructor. This initialises a None value. </div><div class="ttdef"><b>Definition:</b> option.h:20</div></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_option_html"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a></div><div class="ttdoc">Implements an option type. </div><div class="ttdef"><b>Definition:</b> option.h:17</div></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_option_html_a886cd375a5ed16ceda824fd31d1d2bd1"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html#a886cd375a5ed16ceda824fd31d1d2bd1">You::Utils::Option::get</a></div><div class="ttdeci">const T &amp; get() const </div><div class="ttdoc">Retrieves the value of the option type. </div><div class="ttdef"><b>Definition:</b> option.h:40</div></div>
-<div class="ttc" id="class_you_1_1_utils_1_1_option_html_a6d512cd059385d630e16bccec5c0c4c9"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html#a6d512cd059385d630e16bccec5c0c4c9">You::Utils::Option::operator!=</a></div><div class="ttdeci">bool operator!=(const Option&lt; T &gt; &amp;rhs) const </div><div class="ttdoc">Inverse of Option<T>::operator==. </div><div class="ttdef"><b>Definition:</b> option.h:66</div></div>
+<div class="ttc" id="class_you_1_1_utils_1_1_option_html_a6d512cd059385d630e16bccec5c0c4c9"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html#a6d512cd059385d630e16bccec5c0c4c9">You::Utils::Option::operator!=</a></div><div class="ttdeci">bool operator!=(const Option&lt; T &gt; &amp;rhs) const </div><div class="ttdoc">Checks for inequality with another Option value. </div><div class="ttdef"><b>Definition:</b> option.h:67</div></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_option_html_af2225848527da4d9cb481fc688505424"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html#af2225848527da4d9cb481fc688505424">You::Utils::Option::Option</a></div><div class="ttdeci">Option(const T &amp;value)</div><div class="ttdoc">Copy constructor. This copies the value from an existing value. </div><div class="ttdef"><b>Definition:</b> option.h:29</div></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_option_html_acdf21950e74b8233309f375f297f6e6e"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html#acdf21950e74b8233309f375f297f6e6e">You::Utils::Option::Option</a></div><div class="ttdeci">Option(T &amp;&amp;value)</div><div class="ttdoc">Move constructor. This initialises a value from an existing value. </div><div class="ttdef"><b>Definition:</b> option.h:24</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 7 2014 01:27:57 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 7 2014 02:00:40 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -14,5 +14,6 @@ var searchData=
   ['deserialize',['deserialize',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a6390575e523ec23be6430cf6533d068d',1,'You::QueryEngine::Internal::TaskSerializer']]],
   ['deserializetask',['deserializeTask',['../class_you_1_1_query_engine_1_1_unit_tests_1_1_task_builder_test.html#acd2232185428d7648cf1abdff591a80b',1,'You::QueryEngine::UnitTests::TaskBuilderTest']]],
   ['due',['due',['../struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html#a9c7f2cae094cfa990213d888fa88ce8e',1,'You::NLP::ADD_QUERY::due()'],['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#a94797b2d9cdcb8d04b3812a2a31a3de7',1,'You::NLP::EDIT_QUERY::due()'],['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#aa7d18e007398aa3eaf6c8ec3feda45d1a560adeb8e38adbf30d2a533f9fdb5a96',1,'You::NLP::EDIT_QUERY::DUE()']]],
+  ['dummyqueryexecutor',['DummyQueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_unit_tests_1_1_dummy_query_executor.html#a16396943019655d7adb131a1bc2eb6ce',1,'You::Controller::Internal::UnitTests::DummyQueryExecutor']]],
   ['dummyqueryexecutor',['DummyQueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_unit_tests_1_1_dummy_query_executor.html',1,'You::Controller::Internal::UnitTests']]]
 ];
