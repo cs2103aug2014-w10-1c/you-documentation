@@ -129,19 +129,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_main_g_u_i_1_1_task_panel_manager.html#a718909c5e88678c583b99473a3e5ae68">deleteTask</a>(QTreeWidgetItem* task);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_1;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_2;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> updateRowNumbers();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_1;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_3;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_2;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_4;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_3;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_5;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif  // YOU_GUI_TASK_PANEL_MANAGER_H_</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_4;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_5;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif  // YOU_GUI_TASK_PANEL_MANAGER_H_</span></div>
 <div class="ttc" id="class_you_main_g_u_i_1_1_task_panel_manager_html_ad2509fda1b1899e021f7b30d0e13f108"><div class="ttname"><a href="class_you_main_g_u_i_1_1_task_panel_manager.html#ad2509fda1b1899e021f7b30d0e13f108">YouMainGUI::TaskPanelManager::~TaskPanelManager</a></div><div class="ttdeci">~TaskPanelManager()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:19</div></div>
 <div class="ttc" id="class_you_main_g_u_i_1_1_base_manager_html"><div class="ttname"><a href="class_you_main_g_u_i_1_1_base_manager.html">YouMainGUI::BaseManager</a></div><div class="ttdoc">The class from which all components inherit. </div><div class="ttdef"><b>Definition:</b> base_manager.h:8</div></div>
 <div class="ttc" id="class_you_main_g_u_i_1_1_task_panel_manager_html_abeca62039696373e8c69717d526483a7"><div class="ttname"><a href="class_you_main_g_u_i_1_1_task_panel_manager.html#abeca62039696373e8c69717d526483a7">YouMainGUI::TaskPanelManager::TaskPanelManager</a></div><div class="ttdeci">TaskPanelManager(YouMainGUI *const parentGUI)</div><div class="ttdoc">Constructor inherited from BaseManager. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:15</div></div>
@@ -151,11 +153,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_you_main_g_u_i_1_1_task_panel_manager_html_ace9044940ff9a6568717b2030df61514"><div class="ttname"><a href="class_you_main_g_u_i_1_1_task_panel_manager.html#ace9044940ff9a6568717b2030df61514">YouMainGUI::TaskPanelManager::addTask</a></div><div class="ttdeci">void addTask(const You::Controller::Task &amp;task)</div><div class="ttdoc">Adds a task to the taskTreePanel. Only deals with top-level tasks. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:48</div></div>
 <div class="ttc" id="class_you_main_g_u_i_1_1_base_manager_html_aabea248a40b8c4a6a01d16ff21751af1"><div class="ttname"><a href="class_you_main_g_u_i_1_1_base_manager.html#aabea248a40b8c4a6a01d16ff21751af1">YouMainGUI::BaseManager::parentGUI</a></div><div class="ttdeci">YouMainGUI *const parentGUI</div><div class="ttdoc">Pointer to the main GUI. </div><div class="ttdef"><b>Definition:</b> base_manager.h:19</div></div>
 <div class="ttc" id="class_you_main_g_u_i_html"><div class="ttname"><a href="class_you_main_g_u_i.html">YouMainGUI</a></div><div class="ttdoc">The entity that deals with all GUI operations, and makes calls to the NLP engine. ...</div><div class="ttdef"><b>Definition:</b> you_main_gui.h:13</div></div>
-<div class="ttc" id="class_you_main_g_u_i_1_1_task_panel_manager_html_ad43ed824e73258eea1dea1e867086933"><div class="ttname"><a href="class_you_main_g_u_i_1_1_task_panel_manager.html#ad43ed824e73258eea1dea1e867086933">YouMainGUI::TaskPanelManager::editTask</a></div><div class="ttdeci">void editTask(const You::Controller::Task &amp;task)</div><div class="ttdoc">Edits a task. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:59</div></div>
+<div class="ttc" id="class_you_main_g_u_i_1_1_task_panel_manager_html_ad43ed824e73258eea1dea1e867086933"><div class="ttname"><a href="class_you_main_g_u_i_1_1_task_panel_manager.html#ad43ed824e73258eea1dea1e867086933">YouMainGUI::TaskPanelManager::editTask</a></div><div class="ttdeci">void editTask(const You::Controller::Task &amp;task)</div><div class="ttdoc">Edits a task. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:61</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 8 2014 03:45:30 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 8 2014 12:53:27 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
