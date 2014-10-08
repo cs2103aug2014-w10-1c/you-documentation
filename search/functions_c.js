@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['run',['run',['../class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#a3661f39926b4d47b4194badaac2e4866',1,'You::DataStore::Internal::IOperation::run()'],['../class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#a676733c0b3be9a91425a3ec83600ee54',1,'You::DataStore::Internal::EraseOperation::run()'],['../class_you_1_1_data_store_1_1_internal_1_1_post_operation.html#aad434c3081d91e67668b9f6c9db7be5f',1,'You::DataStore::Internal::PostOperation::run()'],['../class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#a20745939374efa8f0ed0c060569e788d',1,'You::DataStore::Internal::PutOperation::run()']]]
+  ['query',['query',['../class_you_1_1_controller_1_1_controller.html#a556e94e66610181dc386c054441ae754',1,'You::Controller::Controller::query()'],['../class_you_main_g_u_i_1_1_n_l_p_manager.html#a5cb387834e6f697ee37501546ea280c5',1,'YouMainGUI::NLPManager::query()']]],
+  ['queryexecutor',['QueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_query_executor.html#a8062c76c0319fd9264cdb2c455478e6b',1,'You::Controller::Internal::QueryExecutor']]],
+  ['queryexecutorbuildervisitor',['QueryExecutorBuilderVisitor',['../class_you_1_1_controller_1_1_internal_1_1_query_executor_builder_visitor.html#af9f4895647aca5779f443788e09585e1',1,'You::Controller::Internal::QueryExecutorBuilderVisitor']]]
 ];

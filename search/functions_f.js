@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['updatetask',['updateTask',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#ae9263106bc8784ae65cd8173ec0d6efd',1,'You::QueryEngine::Internal::TaskGraph::updateTask()'],['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html#aa1c2615894e3c7470eafeb9230fc341b',1,'You::QueryEngine::Internal::Action::UpdateTask::UpdateTask(Task::ID id, Task::Description description, Task::Time deadline, Task::Priority priority, Task::Dependencies dependencies)'],['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html#a867e282ab1cebcea0c02e72e66009db0',1,'You::QueryEngine::Internal::Action::UpdateTask::UpdateTask(Task::ID id, bool completed)']]]
+  ['task',['Task',['../class_you_1_1_query_engine_1_1_task.html#a27c41adfa99810a5635302646651b5b3',1,'You::QueryEngine::Task']]],
+  ['taskpanelmanager',['TaskPanelManager',['../class_you_main_g_u_i_1_1_task_panel_manager.html#abeca62039696373e8c69717d526483a7',1,'YouMainGUI::TaskPanelManager']]],
+  ['try_5fconvert',['try_convert',['../structboost_1_1detail_1_1lexical__converter__impl_3_01_q_string_00_01_source_01_4.html#a0299d35511f2aa9c9311b53903b2d1fa',1,'boost::detail::lexical_converter_impl&lt; QString, Source &gt;']]]
 ];

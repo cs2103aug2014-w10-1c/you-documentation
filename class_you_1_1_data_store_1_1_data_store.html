@@ -89,6 +89,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_you_1_1_data_store_1_1_data_store-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">You::DataStore::DataStore Class Reference</div>  </div>
@@ -97,22 +99,87 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a897ab97e4bad12334859fee77326117e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a897ab97e4bad12334859fee77326117e"></a>
-<a class="el" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a> &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
-<tr class="separator:a897ab97e4bad12334859fee77326117e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd4250086b8486ceb24ba7f282332824"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd4250086b8486ceb24ba7f282332824"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>post</b> (TaskId, SerializedTask &amp;)</td></tr>
-<tr class="separator:afd4250086b8486ceb24ba7f282332824"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac49081bb54833b53530faa20be99915e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac49081bb54833b53530faa20be99915e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>put</b> (TaskId, SerializedTask &amp;)</td></tr>
-<tr class="separator:ac49081bb54833b53530faa20be99915e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a441a0bde02ac59d40eeec636ea9ccf2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a441a0bde02ac59d40eeec636ea9ccf2f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (TaskId)</td></tr>
-<tr class="separator:a441a0bde02ac59d40eeec636ea9ccf2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2490bb2190590b5df501076f32f18cf1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2490bb2190590b5df501076f32f18cf1"></a>
-std::vector&lt; SerializedTask &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getAllTask</b> ()</td></tr>
-<tr class="separator:a2490bb2190590b5df501076f32f18cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bc46409df84912cc90dc5d46bea3768"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#a5bc46409df84912cc90dc5d46bea3768">begin</a> ()</td></tr>
+<tr class="memdesc:a5bc46409df84912cc90dc5d46bea3768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a new transaction It will do a busy wait if there is another transaction taking place.  <a href="#a5bc46409df84912cc90dc5d46bea3768">More...</a><br /></td></tr>
+<tr class="separator:a5bc46409df84912cc90dc5d46bea3768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8051e3051034dd42b1101904fc1447"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b8051e3051034dd42b1101904fc1447"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#a4b8051e3051034dd42b1101904fc1447">post</a> (TaskId, const SerializedTask &amp;)</td></tr>
+<tr class="memdesc:a4b8051e3051034dd42b1101904fc1447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a post operation to operation queue. <br /></td></tr>
+<tr class="separator:a4b8051e3051034dd42b1101904fc1447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8399e2d3682ad6f193a2f18064913a80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8399e2d3682ad6f193a2f18064913a80"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#a8399e2d3682ad6f193a2f18064913a80">put</a> (TaskId, const SerializedTask &amp;)</td></tr>
+<tr class="memdesc:a8399e2d3682ad6f193a2f18064913a80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a put operation to operation queue. <br /></td></tr>
+<tr class="separator:a8399e2d3682ad6f193a2f18064913a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad38c4cdc5652eca4a927c5598c4dfee6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad38c4cdc5652eca4a927c5598c4dfee6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#ad38c4cdc5652eca4a927c5598c4dfee6">erase</a> (TaskId)</td></tr>
+<tr class="memdesc:ad38c4cdc5652eca4a927c5598c4dfee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push an erase operation to operation queue. <br /></td></tr>
+<tr class="separator:ad38c4cdc5652eca4a927c5598c4dfee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d5ffd8bcb18b2c1f19e78b4fbb91357"><td class="memItemLeft" align="right" valign="top">std::vector&lt; SerializedTask &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#a0d5ffd8bcb18b2c1f19e78b4fbb91357">getAllTask</a> ()</td></tr>
+<tr class="memdesc:a0d5ffd8bcb18b2c1f19e78b4fbb91357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all tasks.  <a href="#a0d5ffd8bcb18b2c1f19e78b4fbb91357">More...</a><br /></td></tr>
+<tr class="separator:a0d5ffd8bcb18b2c1f19e78b4fbb91357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acabadd055d0b71e2f59b1512831ee057"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acabadd055d0b71e2f59b1512831ee057"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#acabadd055d0b71e2f59b1512831ee057">notifyCommit</a> ()</td></tr>
+<tr class="memdesc:acabadd055d0b71e2f59b1512831ee057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify <a class="el" href="class_you_1_1_data_store_1_1_data_store.html">DataStore</a> that a transaction is committed To be used only by <a class="el" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a> object. <br /></td></tr>
+<tr class="separator:acabadd055d0b71e2f59b1512831ee057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9fcdfa76cac7eb0189ead6aa8dae849"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9fcdfa76cac7eb0189ead6aa8dae849"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#aa9fcdfa76cac7eb0189ead6aa8dae849">notifyRollback</a> ()</td></tr>
+<tr class="memdesc:aa9fcdfa76cac7eb0189ead6aa8dae849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify <a class="el" href="class_you_1_1_data_store_1_1_data_store.html">DataStore</a> that a transaction is rolled back To be used only by <a class="el" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a> object. <br /></td></tr>
+<tr class="separator:aa9fcdfa76cac7eb0189ead6aa8dae849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bceb6f60bbed31b0ec8f389254f8899"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bceb6f60bbed31b0ec8f389254f8899"></a>
+<a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_internal_data_store.html">Internal::InternalDataStore</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#a0bceb6f60bbed31b0ec8f389254f8899">getInternal</a> ()</td></tr>
+<tr class="memdesc:a0bceb6f60bbed31b0ec8f389254f8899"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the instance of InternalDataStore. <br /></td></tr>
+<tr class="separator:a0bceb6f60bbed31b0ec8f389254f8899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ad8a6c062b75734c85e0afe742e8e8e5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8a6c062b75734c85e0afe742e8e8e5a"></a>
+static <a class="el" href="class_you_1_1_data_store_1_1_data_store.html">DataStore</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_data_store.html#ad8a6c062b75734c85e0afe742e8e8e5a">get</a> ()</td></tr>
+<tr class="memdesc:ad8a6c062b75734c85e0afe742e8e8e5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the instance of <a class="el" href="class_you_1_1_data_store_1_1_data_store.html">DataStore</a>. <br /></td></tr>
+<tr class="separator:ad8a6c062b75734c85e0afe742e8e8e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a0ea0f25282f40c00566d64b370ce6539"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ea0f25282f40c00566d64b370ce6539"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DataStoreApiTest</b></td></tr>
+<tr class="separator:a0ea0f25282f40c00566d64b370ce6539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5bc46409df84912cc90dc5d46bea3768"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a> &amp; You::DataStore::DataStore::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start a new transaction It will do a busy wait if there is another transaction taking place. </p>
+<dl class="section return"><dt>Returns</dt><dd>a reference to a new <a class="el" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0d5ffd8bcb18b2c1f19e78b4fbb91357"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; SerializedTask &gt; You::DataStore::DataStore::getAllTask </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all tasks. </p>
+<dl class="section return"><dt>Returns</dt><dd>a vector of SerializedTasks </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>You-DataStore/<a class="el" href="datastore_8h_source.html">datastore.h</a></li>
 <li>You-DataStore/datastore.cpp</li>
@@ -120,7 +187,7 @@ std::vector&lt; SerializedTask &gt;&#160;</td><td class="memItemRight" valign="b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 8 2014 00:20:49 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 8 2014 00:39:01 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
