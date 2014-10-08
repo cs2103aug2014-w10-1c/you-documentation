@@ -122,22 +122,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_utils_1_1_option.html#af2225848527da4d9cb481fc688505424">Option</a> (const T &amp;value)</td></tr>
 <tr class="memdesc:af2225848527da4d9cb481fc688505424"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor. This copies the value from an existing value. <br /></td></tr>
 <tr class="separator:af2225848527da4d9cb481fc688505424"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71746464f9c081e3af7428fb344e6737"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71746464f9c081e3af7428fb344e6737"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_utils_1_1_option.html#a71746464f9c081e3af7428fb344e6737">operator bool</a> () const </td></tr>
-<tr class="memdesc:a71746464f9c081e3af7428fb344e6737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion to bool. This is to check if this is a None value. <br /></td></tr>
+<tr class="memitem:a71746464f9c081e3af7428fb344e6737"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_utils_1_1_option.html#a71746464f9c081e3af7428fb344e6737">operator bool</a> () const   throw ()</td></tr>
+<tr class="memdesc:a71746464f9c081e3af7428fb344e6737"><td class="mdescLeft">&#160;</td><td class="mdescRight">By default boost::optional doesn't support the use of an implicit conversion to bool.  <a href="#a71746464f9c081e3af7428fb344e6737">More...</a><br /></td></tr>
 <tr class="separator:a71746464f9c081e3af7428fb344e6737"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a886cd375a5ed16ceda824fd31d1d2bd1"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_utils_1_1_option.html#a886cd375a5ed16ceda824fd31d1d2bd1">get</a> () const </td></tr>
-<tr class="memdesc:a886cd375a5ed16ceda824fd31d1d2bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the value of the option type.  <a href="#a886cd375a5ed16ceda824fd31d1d2bd1">More...</a><br /></td></tr>
-<tr class="separator:a886cd375a5ed16ceda824fd31d1d2bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64c92f98050715a51805e4710fed8c9c"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_utils_1_1_option.html#a64c92f98050715a51805e4710fed8c9c">get</a> ()</td></tr>
-<tr class="memdesc:a64c92f98050715a51805e4710fed8c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the value of the option type.  <a href="#a64c92f98050715a51805e4710fed8c9c">More...</a><br /></td></tr>
-<tr class="separator:a64c92f98050715a51805e4710fed8c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afea3ed7b1f0c848b566a85e8f4ade128"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_utils_1_1_option.html#afea3ed7b1f0c848b566a85e8f4ade128">operator==</a> (const <a class="el" href="class_you_1_1_utils_1_1_option.html">Option</a>&lt; T &gt; &amp;rhs) const </td></tr>
-<tr class="memdesc:afea3ed7b1f0c848b566a85e8f4ade128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for equality with another <a class="el" href="class_you_1_1_utils_1_1_option.html" title="Implements an option type. ">Option</a> value.  <a href="#afea3ed7b1f0c848b566a85e8f4ade128">More...</a><br /></td></tr>
-<tr class="separator:afea3ed7b1f0c848b566a85e8f4ade128"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d512cd059385d630e16bccec5c0c4c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_utils_1_1_option.html#a6d512cd059385d630e16bccec5c0c4c9">operator!=</a> (const <a class="el" href="class_you_1_1_utils_1_1_option.html">Option</a>&lt; T &gt; &amp;rhs) const </td></tr>
-<tr class="memdesc:a6d512cd059385d630e16bccec5c0c4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for inequality with another <a class="el" href="class_you_1_1_utils_1_1_option.html" title="Implements an option type. ">Option</a> value.  <a href="#a6d512cd059385d630e16bccec5c0c4c9">More...</a><br /></td></tr>
-<tr class="separator:a6d512cd059385d630e16bccec5c0c4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
@@ -147,7 +134,7 @@ class You::Utils::Option&lt; T &gt;</h3>
 <p>This means that either the null value or an actual value is contained within.</p>
 <p>To test whether there is an actual value, cast this to a boolean. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a886cd375a5ed16ceda824fd31d1d2bd1"></a>
+<a class="anchor" id="a71746464f9c081e3af7428fb344e6737"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -157,38 +144,16 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const T&amp; <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; T &gt;::get </td>
+          <td class="memname"><a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; T &gt;::operator bool </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Retrieves the value of the option type. </p>
-<p>The result is undefined if this is a None value. </p>
-
-</div>
-</div>
-<a class="anchor" id="a64c92f98050715a51805e4710fed8c9c"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">T&amp; <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; T &gt;::get </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td align="right">throw </td><td>(</td><td colspan="2"></td>
+        </tr>
+        <tr>
+          <td align="right"></td><td>)</td><td></td><td></td>
         </tr>
       </table>
   </td>
@@ -198,66 +163,8 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Retrieves the value of the option type. </p>
-<p>The result is undefined if this is a None value. </p>
-
-</div>
-</div>
-<a class="anchor" id="a6d512cd059385d630e16bccec5c0c4c9"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; T &gt;::operator!= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_you_1_1_utils_1_1_option.html">Option</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks for inequality with another <a class="el" href="class_you_1_1_utils_1_1_option.html" title="Implements an option type. ">Option</a> value. </p>
-<p>Equality is defined as none-ness, and if both are not none, then equality of the value. </p>
-
-</div>
-</div>
-<a class="anchor" id="afea3ed7b1f0c848b566a85e8f4ade128"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; T &gt;::operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_you_1_1_utils_1_1_option.html">Option</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks for equality with another <a class="el" href="class_you_1_1_utils_1_1_option.html" title="Implements an option type. ">Option</a> value. </p>
-<p>Equality is defined as none-ness, and if both are not none, then equality of the value. </p>
+<p>By default boost::optional doesn't support the use of an implicit conversion to bool. </p>
+<p>We want this, so define our override. </p>
 
 </div>
 </div>
@@ -267,7 +174,7 @@ template&lt;typename T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 8 2014 12:53:29 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 8 2014 15:18:09 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
