@@ -15,7 +15,7 @@ var indexSectionsWithContent =
   5: "cdptv",
   6: "fgilsv",
   7: "f",
-  8: "cdnp",
+  8: "cdnpr",
   9: "ey",
   10: "y"
 };

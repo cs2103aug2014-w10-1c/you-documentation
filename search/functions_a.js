@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['ontransactioncommit',['onTransactionCommit',['../class_you_1_1_data_store_1_1_internal_1_1_data_store.html#ac8e1098a7826b04273cfd581734b6940',1,'You::DataStore::Internal::DataStore']]],
+  ['ontransactionrollback',['onTransactionRollback',['../class_you_1_1_data_store_1_1_internal_1_1_data_store.html#a72fe644e00574a76c340f61e85aa414f',1,'You::DataStore::Internal::DataStore']]],
   ['operator_20bool',['operator bool',['../class_you_1_1_utils_1_1_option.html#a71746464f9c081e3af7428fb344e6737',1,'You::Utils::Option']]],
   ['operator_20ffilter',['operator FFilter',['../class_you_1_1_query_engine_1_1_filter.html#aca295c7c2a6c28ca22535f90fdb396fd',1,'You::QueryEngine::Filter']]],
   ['operator_20task',['operator Task',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a5376c54ef9be92cc78cab554e864ed16',1,'You::QueryEngine::Internal::TaskBuilder']]],

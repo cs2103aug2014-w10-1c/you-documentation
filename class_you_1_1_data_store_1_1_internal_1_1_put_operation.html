@@ -100,7 +100,8 @@ Inheritance diagram for You::DataStore::Internal::PutOperation:</div>
  <div class="center">
   <img src="class_you_1_1_data_store_1_1_internal_1_1_put_operation.png" usemap="#You::DataStore::Internal::PutOperation_map" alt=""/>
   <map id="You::DataStore::Internal::PutOperation_map" name="You::DataStore::Internal::PutOperation_map">
-<area href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html" title="A pure virtual class of operations to be put into transaction stack. " alt="You::DataStore::Internal::IOperation" shape="rect" coords="0,0,225,24"/>
+<area href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html" alt="You::DataStore::Internal::SerializationOperation" shape="rect" coords="0,56,276,80"/>
+<area href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html" title="A pure virtual class of operations to be put into transaction stack. " alt="You::DataStore::Internal::IOperation" shape="rect" coords="0,0,276,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -109,21 +110,63 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6a364406ce6a5d8ece88dfb717d4a752"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a364406ce6a5d8ece88dfb717d4a752"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>PutOperation</b> (TaskId, const SerializedTask &amp;)</td></tr>
 <tr class="separator:a6a364406ce6a5d8ece88dfb717d4a752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20745939374efa8f0ed0c060569e788d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20745939374efa8f0ed0c060569e788d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#a20745939374efa8f0ed0c060569e788d">run</a> ()</td></tr>
-<tr class="memdesc:a20745939374efa8f0ed0c060569e788d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the operation. <br /></td></tr>
-<tr class="separator:a20745939374efa8f0ed0c060569e788d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e8bea22637bc1936b46d9436cec8b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#af1e8bea22637bc1936b46d9436cec8b5">run</a> (pugi::xml_document &amp;document) override</td></tr>
+<tr class="memdesc:af1e8bea22637bc1936b46d9436cec8b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the operation.  <a href="#af1e8bea22637bc1936b46d9436cec8b5">More...</a><br /></td></tr>
+<tr class="separator:af1e8bea22637bc1936b46d9436cec8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html">You::DataStore::Internal::SerializationOperation</a></td></tr>
+<tr class="memitem:af7fc2bdfa56691dc0bacade0098e617d inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7fc2bdfa56691dc0bacade0098e617d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#af7fc2bdfa56691dc0bacade0098e617d">serialize</a> (const SerializedTask &amp;, pugi::xml_node &amp;)</td></tr>
+<tr class="memdesc:af7fc2bdfa56691dc0bacade0098e617d inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize task to an xml node. <br /></td></tr>
+<tr class="separator:af7fc2bdfa56691dc0bacade0098e617d inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bb1452c7033096c3251755f4441be5a inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bb1452c7033096c3251755f4441be5a"></a>
+static SerializedTask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#a8bb1452c7033096c3251755f4441be5a">deserialize</a> (const pugi::xml_node &amp;)</td></tr>
+<tr class="memdesc:a8bb1452c7033096c3251755f4441be5a inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize task from an xml node. <br /></td></tr>
+<tr class="separator:a8bb1452c7033096c3251755f4441be5a inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html">You::DataStore::Internal::IOperation</a></td></tr>
 <tr class="memitem:a395d02d68ed703c5db17d3d302abf924 inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a395d02d68ed703c5db17d3d302abf924"></a>
-TaskId&#160;</td><td class="memItemRight" valign="bottom"><b>taskId</b></td></tr>
+TaskId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#a395d02d68ed703c5db17d3d302abf924">taskId</a></td></tr>
+<tr class="memdesc:a395d02d68ed703c5db17d3d302abf924 inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Task ID to modify. <br /></td></tr>
 <tr class="separator:a395d02d68ed703c5db17d3d302abf924 inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad700dd1a8248cdee50d3e3edf6547161 inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad700dd1a8248cdee50d3e3edf6547161"></a>
-SerializedTask&#160;</td><td class="memItemRight" valign="bottom"><b>task</b></td></tr>
-<tr class="separator:ad700dd1a8248cdee50d3e3edf6547161 inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af1e8bea22637bc1936b46d9436cec8b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool You::DataStore::Internal::PutOperation::run </td>
+          <td>(</td>
+          <td class="paramtype">pugi::xml_document &amp;&#160;</td>
+          <td class="paramname"><em>document</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes the operation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">document</td><td>The document to modify. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the operation succeeded. </dd></dl>
+
+<p>Implements <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#a736af769502508902192a7723e554171">You::DataStore::Internal::IOperation</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>You-DataStore/internal/operations/<a class="el" href="put__operation_8h_source.html">put_operation.h</a></li>
 <li>You-DataStore/internal/operations/put_operation.cpp</li>
@@ -131,7 +174,7 @@ SerializedTask&#160;</td><td class="memItemRight" valign="bottom"><b>task</b></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 8 2014 15:18:09 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 9 2014 15:13:39 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

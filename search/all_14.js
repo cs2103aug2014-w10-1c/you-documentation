@@ -7,6 +7,7 @@ var searchData=
   ['_7esessionmanager',['~SessionManager',['../class_you_main_g_u_i_1_1_session_manager.html#a6ac6598795baf548b2c07f4e489f25ae',1,'YouMainGUI::SessionManager']]],
   ['_7esystemtraymanager',['~SystemTrayManager',['../class_you_main_g_u_i_1_1_system_tray_manager.html#a86fafd4e5bbf4a85ad23019e9e441157',1,'YouMainGUI::SystemTrayManager']]],
   ['_7etaskpanelmanager',['~TaskPanelManager',['../class_you_main_g_u_i_1_1_task_panel_manager.html#ad2509fda1b1899e021f7b30d0e13f108',1,'YouMainGUI::TaskPanelManager']]],
+  ['_7etransaction',['~Transaction',['../class_you_1_1_data_store_1_1_transaction.html#a502208b2d160ed9cbadb9cda184980a6',1,'You::DataStore::Transaction']]],
   ['_7eupdatetask',['~UpdateTask',['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html#ae9f6aa0aa09169b3234f93ab4baf2544',1,'You::QueryEngine::Internal::Action::UpdateTask']]],
   ['_7eyoumaingui',['~YouMainGUI',['../class_you_main_g_u_i.html#a6753e12e45581105c4798d4ba6f8e309',1,'YouMainGUI']]]
 ];

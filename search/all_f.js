@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['savedata',['saveData',['../class_you_1_1_data_store_1_1_internal_1_1_internal_data_store.html#a345dab73433d2067e5505d4b2ea4dd99',1,'You::DataStore::Internal::InternalDataStore']]],
-  ['serialize',['serialize',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a3ad4efb9e980b5ea89a0b1523018551b',1,'You::QueryEngine::Internal::TaskSerializer']]],
+  ['savedata',['saveData',['../class_you_1_1_data_store_1_1_internal_1_1_data_store.html#aa9830ed855d77ea421d64c0773e23f19',1,'You::DataStore::Internal::DataStore']]],
+  ['serializationoperation',['SerializationOperation',['../class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html',1,'You::DataStore::Internal']]],
+  ['serialize',['serialize',['../class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#af7fc2bdfa56691dc0bacade0098e617d',1,'You::DataStore::Internal::SerializationOperation::serialize()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a3ad4efb9e980b5ea89a0b1523018551b',1,'You::QueryEngine::Internal::TaskSerializer::serialize()']]],
   ['serializetask',['serializeTask',['../class_you_1_1_query_engine_1_1_unit_tests_1_1_task_builder_test.html#a8c5f8d7cf05c4da0d8ac540670e1868f',1,'You::QueryEngine::UnitTests::TaskBuilderTest']]],
   ['sessionmanager',['SessionManager',['../class_you_main_g_u_i_1_1_session_manager.html',1,'YouMainGUI']]],
   ['sessionmanager',['SessionManager',['../class_you_main_g_u_i_1_1_session_manager.html#afc0ca2765f87d20ffb4b942ca3c0c691',1,'YouMainGUI::SessionManager']]],
@@ -10,6 +11,6 @@ var searchData=
   ['state',['State',['../class_you_1_1_query_engine_1_1_internal_1_1_state.html',1,'You::QueryEngine::Internal']]],
   ['state_2eh',['state.h',['../state_8h.html',1,'']]],
   ['stringtype',['StringType',['../class_you_1_1_n_l_p_1_1_date_time_parser.html#ad44734bb65ae0695eb9df717ce8ce52c',1,'You::NLP::DateTimeParser::StringType()'],['../class_you_1_1_n_l_p_1_1_query_parser.html#a43e3e8eabdc5fbd901d3783d4f50f655',1,'You::NLP::QueryParser::StringType()']]],
-  ['systemtraymanager',['SystemTrayManager',['../class_you_main_g_u_i_1_1_system_tray_manager.html#a6cb412b4c27aa3149a0c2ba32edfdc62',1,'YouMainGUI::SystemTrayManager']]],
-  ['systemtraymanager',['SystemTrayManager',['../class_you_main_g_u_i_1_1_system_tray_manager.html',1,'YouMainGUI']]]
+  ['systemtraymanager',['SystemTrayManager',['../class_you_main_g_u_i_1_1_system_tray_manager.html',1,'YouMainGUI']]],
+  ['systemtraymanager',['SystemTrayManager',['../class_you_main_g_u_i_1_1_system_tray_manager.html#a6cb412b4c27aa3149a0c2ba32edfdc62',1,'YouMainGUI::SystemTrayManager']]]
 ];
