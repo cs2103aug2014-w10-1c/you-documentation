@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespace_you.html">You</a></li><li class="navelem"><b>QueryEngine</b></li><li class="navelem"><b>Internal</b></li><li class="navelem"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_you.html">You</a></li><li class="navelem"><a class="el" href="namespace_you_1_1_query_engine.html">QueryEngine</a></li><li class="navelem"><a class="el" href="namespace_you_1_1_query_engine_1_1_internal.html">Internal</a></li><li class="navelem"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -123,24 +123,24 @@ typedef boost::graph_traits<br class="typebreak" />
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a49f5534ae5b7675429173b5d2fda668f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a49f5534ae5b7675429173b5d2fda668f">addTask</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task)</td></tr>
-<tr class="memdesc:a49f5534ae5b7675429173b5d2fda668f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a task to the graph if it is not exist May throw CircularDependencyException.  <a href="#a49f5534ae5b7675429173b5d2fda668f">More...</a><br /></td></tr>
+<tr class="memdesc:a49f5534ae5b7675429173b5d2fda668f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a task to the graph if it is not exist.  <a href="#a49f5534ae5b7675429173b5d2fda668f">More...</a><br /></td></tr>
 <tr class="separator:a49f5534ae5b7675429173b5d2fda668f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cc220f1fdbc985de3e93faa589026d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a7cc220f1fdbc985de3e93faa589026d9">deleteTask</a> (const Task::ID id)</td></tr>
-<tr class="memdesc:a7cc220f1fdbc985de3e93faa589026d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a task from the graph May throw <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_not_found_exception.html" title="An exception thrown when trying to access a task that does not exists. ">TaskNotFoundException</a>.  <a href="#a7cc220f1fdbc985de3e93faa589026d9">More...</a><br /></td></tr>
+<tr class="memdesc:a7cc220f1fdbc985de3e93faa589026d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a task from the graph.  <a href="#a7cc220f1fdbc985de3e93faa589026d9">More...</a><br /></td></tr>
 <tr class="separator:a7cc220f1fdbc985de3e93faa589026d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9263106bc8784ae65cd8173ec0d6efd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#ae9263106bc8784ae65cd8173ec0d6efd">updateTask</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task)</td></tr>
 <tr class="memdesc:ae9263106bc8784ae65cd8173ec0d6efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a task from the graph This means rebuilding the graph since dependencies may change.  <a href="#ae9263106bc8784ae65cd8173ec0d6efd">More...</a><br /></td></tr>
 <tr class="separator:ae9263106bc8784ae65cd8173ec0d6efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b6bcf0733b501741a96f4249ed8d272"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a3b6bcf0733b501741a96f4249ed8d272">getTask</a> (const Task::ID id)</td></tr>
-<tr class="memdesc:a3b6bcf0733b501741a96f4249ed8d272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a single task from the graph May throw <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_not_found_exception.html" title="An exception thrown when trying to access a task that does not exists. ">TaskNotFoundException</a>.  <a href="#a3b6bcf0733b501741a96f4249ed8d272">More...</a><br /></td></tr>
+<tr class="memdesc:a3b6bcf0733b501741a96f4249ed8d272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a single task from the graph May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">Exception::TaskNotFoundException</a>.  <a href="#a3b6bcf0733b501741a96f4249ed8d272">More...</a><br /></td></tr>
 <tr class="separator:a3b6bcf0733b501741a96f4249ed8d272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af53684bb4e770485875d18d42742edb1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#af53684bb4e770485875d18d42742edb1">getTaskList</a> () const </td></tr>
 <tr class="memdesc:af53684bb4e770485875d18d42742edb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of all tasks.  <a href="#af53684bb4e770485875d18d42742edb1">More...</a><br /></td></tr>
 <tr class="separator:af53684bb4e770485875d18d42742edb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f5eec1276d03ebeef58527b9d28260d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f5eec1276d03ebeef58527b9d28260d"></a>
-std::unordered_map&lt; Task::ID, <br class="typebreak" />
-<a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getTaskTable</b> () const </td></tr>
-<tr class="separator:a7f5eec1276d03ebeef58527b9d28260d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c09de523516f7490b10931482fcd6e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c09de523516f7490b10931482fcd6e9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a2c09de523516f7490b10931482fcd6e9">getSize</a> ()</td></tr>
+<tr class="memdesc:a2c09de523516f7490b10931482fcd6e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of task resided in the graph. <br /></td></tr>
+<tr class="separator:a2c09de523516f7490b10931482fcd6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines a simple task graph. </p>
@@ -159,10 +159,10 @@ std::unordered_map&lt; Task::ID, <br class="typebreak" />
       </table>
 </div><div class="memdoc">
 
-<p>Add a task to the graph if it is not exist May throw CircularDependencyException. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Add a task to the graph if it is not exist. </p>
+<p>May throw CircularDependencyException if it causes circular dependency. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The task id to be added. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">task</td><td>The task to be added. </td></tr>
   </table>
   </dd>
 </dl>
@@ -184,8 +184,8 @@ std::unordered_map&lt; Task::ID, <br class="typebreak" />
       </table>
 </div><div class="memdoc">
 
-<p>Delete a task from the graph May throw <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_not_found_exception.html" title="An exception thrown when trying to access a task that does not exists. ">TaskNotFoundException</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Delete a task from the graph. </p>
+<p>May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">Exception::TaskNotFoundException</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The id of the to-be deleted task </td></tr>
   </table>
@@ -209,7 +209,13 @@ std::unordered_map&lt; Task::ID, <br class="typebreak" />
       </table>
 </div><div class="memdoc">
 
-<p>Retrieve a single task from the graph May throw <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_not_found_exception.html" title="An exception thrown when trying to access a task that does not exists. ">TaskNotFoundException</a>. </p>
+<p>Retrieve a single task from the graph May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">Exception::TaskNotFoundException</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The id of the task to be retrieved. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>The task with id id </dd></dl>
 
 </div>
@@ -247,7 +253,8 @@ std::unordered_map&lt; Task::ID, <br class="typebreak" />
 </div><div class="memdoc">
 
 <p>Update a task from the graph This means rebuilding the graph since dependencies may change. </p>
-<p>May throw <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_not_found_exception.html" title="An exception thrown when trying to access a task that does not exists. ">TaskNotFoundException</a> if trying to update non existent task. </p><dl class="params"><dt>Parameters</dt><dd>
+<p><br />
+May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">Exception::TaskNotFoundException</a> if trying to update non existent task. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">task</td><td>The updated task </td></tr>
   </table>
@@ -263,7 +270,7 @@ std::unordered_map&lt; Task::ID, <br class="typebreak" />
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 10 2014 00:37:18 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 10 2014 07:04:37 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

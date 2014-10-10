@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespace_you.html">You</a></li><li class="navelem"><b>QueryEngine</b></li><li class="navelem"><b>Internal</b></li><li class="navelem"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">State</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_you.html">You</a></li><li class="navelem"><a class="el" href="namespace_you_1_1_query_engine.html">QueryEngine</a></li><li class="navelem"><a class="el" href="namespace_you_1_1_query_engine_1_1_internal.html">Internal</a></li><li class="navelem"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">State</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Static class to store DataStore and <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> instances.  
+<p>Singleton class to store <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> instance.  
  <a href="class_you_1_1_query_engine_1_1_internal_1_1_state.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="state_8h_source.html">state.h</a>&gt;</code></p>
@@ -105,25 +105,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4b285e7045c96a1a9284df89268003cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b285e7045c96a1a9284df89268003cf"></a>
 <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html#a4b285e7045c96a1a9284df89268003cf">graph</a> () const </td></tr>
-<tr class="memdesc:a4b285e7045c96a1a9284df89268003cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the graph of the current instance. <br /></td></tr>
+<tr class="memdesc:a4b285e7045c96a1a9284df89268003cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the task graph. <br /></td></tr>
 <tr class="separator:a4b285e7045c96a1a9284df89268003cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbe5ae530e26203a3874f71023e78581"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbe5ae530e26203a3874f71023e78581"></a>
 Task::ID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html#abbe5ae530e26203a3874f71023e78581">inquireNewID</a> ()</td></tr>
-<tr class="memdesc:abbe5ae530e26203a3874f71023e78581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inquire a new, unique task id. <br /></td></tr>
+<tr class="memdesc:abbe5ae530e26203a3874f71023e78581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inquire a new and unique task id. <br /></td></tr>
 <tr class="separator:abbe5ae530e26203a3874f71023e78581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3e5fcb70b1e411c3ba3d520bc59e804"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3e5fcb70b1e411c3ba3d520bc59e804"></a>
 static <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">State</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html#ae3e5fcb70b1e411c3ba3d520bc59e804">get</a> ()</td></tr>
-<tr class="memdesc:ae3e5fcb70b1e411c3ba3d520bc59e804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current instance. <br /></td></tr>
+<tr class="memdesc:ae3e5fcb70b1e411c3ba3d520bc59e804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter of the current instance. <br /></td></tr>
 <tr class="separator:ae3e5fcb70b1e411c3ba3d520bc59e804"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6403b9e84c91bead84931fb1a1ebf8df"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html#a6403b9e84c91bead84931fb1a1ebf8df">clear</a> ()</td></tr>
-<tr class="memdesc:a6403b9e84c91bead84931fb1a1ebf8df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state to empty.  <a href="#a6403b9e84c91bead84931fb1a1ebf8df">More...</a><br /></td></tr>
+<tr class="memdesc:a6403b9e84c91bead84931fb1a1ebf8df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state back to empty state.  <a href="#a6403b9e84c91bead84931fb1a1ebf8df">More...</a><br /></td></tr>
 <tr class="separator:a6403b9e84c91bead84931fb1a1ebf8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Static class to store DataStore and <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> instances. </p>
+<div class="textblock"><p>Singleton class to store <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> instance. </p>
+<p><br />
+When the application run, only one <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html" title="Defines a simple task graph. ">TaskGraph</a> instance is alive. This singleton property of this class helped to achieve this property. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a6403b9e84c91bead84931fb1a1ebf8df"></a>
 <div class="memitem">
@@ -146,8 +148,9 @@ static <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.htm
 </table>
 </div><div class="memdoc">
 
-<p>Reset the state to empty. </p>
-<p>Be careful! </p>
+<p>Reset the state back to empty state. </p>
+<p><br />
+Should be used only if necessary. </p>
 
 </div>
 </div>
@@ -158,7 +161,7 @@ static <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.htm
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 10 2014 00:37:18 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 10 2014 07:04:37 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

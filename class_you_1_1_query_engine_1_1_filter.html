@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,20 +83,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespace_you.html">You</a></li><li class="navelem"><b>QueryEngine</b></li><li class="navelem"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_you.html">You</a></li><li class="navelem"><a class="el" href="namespace_you_1_1_query_engine.html">QueryEngine</a></li><li class="navelem"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_you_1_1_query_engine_1_1_filter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">You::QueryEngine::Filter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Base task filterer class New instances of the filter can only be create by using or combining common filters provided.  
+<p>Base class for filter object.  
  <a href="class_you_1_1_query_engine_1_1_filter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="filter_8h_source.html">filter.h</a>&gt;</code></p>
@@ -106,50 +107,55 @@ Public Types</h2></td></tr>
 <tr class="memitem:a1b6f2f164a823cf680f5bdf97bacdd3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b6f2f164a823cf680f5bdf97bacdd3b"></a>
 typedef std::function&lt; bool(const <br class="typebreak" />
 <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html#a1b6f2f164a823cf680f5bdf97bacdd3b">FFilter</a></td></tr>
-<tr class="memdesc:a1b6f2f164a823cf680f5bdf97bacdd3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the predicate function using in <a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base task filterer class New instances of the filter can only be create by using or combining common ...">Filter</a>. <br /></td></tr>
+<tr class="memdesc:a1b6f2f164a823cf680f5bdf97bacdd3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the predicate function using in <a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base class for filter object. ">Filter</a>. <br /></td></tr>
 <tr class="separator:a1b6f2f164a823cf680f5bdf97bacdd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a77cde7efb8387c04588e6d4f019608e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html#a77cde7efb8387c04588e6d4f019608e0">operator&amp;&amp;</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a> &amp;filter)</td></tr>
-<tr class="memdesc:a77cde7efb8387c04588e6d4f019608e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compose an AND operation with another filter.  <a href="#a77cde7efb8387c04588e6d4f019608e0">More...</a><br /></td></tr>
+<tr class="memdesc:a77cde7efb8387c04588e6d4f019608e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compose using AND operation with another filter.  <a href="#a77cde7efb8387c04588e6d4f019608e0">More...</a><br /></td></tr>
 <tr class="separator:a77cde7efb8387c04588e6d4f019608e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f7d96ec14a7b286f658bbcfa4445dba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html#a6f7d96ec14a7b286f658bbcfa4445dba">operator||</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a> &amp;filter)</td></tr>
-<tr class="memdesc:a6f7d96ec14a7b286f658bbcfa4445dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compose an OR operation with another filter.  <a href="#a6f7d96ec14a7b286f658bbcfa4445dba">More...</a><br /></td></tr>
+<tr class="memdesc:a6f7d96ec14a7b286f658bbcfa4445dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compose using OR operation with another filter.  <a href="#a6f7d96ec14a7b286f658bbcfa4445dba">More...</a><br /></td></tr>
 <tr class="separator:a6f7d96ec14a7b286f658bbcfa4445dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06bfc3775e911215ca349e5a965b5c1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html#a06bfc3775e911215ca349e5a965b5c1d">operator!</a> (void)</td></tr>
-<tr class="memdesc:a06bfc3775e911215ca349e5a965b5c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Negate a filter.  <a href="#a06bfc3775e911215ca349e5a965b5c1d">More...</a><br /></td></tr>
+<tr class="memitem:a06bfc3775e911215ca349e5a965b5c1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06bfc3775e911215ca349e5a965b5c1d"></a>
+<a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html#a06bfc3775e911215ca349e5a965b5c1d">operator!</a> (void)</td></tr>
+<tr class="memdesc:a06bfc3775e911215ca349e5a965b5c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invert the filter using NOT. <br /></td></tr>
 <tr class="separator:a06bfc3775e911215ca349e5a965b5c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a955ab7a0d5bfb4b220a04d45dfaeada1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html#a955ab7a0d5bfb4b220a04d45dfaeada1">butNot</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a> &amp;filter)</td></tr>
-<tr class="memdesc:a955ab7a0d5bfb4b220a04d45dfaeada1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compose an AND NOT operation with another filter.  <a href="#a955ab7a0d5bfb4b220a04d45dfaeada1">More...</a><br /></td></tr>
+<tr class="memdesc:a955ab7a0d5bfb4b220a04d45dfaeada1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for AND NOT operation with another filter.  <a href="#a955ab7a0d5bfb4b220a04d45dfaeada1">More...</a><br /></td></tr>
 <tr class="separator:a955ab7a0d5bfb4b220a04d45dfaeada1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca295c7c2a6c28ca22535f90fdb396fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca295c7c2a6c28ca22535f90fdb396fd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html#aca295c7c2a6c28ca22535f90fdb396fd">operator FFilter</a> () const </td></tr>
-<tr class="memdesc:aca295c7c2a6c28ca22535f90fdb396fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicitly cast to its containing predicate function. <br /></td></tr>
+<tr class="memdesc:aca295c7c2a6c28ca22535f90fdb396fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicitly cast a filter to its predicate function. <br /></td></tr>
 <tr class="separator:aca295c7c2a6c28ca22535f90fdb396fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60e2735c7a64aa5d6e57526499f98896"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60e2735c7a64aa5d6e57526499f98896"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html#a60e2735c7a64aa5d6e57526499f98896">operator()</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;) const </td></tr>
-<tr class="memdesc:a60e2735c7a64aa5d6e57526499f98896"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base task filterer class New instances of the filter can only be create by using or combining common ...">Filter</a> can be applied directly. <br /></td></tr>
+<tr class="memdesc:a60e2735c7a64aa5d6e57526499f98896"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base class for filter object. ">Filter</a> can be applied directly. <br /></td></tr>
 <tr class="separator:a60e2735c7a64aa5d6e57526499f98896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad20786a3c8edebd680ca546da5885f1e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad20786a3c8edebd680ca546da5885f1e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Filter</b> (const <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a> &amp;filter)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html#ad20786a3c8edebd680ca546da5885f1e">Filter</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a> &amp;filter)</td></tr>
+<tr class="memdesc:ad20786a3c8edebd680ca546da5885f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy construct a filter. <br /></td></tr>
 <tr class="separator:ad20786a3c8edebd680ca546da5885f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Common Filters</div></td></tr>
 <tr class="memitem:aaafc28d23d9b34c8c0f2b26939e4035c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaafc28d23d9b34c8c0f2b26939e4035c"></a>
-static <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>anyTask</b> ()</td></tr>
+static <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html#aaafc28d23d9b34c8c0f2b26939e4035c">anyTask</a> ()</td></tr>
+<tr class="memdesc:aaafc28d23d9b34c8c0f2b26939e4035c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base class for filter object. ">Filter</a> any task. <br /></td></tr>
 <tr class="separator:aaafc28d23d9b34c8c0f2b26939e4035c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52f7eb9dc00bbb925e0bd78504e96a0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52f7eb9dc00bbb925e0bd78504e96a0e"></a>
-static <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>idIsIn</b> (std::vector&lt; Task::ID &gt; taskIDs)</td></tr>
+static <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html#a52f7eb9dc00bbb925e0bd78504e96a0e">idIsIn</a> (std::vector&lt; Task::ID &gt; taskIDs)</td></tr>
+<tr class="memdesc:a52f7eb9dc00bbb925e0bd78504e96a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base class for filter object. ">Filter</a> tasks that id is in a list. <br /></td></tr>
 <tr class="separator:a52f7eb9dc00bbb925e0bd78504e96a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6acc39887e90f88af4f4e48578015202"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6acc39887e90f88af4f4e48578015202"></a>
-static <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>completed</b> ()</td></tr>
+static <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html#a6acc39887e90f88af4f4e48578015202">completed</a> ()</td></tr>
+<tr class="memdesc:a6acc39887e90f88af4f4e48578015202"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base class for filter object. ">Filter</a> completed tasks. <br /></td></tr>
 <tr class="separator:a6acc39887e90f88af4f4e48578015202"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base task filterer class New instances of the filter can only be create by using or combining common filters provided. </p>
+<div class="textblock"><p>Base class for filter object. </p>
+<p>New instances of the filter can be created by NLP by combining common filters provided. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a955ab7a0d5bfb4b220a04d45dfaeada1"></a>
 <div class="memitem">
@@ -165,38 +171,14 @@ static <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a
       </table>
 </div><div class="memdoc">
 
-<p>Compose an AND NOT operation with another filter. </p>
+<p>Shortcut for AND NOT operation with another filter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base task filterer class New instances of the filter can only be create by using or combining common ...">Filter</a> object to combine with. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base class for filter object. ">Filter</a> object to combine with. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Own reference </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a06bfc3775e911215ca349e5a965b5c1d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a> &amp; You::QueryEngine::Filter::operator! </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Negate a filter. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base task filterer class New instances of the filter can only be create by using or combining common ...">Filter</a> object to be negated. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -214,10 +196,10 @@ static <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a
       </table>
 </div><div class="memdoc">
 
-<p>Compose an AND operation with another filter. </p>
+<p>Compose using AND operation with another filter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base task filterer class New instances of the filter can only be create by using or combining common ...">Filter</a> object to combine with. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base class for filter object. ">Filter</a> object to combine with. </td></tr>
   </table>
   </dd>
 </dl>
@@ -239,10 +221,10 @@ static <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a
       </table>
 </div><div class="memdoc">
 
-<p>Compose an OR operation with another filter. </p>
+<p>Compose using OR operation with another filter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base task filterer class New instances of the filter can only be create by using or combining common ...">Filter</a> object to combine with. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base class for filter object. ">Filter</a> object to combine with. </td></tr>
   </table>
   </dd>
 </dl>
@@ -257,7 +239,7 @@ static <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 10 2014 00:37:18 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 10 2014 07:04:37 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

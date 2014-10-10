@@ -62,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,14 +89,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">api.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Defines the API for Query Engine.  
+<p>The entry point of the QueryEngine API, defines the QueryEngine class and Query interface.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;boost/variant.hpp&gt;</code><br />
@@ -107,55 +107,70 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query.html">You::QueryEngine::Query</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for all queries.  <a href="class_you_1_1_query_engine_1_1_query.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for queries.  <a href="class_you_1_1_query_engine_1_1_query.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html">You::QueryEngine::QueryEngine</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility class for <a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html" title="Utility class for QueryEngine  This is the API which will be called by Controller. ">QueryEngine</a> <br />
+This is the API which will be called by Controller.  <a href="class_you_1_1_query_engine_1_1_query_engine.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:namespace_you_1_1_query_engine"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_you_1_1_query_engine.html">You::QueryEngine</a></td></tr>
+<tr class="memdesc:namespace_you_1_1_query_engine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsible mainly for implementing and accepting high level queries from NLP and forward it to DataStore. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_you_1_1_query_engine_1_1_internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_you_1_1_query_engine_1_1_internal.html">You::QueryEngine::Internal</a></td></tr>
+<tr class="memdesc:namespace_you_1_1_query_engine_1_1_internal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hidden internal components. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_you_1_1_query_engine_1_1_internal_1_1_action"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_you_1_1_query_engine_1_1_internal_1_1_action.html">You::QueryEngine::Internal::Action</a></td></tr>
+<tr class="memdesc:namespace_you_1_1_query_engine_1_1_internal_1_1_action"><td class="mdescLeft">&#160;</td><td class="mdescRight">Several classes that implements <a class="el" href="class_you_1_1_query_engine_1_1_query.html" title="Interface for queries. ">Query</a> actions. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_you_1_1_query_engine_1_1_internal_1_1_exception"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_you_1_1_query_engine_1_1_internal_1_1_exception.html">You::QueryEngine::Internal::Exception</a></td></tr>
+<tr class="memdesc:namespace_you_1_1_query_engine_1_1_internal_1_1_exception"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handful of exception classes. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_you_1_1_query_engine_1_1_unit_tests"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_you_1_1_query_engine_1_1_unit_tests.html">You::QueryEngine::UnitTests</a></td></tr>
+<tr class="memdesc:namespace_you_1_1_query_engine_1_1_unit_tests"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the test classes for <a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html" title="Utility class for QueryEngine  This is the API which will be called by Controller. ">QueryEngine</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace_you"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_you.html">You</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:af5cc39d16dbccf177883f5ceff401fd7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#af5cc39d16dbccf177883f5ceff401fd7">YOU_QUERYENGINE_API_H_</a></td></tr>
+<tr class="separator:af5cc39d16dbccf177883f5ceff401fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a651f8867d13678410711e7f1c4672fce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a651f8867d13678410711e7f1c4672fce"></a>
 typedef boost::variant<br class="typebreak" />
 &lt; std::vector&lt; Task &gt;, Task, <br class="typebreak" />
-Task::ID, std::wstring &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>You::QueryEngine::Response</b></td></tr>
+Task::ID, std::wstring &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_you_1_1_query_engine.html#a651f8867d13678410711e7f1c4672fce">You::QueryEngine::Response</a></td></tr>
 <tr class="memdesc:a651f8867d13678410711e7f1c4672fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">A synthesized type for holding query responses. <br /></td></tr>
 <tr class="separator:a651f8867d13678410711e7f1c4672fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ae0443b492fc416ce29d74c03f9c69352"><td class="memItemLeft" align="right" valign="top">Response&#160;</td><td class="memItemRight" valign="bottom"><b>You::QueryEngine::executeQuery</b> (std::unique_ptr&lt; Query &gt; query)</td></tr>
-<tr class="memdesc:ae0443b492fc416ce29d74c03f9c69352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a query and return a response.  <a href="#ae0443b492fc416ce29d74c03f9c69352">More...</a><br /></td></tr>
-<tr class="separator:ae0443b492fc416ce29d74c03f9c69352"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Query Constructors</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Construct a query for adding a task</p>
-<dl class="section note"><dt>Note</dt><dd>Please use Task::DEFAULT_xxx to replace incomplete fields. </dd></dl>
-</div></td></tr>
-<tr class="memitem:af19d4d5602f7778e4b8b5c5c5fbe86ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af19d4d5602f7778e4b8b5c5c5fbe86ec"></a>
-std::unique_ptr&lt; Query &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>You::QueryEngine::AddTask</b> (Task::Description description, Task::Time deadline, Task::Priority priority, Task::Dependencies dependencies)</td></tr>
-<tr class="separator:af19d4d5602f7778e4b8b5c5c5fbe86ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab177b599fb76d336ad69502318b3027e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab177b599fb76d336ad69502318b3027e"></a>
-std::unique_ptr&lt; Query &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>You::QueryEngine::FilterTask</b> (const Filter &amp;filter)</td></tr>
-<tr class="separator:ab177b599fb76d336ad69502318b3027e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ef37161a8aea1be2b5bd39370d66248"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ef37161a8aea1be2b5bd39370d66248"></a>
-std::unique_ptr&lt; Query &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>You::QueryEngine::DeleteTask</b> (Task::ID id)</td></tr>
-<tr class="separator:a3ef37161a8aea1be2b5bd39370d66248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6265dead34b5791d06bfb2f84f4be4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6265dead34b5791d06bfb2f84f4be4d"></a>
-std::unique_ptr&lt; Query &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>You::QueryEngine::UpdateTask</b> (Task::ID id, Task::Description description, Task::Time deadline, Task::Priority priority, Task::Dependencies dependencies)</td></tr>
-<tr class="separator:ac6265dead34b5791d06bfb2f84f4be4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a671d9ef9d252fc1319dde51fea681c63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a671d9ef9d252fc1319dde51fea681c63"></a>
-std::unique_ptr&lt; Query &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>You::QueryEngine::UpdateTask</b> (Task::ID id, bool completed)</td></tr>
-<tr class="separator:a671d9ef9d252fc1319dde51fea681c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines the API for Query Engine. </p>
+<div class="textblock"><p>The entry point of the QueryEngine API, defines the QueryEngine class and Query interface. </p>
+<p><br />
+This component interfaces with You::Controller and You::DataStore.<br />
+ </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="af5cc39d16dbccf177883f5ceff401fd7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define YOU_QUERYENGINE_API_H_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 <dl class="section author"><dt>Author</dt><dd>A0112054Y </dd></dl>
-</div></div><!-- contents -->
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 10 2014 00:37:17 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 10 2014 07:04:36 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

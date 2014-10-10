@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespace_you.html">You</a></li><li class="navelem"><b>QueryEngine</b></li><li class="navelem"><a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_you.html">You</a></li><li class="navelem"><a class="el" href="namespace_you_1_1_query_engine.html">QueryEngine</a></li><li class="navelem"><a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -96,16 +96,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>The task model The task instances must be created using builder pattern.  
+<p>Defines the task model.  
  <a href="class_you_1_1_query_engine_1_1_task.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="task__model_8h_source.html">task_model.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Type Declarations for Task Fields</div></td></tr>
-<tr class="memitem:a9ea097b800c55d53d4ca09a5de21a55f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ea097b800c55d53d4ca09a5de21a55f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Priority</b> { <b>IMPORTANT</b>, 
-<b>NORMAL</b>
+<tr><td colspan="2"><div class="groupHeader">Typedefs</div></td></tr>
+<tr class="memitem:a9ea097b800c55d53d4ca09a5de21a55f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ea097b800c55d53d4ca09a5de21a55f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Priority</b> { <b>NORMAL</b>, 
+<b>HIGH</b>
  }</td></tr>
 <tr class="separator:a9ea097b800c55d53d4ca09a5de21a55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65b75d5a0cae208a4bd715ba2039637d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65b75d5a0cae208a4bd715ba2039637d"></a>
@@ -130,7 +130,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afc582759f4ec0c844d3a250470cf9949"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_task.html#afc582759f4ec0c844d3a250470cf9949">operator==</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;rhs) const </td></tr>
 <tr class="memdesc:afc582759f4ec0c844d3a250470cf9949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check equality of two tasks by comparing field by field.  <a href="#afc582759f4ec0c844d3a250470cf9949">More...</a><br /></td></tr>
 <tr class="separator:afc582759f4ec0c844d3a250470cf9949"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Getters for Field Values.</div></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Inlined Field Getters.</div></td></tr>
 <tr class="memitem:a0e6642449c71cd4825a4392e0e3fb271"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e6642449c71cd4825a4392e0e3fb271"></a>
 ID&#160;</td><td class="memItemRight" valign="bottom"><b>getID</b> () const </td></tr>
 <tr class="separator:a0e6642449c71cd4825a4392e0e3fb271"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,7 +149,7 @@ Priority&#160;</td><td class="memItemRight" valign="bottom"><b>getPriority</b> (
 <tr class="memitem:a8bbca3777e80edd8c5b01a308b04b76a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bbca3777e80edd8c5b01a308b04b76a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCompleted</b> () const </td></tr>
 <tr class="separator:a8bbca3777e80edd8c5b01a308b04b76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Setters for Field Values</div></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Field Setters</div></td></tr>
 <tr class="memitem:aa361342696b94d0ca5e3091933574f9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa361342696b94d0ca5e3091933574f9c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setDescription</b> (const Description &amp;description)</td></tr>
 <tr class="separator:aa361342696b94d0ca5e3091933574f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,7 +168,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setCompleted</b> (boo
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Default Values</div></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Field Default Values</div></td></tr>
 <tr class="memitem:a3e75f3d1bcf9e5293dba90063b664a69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e75f3d1bcf9e5293dba90063b664a69"></a>
 static const ID&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_ID</b> = 0L</td></tr>
 <tr class="separator:a3e75f3d1bcf9e5293dba90063b664a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,8 +195,15 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Internal::TaskBuilde
 <tr class="separator:a8d69ea69acc0f2c25c1efe11c90fdf94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The task model The task instances must be created using builder pattern. </p>
-<dl class="section see"><dt>See also</dt><dd>[<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html" title="Builder for tasks New instance of task should be created using this builder. ">Internal::TaskBuilder</a>] </dd></dl>
+<div class="textblock"><p>Defines the task model. </p>
+<p>The instances of the task model can be created using TaskBuilder. No-arg default constructor still available to satisfy the requirement of TaskGraph <br />
+The task model has these following fields</p><ul>
+<li>id</li>
+<li>description</li>
+<li>deadline</li>
+<li>priority</li>
+<li>dependencies </li>
+</ul>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="afc582759f4ec0c844d3a250470cf9949"></a>
 <div class="memitem">
@@ -237,7 +244,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Internal::TaskBuilde
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 10 2014 00:37:18 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 10 2014 07:04:37 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

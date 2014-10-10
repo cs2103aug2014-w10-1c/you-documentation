@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespace_you.html">You</a></li><li class="navelem"><b>QueryEngine</b></li><li class="navelem"><a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_you.html">You</a></li><li class="navelem"><a class="el" href="namespace_you_1_1_query_engine.html">QueryEngine</a></li><li class="navelem"><a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -95,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Base class for all queries.  
+<p>Interface for queries.  
  <a href="class_you_1_1_query_engine_1_1_query.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="api_8h_source.html">api.h</a>&gt;</code></p>
@@ -105,57 +105,31 @@ Inheritance diagram for You::QueryEngine::Query:</div>
  <div class="center">
   <img src="class_you_1_1_query_engine_1_1_query.png" usemap="#You::QueryEngine::Query_map" alt=""/>
   <map id="You::QueryEngine::Query_map" name="You::QueryEngine::Query_map">
-<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html" title="Define action for adding task. " alt="You::QueryEngine::Internal::Action::AddTask" shape="rect" coords="0,56,277,80"/>
-<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html" title="Define action for deleting task. " alt="You::QueryEngine::Internal::Action::DeleteTask" shape="rect" coords="287,56,564,80"/>
-<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_filter_task.html" title="Define action for updating task. " alt="You::QueryEngine::Internal::Action::FilterTask" shape="rect" coords="574,56,851,80"/>
-<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html" title="Define action for updating task. " alt="You::QueryEngine::Internal::Action::UpdateTask" shape="rect" coords="861,56,1138,80"/>
+<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html" title="Action for adding a new task. " alt="You::QueryEngine::Internal::Action::AddTask" shape="rect" coords="0,56,277,80"/>
+<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html" title="Action for deleting an existing task. " alt="You::QueryEngine::Internal::Action::DeleteTask" shape="rect" coords="287,56,564,80"/>
+<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_filter_task.html" title="Action for filtering tasks. " alt="You::QueryEngine::Internal::Action::FilterTask" shape="rect" coords="574,56,851,80"/>
+<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html" title="Action for updating task (e.g marking it as done) " alt="You::QueryEngine::Internal::Action::UpdateTask" shape="rect" coords="861,56,1138,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ab0c291eba3380b3e3470b63bf43d923b"><td class="memItemLeft" align="right" valign="top">Response&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query.html#ab0c291eba3380b3e3470b63bf43d923b">executeQuery</a> (std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt; query)</td></tr>
-<tr class="memdesc:ab0c291eba3380b3e3470b63bf43d923b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a query and return a response.  <a href="#ab0c291eba3380b3e3470b63bf43d923b">More...</a><br /></td></tr>
-<tr class="separator:ab0c291eba3380b3e3470b63bf43d923b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af93bbefe83d2a090b9fcec51a8c0c1f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af93bbefe83d2a090b9fcec51a8c0c1f0"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query.html#af93bbefe83d2a090b9fcec51a8c0c1f0">QueryEngine</a></td></tr>
+<tr class="memdesc:af93bbefe83d2a090b9fcec51a8c0c1f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the query engine utility class. <br /></td></tr>
+<tr class="separator:af93bbefe83d2a090b9fcec51a8c0c1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base class for all queries. </p>
-</div><h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a class="anchor" id="ab0c291eba3380b3e3470b63bf43d923b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Response executeQuery </td>
-          <td>(</td>
-          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td>
-          <td class="paramname"><em>query</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Execute a query and return a response. </p>
-<dl class="section return"><dt>Returns</dt><dd>The result of the query as a response object. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd></dd></dl>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>Interface for queries. </p>
+<p>Implement execute method which takes a State as a parameter and return a Response<br />
+ </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>You-QueryEngine/<a class="el" href="api_8h_source.html">api.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 10 2014 00:37:18 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 10 2014 07:04:37 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
