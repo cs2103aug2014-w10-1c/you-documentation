@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>You: You::QueryEngine::Internal::Exception Namespace Reference</title>
+<title>You: You-QueryEngine/comparator.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,9 +38,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -61,8 +61,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
-      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -81,23 +81,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespace_you.html">You</a></li><li class="navelem"><a class="el" href="namespace_you_1_1_query_engine.html">QueryEngine</a></li><li class="navelem"><a class="el" href="namespace_you_1_1_query_engine_1_1_internal.html">Internal</a></li><li class="navelem"><a class="el" href="namespace_you_1_1_query_engine_1_1_internal_1_1_exception.html">Exception</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_28e12d8377fbce12379d9888938253d0.html">You-QueryEngine</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">You::QueryEngine::Internal::Exception Namespace Reference</div>  </div>
+<div class="title">comparator.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A handful of exception classes.  
+<p>Defines the base class for sorting comparators.  
 <a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &quot;<a class="el" href="task__model_8h_source.html">task_model.h</a>&quot;</code><br />
+</div>
+<p><a href="comparator_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_comparator.html">You::QueryEngine::Comparator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for task comparators.  <a href="class_you_1_1_query_engine_1_1_comparator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespace_you"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_you.html">You</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_you_1_1_query_engine"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_you_1_1_query_engine.html">You::QueryEngine</a></td></tr>
+<tr class="memdesc:namespace_you_1_1_query_engine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsible mainly for implementing and accepting high level queries from NLP and forward it to DataStore. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_you_1_1_query_engine_1_1_unit_tests"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_you_1_1_query_engine_1_1_unit_tests.html">You::QueryEngine::UnitTests</a></td></tr>
+<tr class="memdesc:namespace_you_1_1_query_engine_1_1_unit_tests"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the test classes for <a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html" title="Utility class for QueryEngine  This is the API which will be called by Controller. ">QueryEngine</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A handful of exception classes. </p>
+<div class="textblock"><p>Defines the base class for sorting comparators. </p>
+<dl class="section author"><dt>Author</dt><dd>A0112054Y </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 11 2014 22:30:18 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Oct 11 2014 22:45:56 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
