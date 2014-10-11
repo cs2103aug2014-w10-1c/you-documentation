@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">You::QueryEngine::Internal::TaskGraph Class Reference</div>  </div>
@@ -107,7 +108,7 @@ Public Types</h2></td></tr>
 typedef boost::adjacency_list<br class="typebreak" />
 &lt; boost::vecS, boost::vecS, <br class="typebreak" />
 boost::directedS, Task::ID &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a629c6c559a2ec122073eee11cfd89fb1">Graph</a></td></tr>
-<tr class="memdesc:a629c6c559a2ec122073eee11cfd89fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A directed graph of task. <br /></td></tr>
+<tr class="memdesc:a629c6c559a2ec122073eee11cfd89fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html" title="Defines a simple task graph. ">TaskGraph</a> is a directed graph of task. <br /></td></tr>
 <tr class="separator:a629c6c559a2ec122073eee11cfd89fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62e0f6655f94753453f967d96b49224d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62e0f6655f94753453f967d96b49224d"></a>
 typedef boost::graph_traits<br class="typebreak" />
@@ -117,85 +118,50 @@ typedef boost::graph_traits<br class="typebreak" />
 <tr class="memitem:a1734ba7304708f768463422c77d971be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1734ba7304708f768463422c77d971be"></a>
 typedef boost::graph_traits<br class="typebreak" />
 &lt; <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a629c6c559a2ec122073eee11cfd89fb1">Graph</a> &gt;::vertex_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a1734ba7304708f768463422c77d971be">VIterator</a></td></tr>
-<tr class="memdesc:a1734ba7304708f768463422c77d971be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex iterator. <br /></td></tr>
+<tr class="memdesc:a1734ba7304708f768463422c77d971be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the vertex iterator. <br /></td></tr>
 <tr class="separator:a1734ba7304708f768463422c77d971be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a49f5534ae5b7675429173b5d2fda668f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a49f5534ae5b7675429173b5d2fda668f">addTask</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task)</td></tr>
-<tr class="memdesc:a49f5534ae5b7675429173b5d2fda668f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a task to the graph if it is not exist.  <a href="#a49f5534ae5b7675429173b5d2fda668f">More...</a><br /></td></tr>
-<tr class="separator:a49f5534ae5b7675429173b5d2fda668f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cc220f1fdbc985de3e93faa589026d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a7cc220f1fdbc985de3e93faa589026d9">deleteTask</a> (const Task::ID id)</td></tr>
-<tr class="memdesc:a7cc220f1fdbc985de3e93faa589026d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a task from the graph.  <a href="#a7cc220f1fdbc985de3e93faa589026d9">More...</a><br /></td></tr>
-<tr class="separator:a7cc220f1fdbc985de3e93faa589026d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9263106bc8784ae65cd8173ec0d6efd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#ae9263106bc8784ae65cd8173ec0d6efd">updateTask</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task)</td></tr>
-<tr class="memdesc:ae9263106bc8784ae65cd8173ec0d6efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a task from the graph This means rebuilding the graph since dependencies may change.  <a href="#ae9263106bc8784ae65cd8173ec0d6efd">More...</a><br /></td></tr>
-<tr class="separator:ae9263106bc8784ae65cd8173ec0d6efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b6bcf0733b501741a96f4249ed8d272"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a3b6bcf0733b501741a96f4249ed8d272">getTask</a> (const Task::ID id)</td></tr>
-<tr class="memdesc:a3b6bcf0733b501741a96f4249ed8d272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a single task from the graph May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">Exception::TaskNotFoundException</a>.  <a href="#a3b6bcf0733b501741a96f4249ed8d272">More...</a><br /></td></tr>
-<tr class="separator:a3b6bcf0733b501741a96f4249ed8d272"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af53684bb4e770485875d18d42742edb1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#af53684bb4e770485875d18d42742edb1">getTaskList</a> () const </td></tr>
-<tr class="memdesc:af53684bb4e770485875d18d42742edb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of all tasks.  <a href="#af53684bb4e770485875d18d42742edb1">More...</a><br /></td></tr>
-<tr class="separator:af53684bb4e770485875d18d42742edb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c09de523516f7490b10931482fcd6e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c09de523516f7490b10931482fcd6e9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a2c09de523516f7490b10931482fcd6e9">getSize</a> ()</td></tr>
-<tr class="memdesc:a2c09de523516f7490b10931482fcd6e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of task resided in the graph. <br /></td></tr>
-<tr class="separator:a2c09de523516f7490b10931482fcd6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ecb2af90ba47f56ba13fa2c85fddb31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a6ecb2af90ba47f56ba13fa2c85fddb31">getTask</a> (const Task::ID id) const </td></tr>
+<tr class="memdesc:a6ecb2af90ba47f56ba13fa2c85fddb31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a single task from the graph May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html" title="An exception thrown when trying to delete or edit a task that does not exists. ">Exception::TaskNotFoundException</a>.  <a href="#a6ecb2af90ba47f56ba13fa2c85fddb31">More...</a><br /></td></tr>
+<tr class="separator:a6ecb2af90ba47f56ba13fa2c85fddb31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef5e7236e5e8a05c8d5bc688aeda65f1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#aef5e7236e5e8a05c8d5bc688aeda65f1">asTaskList</a> () const </td></tr>
+<tr class="memdesc:aef5e7236e5e8a05c8d5bc688aeda65f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represent the graph as list of tasks.  <a href="#aef5e7236e5e8a05c8d5bc688aeda65f1">More...</a><br /></td></tr>
+<tr class="separator:aef5e7236e5e8a05c8d5bc688aeda65f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61eca2d1401f4026cc4c635f0548dce1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61eca2d1401f4026cc4c635f0548dce1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a61eca2d1401f4026cc4c635f0548dce1">getTaskCount</a> () const </td></tr>
+<tr class="memdesc:a61eca2d1401f4026cc4c635f0548dce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of task resided in the graph. <br /></td></tr>
+<tr class="separator:a61eca2d1401f4026cc4c635f0548dce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a3a45aacd6be2b52ec9a25475d1eab136"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a45aacd6be2b52ec9a25475d1eab136"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>TaskGraphController</b></td></tr>
+<tr class="separator:a3a45aacd6be2b52ec9a25475d1eab136"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines a simple task graph. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a49f5534ae5b7675429173b5d2fda668f"></a>
+<a class="anchor" id="aef5e7236e5e8a05c8d5bc688aeda65f1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void You::QueryEngine::Internal::TaskGraph::addTask </td>
+          <td class="memname">std::vector&lt; <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &gt; You::QueryEngine::Internal::TaskGraph::asTaskList </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;&#160;</td>
-          <td class="paramname"><em>task</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Add a task to the graph if it is not exist. </p>
-<p>May throw CircularDependencyException if it causes circular dependency. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">task</td><td>The task to be added. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the task is added, false otherwise. </dd></dl>
+<p>Represent the graph as list of tasks. </p>
+<dl class="section return"><dt>Returns</dt><dd>Vector of all tasks. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a7cc220f1fdbc985de3e93faa589026d9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void You::QueryEngine::Internal::TaskGraph::deleteTask </td>
-          <td>(</td>
-          <td class="paramtype">const Task::ID&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Delete a task from the graph. </p>
-<p>May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">Exception::TaskNotFoundException</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The id of the to-be deleted task </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if success, false otherwise. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a3b6bcf0733b501741a96f4249ed8d272"></a>
+<a class="anchor" id="a6ecb2af90ba47f56ba13fa2c85fddb31"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -204,12 +170,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
           <td>(</td>
           <td class="paramtype">const Task::ID&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieve a single task from the graph May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">Exception::TaskNotFoundException</a>. </p>
+<p>Retrieve a single task from the graph May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html" title="An exception thrown when trying to delete or edit a task that does not exists. ">Exception::TaskNotFoundException</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The id of the task to be retrieved. </td></tr>
@@ -220,57 +186,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 
 </div>
 </div>
-<a class="anchor" id="af53684bb4e770485875d18d42742edb1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &gt; You::QueryEngine::Internal::TaskGraph::getTaskList </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the list of all tasks. </p>
-<dl class="section return"><dt>Returns</dt><dd>Vector of all tasks. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ae9263106bc8784ae65cd8173ec0d6efd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void You::QueryEngine::Internal::TaskGraph::updateTask </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;&#160;</td>
-          <td class="paramname"><em>task</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Update a task from the graph This means rebuilding the graph since dependencies may change. </p>
-<p><br />
-May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">Exception::TaskNotFoundException</a> if trying to update non existent task. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">task</td><td>The updated task </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>You-QueryEngine/internal/<a class="el" href="task__graph_8h_source.html">task_graph.h</a></li>
-<li>You-QueryEngine/internal/task_graph.cpp</li>
+<li>You-QueryEngine/internal/model/<a class="el" href="task__graph_8h_source.html">task_graph.h</a></li>
+<li>You-QueryEngine/internal/model/task_graph.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 11 2014 08:41:33 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Oct 11 2014 22:30:18 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['serializationoperation',['SerializationOperation',['../class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html',1,'You::DataStore::Internal']]],
-  ['sessionmanager',['SessionManager',['../class_you_main_g_u_i_1_1_session_manager.html',1,'YouMainGUI']]],
-  ['state',['State',['../class_you_1_1_query_engine_1_1_internal_1_1_state.html',1,'You::QueryEngine::Internal']]],
-  ['systemtraymanager',['SystemTrayManager',['../class_you_main_g_u_i_1_1_system_tray_manager.html',1,'YouMainGUI']]]
+  ['query',['Query',['../class_you_1_1_query_engine_1_1_query.html',1,'You::QueryEngine']]],
+  ['queryengine',['QueryEngine',['../class_you_1_1_query_engine_1_1_query_engine.html',1,'You::QueryEngine']]],
+  ['queryexecutor',['QueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_query_executor.html',1,'You::Controller::Internal']]],
+  ['queryexecutorbuildervisitor',['QueryExecutorBuilderVisitor',['../class_you_1_1_controller_1_1_internal_1_1_query_executor_builder_visitor.html',1,'You::Controller::Internal']]],
+  ['queryparser',['QueryParser',['../class_you_1_1_n_l_p_1_1_query_parser.html',1,'You::NLP']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['delete_5ftask_2eh',['delete_task.h',['../delete__task_8h.html',1,'']]]
+  ['controller_2eh',['controller.h',['../_you-_query_engine_2internal_2controller_8h.html',1,'']]]
 ];

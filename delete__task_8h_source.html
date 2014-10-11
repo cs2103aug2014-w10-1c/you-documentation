@@ -110,7 +110,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html#a34c8a22a5676d3278e6a793b01c12c27">~DeleteTask</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="namespace_you_1_1_query_engine.html#a651f8867d13678410711e7f1c4672fce">Response</a> execute(<a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">State</a>&amp; tasks) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> makeTransaction();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">const</span> Task::ID id;  </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
@@ -123,7 +123,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html">You::QueryEngine::Internal::Action::DeleteTask</a></div><div class="ttdoc">Action for deleting an existing task. </div><div class="ttdef"><b>Definition:</b> delete_task.h:17</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_query_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_query.html">You::QueryEngine::Query</a></div><div class="ttdoc">Interface for queries. </div><div class="ttdef"><b>Definition:</b> api.h:46</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task_html_a34c8a22a5676d3278e6a793b01c12c27"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html#a34c8a22a5676d3278e6a793b01c12c27">You::QueryEngine::Internal::Action::DeleteTask::~DeleteTask</a></div><div class="ttdeci">virtual ~DeleteTask()=default</div><div class="ttdoc">Destructor. </div></div>
-<div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_state_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">You::QueryEngine::Internal::State</a></div><div class="ttdoc">Singleton class to store TaskGraph instance. </div><div class="ttdef"><b>Definition:</b> state.h:20</div></div>
+<div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_state_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">You::QueryEngine::Internal::State</a></div><div class="ttdoc">Singleton class to store TaskGraph instance. </div><div class="ttdef"><b>Definition:</b> state.h:19</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task_html_aceca056ac7a7a68087b9e898c1bef28c"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html#aceca056ac7a7a68087b9e898c1bef28c">You::QueryEngine::Internal::Action::DeleteTask::operator=</a></div><div class="ttdeci">DeleteTask &amp; operator=(const DeleteTask &amp;)=delete</div><div class="ttdoc">Disable assignment operator. </div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task_html_ae7ff1907167ea4f6571fee545462f383"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html#ae7ff1907167ea4f6571fee545462f383">You::QueryEngine::Internal::Action::DeleteTask::DeleteTask</a></div><div class="ttdeci">DeleteTask(Task::ID id)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> delete_task.h:20</div></div>
 <div class="ttc" id="namespace_you_1_1_query_engine_html_a651f8867d13678410711e7f1c4672fce"><div class="ttname"><a href="namespace_you_1_1_query_engine.html#a651f8867d13678410711e7f1c4672fce">You::QueryEngine::Response</a></div><div class="ttdeci">boost::variant&lt; std::vector&lt; Task &gt;, Task, Task::ID, std::wstring &gt; Response</div><div class="ttdoc">A synthesized type for holding query responses. </div><div class="ttdef"><b>Definition:</b> api.h:41</div></div>
@@ -131,7 +131,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 11 2014 08:41:31 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Oct 11 2014 22:30:15 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
