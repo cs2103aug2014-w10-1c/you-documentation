@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fields',['Fields',['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#a4e30098c76bfa6894e9409734188a6bd',1,'You::NLP::EDIT_QUERY']]]
+  ['order',['Order',['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#aa1624ad34144e92b2c34d9ac70fafba3',1,'You::NLP::SHOW_QUERY']]]
 ];

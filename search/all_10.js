@@ -10,7 +10,7 @@ var searchData=
   ['taskbuilder',['TaskBuilder',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html',1,'You::QueryEngine::Internal']]],
   ['taskgraph',['TaskGraph',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html',1,'You::QueryEngine::Internal']]],
   ['taskgraphcontroller',['TaskGraphController',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html',1,'You::QueryEngine::Internal']]],
-  ['taskid',['taskId',['../class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#a395d02d68ed703c5db17d3d302abf924',1,'You::DataStore::Internal::IOperation::taskId()'],['../struct_you_1_1_n_l_p_1_1_d_e_l_e_t_e___q_u_e_r_y.html#a03b892dc91f8a37227cc00dab813c2ee',1,'You::NLP::DELETE_QUERY::taskID()'],['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#ab6d4f24aa18b8c094104993464510979',1,'You::NLP::EDIT_QUERY::taskID()']]],
+  ['taskid',['taskID',['../struct_you_1_1_n_l_p_1_1_d_e_l_e_t_e___q_u_e_r_y.html#a03b892dc91f8a37227cc00dab813c2ee',1,'You::NLP::DELETE_QUERY::taskID()'],['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#ab6d4f24aa18b8c094104993464510979',1,'You::NLP::EDIT_QUERY::taskID()'],['../class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#a395d02d68ed703c5db17d3d302abf924',1,'You::DataStore::Internal::IOperation::taskId()']]],
   ['taskids',['taskIDs',['../class_you_main_g_u_i_1_1_session_manager.html#abe8643469a87237162e697d9019e363f',1,'YouMainGUI::SessionManager']]],
   ['tasklist',['TaskList',['../class_you_1_1_controller_1_1_unit_tests_1_1_mocks_1_1_task_list.html',1,'You::Controller::UnitTests::Mocks']]],
   ['tasknotfoundexception',['TaskNotFoundException',['../class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html',1,'You::QueryEngine::Exception']]],
@@ -20,7 +20,7 @@ var searchData=
   ['tostring',['ToString',['../namespace_you_1_1_query_engine.html#a794521b3df3abdbf07481f460f7d5590',1,'You::QueryEngine']]],
   ['tostringvisitor',['ToStringVisitor',['../struct_you_1_1_n_l_p_1_1_unit_tests_1_1_to_string_visitor.html',1,'You::NLP::UnitTests']]],
   ['transaction',['Transaction',['../class_you_1_1_data_store_1_1_internal_1_1_transaction.html#a4c8875c67bbdf13bac9e580f9df67811',1,'You::DataStore::Internal::Transaction::Transaction()'],['../class_you_1_1_data_store_1_1_transaction.html#a16e31b2fcce4b8888a186d3da1b5aadf',1,'You::DataStore::Transaction::Transaction()']]],
-  ['transaction',['Transaction',['../class_you_1_1_data_store_1_1_internal_1_1_transaction.html',1,'You::DataStore::Internal']]],
   ['transaction',['Transaction',['../class_you_1_1_data_store_1_1_transaction.html',1,'You::DataStore']]],
+  ['transaction',['Transaction',['../class_you_1_1_data_store_1_1_internal_1_1_transaction.html',1,'You::DataStore::Internal']]],
   ['try_5fconvert',['try_convert',['../structboost_1_1detail_1_1lexical__converter__impl_3_01_q_string_00_01_source_01_4.html#a0299d35511f2aa9c9311b53903b2d1fa',1,'boost::detail::lexical_converter_impl&lt; QString, Source &gt;']]]
 ];

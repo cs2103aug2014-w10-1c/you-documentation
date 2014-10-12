@@ -88,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y-members.html">List of all members</a>  </div>
@@ -102,20 +101,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="edit__query_8h_source.html">edit_query.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a4e30098c76bfa6894e9409734188a6bd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#a4e30098c76bfa6894e9409734188a6bd">Fields</a> { <br />
-&#160;&#160;<a class="el" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#a4e30098c76bfa6894e9409734188a6bdab50339a10e1de285ac99d4c3990b8693">Fields::NONE</a> = 0, 
-<a class="el" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#a4e30098c76bfa6894e9409734188a6bda35ba4a2677442e210c23a00a5601aba3">Fields::DESCRIPTION</a> = 1 &lt;&lt; 0, 
-<a class="el" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#a4e30098c76bfa6894e9409734188a6bdacaf55db72c49969e2ed270adbcd0a8f5">Fields::PRIORITY</a> = 1 &lt;&lt; 1, 
-<a class="el" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#a4e30098c76bfa6894e9409734188a6bdae127c5fed59b59402a4bfcc1404fe7ec">Fields::DEADLINE</a> = 1 &lt;&lt; 2, 
-<br />
-&#160;&#160;<a class="el" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#a4e30098c76bfa6894e9409734188a6bda3de44296982e58199afc513a715b12ba">Fields::COMPLETE</a> = 1 &lt;&lt; 3
-<br />
- }</td></tr>
-<tr class="memdesc:a4e30098c76bfa6894e9409734188a6bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A bitfield specifying which fields need to be updated.  <a href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#a4e30098c76bfa6894e9409734188a6bd">More...</a><br /></td></tr>
-<tr class="separator:a4e30098c76bfa6894e9409734188a6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a73a8e57ca88168d6084f6919bb5666ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#a73a8e57ca88168d6084f6919bb5666ec">operator==</a> (const <a class="el" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html">EDIT_QUERY</a> &amp;rhs) const </td></tr>
@@ -148,48 +133,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines the synthesised value type of an edit query. </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a4e30098c76bfa6894e9409734188a6bd"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#a4e30098c76bfa6894e9409734188a6bd">You::NLP::EDIT_QUERY::Fields</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>A bitfield specifying which fields need to be updated. </p>
-<p>This can be binary ORed together. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a4e30098c76bfa6894e9409734188a6bdab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc">
-<p>Not changing anything. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e30098c76bfa6894e9409734188a6bda35ba4a2677442e210c23a00a5601aba3"></a>DESCRIPTION&#160;</td><td class="fielddoc">
-<p>The description field needs to be changed. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e30098c76bfa6894e9409734188a6bdacaf55db72c49969e2ed270adbcd0a8f5"></a>PRIORITY&#160;</td><td class="fielddoc">
-<p>The priority of the task. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e30098c76bfa6894e9409734188a6bdae127c5fed59b59402a4bfcc1404fe7ec"></a>DEADLINE&#160;</td><td class="fielddoc">
-<p>The deadline field needs to be changed. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4e30098c76bfa6894e9409734188a6bda3de44296982e58199afc513a715b12ba"></a>COMPLETE&#160;</td><td class="fielddoc">
-<p>The task is now complete. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a73a8e57ca88168d6084f6919bb5666ec"></a>
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +165,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 11 2014 22:45:57 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 12 2014 07:14:47 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

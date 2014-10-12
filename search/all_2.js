@@ -8,7 +8,7 @@ var searchData=
   ['comparator_2eh',['comparator.h',['../comparator_8h.html',1,'']]],
   ['comparatorfunc',['ComparatorFunc',['../class_you_1_1_query_engine_1_1_comparator.html#a2000fb269924b16f8122823c74319e0f',1,'You::QueryEngine::Comparator']]],
   ['comparisonresult',['ComparisonResult',['../class_you_1_1_query_engine_1_1_comparator.html#aef3ab37e037579df483bb39d7df1af85',1,'You::QueryEngine::Comparator']]],
-  ['complete',['complete',['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#ad02cac77cd495c555890d9134d2125cb',1,'You::NLP::EDIT_QUERY::complete()'],['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#a4e30098c76bfa6894e9409734188a6bda3de44296982e58199afc513a715b12ba',1,'You::NLP::EDIT_QUERY::COMPLETE()']]],
+  ['complete',['complete',['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#ad02cac77cd495c555890d9134d2125cb',1,'You::NLP::EDIT_QUERY']]],
   ['completed',['completed',['../class_you_1_1_query_engine_1_1_filter.html#a6acc39887e90f88af4f4e48578015202',1,'You::QueryEngine::Filter']]],
   ['context',['Context',['../class_you_1_1_controller_1_1_controller_1_1_context.html',1,'You::Controller::Controller']]],
   ['context',['Context',['../class_you_1_1_controller_1_1_controller_1_1_context.html#aee6d560b3c1300ae02f892b05089af3c',1,'You::Controller::Controller::Context']]],

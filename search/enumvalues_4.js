@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['rolled_5fback',['ROLLED_BACK',['../class_you_1_1_data_store_1_1_transaction.html#a56e1e588796d3ae085e200739238b692aed701d1c3d474e00c7a2f416f8d6858c',1,'You::DataStore::Transaction']]]
+  ['greater_5fthan',['GREATER_THAN',['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#a1734b62cd99ffec4742957c9636a3fe0a1625ef4fe09f68fa20d3ff6e02cd5c8e',1,'You::NLP::SHOW_QUERY']]],
+  ['greater_5fthan_5feq',['GREATER_THAN_EQ',['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#a1734b62cd99ffec4742957c9636a3fe0aeb25c4fe79089f5549c491729af0a8d2',1,'You::NLP::SHOW_QUERY']]]
 ];
