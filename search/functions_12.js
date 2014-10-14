@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['youmaingui',['YouMainGUI',['../class_you_main_g_u_i.html#ae2a92125ab23eda4479333a0c9c4b74a',1,'YouMainGUI']]]
+  ['write',['write',['../class_you_1_1_utils_1_1_logger.html#a2a9b2329b1aa8f4a1c6fb6b5daf493bf',1,'You::Utils::Logger']]]
 ];
