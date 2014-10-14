@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_get_task.html#af34703df06b20bec0cc2d174df976940">   23</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_get_task.html#af34703df06b20bec0cc2d174df976940">GetTask</a>(<span class="keyword">const</span> <a class="code" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a>&amp; filter) : filter(filter) {}</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_get_task.html#af34703df06b20bec0cc2d174df976940">GetTask</a>(<span class="keyword">const</span> <a class="code" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a>&amp; filter, <span class="keyword">const</span> <a class="code" href="class_you_1_1_query_engine_1_1_comparator.html">Comparator</a>&amp; comparator) :</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        filter(filter), comparator(comparator) {}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        filter(filter), comparator(comparator), sortAfterFilter(true) {}</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_get_task.html#ad10b4925f0b2c7571a4ed53b921fbf7d">~GetTask</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
@@ -115,14 +115,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_get_task.html#af34703df06b20bec0cc2d174df976940">GetTask</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_get_task.html#af34703df06b20bec0cc2d174df976940">GetTask</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a> filter;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_you_1_1_query_engine_1_1_comparator.html">Comparator</a> comparator = Comparator::notSorted();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}  <span class="comment">// namespace Action</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}  <span class="comment">// namespace Internal</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}  <span class="comment">// namespace QueryEngine</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_INTERNAL_ACTION_GET_TASK_H_</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> sortAfterFilter = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}  <span class="comment">// namespace Action</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}  <span class="comment">// namespace Internal</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}  <span class="comment">// namespace QueryEngine</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_INTERNAL_ACTION_GET_TASK_H_</span></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_get_task_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_get_task.html">You::QueryEngine::Internal::Action::GetTask</a></div><div class="ttdoc">Action for getting tasks by applying a filter and optionally a sorter. </div><div class="ttdef"><b>Definition:</b> get_task.h:20</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_query_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_query.html">You::QueryEngine::Query</a></div><div class="ttdoc">Interface for queries. </div><div class="ttdef"><b>Definition:</b> api.h:45</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_state_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">You::QueryEngine::Internal::State</a></div><div class="ttdoc">Singleton class to store TaskGraph instance. </div><div class="ttdef"><b>Definition:</b> state.h:19</div></div>
@@ -135,7 +136,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 14 2014 10:52:41 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 11:23:34 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

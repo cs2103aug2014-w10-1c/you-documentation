@@ -102,6 +102,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae475029717e8998775f3d8f87876855e"><td class="memItemLeft" align="right" valign="top">static Task::ID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#ae475029717e8998775f3d8f87876855e">loadFromFile</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph)</td></tr>
+<tr class="memdesc:ae475029717e8998775f3d8f87876855e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the xml and build an initial task graph.  <a href="#ae475029717e8998775f3d8f87876855e">More...</a><br /></td></tr>
+<tr class="separator:ae475029717e8998775f3d8f87876855e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae37442a93689b96e6cd998ca7c7a7320"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#ae37442a93689b96e6cd998ca7c7a7320">addTask</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph, const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task)</td></tr>
 <tr class="memdesc:ae37442a93689b96e6cd998ca7c7a7320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a task to the graph if it is not exist.  <a href="#ae37442a93689b96e6cd998ca7c7a7320">More...</a><br /></td></tr>
 <tr class="separator:ae37442a93689b96e6cd998ca7c7a7320"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,6 +208,39 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
+<a class="anchor" id="ae475029717e8998775f3d8f87876855e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task::ID You::QueryEngine::Internal::TGC::loadFromFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;&#160;</td>
+          <td class="paramname"><em>graph</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load the xml and build an initial task graph. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">graph</td><td>The graph to be built. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The last task ID seen. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a986423d175b77c79096727de6825aba7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -254,7 +290,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 14 2014 10:52:43 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 11:23:35 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

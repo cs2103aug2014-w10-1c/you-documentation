@@ -111,11 +111,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Task::ID <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html#abbe5ae530e26203a3874f71023e78581">inquireNewID</a>();</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">State</a>() : innerGraph(std::move(<a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a>())) {}</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    State(<span class="keyword">const</span> State&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    State&amp; operator=(<span class="keyword">const</span> State&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    TaskGraph innerGraph;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">State</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">State</a>(<span class="keyword">const</span> <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">State</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">State</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">State</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    Task::ID maxID;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> innerGraph;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}  <span class="comment">// namespace Internal</span></div>
@@ -125,15 +125,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_INTERNAL_MODEL_STATE_H_</span></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">You::QueryEngine::Internal::TaskGraph</a></div><div class="ttdoc">Defines a simple task graph. </div><div class="ttdef"><b>Definition:</b> task_graph.h:21</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_state_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">You::QueryEngine::Internal::State</a></div><div class="ttdoc">Singleton class to store TaskGraph instance. </div><div class="ttdef"><b>Definition:</b> state.h:19</div></div>
-<div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_state_html_abbe5ae530e26203a3874f71023e78581"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_state.html#abbe5ae530e26203a3874f71023e78581">You::QueryEngine::Internal::State::inquireNewID</a></div><div class="ttdeci">Task::ID inquireNewID()</div><div class="ttdoc">Inquire a new and unique task id. </div><div class="ttdef"><b>Definition:</b> state.cpp:17</div></div>
+<div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_state_html_abbe5ae530e26203a3874f71023e78581"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_state.html#abbe5ae530e26203a3874f71023e78581">You::QueryEngine::Internal::State::inquireNewID</a></div><div class="ttdeci">Task::ID inquireNewID()</div><div class="ttdoc">Inquire a new and unique task id. </div><div class="ttdef"><b>Definition:</b> state.cpp:24</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_state_html_a4b285e7045c96a1a9284df89268003cf"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_state.html#a4b285e7045c96a1a9284df89268003cf">You::QueryEngine::Internal::State::graph</a></div><div class="ttdeci">TaskGraph &amp; graph() const </div><div class="ttdoc">Get the task graph. </div><div class="ttdef"><b>Definition:</b> state.h:29</div></div>
 <div class="ttc" id="task__graph_8h_html"><div class="ttname"><a href="task__graph_8h.html">task_graph.h</a></div><div class="ttdoc">Defines the TaskGraph class. </div></div>
-<div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_state_html_a6403b9e84c91bead84931fb1a1ebf8df"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_state.html#a6403b9e84c91bead84931fb1a1ebf8df">You::QueryEngine::Internal::State::clear</a></div><div class="ttdeci">static void clear()</div><div class="ttdoc">Reset the state back to empty state. </div><div class="ttdef"><b>Definition:</b> state.cpp:13</div></div>
+<div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_state_html_a6403b9e84c91bead84931fb1a1ebf8df"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_state.html#a6403b9e84c91bead84931fb1a1ebf8df">You::QueryEngine::Internal::State::clear</a></div><div class="ttdeci">static void clear()</div><div class="ttdoc">Reset the state back to empty state. </div><div class="ttdef"><b>Definition:</b> state.cpp:20</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 14 2014 10:52:41 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 11:23:34 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
