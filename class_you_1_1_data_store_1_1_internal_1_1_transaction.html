@@ -118,6 +118,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ae51c5f227c9c06dda8f8be53a6540788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html#ae51c5f227c9c06dda8f8be53a6540788">push</a> (std::unique_ptr&lt; <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html">IOperation</a> &gt; operation)</td></tr>
 <tr class="memdesc:ae51c5f227c9c06dda8f8be53a6540788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes a transaction onto the stack.  <a href="#ae51c5f227c9c06dda8f8be53a6540788">More...</a><br /></td></tr>
 <tr class="separator:ae51c5f227c9c06dda8f8be53a6540788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5332b275ae6a93467fbfc163751314"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html#a5d5332b275ae6a93467fbfc163751314">mergeOperationsQueue</a> (boost::ptr_deque&lt; <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html">IOperation</a> &gt; &amp;queue)</td></tr>
+<tr class="memdesc:a5d5332b275ae6a93467fbfc163751314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges the operationsQueue of the next transaction that is committed earlier.  <a href="#a5d5332b275ae6a93467fbfc163751314">More...</a><br /></td></tr>
+<tr class="separator:a5d5332b275ae6a93467fbfc163751314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6984a811d3fb7e17a283f1c486818828"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6984a811d3fb7e17a283f1c486818828"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html">Transaction</a> &amp;)</td></tr>
+<tr class="separator:a6984a811d3fb7e17a283f1c486818828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -131,6 +137,30 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DataStore
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The actual class that contains the logic for managing transactions. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5d5332b275ae6a93467fbfc163751314"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void You::DataStore::Internal::Transaction::mergeOperationsQueue </td>
+          <td>(</td>
+          <td class="paramtype">boost::ptr_deque&lt; <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html">IOperation</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>queue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Merges the operationsQueue of the next transaction that is committed earlier. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">queue</td><td>The operations queue </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ae51c5f227c9c06dda8f8be53a6540788"></a>
 <div class="memitem">
 <div class="memproto">
@@ -163,7 +193,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DataStore
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 12 2014 11:44:36 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 14 2014 10:38:02 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

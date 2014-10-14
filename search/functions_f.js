@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['task',['Task',['../class_you_1_1_query_engine_1_1_task.html#a27c41adfa99810a5635302646651b5b3',1,'You::QueryEngine::Task']]],
-  ['taskpanelmanager',['TaskPanelManager',['../class_you_main_g_u_i_1_1_task_panel_manager.html#abeca62039696373e8c69717d526483a7',1,'YouMainGUI::TaskPanelManager']]],
-  ['tostring',['ToString',['../namespace_you_1_1_query_engine.html#a794521b3df3abdbf07481f460f7d5590',1,'You::QueryEngine']]],
-  ['transaction',['Transaction',['../class_you_1_1_data_store_1_1_internal_1_1_transaction.html#a4c8875c67bbdf13bac9e580f9df67811',1,'You::DataStore::Internal::Transaction::Transaction()'],['../class_you_1_1_data_store_1_1_transaction.html#a16e31b2fcce4b8888a186d3da1b5aadf',1,'You::DataStore::Transaction::Transaction()']]],
-  ['try_5fconvert',['try_convert',['../structboost_1_1detail_1_1lexical__converter__impl_3_01_q_string_00_01_source_01_4.html#a0299d35511f2aa9c9311b53903b2d1fa',1,'boost::detail::lexical_converter_impl&lt; QString, Source &gt;']]]
+  ['savedata',['saveData',['../class_you_1_1_data_store_1_1_internal_1_1_data_store.html#aa9830ed855d77ea421d64c0773e23f19',1,'You::DataStore::Internal::DataStore']]],
+  ['serialize',['serialize',['../class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#af7fc2bdfa56691dc0bacade0098e617d',1,'You::DataStore::Internal::SerializationOperation::serialize()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#aff07e3bb6e29773df72432baba54c66a',1,'You::QueryEngine::Internal::TaskSerializer::serialize()']]],
+  ['sessionmanager',['SessionManager',['../class_you_main_g_u_i_1_1_session_manager.html#afc0ca2765f87d20ffb4b942ca3c0c691',1,'YouMainGUI::SessionManager']]],
+  ['setup',['setup',['../class_you_main_g_u_i_1_1_base_manager.html#a15644ba571a43ca149d7c0dc59289493',1,'YouMainGUI::BaseManager::setup()'],['../class_you_main_g_u_i_1_1_n_l_p_manager.html#ae2486b4ab7889f253ae96353eb59a39f',1,'YouMainGUI::NLPManager::setup()'],['../class_you_main_g_u_i_1_1_session_manager.html#a21d143c285fa511afe5990b6d7518e9a',1,'YouMainGUI::SessionManager::setup()'],['../class_you_main_g_u_i_1_1_system_tray_manager.html#ad1b9974ec2c68ba605be7906225329f4',1,'YouMainGUI::SystemTrayManager::setup()'],['../class_you_main_g_u_i_1_1_task_panel_manager.html#ae592a92c4ef240e668e9a61a75f406f9',1,'YouMainGUI::TaskPanelManager::setup()']]],
+  ['systemtraymanager',['SystemTrayManager',['../class_you_main_g_u_i_1_1_system_tray_manager.html#a6cb412b4c27aa3149a0c2ba32edfdc62',1,'YouMainGUI::SystemTrayManager']]]
 ];

@@ -10,7 +10,7 @@ var searchData=
   ['taskbuilder',['TaskBuilder',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html',1,'You::QueryEngine::Internal']]],
   ['taskgraph',['TaskGraph',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html',1,'You::QueryEngine::Internal']]],
   ['taskgraphcontroller',['TaskGraphController',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html',1,'You::QueryEngine::Internal']]],
-  ['taskid',['taskID',['../struct_you_1_1_n_l_p_1_1_d_e_l_e_t_e___q_u_e_r_y.html#a03b892dc91f8a37227cc00dab813c2ee',1,'You::NLP::DELETE_QUERY::taskID()'],['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#ab6d4f24aa18b8c094104993464510979',1,'You::NLP::EDIT_QUERY::taskID()'],['../class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#a395d02d68ed703c5db17d3d302abf924',1,'You::DataStore::Internal::IOperation::taskId()']]],
+  ['taskid',['taskId',['../class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#a395d02d68ed703c5db17d3d302abf924',1,'You::DataStore::Internal::IOperation::taskId()'],['../struct_you_1_1_n_l_p_1_1_d_e_l_e_t_e___q_u_e_r_y.html#a03b892dc91f8a37227cc00dab813c2ee',1,'You::NLP::DELETE_QUERY::taskID()'],['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#ab6d4f24aa18b8c094104993464510979',1,'You::NLP::EDIT_QUERY::taskID()']]],
   ['taskids',['taskIDs',['../class_you_main_g_u_i_1_1_session_manager.html#abe8643469a87237162e697d9019e363f',1,'YouMainGUI::SessionManager']]],
   ['tasklist',['TaskList',['../class_you_1_1_controller_1_1_unit_tests_1_1_mocks_1_1_task_list.html',1,'You::Controller::UnitTests::Mocks']]],
   ['tasknotfoundexception',['TaskNotFoundException',['../class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html',1,'You::QueryEngine::Exception']]],
