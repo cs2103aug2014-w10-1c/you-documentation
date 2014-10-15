@@ -21,8 +21,8 @@ var searchData=
   ['taskserializer',['TaskSerializer',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html',1,'You::QueryEngine::Internal']]],
   ['tostring',['ToString',['../namespace_you_1_1_query_engine.html#a794521b3df3abdbf07481f460f7d5590',1,'You::QueryEngine']]],
   ['tostringvisitor',['ToStringVisitor',['../struct_you_1_1_n_l_p_1_1_unit_tests_1_1_to_string_visitor.html',1,'You::NLP::UnitTests']]],
-  ['transaction',['Transaction',['../class_you_1_1_data_store_1_1_internal_1_1_transaction.html',1,'You::DataStore::Internal']]],
-  ['transaction',['Transaction',['../class_you_1_1_data_store_1_1_internal_1_1_transaction.html#a4c8875c67bbdf13bac9e580f9df67811',1,'You::DataStore::Internal::Transaction::Transaction()'],['../class_you_1_1_data_store_1_1_transaction.html#a16e31b2fcce4b8888a186d3da1b5aadf',1,'You::DataStore::Transaction::Transaction()']]],
   ['transaction',['Transaction',['../class_you_1_1_data_store_1_1_transaction.html',1,'You::DataStore']]],
+  ['transaction',['Transaction',['../class_you_1_1_data_store_1_1_internal_1_1_transaction.html#a4c8875c67bbdf13bac9e580f9df67811',1,'You::DataStore::Internal::Transaction::Transaction()'],['../class_you_1_1_data_store_1_1_transaction.html#a16e31b2fcce4b8888a186d3da1b5aadf',1,'You::DataStore::Transaction::Transaction()']]],
+  ['transaction',['Transaction',['../class_you_1_1_data_store_1_1_internal_1_1_transaction.html',1,'You::DataStore::Internal']]],
   ['try_5fconvert',['try_convert',['../structboost_1_1detail_1_1lexical__converter__impl_3_01_q_string_00_01_source_01_4.html#a0299d35511f2aa9c9311b53903b2d1fa',1,'boost::detail::lexical_converter_impl&lt; QString, Source &gt;']]]
 ];
