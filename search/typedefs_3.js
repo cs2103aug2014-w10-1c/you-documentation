@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['iteratortype',['IteratorType',['../class_you_1_1_n_l_p_1_1_date_time_parser.html#ac8ef4947525805f0c8089d264b11603c',1,'You::NLP::DateTimeParser::IteratorType()'],['../class_you_1_1_n_l_p_1_1_query_parser.html#a13814a307b4b38a17dae768407d56f8d',1,'You::NLP::QueryParser::IteratorType()']]]
+  ['graph',['Graph',['../class_you_1_1_query_engine_1_1_internal_1_1_controller.html#a88acc97223c07c10cc0473db1f451df5',1,'You::QueryEngine::Internal::Controller::Graph()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a629c6c559a2ec122073eee11cfd89fb1',1,'You::QueryEngine::Internal::TaskGraph::Graph()']]]
 ];
