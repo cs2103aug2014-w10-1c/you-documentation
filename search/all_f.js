@@ -1,19 +1,9 @@
 var searchData=
 [
-  ['savedata',['saveData',['../class_you_1_1_data_store_1_1_internal_1_1_data_store.html#aa9830ed855d77ea421d64c0773e23f19',1,'You::DataStore::Internal::DataStore']]],
-  ['serializationoperation',['SerializationOperation',['../class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html',1,'You::DataStore::Internal']]],
-  ['serialize',['serialize',['../class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#af7fc2bdfa56691dc0bacade0098e617d',1,'You::DataStore::Internal::SerializationOperation::serialize()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a80a4f96df042d4e7cf7d0435bf2f3ed3',1,'You::QueryEngine::Internal::TaskSerializer::serialize()']]],
-  ['serializer',['Serializer',['../class_you_1_1_query_engine_1_1_internal_1_1_controller.html#a132beef508a6d62225b1c1cc2ad0544b',1,'You::QueryEngine::Internal::Controller']]],
-  ['sessionmanager',['SessionManager',['../class_you_main_g_u_i_1_1_session_manager.html',1,'YouMainGUI']]],
-  ['sessionmanager',['SessionManager',['../class_you_main_g_u_i_1_1_session_manager.html#afc0ca2765f87d20ffb4b942ca3c0c691',1,'YouMainGUI::SessionManager']]],
-  ['setloglevel',['setLogLevel',['../class_you_1_1_utils_1_1_log.html#abc139e65dcb8b92cd34b279d54387e27',1,'You::Utils::Log']]],
-  ['setsink',['setSink',['../class_you_1_1_utils_1_1_log.html#af739ad468c59f3947eba570f3b2232b9',1,'You::Utils::Log']]],
-  ['setup',['setup',['../class_you_main_g_u_i_1_1_base_manager.html#a15644ba571a43ca149d7c0dc59289493',1,'YouMainGUI::BaseManager::setup()'],['../class_you_main_g_u_i_1_1_n_l_p_manager.html#ae2486b4ab7889f253ae96353eb59a39f',1,'YouMainGUI::NLPManager::setup()'],['../class_you_main_g_u_i_1_1_session_manager.html#a21d143c285fa511afe5990b6d7518e9a',1,'YouMainGUI::SessionManager::setup()'],['../class_you_main_g_u_i_1_1_system_tray_manager.html#ad1b9974ec2c68ba605be7906225329f4',1,'YouMainGUI::SystemTrayManager::setup()'],['../class_you_main_g_u_i_1_1_task_panel_manager.html#ae592a92c4ef240e668e9a61a75f406f9',1,'YouMainGUI::TaskPanelManager::setup()']]],
-  ['show_5fquery',['SHOW_QUERY',['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html',1,'You::NLP']]],
-  ['show_5fresult',['SHOW_RESULT',['../struct_you_1_1_controller_1_1_s_h_o_w___r_e_s_u_l_t.html',1,'You::Controller']]],
-  ['skippertype',['SkipperType',['../class_you_1_1_n_l_p_1_1_date_time_parser.html#a8ef6acc06aede1b16238e988488475cc',1,'You::NLP::DateTimeParser::SkipperType()'],['../class_you_1_1_n_l_p_1_1_query_parser.html#a112fa0a13e0a40d68ec60402a4c64db2',1,'You::NLP::QueryParser::SkipperType()']]],
-  ['state',['State',['../class_you_1_1_query_engine_1_1_internal_1_1_state.html',1,'You::QueryEngine::Internal']]],
-  ['stringtype',['StringType',['../class_you_1_1_n_l_p_1_1_date_time_parser.html#ad44734bb65ae0695eb9df717ce8ce52c',1,'You::NLP::DateTimeParser::StringType()'],['../class_you_1_1_n_l_p_1_1_query_parser.html#a43e3e8eabdc5fbd901d3783d4f50f655',1,'You::NLP::QueryParser::StringType()']]],
-  ['systemtraymanager',['SystemTrayManager',['../class_you_main_g_u_i_1_1_system_tray_manager.html#a6cb412b4c27aa3149a0c2ba32edfdc62',1,'YouMainGUI::SystemTrayManager']]],
-  ['systemtraymanager',['SystemTrayManager',['../class_you_main_g_u_i_1_1_system_tray_manager.html',1,'YouMainGUI']]]
+  ['rebuildgraph',['rebuildGraph',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a41d6594d132abe513907aeafaf632b30',1,'You::QueryEngine::Internal::TaskGraphController']]],
+  ['resizeevent',['resizeEvent',['../class_you_1_1_g_u_i_1_1_main_window.html#a5ab7bebced5d27d8c66c54816cc6f08e',1,'You::GUI::MainWindow']]],
+  ['response',['Response',['../namespace_you_1_1_query_engine.html#a651f8867d13678410711e7f1c4672fce',1,'You::QueryEngine']]],
+  ['rollback',['rollback',['../class_you_1_1_data_store_1_1_internal_1_1_transaction.html#a098ccd416b9f29485a5704a695e18476',1,'You::DataStore::Internal::Transaction::rollback()'],['../class_you_1_1_data_store_1_1_transaction.html#ae5e03610e9a5971223e6e0cb2c5e9b2e',1,'You::DataStore::Transaction::rollback()']]],
+  ['rolled_5fback',['ROLLED_BACK',['../class_you_1_1_data_store_1_1_transaction.html#a56e1e588796d3ae085e200739238b692aed701d1c3d474e00c7a2f416f8d6858c',1,'You::DataStore::Transaction']]],
+  ['run',['run',['../class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#a736af769502508902192a7723e554171',1,'You::DataStore::Internal::IOperation::run()'],['../class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#aa8c2de5ee73acca5868a8545c9a4f8bf',1,'You::DataStore::Internal::EraseOperation::run()'],['../class_you_1_1_data_store_1_1_internal_1_1_post_operation.html#ac3eb2e22fa1abbaca6a8b7912ca4e0b2',1,'You::DataStore::Internal::PostOperation::run()'],['../class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#af1e8bea22637bc1936b46d9436cec8b5',1,'You::DataStore::Internal::PutOperation::run()'],['../class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html#a5465af2f9a4ff0caa2aa391cc2e7997b',1,'You::GUI::Thread::TrayHotkeyHandler::run()']]]
 ];

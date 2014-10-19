@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['value_5fdelimiter',['VALUE_DELIMITER',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#ae61e84b5144afd238866eabfcdfce654',1,'You::QueryEngine::Internal::TaskSerializer']]],
-  ['vertex',['Vertex',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a62e0f6655f94753453f967d96b49224d',1,'You::QueryEngine::Internal::TaskGraph']]],
-  ['viterator',['VIterator',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a1734ba7304708f768463422c77d971be',1,'You::QueryEngine::Internal::TaskGraph']]]
+  ['update_5ftask_2eh',['update_task.h',['../update__task_8h.html',1,'']]],
+  ['updatetask',['updateTask',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a9149235e7ddf9b2054e12d04e6eae9f8',1,'You::QueryEngine::Internal::TaskGraphController::updateTask()'],['../class_you_1_1_query_engine_1_1_query_engine.html#ad1c9fe9d2e4f848ee49f3095c86eed51',1,'You::QueryEngine::QueryEngine::UpdateTask(Task::ID id, Task::Description description, Task::Time deadline, Task::Priority priority, Task::Dependencies dependencies)'],['../class_you_1_1_query_engine_1_1_query_engine.html#afa97263e3d3a048433f8de176d0ecc23',1,'You::QueryEngine::QueryEngine::UpdateTask(Task::ID id, bool completed)'],['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html#aa1c2615894e3c7470eafeb9230fc341b',1,'You::QueryEngine::Internal::Action::UpdateTask::UpdateTask(Task::ID id, Task::Description description, Task::Time deadline, Task::Priority priority, Task::Dependencies dependencies)'],['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html#a867e282ab1cebcea0c02e72e66009db0',1,'You::QueryEngine::Internal::Action::UpdateTask::UpdateTask(Task::ID id, bool completed)']]],
+  ['updatetask',['UpdateTask',['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html',1,'You::QueryEngine::Internal::Action']]]
 ];

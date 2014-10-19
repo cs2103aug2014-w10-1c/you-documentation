@@ -1,8 +1,14 @@
 var searchData=
 [
-  ['rebuildgraph',['rebuildGraph',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a41d6594d132abe513907aeafaf632b30',1,'You::QueryEngine::Internal::TaskGraphController']]],
-  ['response',['Response',['../namespace_you_1_1_query_engine.html#a651f8867d13678410711e7f1c4672fce',1,'You::QueryEngine']]],
-  ['rollback',['rollback',['../class_you_1_1_data_store_1_1_internal_1_1_transaction.html#a098ccd416b9f29485a5704a695e18476',1,'You::DataStore::Internal::Transaction::rollback()'],['../class_you_1_1_data_store_1_1_transaction.html#ae5e03610e9a5971223e6e0cb2c5e9b2e',1,'You::DataStore::Transaction::rollback()']]],
-  ['rolled_5fback',['ROLLED_BACK',['../class_you_1_1_data_store_1_1_transaction.html#a56e1e588796d3ae085e200739238b692aed701d1c3d474e00c7a2f416f8d6858c',1,'You::DataStore::Transaction']]],
-  ['run',['run',['../class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#a736af769502508902192a7723e554171',1,'You::DataStore::Internal::IOperation::run()'],['../class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#aa8c2de5ee73acca5868a8545c9a4f8bf',1,'You::DataStore::Internal::EraseOperation::run()'],['../class_you_1_1_data_store_1_1_internal_1_1_post_operation.html#ac3eb2e22fa1abbaca6a8b7912ca4e0b2',1,'You::DataStore::Internal::PostOperation::run()'],['../class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#af1e8bea22637bc1936b46d9436cec8b5',1,'You::DataStore::Internal::PutOperation::run()']]]
+  ['query',['Query',['../class_you_1_1_query_engine_1_1_query.html',1,'You::QueryEngine']]],
+  ['query',['query',['../class_you_1_1_controller_1_1_controller.html#a556e94e66610181dc386c054441ae754',1,'You::Controller::Controller::query()'],['../class_you_1_1_g_u_i_1_1_main_window_1_1_query_manager.html#a07bd69c623114774ffa768c5aefe017f',1,'You::GUI::MainWindow::QueryManager::query()']]],
+  ['queryengine',['QueryEngine',['../class_you_1_1_query_engine_1_1_query_engine.html',1,'You::QueryEngine']]],
+  ['queryengine',['QueryEngine',['../class_you_1_1_query_engine_1_1_query.html#af93bbefe83d2a090b9fcec51a8c0c1f0',1,'You::QueryEngine::Query']]],
+  ['queryexecutor',['QueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_query_executor.html#a8062c76c0319fd9264cdb2c455478e6b',1,'You::Controller::Internal::QueryExecutor']]],
+  ['queryexecutor',['QueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_query_executor.html',1,'You::Controller::Internal']]],
+  ['queryexecutorbuildervisitor',['QueryExecutorBuilderVisitor',['../class_you_1_1_controller_1_1_internal_1_1_query_executor_builder_visitor.html',1,'You::Controller::Internal']]],
+  ['queryexecutorbuildervisitor',['QueryExecutorBuilderVisitor',['../class_you_1_1_controller_1_1_internal_1_1_query_executor_builder_visitor.html#af9f4895647aca5779f443788e09585e1',1,'You::Controller::Internal::QueryExecutorBuilderVisitor']]],
+  ['querymanager',['QueryManager',['../class_you_1_1_g_u_i_1_1_main_window_1_1_query_manager.html',1,'You::GUI::MainWindow']]],
+  ['querymanager',['QueryManager',['../class_you_1_1_g_u_i_1_1_main_window_1_1_query_manager.html#aff33e3fc3293ee59ed511f3e033052e0',1,'You::GUI::MainWindow::QueryManager']]],
+  ['queryparser',['QueryParser',['../class_you_1_1_n_l_p_1_1_query_parser.html',1,'You::NLP']]]
 ];

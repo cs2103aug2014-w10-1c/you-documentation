@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>You: YouMainGUI::BaseManager Class Reference</title>
+<title>You: You::GUI::Thread::TrayHotkeyHandler Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,64 +83,65 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="class_you_main_g_u_i.html">YouMainGUI</a></li><li class="navelem"><a class="el" href="class_you_main_g_u_i_1_1_base_manager.html">BaseManager</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_you.html">You</a></li><li class="navelem"><b>GUI</b></li><li class="navelem"><b>Thread</b></li><li class="navelem"><a class="el" href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html">TrayHotkeyHandler</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="class_you_main_g_u_i_1_1_base_manager-members.html">List of all members</a>  </div>
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">YouMainGUI::BaseManager Class Reference</div>  </div>
+<div class="title">You::GUI::Thread::TrayHotkeyHandler Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>The class from which all components inherit.  
- <a href="class_you_main_g_u_i_1_1_base_manager.html#details">More...</a></p>
+<p><a class="el" href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html" title="TrayHotkeyHandler inherits from QThread, and runs on a separate thread as a listener for a hotkey eve...">TrayHotkeyHandler</a> inherits from QThread, and runs on a separate thread as a listener for a hotkey event.  
+ <a href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="base__manager_8h_source.html">base_manager.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="tray__hotkey__handler_8h_source.html">tray_hotkey_handler.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for YouMainGUI::BaseManager:</div>
+Inheritance diagram for You::GUI::Thread::TrayHotkeyHandler:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_you_main_g_u_i_1_1_base_manager.png" usemap="#YouMainGUI::BaseManager_map" alt=""/>
-  <map id="YouMainGUI::BaseManager_map" name="YouMainGUI::BaseManager_map">
-<area href="class_you_main_g_u_i_1_1_n_l_p_manager.html" title="The component that handles passing of data between the NLP parser and the rest of the GUI..." alt="YouMainGUI::NLPManager" shape="rect" coords="0,112,206,136"/>
-<area href="class_you_main_g_u_i_1_1_session_manager.html" title="The component that handles all session-related data of the application. " alt="YouMainGUI::SessionManager" shape="rect" coords="216,112,422,136"/>
-<area href="class_you_main_g_u_i_1_1_system_tray_manager.html" title="The component that handles all interactions with the tray icon. " alt="YouMainGUI::SystemTrayManager" shape="rect" coords="432,112,638,136"/>
-<area href="class_you_main_g_u_i_1_1_task_panel_manager.html" title="The component that deals with everything in the task panel. " alt="YouMainGUI::TaskPanelManager" shape="rect" coords="648,112,854,136"/>
+  <img src="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.png" usemap="#You::GUI::Thread::TrayHotkeyHandler_map" alt=""/>
+  <map id="You::GUI::Thread::TrayHotkeyHandler_map" name="You::GUI::Thread::TrayHotkeyHandler_map">
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a610fd607156df35e9eb05ede2627119a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a610fd607156df35e9eb05ede2627119a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html#a610fd607156df35e9eb05ede2627119a">hotkeyClicked</a> (QSystemTrayIcon::ActivationReason)</td></tr>
+<tr class="memdesc:a610fd607156df35e9eb05ede2627119a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals to SystemTrayManager that hotkey has been pressed. <br /></td></tr>
+<tr class="separator:a610fd607156df35e9eb05ede2627119a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a49a263bc4561e31c10e3082dc1169b9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49a263bc4561e31c10e3082dc1169b9e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_main_g_u_i_1_1_base_manager.html#a49a263bc4561e31c10e3082dc1169b9e">BaseManager</a> (<a class="el" href="class_you_main_g_u_i.html">YouMainGUI</a> *<a class="el" href="class_you_main_g_u_i_1_1_base_manager.html#aabea248a40b8c4a6a01d16ff21751af1">parentGUI</a>)</td></tr>
-<tr class="memdesc:a49a263bc4561e31c10e3082dc1169b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor that assigns to the manager the parent GUI. <br /></td></tr>
-<tr class="separator:a49a263bc4561e31c10e3082dc1169b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15644ba571a43ca149d7c0dc59289493"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15644ba571a43ca149d7c0dc59289493"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_main_g_u_i_1_1_base_manager.html#a15644ba571a43ca149d7c0dc59289493">setup</a> ()</td></tr>
-<tr class="memdesc:a15644ba571a43ca149d7c0dc59289493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tasks needed to be run on startup. <br /></td></tr>
-<tr class="separator:a15644ba571a43ca149d7c0dc59289493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4423238413a645330eebd582b28e326c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4423238413a645330eebd582b28e326c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html#a4423238413a645330eebd582b28e326c">TrayHotkeyHandler</a> ()</td></tr>
+<tr class="memdesc:a4423238413a645330eebd582b28e326c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="separator:a4423238413a645330eebd582b28e326c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:aabea248a40b8c4a6a01d16ff21751af1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabea248a40b8c4a6a01d16ff21751af1"></a>
-<a class="el" href="class_you_main_g_u_i.html">YouMainGUI</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_main_g_u_i_1_1_base_manager.html#aabea248a40b8c4a6a01d16ff21751af1">parentGUI</a></td></tr>
-<tr class="memdesc:aabea248a40b8c4a6a01d16ff21751af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the main GUI. <br /></td></tr>
-<tr class="separator:aabea248a40b8c4a6a01d16ff21751af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a5465af2f9a4ff0caa2aa391cc2e7997b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5465af2f9a4ff0caa2aa391cc2e7997b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html#a5465af2f9a4ff0caa2aa391cc2e7997b">run</a> ()</td></tr>
+<tr class="memdesc:a5465af2f9a4ff0caa2aa391cc2e7997b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loops in its own thread to check if hotkey is pressed. <br /></td></tr>
+<tr class="separator:a5465af2f9a4ff0caa2aa391cc2e7997b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The class from which all components inherit. </p>
+<div class="textblock"><p><a class="el" href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html" title="TrayHotkeyHandler inherits from QThread, and runs on a separate thread as a listener for a hotkey eve...">TrayHotkeyHandler</a> inherits from QThread, and runs on a separate thread as a listener for a hotkey event. </p>
+<p>It registers the hotkey before looping. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>You-GUI/<a class="el" href="base__manager_8h_source.html">base_manager.h</a></li>
-<li>You-GUI/you_main_gui.cpp</li>
+<li>You-GUI/<a class="el" href="tray__hotkey__handler_8h_source.html">tray_hotkey_handler.h</a></li>
+<li>You-GUI/tray_hotkey_handler.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 17 2014 07:16:29 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 19 2014 15:07:22 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
