@@ -3,6 +3,7 @@ var searchData=
   ['datastore',['DataStore',['../class_you_1_1_data_store_1_1_data_store.html',1,'You::DataStore']]],
   ['datastore',['DataStore',['../class_you_1_1_data_store_1_1_internal_1_1_data_store.html',1,'You::DataStore::Internal']]],
   ['datastoreapitest',['DataStoreApiTest',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_api_test.html',1,'You::DataStore::UnitTests']]],
+  ['datastoreoperationstest',['DataStoreOperationsTest',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_operations_test.html',1,'You::DataStore::UnitTests']]],
   ['datastoretest',['DataStoreTest',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html',1,'You::DataStore::UnitTests']]],
   ['datetimeparser',['DateTimeParser',['../class_you_1_1_n_l_p_1_1_date_time_parser.html',1,'You::NLP']]],
   ['deadline',['deadline',['../struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html#a0fe05a9147bfa342015e8bb3d970c90a',1,'You::NLP::ADD_QUERY::deadline()'],['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#ad6d4f35d869f543a17fe33db2b896d01',1,'You::NLP::EDIT_QUERY::deadline()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a180f358649421f95a9788b183816a5bc',1,'You::QueryEngine::Internal::TaskBuilder::deadline()']]],

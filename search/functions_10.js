@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['savedata',['saveData',['../class_you_1_1_data_store_1_1_internal_1_1_data_store.html#aa9830ed855d77ea421d64c0773e23f19',1,'You::DataStore::Internal::DataStore']]],
   ['serialize',['serialize',['../class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#af7fc2bdfa56691dc0bacade0098e617d',1,'You::DataStore::Internal::SerializationOperation::serialize()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a80a4f96df042d4e7cf7d0435bf2f3ed3',1,'You::QueryEngine::Internal::TaskSerializer::serialize()']]],
   ['sessionmanager',['SessionManager',['../class_you_1_1_g_u_i_1_1_main_window_1_1_session_manager.html#a0c8d7516fe8d4927ff34a1bb31b651a0',1,'You::GUI::MainWindow::SessionManager']]],
   ['setloglevel',['setLogLevel',['../class_you_1_1_utils_1_1_log.html#abc139e65dcb8b92cd34b279d54387e27',1,'You::Utils::Log']]],
