@@ -10,5 +10,6 @@ var searchData=
   ['_7esystemtraymanager',['~SystemTrayManager',['../class_you_1_1_g_u_i_1_1_main_window_1_1_system_tray_manager.html#ab8be62e0673bf950125765da7079eb1d',1,'You::GUI::MainWindow::SystemTrayManager']]],
   ['_7etaskpanelmanager',['~TaskPanelManager',['../class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#ade65b04ab2a81c0e66c883b77da45de5',1,'You::GUI::MainWindow::TaskPanelManager']]],
   ['_7etransaction',['~Transaction',['../class_you_1_1_data_store_1_1_transaction.html#a502208b2d160ed9cbadb9cda184980a6',1,'You::DataStore::Transaction']]],
+  ['_7eundo',['~Undo',['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_undo.html#a41b4379b888171228e9b270812c008d8',1,'You::QueryEngine::Internal::Action::Undo']]],
   ['_7eupdatetask',['~UpdateTask',['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html#ae9f6aa0aa09169b3234f93ab4baf2544',1,'You::QueryEngine::Internal::Action::UpdateTask']]]
 ];

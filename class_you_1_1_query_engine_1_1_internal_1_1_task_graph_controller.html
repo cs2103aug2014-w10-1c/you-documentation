@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -105,6 +106,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac61bf55968ee4ce2062f9e3688b8fc08"><td class="memItemLeft" align="right" valign="top">static Task::ID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#ac61bf55968ee4ce2062f9e3688b8fc08">loadFromFile</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph)</td></tr>
 <tr class="memdesc:ac61bf55968ee4ce2062f9e3688b8fc08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the xml and build an initial task graph.  <a href="#ac61bf55968ee4ce2062f9e3688b8fc08">More...</a><br /></td></tr>
 <tr class="separator:ac61bf55968ee4ce2062f9e3688b8fc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f677465eb4ccc3d201055b93fbe32f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a99f677465eb4ccc3d201055b93fbe32f">isTaskExist</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph, const Task::ID id)</td></tr>
+<tr class="memdesc:a99f677465eb4ccc3d201055b93fbe32f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the task exist in the graph.  <a href="#a99f677465eb4ccc3d201055b93fbe32f">More...</a><br /></td></tr>
+<tr class="separator:a99f677465eb4ccc3d201055b93fbe32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77193c7ac5062d1851ddda98d2ffb6ff"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a77193c7ac5062d1851ddda98d2ffb6ff">addTask</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph, const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task)</td></tr>
 <tr class="memdesc:a77193c7ac5062d1851ddda98d2ffb6ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a task to the graph if it is not exist.  <a href="#a77193c7ac5062d1851ddda98d2ffb6ff">More...</a><br /></td></tr>
 <tr class="separator:a77193c7ac5062d1851ddda98d2ffb6ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,8 +159,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><div class="memdoc">
 
 <p>Add a task to the graph if it is not exist. </p>
-<p>May throw CircularDependencyException if it causes circular dependency. </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">graph</td><td>The graph to be modified. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">task</td><td>The task to be added. </td></tr>
   </table>
   </dd>
@@ -200,11 +205,54 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <p>Delete a task from the graph. </p>
 <p>May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">Exception::TaskNotFoundException</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">graph</td><td>The graph to be modified. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The id of the to-be deleted task </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if success, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a99f677465eb4ccc3d201055b93fbe32f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool You::QueryEngine::Internal::TaskGraphController::isTaskExist </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;&#160;</td>
+          <td class="paramname"><em>graph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Task::ID&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if the task exist in the graph. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The id to be checked. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -274,8 +322,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><div class="memdoc">
 
 <p>Update a task from the graph Rebuilds the graph if there is a dependency change. </p>
-<p>May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">Exception::TaskNotFoundException</a> if trying to update non existent task. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">Exception::TaskNotFoundException</a> if trying to update non existent task. May throw CircularDependencyException if it causes circular dependency. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">graph</td><td>The graph to be modified. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">task</td><td>The updated task </td></tr>
   </table>
   </dd>
@@ -289,7 +338,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 22 2014 01:17:01 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 22 2014 03:24:39 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_you_1_1_query_engine_1_1_query-members.html">List of all members</a>  </div>
@@ -109,14 +110,23 @@ Inheritance diagram for You::QueryEngine::Query:</div>
 <area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html" title="Action for adding a new task. " alt="You::QueryEngine::Internal::Action::AddTask" shape="rect" coords="0,56,277,80"/>
 <area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html" title="Action for deleting an existing task. " alt="You::QueryEngine::Internal::Action::DeleteTask" shape="rect" coords="287,56,564,80"/>
 <area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_get_task.html" title="Action for getting tasks by applying a filter and optionally a sorter. " alt="You::QueryEngine::Internal::Action::GetTask" shape="rect" coords="574,56,851,80"/>
-<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html" title="Action for updating task (e.g marking it as done) " alt="You::QueryEngine::Internal::Action::UpdateTask" shape="rect" coords="861,56,1138,80"/>
+<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_undo.html" title="Action for updating task (e.g marking it as done) " alt="You::QueryEngine::Internal::Action::Undo" shape="rect" coords="861,56,1138,80"/>
+<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html" title="Action for updating task (e.g marking it as done) " alt="You::QueryEngine::Internal::Action::UpdateTask" shape="rect" coords="1148,56,1425,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:abee80d359d958d5ce1c4132d560068df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abee80d359d958d5ce1c4132d560068df"></a>
+virtual std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query.html#abee80d359d958d5ce1c4132d560068df">getReverse</a> ()</td></tr>
+<tr class="memdesc:abee80d359d958d5ce1c4132d560068df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reverse of this query for undo. <br /></td></tr>
+<tr class="separator:abee80d359d958d5ce1c4132d560068df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
 <tr class="memitem:ac41d73c7383562be11fd3402263c23fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac41d73c7383562be11fd3402263c23fa"></a>
-static const std::wstring&#160;</td><td class="memItemRight" valign="bottom"><b>logCategory</b> = L&quot;[QE]&quot;</td></tr>
+static const std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query.html#ac41d73c7383562be11fd3402263c23fa">logCategory</a> = L&quot;[QE]&quot;</td></tr>
+<tr class="memdesc:ac41d73c7383562be11fd3402263c23fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">String appended before each log message. <br /></td></tr>
 <tr class="separator:ac41d73c7383562be11fd3402263c23fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -125,6 +135,9 @@ Friends</h2></td></tr>
 class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query.html#af93bbefe83d2a090b9fcec51a8c0c1f0">QueryEngine</a></td></tr>
 <tr class="memdesc:af93bbefe83d2a090b9fcec51a8c0c1f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the query engine utility class. <br /></td></tr>
 <tr class="separator:af93bbefe83d2a090b9fcec51a8c0c1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57116cb93dc67589ab40e3f8aa04d53e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57116cb93dc67589ab40e3f8aa04d53e"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Internal::Action::Undo</b></td></tr>
+<tr class="separator:a57116cb93dc67589ab40e3f8aa04d53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for queries. </p>
@@ -137,7 +150,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 22 2014 01:17:01 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 22 2014 03:24:39 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

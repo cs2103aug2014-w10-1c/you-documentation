@@ -8,6 +8,8 @@ var searchData=
   ['descending',['descending',['../class_you_1_1_query_engine_1_1_comparator.html#aa76638a2e16a96349457a9bdfc9838e8',1,'You::QueryEngine::Comparator']]],
   ['description',['description',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a78497582f6b112727d381be31cca258a',1,'You::QueryEngine::Internal::TaskBuilder']]],
   ['deserialize',['deserialize',['../class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#a8bb1452c7033096c3251755f4441be5a',1,'You::DataStore::Internal::SerializationOperation::deserialize()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a0c50365c2f29c0044827cf64f84cc840',1,'You::QueryEngine::Internal::TaskSerializer::deserialize()']]],
+  ['duebefore',['dueBefore',['../class_you_1_1_query_engine_1_1_filter.html#af56bb3869c5c6733b5143e0377b60458',1,'You::QueryEngine::Filter']]],
+  ['duenever',['dueNever',['../class_you_1_1_query_engine_1_1_filter.html#a5cebaf03f7df3b449fa0de8a53b1eefb',1,'You::QueryEngine::Filter']]],
   ['duethismonth',['dueThisMonth',['../class_you_1_1_query_engine_1_1_filter.html#a0c07a24bd89675995d6dbbe2287bdf90',1,'You::QueryEngine::Filter']]],
   ['duethisweek',['dueThisWeek',['../class_you_1_1_query_engine_1_1_filter.html#a07071d1da4f01bb3fa9cd78545911723',1,'You::QueryEngine::Filter']]],
   ['duethisyear',['dueThisYear',['../class_you_1_1_query_engine_1_1_filter.html#a4c156bf7013a052cd63bfb94228314f7',1,'You::QueryEngine::Filter']]],

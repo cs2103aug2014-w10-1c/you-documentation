@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['warning',['warning',['../class_you_1_1_utils_1_1_log.html#afc0290f4bd0ca0a8d4bc5b002c84161b',1,'You::Utils::Log']]]
+  ['value_5fdelimiter',['VALUE_DELIMITER',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#ae61e84b5144afd238866eabfcdfce654',1,'You::QueryEngine::Internal::TaskSerializer']]]
 ];

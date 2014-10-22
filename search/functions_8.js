@@ -8,5 +8,6 @@ var searchData=
   ['isdependon',['isDependOn',['../class_you_1_1_query_engine_1_1_task.html#ad7cc1f2080ed6bb74d19fb528d73ab1b',1,'You::QueryEngine::Task']]],
   ['isdueafter',['isDueAfter',['../class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a3fdfed8aa28cf6e2d7724b8447c88d3c',1,'You::GUI::MainWindow::TaskPanelManager']]],
   ['isduewithin',['isDueWithin',['../class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#ae0eae6eda377eb40b04ed1c23c1b8752',1,'You::GUI::MainWindow::TaskPanelManager']]],
-  ['ispastdue',['isPastDue',['../class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#aa959d0e49defbf128bc5b1f69f77560f',1,'You::GUI::MainWindow::TaskPanelManager']]]
+  ['ispastdue',['isPastDue',['../class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#aa959d0e49defbf128bc5b1f69f77560f',1,'You::GUI::MainWindow::TaskPanelManager']]],
+  ['istaskexist',['isTaskExist',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a99f677465eb4ccc3d201055b93fbe32f',1,'You::QueryEngine::Internal::TaskGraphController']]]
 ];
