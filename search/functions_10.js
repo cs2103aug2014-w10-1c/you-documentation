@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['serialize',['serialize',['../class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#af7fc2bdfa56691dc0bacade0098e617d',1,'You::DataStore::Internal::SerializationOperation::serialize()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a80a4f96df042d4e7cf7d0435bf2f3ed3',1,'You::QueryEngine::Internal::TaskSerializer::serialize()']]],
+  ['serialize',['serialize',['../class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#ae80e42d3f83067877612750c86af0008',1,'You::DataStore::Internal::SerializationOperation::serialize()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a80a4f96df042d4e7cf7d0435bf2f3ed3',1,'You::QueryEngine::Internal::TaskSerializer::serialize()']]],
   ['sessionmanager',['SessionManager',['../class_you_1_1_g_u_i_1_1_main_window_1_1_session_manager.html#a0c8d7516fe8d4927ff34a1bb31b651a0',1,'You::GUI::MainWindow::SessionManager']]],
   ['setloglevel',['setLogLevel',['../class_you_1_1_utils_1_1_log.html#abc139e65dcb8b92cd34b279d54387e27',1,'You::Utils::Log']]],
   ['setsink',['setSink',['../class_you_1_1_utils_1_1_log.html#af739ad468c59f3947eba570f3b2232b9',1,'You::Utils::Log']]],

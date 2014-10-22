@@ -94,32 +94,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">You::DataStore::UnitTests::DataStoreApiTest Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Unit test for <a class="el" href="class_you_1_1_data_store_1_1_data_store.html" title="The public methods of the data store. ">DataStore</a> API that is exposed to Query Engine, namely <a class="el" href="class_you_1_1_data_store_1_1_data_store.html">DataStore</a> and <a class="el" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a>.  
+ <a href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_api_test.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0619d8daece61810c1db5ee3a3678dc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0619d8daece61810c1db5ee3a3678dc0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pushOperationsToTransaction</b> ()</td></tr>
-<tr class="separator:a0619d8daece61810c1db5ee3a3678dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af43eebdfa196163266d9aa5481dd3f62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af43eebdfa196163266d9aa5481dd3f62"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>transactionRollback</b> ()</td></tr>
-<tr class="separator:af43eebdfa196163266d9aa5481dd3f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab45dc136ade440b6bc50cc356015e754"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab45dc136ade440b6bc50cc356015e754"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>constructTransactionWithDataStoreBegin</b> ()</td></tr>
-<tr class="separator:ab45dc136ade440b6bc50cc356015e754"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13befc795861d21fd5ed8dbfe154dd49"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13befc795861d21fd5ed8dbfe154dd49"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>commitTransaction</b> ()</td></tr>
-<tr class="separator:a13befc795861d21fd5ed8dbfe154dd49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6b015110427cb44b1faa4dea9fc8020"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6b015110427cb44b1faa4dea9fc8020"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>nestedTransaction</b> ()</td></tr>
-<tr class="separator:af6b015110427cb44b1faa4dea9fc8020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fff7cfda4b7c42cc27318069159abf6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fff7cfda4b7c42cc27318069159abf6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_api_test.html#a1fff7cfda4b7c42cc27318069159abf6">TEST_METHOD_INITIALIZE</a> (clearDataStoreState)</td></tr>
+<tr class="memdesc:a1fff7cfda4b7c42cc27318069159abf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears xml document tree and save empty xml file. <br /></td></tr>
+<tr class="separator:a1fff7cfda4b7c42cc27318069159abf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ddce93c3da0d1e84f6e589830452039"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ddce93c3da0d1e84f6e589830452039"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rollbackDeleteTransactionFromStack</b> ()</td></tr>
+<tr class="separator:a4ddce93c3da0d1e84f6e589830452039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56f261ba39b0893dff354d443b37440"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae56f261ba39b0893dff354d443b37440"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dataStoreOperationPushedToOperationsQueue</b> ()</td></tr>
+<tr class="separator:ae56f261ba39b0893dff354d443b37440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3112bab5f44f260afe4e1c85685b36c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3112bab5f44f260afe4e1c85685b36c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>commitTransactionModifyData</b> ()</td></tr>
+<tr class="separator:a3112bab5f44f260afe4e1c85685b36c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce0e5641eb08d4de39baf5923aa93ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ce0e5641eb08d4de39baf5923aa93ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>nestedTransactionExecuteOperationsInCorrectOrder</b> ()</td></tr>
+<tr class="separator:a9ce0e5641eb08d4de39baf5923aa93ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Unit test for <a class="el" href="class_you_1_1_data_store_1_1_data_store.html" title="The public methods of the data store. ">DataStore</a> API that is exposed to Query Engine, namely <a class="el" href="class_you_1_1_data_store_1_1_data_store.html">DataStore</a> and <a class="el" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a>. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>You-DataStore-Tests/datastore_api_test.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 22 2014 03:24:39 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 22 2014 04:09:31 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

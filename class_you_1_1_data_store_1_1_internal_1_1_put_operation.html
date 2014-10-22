@@ -107,9 +107,9 @@ Inheritance diagram for You::DataStore::Internal::PutOperation:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6a364406ce6a5d8ece88dfb717d4a752"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a364406ce6a5d8ece88dfb717d4a752"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PutOperation</b> (TaskId, const SerializedTask &amp;)</td></tr>
-<tr class="separator:a6a364406ce6a5d8ece88dfb717d4a752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b47bf5cd0bf9040189200ebea4926c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b47bf5cd0bf9040189200ebea4926c8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PutOperation</b> (TaskId, const KeyValuePairs &amp;)</td></tr>
+<tr class="separator:a0b47bf5cd0bf9040189200ebea4926c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1e8bea22637bc1936b46d9436cec8b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#af1e8bea22637bc1936b46d9436cec8b5">run</a> (pugi::xml_document &amp;document) override</td></tr>
 <tr class="memdesc:af1e8bea22637bc1936b46d9436cec8b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the operation.  <a href="#af1e8bea22637bc1936b46d9436cec8b5">More...</a><br /></td></tr>
 <tr class="separator:af1e8bea22637bc1936b46d9436cec8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,14 +117,14 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html">You::DataStore::Internal::SerializationOperation</a></td></tr>
-<tr class="memitem:af7fc2bdfa56691dc0bacade0098e617d inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7fc2bdfa56691dc0bacade0098e617d"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#af7fc2bdfa56691dc0bacade0098e617d">serialize</a> (const SerializedTask &amp;, pugi::xml_node &amp;)</td></tr>
-<tr class="memdesc:af7fc2bdfa56691dc0bacade0098e617d inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize task to an xml node. <br /></td></tr>
-<tr class="separator:af7fc2bdfa56691dc0bacade0098e617d inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bb1452c7033096c3251755f4441be5a inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bb1452c7033096c3251755f4441be5a"></a>
-static SerializedTask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#a8bb1452c7033096c3251755f4441be5a">deserialize</a> (const pugi::xml_node &amp;)</td></tr>
-<tr class="memdesc:a8bb1452c7033096c3251755f4441be5a inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize task from an xml node. <br /></td></tr>
-<tr class="separator:a8bb1452c7033096c3251755f4441be5a inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae80e42d3f83067877612750c86af0008 inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae80e42d3f83067877612750c86af0008"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#ae80e42d3f83067877612750c86af0008">serialize</a> (const KeyValuePairs &amp;, pugi::xml_node &amp;)</td></tr>
+<tr class="memdesc:ae80e42d3f83067877612750c86af0008 inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize task to an xml node. <br /></td></tr>
+<tr class="separator:ae80e42d3f83067877612750c86af0008 inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5a3a22e35acb2c5f12ba55a33b1b06 inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c5a3a22e35acb2c5f12ba55a33b1b06"></a>
+static KeyValuePairs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#a3c5a3a22e35acb2c5f12ba55a33b1b06">deserialize</a> (const pugi::xml_node &amp;)</td></tr>
+<tr class="memdesc:a3c5a3a22e35acb2c5f12ba55a33b1b06 inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize task from an xml node. <br /></td></tr>
+<tr class="separator:a3c5a3a22e35acb2c5f12ba55a33b1b06 inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html">You::DataStore::Internal::IOperation</a></td></tr>
 <tr class="memitem:a395d02d68ed703c5db17d3d302abf924 inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a395d02d68ed703c5db17d3d302abf924"></a>
 TaskId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#a395d02d68ed703c5db17d3d302abf924">taskId</a></td></tr>
@@ -174,7 +174,7 @@ TaskId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 22 2014 03:24:38 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 22 2014 04:09:31 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
