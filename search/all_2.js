@@ -17,8 +17,8 @@ var searchData=
   ['contextindexoutofrangeexception',['ContextIndexOutOfRangeException',['../class_you_1_1_controller_1_1_context_index_out_of_range_exception.html#a44df5759c6ef9a5274e3fae29f820462',1,'You::Controller::ContextIndexOutOfRangeException::ContextIndexOutOfRangeException()'],['../class_you_1_1_controller_1_1_context_index_out_of_range_exception.html#a0da5f76038b669ff883d51eeb36b3553',1,'You::Controller::ContextIndexOutOfRangeException::ContextIndexOutOfRangeException(const std::out_of_range &amp;exception)'],['../class_you_1_1_controller_1_1_context_index_out_of_range_exception.html#a2079627aae63f45987e532d846d5c849',1,'You::Controller::ContextIndexOutOfRangeException::ContextIndexOutOfRangeException(const ContextIndexOutOfRangeException &amp;exception)']]],
   ['contextindexoutofrangeexception',['ContextIndexOutOfRangeException',['../class_you_1_1_controller_1_1_context_index_out_of_range_exception.html',1,'You::Controller']]],
   ['contextrequiredexception',['ContextRequiredException',['../class_you_1_1_controller_1_1_context_required_exception.html',1,'You::Controller']]],
-  ['controller',['Controller',['../class_you_1_1_query_engine_1_1_internal_1_1_controller.html',1,'You::QueryEngine::Internal']]],
   ['controller',['Controller',['../class_you_1_1_controller_1_1_controller.html',1,'You::Controller']]],
+  ['controller',['Controller',['../class_you_1_1_query_engine_1_1_internal_1_1_controller.html',1,'You::QueryEngine::Internal']]],
   ['controller_2eh',['controller.h',['../_you-_query_engine_2internal_2controller_8h.html',1,'']]],
   ['critical',['critical',['../class_you_1_1_utils_1_1_log.html#a15f60ad05512c9ef99c147c398260b5b',1,'You::Utils::Log']]]
 ];

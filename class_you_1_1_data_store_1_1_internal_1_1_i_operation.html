@@ -106,18 +106,19 @@ Inheritance diagram for You::DataStore::Internal::IOperation:</div>
  <div class="center">
   <img src="class_you_1_1_data_store_1_1_internal_1_1_i_operation.png" usemap="#You::DataStore::Internal::IOperation_map" alt=""/>
   <map id="You::DataStore::Internal::IOperation_map" name="You::DataStore::Internal::IOperation_map">
-<area href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html" alt="You::DataStore::Internal::EraseOperation" shape="rect" coords="0,56,276,80"/>
-<area href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html" alt="You::DataStore::Internal::SerializationOperation" shape="rect" coords="286,56,562,80"/>
-<area href="class_you_1_1_data_store_1_1_internal_1_1_post_operation.html" alt="You::DataStore::Internal::PostOperation" shape="rect" coords="143,112,419,136"/>
-<area href="class_you_1_1_data_store_1_1_internal_1_1_put_operation.html" alt="You::DataStore::Internal::PutOperation" shape="rect" coords="429,112,705,136"/>
+<area href="class_you_1_1_data_store_1_1_internal_1_1_branch_operation.html" title="BranchOperation gets the XML node in the document with the name specified or create one if none exist..." alt="You::DataStore::Internal::BranchOperation" shape="rect" coords="0,56,276,80"/>
+<area href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html" alt="You::DataStore::Internal::EraseOperation" shape="rect" coords="286,56,562,80"/>
+<area href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html" alt="You::DataStore::Internal::SerializationOperation" shape="rect" coords="572,56,848,80"/>
+<area href="class_you_1_1_data_store_1_1_internal_1_1_post_operation.html" alt="You::DataStore::Internal::PostOperation" shape="rect" coords="429,112,705,136"/>
+<area href="class_you_1_1_data_store_1_1_internal_1_1_put_operation.html" alt="You::DataStore::Internal::PutOperation" shape="rect" coords="715,112,991,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a736af769502508902192a7723e554171"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#a736af769502508902192a7723e554171">run</a> (pugi::xml_document &amp;document)=0</td></tr>
-<tr class="memdesc:a736af769502508902192a7723e554171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the operation.  <a href="#a736af769502508902192a7723e554171">More...</a><br /></td></tr>
-<tr class="separator:a736af769502508902192a7723e554171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af32a0e27b7b3b100dfef24355da52bb9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#af32a0e27b7b3b100dfef24355da52bb9">run</a> (pugi::xml_node &amp;document)=0</td></tr>
+<tr class="memdesc:af32a0e27b7b3b100dfef24355da52bb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the operation.  <a href="#af32a0e27b7b3b100dfef24355da52bb9">More...</a><br /></td></tr>
+<tr class="separator:af32a0e27b7b3b100dfef24355da52bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -129,7 +130,7 @@ TaskId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A pure virtual class of operations to be put into transaction stack. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a736af769502508902192a7723e554171"></a>
+<a class="anchor" id="af32a0e27b7b3b100dfef24355da52bb9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -139,7 +140,7 @@ TaskId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
         <tr>
           <td class="memname">virtual bool You::DataStore::Internal::IOperation::run </td>
           <td>(</td>
-          <td class="paramtype">pugi::xml_document &amp;&#160;</td>
+          <td class="paramtype">pugi::xml_node &amp;&#160;</td>
           <td class="paramname"><em>document</em></td><td>)</td>
           <td></td>
         </tr>
@@ -160,7 +161,7 @@ TaskId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the operation succeeded. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#aa8c2de5ee73acca5868a8545c9a4f8bf">You::DataStore::Internal::EraseOperation</a>, <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_post_operation.html#ac3eb2e22fa1abbaca6a8b7912ca4e0b2">You::DataStore::Internal::PostOperation</a>, and <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#af1e8bea22637bc1936b46d9436cec8b5">You::DataStore::Internal::PutOperation</a>.</p>
+<p>Implemented in <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#a0ac10fa166a63ce8ed885fbfeab9abc2">You::DataStore::Internal::EraseOperation</a>, <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_post_operation.html#a3de558e70b77f17901140db288ddeefc">You::DataStore::Internal::PostOperation</a>, and <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#a2ada042897a0e384ab436c1b0d099363">You::DataStore::Internal::PutOperation</a>.</p>
 
 </div>
 </div>
@@ -170,7 +171,7 @@ TaskId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 25 2014 03:17:09 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 27 2014 03:51:35 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
