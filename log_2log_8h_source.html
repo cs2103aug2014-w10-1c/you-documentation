@@ -129,27 +129,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        Log::sink = sink;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="class_you_1_1_utils_1_1_log.html">Log</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_utils_1_1_log.html#a7a2f469d325b7d57f3cff25cf70fc42b">restoreSink</a>();</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> write(</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        LogSeverity severity,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">const</span> std::wstring&amp; category,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keyword">const</span> std::wstring&amp; message);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">static</span> LogSeverity logLevel;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">static</span> std::shared_ptr&lt;LogSink&gt; sink;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}  <span class="comment">// namespace Utils</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="class_you_1_1_utils_1_1_log.html">Log</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> write(</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        LogSeverity severity,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">const</span> std::wstring&amp; category,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keyword">const</span> std::wstring&amp; message);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">static</span> LogSeverity logLevel;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">static</span> std::shared_ptr&lt;LogSink&gt; sink;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif  // YOU_UTILS_LOG_LOG_H_</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}  <span class="comment">// namespace Utils</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif  // YOU_UTILS_LOG_LOG_H_</span></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_log_html_a3aee5642a67db1b93eab4f13f4b28f6f"><div class="ttname"><a href="class_you_1_1_utils_1_1_log.html#a3aee5642a67db1b93eab4f13f4b28f6f">You::Utils::Log::error</a></div><div class="ttdeci">static Logger error</div><div class="ttdoc">The logger which prints error-level messages. </div><div class="ttdef"><b>Definition:</b> log.h:46</div></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_log_html_aad48612b50c957fe4277633ff6cce06e"><div class="ttname"><a href="class_you_1_1_utils_1_1_log.html#aad48612b50c957fe4277633ff6cce06e">You::Utils::Log::getLogLevel</a></div><div class="ttdeci">static LogSeverity getLogLevel()</div><div class="ttdoc">Gets the active log level. </div><div class="ttdef"><b>Definition:</b> log.h:59</div></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_log_html_af739ad468c59f3947eba570f3b2232b9"><div class="ttname"><a href="class_you_1_1_utils_1_1_log.html#af739ad468c59f3947eba570f3b2232b9">You::Utils::Log::setSink</a></div><div class="ttdeci">static void setSink(std::shared_ptr&lt; LogSink &gt; sink)</div><div class="ttdoc">Sets the active log sink. </div><div class="ttdef"><b>Definition:</b> log.h:79</div></div>
+<div class="ttc" id="class_you_1_1_utils_1_1_log_html_a7a2f469d325b7d57f3cff25cf70fc42b"><div class="ttname"><a href="class_you_1_1_utils_1_1_log.html#a7a2f469d325b7d57f3cff25cf70fc42b">You::Utils::Log::restoreSink</a></div><div class="ttdeci">static void restoreSink()</div><div class="ttdoc">Restores the default log sink. </div><div class="ttdef"><b>Definition:</b> log.cpp:60</div></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_log_html_afc0290f4bd0ca0a8d4bc5b002c84161b"><div class="ttname"><a href="class_you_1_1_utils_1_1_log.html#afc0290f4bd0ca0a8d4bc5b002c84161b">You::Utils::Log::warning</a></div><div class="ttdeci">static Logger warning</div><div class="ttdoc">The logger which prints warning-level messages. </div><div class="ttdef"><b>Definition:</b> log.h:41</div></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_log_html_a9bd83e5b3e9ab2dc6d55a59fdf268042"><div class="ttname"><a href="class_you_1_1_utils_1_1_log.html#a9bd83e5b3e9ab2dc6d55a59fdf268042">You::Utils::Log::info</a></div><div class="ttdeci">static Logger info</div><div class="ttdoc">The logger which prints info-level messages. </div><div class="ttdef"><b>Definition:</b> log.h:36</div></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_log_html_abc139e65dcb8b92cd34b279d54387e27"><div class="ttname"><a href="class_you_1_1_utils_1_1_log.html#abc139e65dcb8b92cd34b279d54387e27">You::Utils::Log::setLogLevel</a></div><div class="ttdeci">static void setLogLevel(LogSeverity severity)</div><div class="ttdoc">Sets the active log level. </div><div class="ttdef"><b>Definition:</b> log.h:69</div></div>
@@ -161,7 +164,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 27 2014 03:51:27 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 27 2014 10:04:18 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
