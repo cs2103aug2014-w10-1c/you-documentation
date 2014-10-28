@@ -4,8 +4,10 @@ var searchData=
   ['parseerrorexception',['ParseErrorException',['../class_you_1_1_n_l_p_1_1_parse_error_exception.html#a0c1b35ff9e6776e4b566e8ef95cce8fc',1,'You::NLP::ParseErrorException']]],
   ['populatetaskpanel',['populateTaskPanel',['../class_you_1_1_g_u_i_1_1_main_window.html#a5fd32bc206ce56aeb3e9e2b5a48b2385',1,'You::GUI::MainWindow']]],
   ['post',['post',['../class_you_1_1_data_store_1_1_data_store.html#a99e2d48906c7119e626407bfa7ac2d77',1,'You::DataStore::DataStore::post()'],['../class_you_1_1_data_store_1_1_internal_1_1_data_store.html#af2f0645cbc65b9aea77f0533efe12c3c',1,'You::DataStore::Internal::DataStore::post()']]],
+  ['postoperation',['PostOperation',['../class_you_1_1_data_store_1_1_internal_1_1_post_operation.html#afa0a13a6a96491d0ee4cf4c91b4ec544',1,'You::DataStore::Internal::PostOperation']]],
   ['priority',['priority',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#ae4df8891d703178ee0339546aa2cb06e',1,'You::QueryEngine::Internal::TaskBuilder']]],
   ['processresponse',['processResponse',['../class_you_1_1_controller_1_1_internal_1_1_query_executor.html#a018b12200e924028a7b52c60569b4aab',1,'You::Controller::Internal::QueryExecutor::processResponse()'],['../class_you_1_1_controller_1_1_internal_1_1_unit_tests_1_1_dummy_query_executor.html#a71a2877ad94d0b49e2d5285780e56dc7',1,'You::Controller::Internal::UnitTests::DummyQueryExecutor::processResponse()']]],
-  ['push',['push',['../class_you_1_1_data_store_1_1_internal_1_1_transaction.html#ae51c5f227c9c06dda8f8be53a6540788',1,'You::DataStore::Internal::Transaction']]],
-  ['put',['put',['../class_you_1_1_data_store_1_1_data_store.html#aca42548ba92a1201e295f8c1ab4b1d7c',1,'You::DataStore::DataStore::put()'],['../class_you_1_1_data_store_1_1_internal_1_1_data_store.html#af1a511ebefbe0b57b5bd9526f88ed674',1,'You::DataStore::Internal::DataStore::put()']]]
+  ['push',['push',['../class_you_1_1_data_store_1_1_internal_1_1_transaction.html#aa11265c3d625b3dac6079c3343542304',1,'You::DataStore::Internal::Transaction']]],
+  ['put',['put',['../class_you_1_1_data_store_1_1_data_store.html#aca42548ba92a1201e295f8c1ab4b1d7c',1,'You::DataStore::DataStore::put()'],['../class_you_1_1_data_store_1_1_internal_1_1_data_store.html#af1a511ebefbe0b57b5bd9526f88ed674',1,'You::DataStore::Internal::DataStore::put()']]],
+  ['putoperation',['PutOperation',['../class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#afda1fde2e8369b1389fb95b1ec72c32e',1,'You::DataStore::Internal::PutOperation']]]
 ];

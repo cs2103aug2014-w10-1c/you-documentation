@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logcategory',['logCategory',['../class_you_1_1_query_engine_1_1_query.html#ac41d73c7383562be11fd3402263c23fa',1,'You::QueryEngine::Query']]]
+  ['info',['info',['../class_you_1_1_utils_1_1_log.html#a9bd83e5b3e9ab2dc6d55a59fdf268042',1,'You::Utils::Log']]]
 ];

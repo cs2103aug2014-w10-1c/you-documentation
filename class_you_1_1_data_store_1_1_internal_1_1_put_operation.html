@@ -94,25 +94,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">You::DataStore::Internal::PutOperation Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>An <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">Operation</a> class for put operation Edits the XML when <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#af1e8bea22637bc1936b46d9436cec8b5">run</a> is called.  
+ <a href="class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="put__operation_8h_source.html">put_operation.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for You::DataStore::Internal::PutOperation:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_you_1_1_data_store_1_1_internal_1_1_put_operation.png" usemap="#You::DataStore::Internal::PutOperation_map" alt=""/>
   <map id="You::DataStore::Internal::PutOperation_map" name="You::DataStore::Internal::PutOperation_map">
-<area href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html" alt="You::DataStore::Internal::SerializationOperation" shape="rect" coords="0,56,276,80"/>
-<area href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html" title="A pure virtual class of operations to be put into transaction stack. " alt="You::DataStore::Internal::IOperation" shape="rect" coords="0,0,276,24"/>
+<area href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html" title="Intermediate parent class of Operation requiring serialization. " alt="You::DataStore::Internal::SerializationOperation" shape="rect" coords="0,56,276,80"/>
+<area href="class_you_1_1_data_store_1_1_internal_1_1_operation.html" title="A pure virtual class of operations to be put into transaction stack. " alt="You::DataStore::Internal::Operation" shape="rect" coords="0,0,276,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0b47bf5cd0bf9040189200ebea4926c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b47bf5cd0bf9040189200ebea4926c8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PutOperation</b> (TaskId, const KeyValuePairs &amp;)</td></tr>
-<tr class="separator:a0b47bf5cd0bf9040189200ebea4926c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ada042897a0e384ab436c1b0d099363"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#a2ada042897a0e384ab436c1b0d099363">run</a> (pugi::xml_node &amp;document) override</td></tr>
-<tr class="memdesc:a2ada042897a0e384ab436c1b0d099363"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the operation.  <a href="#a2ada042897a0e384ab436c1b0d099363">More...</a><br /></td></tr>
-<tr class="separator:a2ada042897a0e384ab436c1b0d099363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda1fde2e8369b1389fb95b1ec72c32e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#afda1fde2e8369b1389fb95b1ec72c32e">PutOperation</a> (std::wstring branch, std::wstring id, const KeyValuePairs &amp;kvp)</td></tr>
+<tr class="memdesc:afda1fde2e8369b1389fb95b1ec72c32e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#afda1fde2e8369b1389fb95b1ec72c32e">More...</a><br /></td></tr>
+<tr class="separator:afda1fde2e8369b1389fb95b1ec72c32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e8bea22637bc1936b46d9436cec8b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#af1e8bea22637bc1936b46d9436cec8b5">run</a> (pugi::xml_document &amp;document) override</td></tr>
+<tr class="memdesc:af1e8bea22637bc1936b46d9436cec8b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the operation.  <a href="#af1e8bea22637bc1936b46d9436cec8b5">More...</a><br /></td></tr>
+<tr class="separator:af1e8bea22637bc1936b46d9436cec8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -125,14 +130,63 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static KeyValuePairs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#a3c5a3a22e35acb2c5f12ba55a33b1b06">deserialize</a> (const pugi::xml_node &amp;)</td></tr>
 <tr class="memdesc:a3c5a3a22e35acb2c5f12ba55a33b1b06 inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize task from an xml node. <br /></td></tr>
 <tr class="separator:a3c5a3a22e35acb2c5f12ba55a33b1b06 inherit pub_static_methods_class_you_1_1_data_store_1_1_internal_1_1_serialization_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html">You::DataStore::Internal::IOperation</a></td></tr>
-<tr class="memitem:a395d02d68ed703c5db17d3d302abf924 inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a395d02d68ed703c5db17d3d302abf924"></a>
-TaskId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#a395d02d68ed703c5db17d3d302abf924">taskId</a></td></tr>
-<tr class="memdesc:a395d02d68ed703c5db17d3d302abf924 inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Task ID to modify. <br /></td></tr>
-<tr class="separator:a395d02d68ed703c5db17d3d302abf924 inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_operation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_operation')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">You::DataStore::Internal::Operation</a></td></tr>
+<tr class="memitem:a8d1106ebd31972a6d9f778204635475e inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_operation"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d1106ebd31972a6d9f778204635475e"></a>
+std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html#a8d1106ebd31972a6d9f778204635475e">nodeId</a></td></tr>
+<tr class="memdesc:a8d1106ebd31972a6d9f778204635475e inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_operation"><td class="mdescLeft">&#160;</td><td class="mdescRight">The "id" attribute of the XML node to modify. <br /></td></tr>
+<tr class="separator:a8d1106ebd31972a6d9f778204635475e inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d0dd6a5b84fa403e8cd7df59d9b8cc inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_operation"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20d0dd6a5b84fa403e8cd7df59d9b8cc"></a>
+std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html#a20d0dd6a5b84fa403e8cd7df59d9b8cc">branchName</a></td></tr>
+<tr class="memdesc:a20d0dd6a5b84fa403e8cd7df59d9b8cc inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_operation"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the XML branch to modify. <br /></td></tr>
+<tr class="separator:a20d0dd6a5b84fa403e8cd7df59d9b8cc inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">Operation</a> class for put operation Edits the XML when <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#af1e8bea22637bc1936b46d9436cec8b5">run</a> is called. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="afda1fde2e8369b1389fb95b1ec72c32e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">You::DataStore::Internal::PutOperation::PutOperation </td>
+          <td>(</td>
+          <td class="paramtype">std::wstring&#160;</td>
+          <td class="paramname"><em>branch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::wstring&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const KeyValuePairs &amp;&#160;</td>
+          <td class="paramname"><em>kvp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">branch</td><td>the name of the branch to modify </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>the id attribute of the node to be edited </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kvp</td><td>the KeyValuePairs to be written over the old one </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a2ada042897a0e384ab436c1b0d099363"></a>
+<a class="anchor" id="af1e8bea22637bc1936b46d9436cec8b5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -142,7 +196,7 @@ TaskId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
         <tr>
           <td class="memname">bool You::DataStore::Internal::PutOperation::run </td>
           <td>(</td>
-          <td class="paramtype">pugi::xml_node &amp;&#160;</td>
+          <td class="paramtype">pugi::xml_document &amp;&#160;</td>
           <td class="paramname"><em>document</em></td><td>)</td>
           <td></td>
         </tr>
@@ -163,7 +217,7 @@ TaskId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the operation succeeded. </dd></dl>
 
-<p>Implements <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#af32a0e27b7b3b100dfef24355da52bb9">You::DataStore::Internal::IOperation</a>.</p>
+<p>Implements <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html#a8fd843167462f72f2cc7f81487d6ee1e">You::DataStore::Internal::Operation</a>.</p>
 
 </div>
 </div>
@@ -174,7 +228,7 @@ TaskId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 28 2014 00:38:17 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 28 2014 01:02:50 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -94,35 +94,82 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">You::DataStore::Internal::EraseOperation Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>An <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">Operation</a> class for erase operation Erases a node from the XML when <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#aa8c2de5ee73acca5868a8545c9a4f8bf">run</a> is called.  
+ <a href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="erase__operation_8h_source.html">erase_operation.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for You::DataStore::Internal::EraseOperation:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.png" usemap="#You::DataStore::Internal::EraseOperation_map" alt=""/>
   <map id="You::DataStore::Internal::EraseOperation_map" name="You::DataStore::Internal::EraseOperation_map">
-<area href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html" title="A pure virtual class of operations to be put into transaction stack. " alt="You::DataStore::Internal::IOperation" shape="rect" coords="0,0,240,24"/>
+<area href="class_you_1_1_data_store_1_1_internal_1_1_operation.html" title="A pure virtual class of operations to be put into transaction stack. " alt="You::DataStore::Internal::Operation" shape="rect" coords="0,0,240,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7a5d5197af6d548b1535863432e5ac5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a5d5197af6d548b1535863432e5ac5c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>EraseOperation</b> (TaskId)</td></tr>
-<tr class="separator:a7a5d5197af6d548b1535863432e5ac5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ac10fa166a63ce8ed885fbfeab9abc2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#a0ac10fa166a63ce8ed885fbfeab9abc2">run</a> (pugi::xml_node &amp;document) override</td></tr>
-<tr class="memdesc:a0ac10fa166a63ce8ed885fbfeab9abc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the operation.  <a href="#a0ac10fa166a63ce8ed885fbfeab9abc2">More...</a><br /></td></tr>
-<tr class="separator:a0ac10fa166a63ce8ed885fbfeab9abc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a4c3b9363c0d125d891a37255f4c44c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#a8a4c3b9363c0d125d891a37255f4c44c">EraseOperation</a> (std::wstring branch, std::wstring id)</td></tr>
+<tr class="memdesc:a8a4c3b9363c0d125d891a37255f4c44c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a8a4c3b9363c0d125d891a37255f4c44c">More...</a><br /></td></tr>
+<tr class="separator:a8a4c3b9363c0d125d891a37255f4c44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8c2de5ee73acca5868a8545c9a4f8bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#aa8c2de5ee73acca5868a8545c9a4f8bf">run</a> (pugi::xml_document &amp;document) override</td></tr>
+<tr class="memdesc:aa8c2de5ee73acca5868a8545c9a4f8bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the operation.  <a href="#aa8c2de5ee73acca5868a8545c9a4f8bf">More...</a><br /></td></tr>
+<tr class="separator:aa8c2de5ee73acca5868a8545c9a4f8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html">You::DataStore::Internal::IOperation</a></td></tr>
-<tr class="memitem:a395d02d68ed703c5db17d3d302abf924 inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a395d02d68ed703c5db17d3d302abf924"></a>
-TaskId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#a395d02d68ed703c5db17d3d302abf924">taskId</a></td></tr>
-<tr class="memdesc:a395d02d68ed703c5db17d3d302abf924 inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Task ID to modify. <br /></td></tr>
-<tr class="separator:a395d02d68ed703c5db17d3d302abf924 inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_i_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_operation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_operation')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">You::DataStore::Internal::Operation</a></td></tr>
+<tr class="memitem:a8d1106ebd31972a6d9f778204635475e inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_operation"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d1106ebd31972a6d9f778204635475e"></a>
+std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html#a8d1106ebd31972a6d9f778204635475e">nodeId</a></td></tr>
+<tr class="memdesc:a8d1106ebd31972a6d9f778204635475e inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_operation"><td class="mdescLeft">&#160;</td><td class="mdescRight">The "id" attribute of the XML node to modify. <br /></td></tr>
+<tr class="separator:a8d1106ebd31972a6d9f778204635475e inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d0dd6a5b84fa403e8cd7df59d9b8cc inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_operation"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20d0dd6a5b84fa403e8cd7df59d9b8cc"></a>
+std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html#a20d0dd6a5b84fa403e8cd7df59d9b8cc">branchName</a></td></tr>
+<tr class="memdesc:a20d0dd6a5b84fa403e8cd7df59d9b8cc inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_operation"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the XML branch to modify. <br /></td></tr>
+<tr class="separator:a20d0dd6a5b84fa403e8cd7df59d9b8cc inherit pro_attribs_class_you_1_1_data_store_1_1_internal_1_1_operation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">Operation</a> class for erase operation Erases a node from the XML when <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#aa8c2de5ee73acca5868a8545c9a4f8bf">run</a> is called. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a8a4c3b9363c0d125d891a37255f4c44c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">You::DataStore::Internal::EraseOperation::EraseOperation </td>
+          <td>(</td>
+          <td class="paramtype">std::wstring&#160;</td>
+          <td class="paramname"><em>branch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::wstring&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">branch</td><td>the name of the branch to modify </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>the id attribute of the node to be erased </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0ac10fa166a63ce8ed885fbfeab9abc2"></a>
+<a class="anchor" id="aa8c2de5ee73acca5868a8545c9a4f8bf"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -132,7 +179,7 @@ TaskId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
         <tr>
           <td class="memname">bool You::DataStore::Internal::EraseOperation::run </td>
           <td>(</td>
-          <td class="paramtype">pugi::xml_node &amp;&#160;</td>
+          <td class="paramtype">pugi::xml_document &amp;&#160;</td>
           <td class="paramname"><em>document</em></td><td>)</td>
           <td></td>
         </tr>
@@ -153,7 +200,7 @@ TaskId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the operation succeeded. </dd></dl>
 
-<p>Implements <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_i_operation.html#af32a0e27b7b3b100dfef24355da52bb9">You::DataStore::Internal::IOperation</a>.</p>
+<p>Implements <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html#a8fd843167462f72f2cc7f81487d6ee1e">You::DataStore::Internal::Operation</a>.</p>
 
 </div>
 </div>
@@ -164,7 +211,7 @@ TaskId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 28 2014 00:38:17 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 28 2014 01:02:50 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
