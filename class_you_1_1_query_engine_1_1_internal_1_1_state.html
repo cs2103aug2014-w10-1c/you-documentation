@@ -132,6 +132,9 @@ std::stack&lt; std::unique_ptr<br class="typebreak" />
 Task::ID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html#abbe5ae530e26203a3874f71023e78581">inquireNewID</a> ()</td></tr>
 <tr class="memdesc:abbe5ae530e26203a3874f71023e78581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inquire a new and unique task id. <br /></td></tr>
 <tr class="separator:abbe5ae530e26203a3874f71023e78581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70aa302615a7bf7772da7401170259ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html#a70aa302615a7bf7772da7401170259ab">commitMaxIDToDataStore</a> (bool isFirstTime)</td></tr>
+<tr class="memdesc:a70aa302615a7bf7772da7401170259ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save max id to datastore.  <a href="#a70aa302615a7bf7772da7401170259ab">More...</a><br /></td></tr>
+<tr class="separator:a70aa302615a7bf7772da7401170259ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -175,6 +178,30 @@ Should be used only if necessary. </p>
 
 </div>
 </div>
+<a class="anchor" id="a70aa302615a7bf7772da7401170259ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void You::QueryEngine::Internal::State::commitMaxIDToDataStore </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isFirstTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Save max id to datastore. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">isFirstTime</td><td>POST if true, PUT otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>You-QueryEngine/internal/model/<a class="el" href="state_8h_source.html">state.h</a></li>
 <li>You-QueryEngine/internal/model/state.cpp</li>
@@ -182,7 +209,7 @@ Should be used only if necessary. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 28 2014 10:52:55 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 28 2014 12:10:36 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
