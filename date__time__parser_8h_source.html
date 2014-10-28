@@ -117,71 +117,75 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_date_time_parser.html#ad44734bb65ae0695eb9df717ce8ce52c">   31</a></span>&#160;    <span class="keyword">typedef</span> std::basic_string&lt;ParserCharEncoding::char_type&gt; <a class="code" href="class_you_1_1_n_l_p_1_1_date_time_parser.html#ad44734bb65ae0695eb9df717ce8ce52c">StringType</a>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">static</span> boost::posix_time::ptime <a class="code" href="class_you_1_1_n_l_p_1_1_date_time_parser.html#ae3f33f59c8a9c975da7cf0b198776cfb">parse</a>(<span class="keyword">const</span> StringType&amp; <span class="keywordtype">string</span>);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">typedef</span> int16_t Year;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">typedef</span> int16_t Month;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">typedef</span> int8_t Day;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">typedef</span> boost::gregorian::date Date;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">typedef</span> boost::posix_time::ptime DateTime;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">typedef</span> boost::spirit::qi::rule&lt;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_you_1_1_n_l_p_1_1_date_time_parser.html#ac8ef4947525805f0c8089d264b11603c">IteratorType</a>,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        Date(),</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        SkipperType&gt; DateRule;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_you_1_1_n_l_p_1_1_date_time_parser.html">DateTimeParser</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> DateTime buildDateTime(Date);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">static</span> Date buildDate(Year, Month, Day);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">static</span> Year parseFuzzyYear(</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">const</span> std::vector&lt;ParserCharEncoding::char_type&gt;&amp; chars);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">static</span> Year parseTwoDigitYear(Year year);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">static</span> Date constructDayMonthDate(Day, Month);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    start_type start;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    DateRule date;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    DateRule dateYearMonthDay;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    DateRule dateYearMonth;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    DateRule dateYear;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    DateRule dateMonthYear;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    DateRule dateDayMonth;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, Year(), SkipperType&gt; year;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, Month(), SkipperType&gt; month;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    boost::spirit::qi::symbols&lt;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        ParserCharEncoding::char_type,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        boost::gregorian::months_of_year&gt; monthNames;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, Day(), SkipperType&gt; day;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}  <span class="comment">// namespace NLP</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif  // YOU_NLP_DATE_TIME_PARSER_H_</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_n_l_p_1_1_date_time_parser.html#a36ed456d5dc7b647a19872236007719f">parse</a>(</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">const</span> StringType&amp; <span class="keywordtype">string</span>,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        boost::posix_time::ptime&amp; result);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">static</span> boost::posix_time::ptime <a class="code" href="class_you_1_1_n_l_p_1_1_date_time_parser.html#a36ed456d5dc7b647a19872236007719f">parse</a>(<span class="keyword">const</span> StringType&amp; <span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">typedef</span> int16_t Year;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">typedef</span> int16_t Month;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">typedef</span> int8_t Day;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">typedef</span> boost::gregorian::date Date;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">typedef</span> boost::posix_time::ptime DateTime;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">typedef</span> boost::spirit::qi::rule&lt;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="class_you_1_1_n_l_p_1_1_date_time_parser.html#ac8ef4947525805f0c8089d264b11603c">IteratorType</a>,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        Date(),</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        SkipperType&gt; DateRule;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="class_you_1_1_n_l_p_1_1_date_time_parser.html">DateTimeParser</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> DateTime buildDateTime(Date);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">static</span> Date buildDate(Year, Month, Day);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">static</span> Year parseFuzzyYear(</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keyword">const</span> std::vector&lt;ParserCharEncoding::char_type&gt;&amp; chars);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">static</span> Year parseTwoDigitYear(Year year);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">static</span> Date constructDayMonthDate(Day, Month);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    start_type start;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    DateRule date;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    DateRule dateYearMonthDay;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    DateRule dateYearMonth;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    DateRule dateYear;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    DateRule dateMonthYear;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    DateRule dateDayMonth;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, Year(), SkipperType&gt; year;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, Month(), SkipperType&gt; month;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    boost::spirit::qi::symbols&lt;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        ParserCharEncoding::char_type,</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        boost::gregorian::months_of_year&gt; monthNames;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, Day(), SkipperType&gt; day;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}  <span class="comment">// namespace NLP</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif  // YOU_NLP_DATE_TIME_PARSER_H_</span></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_date_time_parser_html"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_date_time_parser.html">You::NLP::DateTimeParser</a></div><div class="ttdoc">The query parser that recognises our input syntax. </div><div class="ttdef"><b>Definition:</b> date_time_parser.h:14</div></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_date_time_parser_html_a8ef6acc06aede1b16238e988488475cc"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_date_time_parser.html#a8ef6acc06aede1b16238e988488475cc">You::NLP::DateTimeParser::SkipperType</a></div><div class="ttdeci">ParserSkipperType SkipperType</div><div class="ttdoc">The type of the skipper used in this grammar. </div><div class="ttdef"><b>Definition:</b> date_time_parser.h:25</div></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_date_time_parser_html_ae3f33f59c8a9c975da7cf0b198776cfb"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_date_time_parser.html#ae3f33f59c8a9c975da7cf0b198776cfb">You::NLP::DateTimeParser::parse</a></div><div class="ttdeci">static boost::posix_time::ptime parse(const StringType &amp;string)</div><div class="ttdoc">Parses the given input string into date. </div><div class="ttdef"><b>Definition:</b> date_time_parser.cpp:16</div></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_date_time_parser_html_ad44734bb65ae0695eb9df717ce8ce52c"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_date_time_parser.html#ad44734bb65ae0695eb9df717ce8ce52c">You::NLP::DateTimeParser::StringType</a></div><div class="ttdeci">std::basic_string&lt; ParserCharEncoding::char_type &gt; StringType</div><div class="ttdoc">The type of input strings accepted by this parser. </div><div class="ttdef"><b>Definition:</b> date_time_parser.h:31</div></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_date_time_parser_html_ac8ef4947525805f0c8089d264b11603c"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_date_time_parser.html#ac8ef4947525805f0c8089d264b11603c">You::NLP::DateTimeParser::IteratorType</a></div><div class="ttdeci">ParserIteratorType IteratorType</div><div class="ttdoc">The type of the iterator used in this grammar. </div><div class="ttdef"><b>Definition:</b> date_time_parser.h:22</div></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_date_time_parser_html_af4fbe3d115141139f378afc9acec77d2"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_date_time_parser.html#af4fbe3d115141139f378afc9acec77d2">You::NLP::DateTimeParser::LexemeType</a></div><div class="ttdeci">std::vector&lt; ParserCharEncoding::char_type &gt; LexemeType</div><div class="ttdoc">The type of the lexeme buffer provided in a lexing semantic action. </div><div class="ttdef"><b>Definition:</b> date_time_parser.h:28</div></div>
+<div class="ttc" id="class_you_1_1_n_l_p_1_1_date_time_parser_html_a36ed456d5dc7b647a19872236007719f"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_date_time_parser.html#a36ed456d5dc7b647a19872236007719f">You::NLP::DateTimeParser::parse</a></div><div class="ttdeci">static bool parse(const StringType &amp;string, boost::posix_time::ptime &amp;result)</div><div class="ttdoc">Parses the given input string into a date. </div><div class="ttdef"><b>Definition:</b> date_time_parser.cpp:25</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 28 2014 07:14:41 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 28 2014 08:12:55 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

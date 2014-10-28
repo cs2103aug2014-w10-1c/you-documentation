@@ -133,8 +133,11 @@ typedef std::basic_string<br class="typebreak" />
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a36ed456d5dc7b647a19872236007719f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_n_l_p_1_1_date_time_parser.html#a36ed456d5dc7b647a19872236007719f">parse</a> (const <a class="el" href="class_you_1_1_n_l_p_1_1_date_time_parser.html#ad44734bb65ae0695eb9df717ce8ce52c">StringType</a> &amp;string, boost::posix_time::ptime &amp;result)</td></tr>
+<tr class="memdesc:a36ed456d5dc7b647a19872236007719f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the given input string into a date.  <a href="#a36ed456d5dc7b647a19872236007719f">More...</a><br /></td></tr>
+<tr class="separator:a36ed456d5dc7b647a19872236007719f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3f33f59c8a9c975da7cf0b198776cfb"><td class="memItemLeft" align="right" valign="top">static boost::posix_time::ptime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_n_l_p_1_1_date_time_parser.html#ae3f33f59c8a9c975da7cf0b198776cfb">parse</a> (const <a class="el" href="class_you_1_1_n_l_p_1_1_date_time_parser.html#ad44734bb65ae0695eb9df717ce8ce52c">StringType</a> &amp;string)</td></tr>
-<tr class="memdesc:ae3f33f59c8a9c975da7cf0b198776cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the given input string into date.  <a href="#ae3f33f59c8a9c975da7cf0b198776cfb">More...</a><br /></td></tr>
+<tr class="memdesc:ae3f33f59c8a9c975da7cf0b198776cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the given input string into a date.  <a href="#ae3f33f59c8a9c975da7cf0b198776cfb">More...</a><br /></td></tr>
 <tr class="separator:ae3f33f59c8a9c975da7cf0b198776cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -146,6 +149,50 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DateTimeP
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The query parser that recognises our input syntax. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a36ed456d5dc7b647a19872236007719f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool You::NLP::DateTimeParser::parse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_you_1_1_n_l_p_1_1_date_time_parser.html#ad44734bb65ae0695eb9df717ce8ce52c">StringType</a> &amp;&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::posix_time::ptime &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parses the given input string into a date. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">string</td><td>The string to parse. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>The parsed date/time object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if parsing was successful. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ae3f33f59c8a9c975da7cf0b198776cfb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -168,7 +215,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DateTimeP
 </table>
 </div><div class="memdoc">
 
-<p>Parses the given input string into date. </p>
+<p>Parses the given input string into a date. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">string</td><td>The string to parse. </td></tr>
@@ -176,6 +223,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DateTimeP
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The date/time representing the string. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_you_1_1_n_l_p_1_1_parser_exception.html">ParserException</a></td><td>When parsing fails. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -186,7 +239,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DateTimeP
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 28 2014 07:14:50 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 28 2014 08:13:04 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

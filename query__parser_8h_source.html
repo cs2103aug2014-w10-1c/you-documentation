@@ -118,202 +118,207 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">typedef</span> boost::variant&lt;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        int,</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        bool,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#ab69e378c604616c71310072c35b2e819">LexemeType</a>,</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_query_parser.html#ab00d3eb5a2c068da16f0be2caed83627">   37</a></span>&#160;        boost::posix_time::ptime&gt; <a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#ab00d3eb5a2c068da16f0be2caed83627">ValueType</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html">QueryParser</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">static</span> QUERY <a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#a15387b3664c14a273fc24e0244920080">parse</a>(<span class="keyword">const</span> StringType&amp; <span class="keywordtype">string</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">    #pragma region Adding tasks</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html">ADD_QUERY</a> constructAddQuery(ParserCharEncoding::char_type lexeme,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">const</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html">ADD_QUERY</a>&amp; query);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html">ADD_QUERY</a> constructAddQueryWithPriority(<span class="keyword">const</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html">ADD_QUERY</a>&amp; query);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html">ADD_QUERY</a> constructAddQueryWithDeadline(</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keyword">const</span> boost::posix_time::ptime&amp; deadline);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html">ADD_QUERY</a> constructAddQueryWithOptionalDeadline(</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">const</span> boost::optional&lt;ADD_QUERY&gt;&amp; query);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">    #pragma region Showing tasks</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html">SHOW_QUERY</a> constructShowQuery(</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        boost::optional&lt;std::vector&lt;SHOW_QUERY::FIELD_FILTER&gt;&gt; filters,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        boost::optional&lt;std::vector&lt;SHOW_QUERY::FIELD_ORDER&gt;&gt; ordering</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    );</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_1_1_f_i_e_l_d___f_i_l_t_e_r.html">SHOW_QUERY::FIELD_FILTER</a> constructShowQueryFilteringColumn(</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keyword">const</span> TaskField&amp; field,</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keyword">const</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#a1734b62cd99ffec4742957c9636a3fe0">SHOW_QUERY::Predicate</a>&amp; predicate,</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keyword">const</span> LexemeType&amp; value);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_1_1_f_i_e_l_d___o_r_d_e_r.html">SHOW_QUERY::FIELD_ORDER</a> constructShowQuerySortColumn(</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keyword">const</span> TaskField&amp; field,</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keyword">const</span> boost::optional&lt;SHOW_QUERY::Order&gt; order</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    );</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">    #pragma region Editing tasks</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html">EDIT_QUERY</a> constructEditQuery(</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">size_t</span> offset,</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keyword">const</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html">EDIT_QUERY</a>&amp; query);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html">EDIT_QUERY</a> constructEditQueryNullary(TaskField field);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html">EDIT_QUERY</a> constructEditQueryUnary(</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        TaskField field,</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keyword">const</span> ValueType&amp; newValue);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        TaskPriority,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#ab69e378c604616c71310072c35b2e819">LexemeType</a>,</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_query_parser.html#ace7804899f81c39b8bfe849292331337">   38</a></span>&#160;        boost::posix_time::ptime&gt; <a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#ace7804899f81c39b8bfe849292331337">ValueType</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html">QueryParser</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#a32946b8b1d8eb5e0ff807854243d1a0f">parse</a>(<span class="keyword">const</span> StringType&amp; <span class="keywordtype">string</span>, QUERY&amp; result);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">static</span> QUERY <a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#a32946b8b1d8eb5e0ff807854243d1a0f">parse</a>(<span class="keyword">const</span> StringType&amp; <span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">    #pragma region Adding tasks</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html">ADD_QUERY</a> constructAddQuery(ParserCharEncoding::char_type lexeme,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">const</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html">ADD_QUERY</a>&amp; query);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html">ADD_QUERY</a> constructAddQueryWithPriority(<span class="keyword">const</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html">ADD_QUERY</a>&amp; query);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html">ADD_QUERY</a> constructAddQueryWithDeadline(</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keyword">const</span> boost::posix_time::ptime&amp; deadline);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html">ADD_QUERY</a> constructAddQueryWithOptionalDeadline(</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keyword">const</span> boost::optional&lt;ADD_QUERY&gt;&amp; query);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">    #pragma region Showing tasks</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html">SHOW_QUERY</a> constructShowQuery(</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        boost::optional&lt;std::vector&lt;SHOW_QUERY::FIELD_FILTER&gt;&gt; filters,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        boost::optional&lt;std::vector&lt;SHOW_QUERY::FIELD_ORDER&gt;&gt; ordering</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    );</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_1_1_f_i_e_l_d___f_i_l_t_e_r.html">SHOW_QUERY::FIELD_FILTER</a> constructShowQueryFilteringColumn(</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keyword">const</span> TaskField&amp; field,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keyword">const</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#a1734b62cd99ffec4742957c9636a3fe0">SHOW_QUERY::Predicate</a>&amp; predicate,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keyword">const</span> ValueType&amp; value);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_1_1_f_i_e_l_d___o_r_d_e_r.html">SHOW_QUERY::FIELD_ORDER</a> constructShowQuerySortColumn(</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keyword">const</span> TaskField&amp; field,</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keyword">const</span> boost::optional&lt;SHOW_QUERY::Order&gt; order</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    );</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">    #pragma region Editing tasks</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html">EDIT_QUERY</a> constructEditQuery(</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">size_t</span> offset,</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keyword">const</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html">EDIT_QUERY</a>&amp; query);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html">EDIT_QUERY</a> constructEditQueryNullary(TaskField field);</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html">EDIT_QUERY</a> constructEditQueryPriority(</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        TaskPriority priority);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> onFailure(</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        ParserIteratorType begin,</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        ParserIteratorType end,</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        ParserIteratorType errorPos,</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keyword">const</span> boost::spirit::info&amp; message);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">    #pragma region Deleting tasks</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_d_e_l_e_t_e___q_u_e_r_y.html">DELETE_QUERY</a> constructDeleteQuery(<span class="keyword">const</span> <span class="keywordtype">size_t</span> offset);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keyword">static</span> boost::posix_time::ptime constructDateTime(<span class="keyword">const</span> LexemeType&amp; lexeme);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    start_type start;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, QUERY(), SkipperType&gt; explicitCommand;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">    #pragma region Adding tasks</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, ADD_QUERY(), SkipperType&gt; addCommand;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, ADD_QUERY()&gt; addCommandDescription;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, ADD_QUERY()&gt;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        addCommandDescriptionTail;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, ADD_QUERY()&gt; addCommandPriority;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, ADD_QUERY()&gt; addCommandDeadline;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, ADD_QUERY()&gt;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        addCommandDeadlineOptional;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">    #pragma region Showing tasks</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, SHOW_QUERY(), SkipperType&gt;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        showCommand;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    boost::spirit::qi::rule&lt;<a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#a13814a307b4b38a17dae768407d56f8d">IteratorType</a>,</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        std::vector&lt;SHOW_QUERY::FIELD_FILTER&gt;(), SkipperType&gt;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        showCommandFiltering;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    boost::spirit::qi::rule&lt;<a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#a13814a307b4b38a17dae768407d56f8d">IteratorType</a>,</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <a class="code" href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_1_1_f_i_e_l_d___f_i_l_t_e_r.html">SHOW_QUERY::FIELD_FILTER</a>(),</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        SkipperType&gt; showCommandFilteringColumn;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html">EDIT_QUERY</a> constructEditQueryUnary(</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        TaskField field,</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keyword">const</span> ValueType&amp; newValue);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html">EDIT_QUERY</a> constructEditQueryPriority(</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        TaskPriority priority);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> onFailure(</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        ParserIteratorType begin,</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        ParserIteratorType end,</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        ParserIteratorType errorPos,</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keyword">const</span> boost::spirit::info&amp; message);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">    #pragma region Deleting tasks</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_d_e_l_e_t_e___q_u_e_r_y.html">DELETE_QUERY</a> constructDeleteQuery(<span class="keyword">const</span> <span class="keywordtype">size_t</span> offset);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keyword">static</span> boost::posix_time::ptime constructDateTime(<span class="keyword">const</span> LexemeType&amp; lexeme);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keyword">static</span> ValueType constructValue(ValueType value);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    start_type start;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, QUERY(), SkipperType&gt; explicitCommand;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">    #pragma region Adding tasks</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, ADD_QUERY(), SkipperType&gt; addCommand;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, ADD_QUERY()&gt; addCommandDescription;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, ADD_QUERY()&gt;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        addCommandDescriptionTail;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, ADD_QUERY()&gt; addCommandPriority;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, ADD_QUERY()&gt; addCommandDeadline;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, ADD_QUERY()&gt;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        addCommandDeadlineOptional;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    boost::spirit::qi::symbols&lt;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        ParserCharEncoding::char_type,</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <a class="code" href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#a1734b62cd99ffec4742957c9636a3fe0">SHOW_QUERY::Predicate</a>&gt; showCommandFilteringPredicate;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="preprocessor">    #pragma region Showing tasks</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, SHOW_QUERY(), SkipperType&gt;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        showCommand;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    boost::spirit::qi::rule&lt;<a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#a13814a307b4b38a17dae768407d56f8d">IteratorType</a>,</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        std::vector&lt;SHOW_QUERY::FIELD_ORDER&gt;(), SkipperType&gt;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        showCommandSorting;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        std::vector&lt;SHOW_QUERY::FIELD_FILTER&gt;(), SkipperType&gt;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        showCommandFiltering;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    boost::spirit::qi::rule&lt;<a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#a13814a307b4b38a17dae768407d56f8d">IteratorType</a>,</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <a class="code" href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_1_1_f_i_e_l_d___o_r_d_e_r.html">SHOW_QUERY::FIELD_ORDER</a>(),</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        SkipperType&gt; showCommandSortingColumn;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <a class="code" href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_1_1_f_i_e_l_d___f_i_l_t_e_r.html">SHOW_QUERY::FIELD_FILTER</a>(),</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        SkipperType&gt; showCommandFilteringColumn;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    boost::spirit::qi::symbols&lt;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        ParserCharEncoding::char_type,</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <a class="code" href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#aa1624ad34144e92b2c34d9ac70fafba3">SHOW_QUERY::Order</a>&gt; showCommandSortingOrders;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <a class="code" href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#a1734b62cd99ffec4742957c9636a3fe0">SHOW_QUERY::Predicate</a>&gt; showCommandFilteringPredicate;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    boost::spirit::qi::symbols&lt;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        ParserCharEncoding::char_type,</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        TaskField&gt; showCommandFields;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">    #pragma region Editing tasks</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, EDIT_QUERY(), SkipperType&gt;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        editCommand;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, EDIT_QUERY(), SkipperType&gt;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        editCommandRule;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    boost::spirit::qi::rule&lt;<a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#a13814a307b4b38a17dae768407d56f8d">IteratorType</a>,</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        std::vector&lt;SHOW_QUERY::FIELD_ORDER&gt;(), SkipperType&gt;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        showCommandSorting;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    boost::spirit::qi::rule&lt;<a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#a13814a307b4b38a17dae768407d56f8d">IteratorType</a>,</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <a class="code" href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_1_1_f_i_e_l_d___o_r_d_e_r.html">SHOW_QUERY::FIELD_ORDER</a>(),</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        SkipperType&gt; showCommandSortingColumn;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    boost::spirit::qi::symbols&lt;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        ParserCharEncoding::char_type,</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <a class="code" href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#aa1624ad34144e92b2c34d9ac70fafba3">SHOW_QUERY::Order</a>&gt; showCommandSortingOrders;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, EDIT_QUERY(), SkipperType&gt;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        editCommandRuleUnary;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, EDIT_QUERY(), SkipperType&gt;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        editCommandRuleNullary;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, EDIT_QUERY(), SkipperType&gt;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        editCommandRulePriorities;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    boost::spirit::qi::symbols&lt;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        ParserCharEncoding::char_type,</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        TaskField&gt; editCommandFieldsUnary;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    boost::spirit::qi::symbols&lt;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        ParserCharEncoding::char_type,</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        TaskField&gt; editCommandFieldsNullary;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    boost::spirit::qi::symbols&lt;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        ParserCharEncoding::char_type,</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        TaskPriority&gt; editCommandFieldPriorities;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">    #pragma region Deleting tasks</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, DELETE_QUERY(), SkipperType&gt;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        deleteCommand;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor">    #pragma region Undoing tasks</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, UNDO_QUERY(), SkipperType&gt;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        undoCommand;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor">    #pragma region Utility rules</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, ValueType()&gt; utilityValue;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, boost::posix_time::ptime()&gt;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        utilityTime;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    boost::spirit::qi::symbols&lt;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        ParserCharEncoding::char_type,</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        TaskField&gt; showCommandFields;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor">    #pragma region Editing tasks</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, EDIT_QUERY(), SkipperType&gt;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        editCommand;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, EDIT_QUERY(), SkipperType&gt;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        editCommandRule;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, EDIT_QUERY(), SkipperType&gt;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        editCommandRuleUnary;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, EDIT_QUERY(), SkipperType&gt;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        editCommandRuleNullary;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, EDIT_QUERY(), SkipperType&gt;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        editCommandRulePriorities;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    boost::spirit::qi::symbols&lt;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        ParserCharEncoding::char_type,</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        TaskField&gt; editCommandFieldsUnary;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    boost::spirit::qi::symbols&lt;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        ParserCharEncoding::char_type,</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        TaskField&gt; editCommandFieldsNullary;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">    #pragma region Deleting tasks</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, DELETE_QUERY(), SkipperType&gt;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        deleteCommand;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor">    #pragma region Undoing tasks</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, UNDO_QUERY(), SkipperType&gt;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        undoCommand;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, LexemeType()&gt; utilityLexeme;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="preprocessor">    #pragma region Utility rules</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, ValueType()&gt; utilityValue;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    boost::spirit::qi::rule&lt;<a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#a13814a307b4b38a17dae768407d56f8d">IteratorType</a>,</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        ParserCharEncoding::char_type()&gt; utilityLexemeContents;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;};</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;}  <span class="comment">// namespace NLP</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    boost::spirit::qi::symbols&lt;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        ParserCharEncoding::char_type,</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        TaskPriority&gt; utilityTaskPriority;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, boost::posix_time::ptime()&gt;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        utilityTime;</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor">#endif  // YOU_NLP_QUERY_PARSER_H_</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, LexemeType()&gt; utilityLexeme;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    boost::spirit::qi::rule&lt;<a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#a13814a307b4b38a17dae768407d56f8d">IteratorType</a>,</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        ParserCharEncoding::char_type()&gt; utilityLexemeContents;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;};</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;}  <span class="comment">// namespace NLP</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="preprocessor">#endif  // YOU_NLP_QUERY_PARSER_H_</span></div>
 <div class="ttc" id="struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y_html"><div class="ttname"><a href="struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html">You::NLP::ADD_QUERY</a></div><div class="ttdoc">Defines the synthesised value type of an add query. </div><div class="ttdef"><b>Definition:</b> add_query.h:16</div></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_query_parser_html_a13814a307b4b38a17dae768407d56f8d"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_query_parser.html#a13814a307b4b38a17dae768407d56f8d">You::NLP::QueryParser::IteratorType</a></div><div class="ttdeci">ParserIteratorType IteratorType</div><div class="ttdoc">The type of the iterator used in this grammar. </div><div class="ttdef"><b>Definition:</b> query_parser.h:21</div></div>
+<div class="ttc" id="class_you_1_1_n_l_p_1_1_query_parser_html_ace7804899f81c39b8bfe849292331337"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_query_parser.html#ace7804899f81c39b8bfe849292331337">You::NLP::QueryParser::ValueType</a></div><div class="ttdeci">boost::variant&lt; int, bool, TaskPriority, LexemeType, boost::posix_time::ptime &gt; ValueType</div><div class="ttdoc">The type of values on the RHS of any expression in the grammar. </div><div class="ttdef"><b>Definition:</b> query_parser.h:38</div></div>
 <div class="ttc" id="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_html_a1734b62cd99ffec4742957c9636a3fe0"><div class="ttname"><a href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#a1734b62cd99ffec4742957c9636a3fe0">You::NLP::SHOW_QUERY::Predicate</a></div><div class="ttdeci">Predicate</div><div class="ttdoc">The predicate for filtering tasks. </div><div class="ttdef"><b>Definition:</b> show_query.h:28</div></div>
 <div class="ttc" id="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y_html"><div class="ttname"><a href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html">You::NLP::EDIT_QUERY</a></div><div class="ttdoc">Defines the synthesised value type of an edit query. </div><div class="ttdef"><b>Definition:</b> edit_query.h:17</div></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_query_parser_html_a112fa0a13e0a40d68ec60402a4c64db2"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_query_parser.html#a112fa0a13e0a40d68ec60402a4c64db2">You::NLP::QueryParser::SkipperType</a></div><div class="ttdeci">ParserSkipperType SkipperType</div><div class="ttdoc">The type of the skipper used in this grammar. </div><div class="ttdef"><b>Definition:</b> query_parser.h:24</div></div>
 <div class="ttc" id="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_1_1_f_i_e_l_d___o_r_d_e_r_html"><div class="ttname"><a href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_1_1_f_i_e_l_d___o_r_d_e_r.html">You::NLP::SHOW_QUERY::FIELD_ORDER</a></div><div class="ttdoc">A pair containing the field and the order to sort by. </div><div class="ttdef"><b>Definition:</b> show_query.h:70</div></div>
 <div class="ttc" id="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_html"><div class="ttname"><a href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html">You::NLP::SHOW_QUERY</a></div><div class="ttdoc">Defines the synthesised value type of show query. </div><div class="ttdef"><b>Definition:</b> show_query.h:17</div></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_query_parser_html_a15387b3664c14a273fc24e0244920080"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_query_parser.html#a15387b3664c14a273fc24e0244920080">You::NLP::QueryParser::parse</a></div><div class="ttdeci">static QUERY parse(const StringType &amp;string)</div><div class="ttdoc">Parses the given input string into a query. </div><div class="ttdef"><b>Definition:</b> query_parser.cpp:13</div></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_query_parser_html_ab69e378c604616c71310072c35b2e819"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_query_parser.html#ab69e378c604616c71310072c35b2e819">You::NLP::QueryParser::LexemeType</a></div><div class="ttdeci">std::vector&lt; ParserCharEncoding::char_type &gt; LexemeType</div><div class="ttdoc">The type of the lexeme buffer provided in a lexer semantic action. </div><div class="ttdef"><b>Definition:</b> query_parser.h:27</div></div>
 <div class="ttc" id="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_html_aa1624ad34144e92b2c34d9ac70fafba3"><div class="ttname"><a href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#aa1624ad34144e92b2c34d9ac70fafba3">You::NLP::SHOW_QUERY::Order</a></div><div class="ttdeci">Order</div><div class="ttdoc">The order in which columns are sorted. </div><div class="ttdef"><b>Definition:</b> show_query.h:19</div></div>
 <div class="ttc" id="struct_you_1_1_n_l_p_1_1_d_e_l_e_t_e___q_u_e_r_y_html"><div class="ttname"><a href="struct_you_1_1_n_l_p_1_1_d_e_l_e_t_e___q_u_e_r_y.html">You::NLP::DELETE_QUERY</a></div><div class="ttdoc">Defines the synthesised value type of a delete query. </div><div class="ttdef"><b>Definition:</b> delete_query.h:10</div></div>
 <div class="ttc" id="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_1_1_f_i_e_l_d___f_i_l_t_e_r_html"><div class="ttname"><a href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_1_1_f_i_e_l_d___f_i_l_t_e_r.html">You::NLP::SHOW_QUERY::FIELD_FILTER</a></div><div class="ttdoc">A predicate for filtering tasks. </div><div class="ttdef"><b>Definition:</b> show_query.h:49</div></div>
+<div class="ttc" id="class_you_1_1_n_l_p_1_1_query_parser_html_a32946b8b1d8eb5e0ff807854243d1a0f"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_query_parser.html#a32946b8b1d8eb5e0ff807854243d1a0f">You::NLP::QueryParser::parse</a></div><div class="ttdeci">static bool parse(const StringType &amp;string, QUERY &amp;result)</div><div class="ttdoc">Parses the given input string into a date. </div><div class="ttdef"><b>Definition:</b> query_parser.cpp:23</div></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_query_parser_html_a43e3e8eabdc5fbd901d3783d4f50f655"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_query_parser.html#a43e3e8eabdc5fbd901d3783d4f50f655">You::NLP::QueryParser::StringType</a></div><div class="ttdeci">std::basic_string&lt; ParserCharEncoding::char_type &gt; StringType</div><div class="ttdoc">The type of input strings accepted by this parser. </div><div class="ttdef"><b>Definition:</b> query_parser.h:30</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:11</div></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_query_parser_html"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_query_parser.html">You::NLP::QueryParser</a></div><div class="ttdoc">The query parser that recognises our input syntax. </div><div class="ttdef"><b>Definition:</b> query_parser.h:15</div></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_query_parser_html_ab00d3eb5a2c068da16f0be2caed83627"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_query_parser.html#ab00d3eb5a2c068da16f0be2caed83627">You::NLP::QueryParser::ValueType</a></div><div class="ttdeci">boost::variant&lt; int, bool, LexemeType, boost::posix_time::ptime &gt; ValueType</div><div class="ttdoc">The type of values on the RHS of any expression in the grammar. </div><div class="ttdef"><b>Definition:</b> query_parser.h:37</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 28 2014 07:14:41 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 28 2014 08:12:56 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
