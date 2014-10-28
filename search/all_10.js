@@ -1,7 +1,9 @@
 var searchData=
 [
+  ['saveandloadthesamething',['saveAndLoadTheSameThing',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html#a3c399433084201a531571b5c6af352d8',1,'You::DataStore::UnitTests::DataStoreTest']]],
   ['serializationoperation',['SerializationOperation',['../class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html',1,'You::DataStore::Internal']]],
   ['serialize',['serialize',['../class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#ae80e42d3f83067877612750c86af0008',1,'You::DataStore::Internal::SerializationOperation::serialize()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a80a4f96df042d4e7cf7d0435bf2f3ed3',1,'You::QueryEngine::Internal::TaskSerializer::serialize()']]],
+  ['serializeoperation',['serializeOperation',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_operations_test.html#a9866e61c2af9247dc72e7866c6cdf527',1,'You::DataStore::UnitTests::DataStoreOperationsTest']]],
   ['serializer',['Serializer',['../class_you_1_1_query_engine_1_1_internal_1_1_controller.html#a132beef508a6d62225b1c1cc2ad0544b',1,'You::QueryEngine::Internal::Controller']]],
   ['sessionmanager',['SessionManager',['../class_you_1_1_g_u_i_1_1_main_window_1_1_session_manager.html',1,'You::GUI::MainWindow']]],
   ['sessionmanager',['SessionManager',['../class_you_1_1_g_u_i_1_1_main_window_1_1_session_manager.html#a0c8d7516fe8d4927ff34a1bb31b651a0',1,'You::GUI::MainWindow::SessionManager']]],
@@ -17,6 +19,6 @@ var searchData=
   ['stringtype',['StringType',['../class_you_1_1_n_l_p_1_1_date_time_parser.html#ad44734bb65ae0695eb9df717ce8ce52c',1,'You::NLP::DateTimeParser::StringType()'],['../class_you_1_1_n_l_p_1_1_query_parser.html#a43e3e8eabdc5fbd901d3783d4f50f655',1,'You::NLP::QueryParser::StringType()']]],
   ['super_5fimportant_5ftask',['SUPER_IMPORTANT_TASK',['../namespace_you_1_1_query_engine_1_1_unit_tests.html#a6529b9b61e180d269363086205e7acb4',1,'You::QueryEngine::UnitTests']]],
   ['syntaxhighlighter',['SyntaxHighlighter',['../class_you_1_1_g_u_i_1_1_syntax_highlighter.html',1,'You::GUI']]],
-  ['systemtraymanager',['SystemTrayManager',['../class_you_1_1_g_u_i_1_1_main_window_1_1_system_tray_manager.html',1,'You::GUI::MainWindow']]],
-  ['systemtraymanager',['SystemTrayManager',['../class_you_1_1_g_u_i_1_1_main_window_1_1_system_tray_manager.html#aaa8f72be054fd69b0126b0b9ccdd2978',1,'You::GUI::MainWindow::SystemTrayManager']]]
+  ['systemtraymanager',['SystemTrayManager',['../class_you_1_1_g_u_i_1_1_main_window_1_1_system_tray_manager.html#aaa8f72be054fd69b0126b0b9ccdd2978',1,'You::GUI::MainWindow::SystemTrayManager']]],
+  ['systemtraymanager',['SystemTrayManager',['../class_you_1_1_g_u_i_1_1_main_window_1_1_system_tray_manager.html',1,'You::GUI::MainWindow']]]
 ];

@@ -89,70 +89,71 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">transaction.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef YOU_DATASTORE_TRANSACTION_H_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define YOU_DATASTORE_TRANSACTION_H_</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>DataStore {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>UnitTests { <span class="keyword">class </span>DataStoreApiTest; <span class="keyword">class </span>DataStoreTest; }</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>Internal { <span class="keyword">class </span>DataStore; <span class="keyword">class </span>Transaction; }</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_you_1_1_data_store_1_1_transaction.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a> : <span class="keyword">protected</span> std::shared_ptr&lt;Internal::Transaction&gt; {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html">Internal::DataStore</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_api_test.html">UnitTests::DataStoreApiTest</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html">UnitTests::DataStoreTest</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a>(<a class="code" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a>&amp;&amp; transaction);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_you_1_1_data_store_1_1_transaction.html#a502208b2d160ed9cbadb9cda184980a6">~Transaction</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_data_store_1_1_transaction.html#a277f00d5732916e26233fdcf2024381c">commit</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_data_store_1_1_transaction.html#ae5e03610e9a5971223e6e0cb2c5e9b2e">rollback</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">enum class</span> State {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="class_you_1_1_data_store_1_1_transaction.html#a56e1e588796d3ae085e200739238b692a9fc49374420f4310fb89e88ea2689da5">NEITHER</a> = 0,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="class_you_1_1_data_store_1_1_transaction.html#a56e1e588796d3ae085e200739238b692a1c372d13f50af5ca9a935ebc78006e82">COMMITTED</a>,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="class_you_1_1_data_store_1_1_transaction.html#a56e1e588796d3ae085e200739238b692aed701d1c3d474e00c7a2f416f8d6858c">ROLLED_BACK</a></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a>(<span class="keyword">const</span> <a class="code" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    State state;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}  <span class="comment">// namespace DataStore</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif  // YOU_DATASTORE_TRANSACTION_H_</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//@author A0114171W</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef YOU_DATASTORE_TRANSACTION_H_</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define YOU_DATASTORE_TRANSACTION_H_</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>DataStore {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>UnitTests { <span class="keyword">class </span>DataStoreApiTest; <span class="keyword">class </span>DataStoreTest; }</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>Internal { <span class="keyword">class </span>DataStore; <span class="keyword">class </span>Transaction; }</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_you_1_1_data_store_1_1_transaction.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a> : <span class="keyword">protected</span> std::shared_ptr&lt;Internal::Transaction&gt; {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html">Internal::DataStore</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_api_test.html">UnitTests::DataStoreApiTest</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html">UnitTests::DataStoreTest</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a>(<a class="code" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a>&amp;&amp; transaction);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_you_1_1_data_store_1_1_transaction.html#a502208b2d160ed9cbadb9cda184980a6">~Transaction</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_data_store_1_1_transaction.html#a277f00d5732916e26233fdcf2024381c">commit</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_data_store_1_1_transaction.html#ae5e03610e9a5971223e6e0cb2c5e9b2e">rollback</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">enum class</span> State {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="class_you_1_1_data_store_1_1_transaction.html#a56e1e588796d3ae085e200739238b692a9fc49374420f4310fb89e88ea2689da5">NEITHER</a> = 0,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="class_you_1_1_data_store_1_1_transaction.html#a56e1e588796d3ae085e200739238b692a1c372d13f50af5ca9a935ebc78006e82">COMMITTED</a>,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_you_1_1_data_store_1_1_transaction.html#a56e1e588796d3ae085e200739238b692aed701d1c3d474e00c7a2f416f8d6858c">ROLLED_BACK</a></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    };</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a>(<span class="keyword">const</span> <a class="code" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_you_1_1_data_store_1_1_transaction.html">Transaction</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    State state;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}  <span class="comment">// namespace DataStore</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif  // YOU_DATASTORE_TRANSACTION_H_</span></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_transaction_html_a56e1e588796d3ae085e200739238b692a9fc49374420f4310fb89e88ea2689da5"><div class="ttname"><a href="class_you_1_1_data_store_1_1_transaction.html#a56e1e588796d3ae085e200739238b692a9fc49374420f4310fb89e88ea2689da5">You::DataStore::Transaction::State::NEITHER</a></div><div class="ttdoc">The transaction has neither been committed nor rolled back. </div></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_transaction_html_a56e1e588796d3ae085e200739238b692aed701d1c3d474e00c7a2f416f8d6858c"><div class="ttname"><a href="class_you_1_1_data_store_1_1_transaction.html#a56e1e588796d3ae085e200739238b692aed701d1c3d474e00c7a2f416f8d6858c">You::DataStore::Transaction::State::ROLLED_BACK</a></div><div class="ttdoc">The transaction has been rolled back. </div></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_api_test_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_api_test.html">You::DataStore::UnitTests::DataStoreApiTest</a></div><div class="ttdoc">Unit test for DataStore API that is exposed to Query Engine, namely DataStore and Transaction...</div><div class="ttdef"><b>Definition:</b> datastore_api_test.cpp:17</div></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_transaction_html_a277f00d5732916e26233fdcf2024381c"><div class="ttname"><a href="class_you_1_1_data_store_1_1_transaction.html#a277f00d5732916e26233fdcf2024381c">You::DataStore::Transaction::commit</a></div><div class="ttdeci">void commit()</div><div class="ttdoc">Commits the set of operations made. </div><div class="ttdef"><b>Definition:</b> transaction.cpp:24</div></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_transaction_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_transaction.html">You::DataStore::Transaction</a></div><div class="ttdoc">Represents a collection of operations that need to collectively succeed or fail. </div><div class="ttdef"><b>Definition:</b> transaction.h:17</div></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_transaction_html_a502208b2d160ed9cbadb9cda184980a6"><div class="ttname"><a href="class_you_1_1_data_store_1_1_transaction.html#a502208b2d160ed9cbadb9cda184980a6">You::DataStore::Transaction::~Transaction</a></div><div class="ttdeci">~Transaction()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> transaction.cpp:18</div></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_data_store_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html">You::DataStore::Internal::DataStore</a></div><div class="ttdoc">The most primitive class that does the changes to the actual xml file. </div><div class="ttdef"><b>Definition:</b> internal_datastore.h:25</div></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html">You::DataStore::UnitTests::DataStoreTest</a></div><div class="ttdoc">Unit Test Class for DataStore class. </div><div class="ttdef"><b>Definition:</b> internal_datastore_test.cpp:20</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_api_test_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_api_test.html">You::DataStore::UnitTests::DataStoreApiTest</a></div><div class="ttdoc">Unit test for DataStore API that is exposed to Query Engine, namely DataStore and Transaction...</div><div class="ttdef"><b>Definition:</b> datastore_api_test.cpp:18</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_transaction_html_a277f00d5732916e26233fdcf2024381c"><div class="ttname"><a href="class_you_1_1_data_store_1_1_transaction.html#a277f00d5732916e26233fdcf2024381c">You::DataStore::Transaction::commit</a></div><div class="ttdeci">void commit()</div><div class="ttdoc">Commits the set of operations made. </div><div class="ttdef"><b>Definition:</b> transaction.cpp:25</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_transaction_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_transaction.html">You::DataStore::Transaction</a></div><div class="ttdoc">Represents a collection of operations that need to collectively succeed or fail. </div><div class="ttdef"><b>Definition:</b> transaction.h:18</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_transaction_html_a502208b2d160ed9cbadb9cda184980a6"><div class="ttname"><a href="class_you_1_1_data_store_1_1_transaction.html#a502208b2d160ed9cbadb9cda184980a6">You::DataStore::Transaction::~Transaction</a></div><div class="ttdeci">~Transaction()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> transaction.cpp:19</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_data_store_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html">You::DataStore::Internal::DataStore</a></div><div class="ttdoc">The most primitive class that does the changes to the actual xml file. </div><div class="ttdef"><b>Definition:</b> internal_datastore.h:26</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html">You::DataStore::UnitTests::DataStoreTest</a></div><div class="ttdoc">Unit Test Class for DataStore class. </div><div class="ttdef"><b>Definition:</b> internal_datastore_test.cpp:21</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:11</div></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_transaction_html_a56e1e588796d3ae085e200739238b692a1c372d13f50af5ca9a935ebc78006e82"><div class="ttname"><a href="class_you_1_1_data_store_1_1_transaction.html#a56e1e588796d3ae085e200739238b692a1c372d13f50af5ca9a935ebc78006e82">You::DataStore::Transaction::State::COMMITTED</a></div><div class="ttdoc">The transaction has been committed. </div></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_transaction_html_ae5e03610e9a5971223e6e0cb2c5e9b2e"><div class="ttname"><a href="class_you_1_1_data_store_1_1_transaction.html#ae5e03610e9a5971223e6e0cb2c5e9b2e">You::DataStore::Transaction::rollback</a></div><div class="ttdeci">void rollback()</div><div class="ttdoc">Rolls back all the operations made. </div><div class="ttdef"><b>Definition:</b> transaction.cpp:31</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_transaction_html_ae5e03610e9a5971223e6e0cb2c5e9b2e"><div class="ttname"><a href="class_you_1_1_data_store_1_1_transaction.html#ae5e03610e9a5971223e6e0cb2c5e9b2e">You::DataStore::Transaction::rollback</a></div><div class="ttdeci">void rollback()</div><div class="ttdoc">Rolls back all the operations made. </div><div class="ttdef"><b>Definition:</b> transaction.cpp:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 28 2014 14:18:03 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 28 2014 20:06:33 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

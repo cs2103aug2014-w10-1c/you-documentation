@@ -89,36 +89,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">erase_operation.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef YOU_DATASTORE_INTERNAL_OPERATIONS_ERASE_OPERATION_H_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define YOU_DATASTORE_INTERNAL_OPERATIONS_ERASE_OPERATION_H_</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../operation.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>DataStore {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>Internal {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html">EraseOperation</a> : <span class="keyword">public</span> <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">Operation</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#a8a4c3b9363c0d125d891a37255f4c44c">EraseOperation</a>(std::wstring branch, std::wstring <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#aa8c2de5ee73acca5868a8545c9a4f8bf">run</a>(pugi::xml_document&amp; document) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html">EraseOperation</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}  <span class="comment">// namespace Internal</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}  <span class="comment">// namespace DataStore</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif  // YOU_DATASTORE_INTERNAL_OPERATIONS_ERASE_OPERATION_H_</span></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_erase_operation_html_a8a4c3b9363c0d125d891a37255f4c44c"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#a8a4c3b9363c0d125d891a37255f4c44c">You::DataStore::Internal::EraseOperation::EraseOperation</a></div><div class="ttdeci">EraseOperation(std::wstring branch, std::wstring id)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> erase_operation.cpp:9</div></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_erase_operation_html_aa8c2de5ee73acca5868a8545c9a4f8bf"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#aa8c2de5ee73acca5868a8545c9a4f8bf">You::DataStore::Internal::EraseOperation::run</a></div><div class="ttdeci">bool run(pugi::xml_document &amp;document) override</div><div class="ttdoc">Executes the operation. </div><div class="ttdef"><b>Definition:</b> erase_operation.cpp:14</div></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_operation_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">You::DataStore::Internal::Operation</a></div><div class="ttdoc">A pure virtual class of operations to be put into transaction stack. </div><div class="ttdef"><b>Definition:</b> operation.h:13</div></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_erase_operation_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html">You::DataStore::Internal::EraseOperation</a></div><div class="ttdoc">An Operation class for erase operation Erases a node from the XML when run is called. </div><div class="ttdef"><b>Definition:</b> erase_operation.h:13</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//@author A0114171W</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef YOU_DATASTORE_INTERNAL_OPERATIONS_ERASE_OPERATION_H_</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define YOU_DATASTORE_INTERNAL_OPERATIONS_ERASE_OPERATION_H_</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../operation.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>DataStore {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>Internal {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html">EraseOperation</a> : <span class="keyword">public</span> <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">Operation</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#a8a4c3b9363c0d125d891a37255f4c44c">EraseOperation</a>(std::wstring branch, std::wstring <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#aa8c2de5ee73acca5868a8545c9a4f8bf">run</a>(pugi::xml_document&amp; document) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html">EraseOperation</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}  <span class="comment">// namespace Internal</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}  <span class="comment">// namespace DataStore</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif  // YOU_DATASTORE_INTERNAL_OPERATIONS_ERASE_OPERATION_H_</span></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_erase_operation_html_a8a4c3b9363c0d125d891a37255f4c44c"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#a8a4c3b9363c0d125d891a37255f4c44c">You::DataStore::Internal::EraseOperation::EraseOperation</a></div><div class="ttdeci">EraseOperation(std::wstring branch, std::wstring id)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> erase_operation.cpp:10</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_erase_operation_html_aa8c2de5ee73acca5868a8545c9a4f8bf"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#aa8c2de5ee73acca5868a8545c9a4f8bf">You::DataStore::Internal::EraseOperation::run</a></div><div class="ttdeci">bool run(pugi::xml_document &amp;document) override</div><div class="ttdoc">Executes the operation. </div><div class="ttdef"><b>Definition:</b> erase_operation.cpp:15</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_operation_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">You::DataStore::Internal::Operation</a></div><div class="ttdoc">A pure virtual class of operations to be put into transaction stack. </div><div class="ttdef"><b>Definition:</b> operation.h:14</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_erase_operation_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html">You::DataStore::Internal::EraseOperation</a></div><div class="ttdoc">An Operation class for erase operation Erases a node from the XML when run is called. </div><div class="ttdef"><b>Definition:</b> erase_operation.h:14</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 28 2014 14:18:03 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 28 2014 20:06:33 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

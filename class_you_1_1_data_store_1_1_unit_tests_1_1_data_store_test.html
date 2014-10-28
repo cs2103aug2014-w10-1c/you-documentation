@@ -107,31 +107,40 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TEST_METHOD_CLEANUP</b> (cleanUpDataStoreState)</td></tr>
 <tr class="separator:a52507e598c5c13933413fe0f2a8ae198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bcc76a150e4649442b560aca0d3dff3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bcc76a150e4649442b560aca0d3dff3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>beginTransactionAddsToTransactionStack</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html#a0bcc76a150e4649442b560aca0d3dff3">beginTransactionAddsToTransactionStack</a> ()</td></tr>
+<tr class="memdesc:a0bcc76a150e4649442b560aca0d3dff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html#afa2a36d81e320e8e7b976b31ec4cca86" title="Gets the singleton instance of the internal data store. ">DataStore::get()</a> method adds a new transaction into the active transaction stack. <br /></td></tr>
 <tr class="separator:a0bcc76a150e4649442b560aca0d3dff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0e2725e5362f3b8995b586f2c17a216"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0e2725e5362f3b8995b586f2c17a216"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pushedOperationsAddedToTransactionOperationsQueue</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html#ae0e2725e5362f3b8995b586f2c17a216">pushedOperationsAddedToTransactionOperationsQueue</a> ()</td></tr>
+<tr class="memdesc:ae0e2725e5362f3b8995b586f2c17a216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if post, put, and erase methods add <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">Internal::Operation</a> objects into the active transaction's operationsQueue. <br /></td></tr>
 <tr class="separator:ae0e2725e5362f3b8995b586f2c17a216"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1d59ba0b7b85a537a64cd20288a0de2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1d59ba0b7b85a537a64cd20288a0de2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>commitChangesXmlDocumentTree</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html#ab1d59ba0b7b85a537a64cd20288a0de2">commitChangesXmlDocumentTree</a> ()</td></tr>
+<tr class="memdesc:ab1d59ba0b7b85a537a64cd20288a0de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the document is only changed when a transaction is committed. <br /></td></tr>
 <tr class="separator:ab1d59ba0b7b85a537a64cd20288a0de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ff7c84e638c46ca5269943bae109e60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ff7c84e638c46ca5269943bae109e60"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rollbackDeleteTransactionFromStack</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html#a6ff7c84e638c46ca5269943bae109e60">rollbackDeleteTransactionFromStack</a> ()</td></tr>
+<tr class="memdesc:a6ff7c84e638c46ca5269943bae109e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if rollback cleans up the transaction stack too. <br /></td></tr>
 <tr class="separator:a6ff7c84e638c46ca5269943bae109e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec67332a1b63232ccb7845d4ed46bc53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec67332a1b63232ccb7845d4ed46bc53"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>getAllFromTree</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html#aec67332a1b63232ccb7845d4ed46bc53">getAllFromTree</a> ()</td></tr>
+<tr class="memdesc:aec67332a1b63232ccb7845d4ed46bc53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test to check if getAll behaves correctly when getting from the XML document tree. <br /></td></tr>
 <tr class="separator:aec67332a1b63232ccb7845d4ed46bc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23be6734de1f8e22f24a9359961a0a0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23be6734de1f8e22f24a9359961a0a0c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>getAllFromFile</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html#a23be6734de1f8e22f24a9359961a0a0c">getAllFromFile</a> ()</td></tr>
+<tr class="memdesc:a23be6734de1f8e22f24a9359961a0a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test to check if getAll behaves correctly when getting from file (scenario: during load) <br /></td></tr>
 <tr class="separator:a23be6734de1f8e22f24a9359961a0a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c399433084201a531571b5c6af352d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c399433084201a531571b5c6af352d8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>saveAndLoadTheSameThing</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html#a3c399433084201a531571b5c6af352d8">saveAndLoadTheSameThing</a> ()</td></tr>
+<tr class="memdesc:a3c399433084201a531571b5c6af352d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if saving and loading works. <br /></td></tr>
 <tr class="separator:a3c399433084201a531571b5c6af352d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a341034d2df2f27d3cffb6603ca9e895a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a341034d2df2f27d3cffb6603ca9e895a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pushOperationToTransactionWithoutDataStore</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html#a341034d2df2f27d3cffb6603ca9e895a">pushOperationToTransactionWithoutDataStore</a> ()</td></tr>
+<tr class="memdesc:a341034d2df2f27d3cffb6603ca9e895a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html">Internal::Transaction</a> 's push operation. <br /></td></tr>
 <tr class="separator:a341034d2df2f27d3cffb6603ca9e895a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad457ae77cfce7a770432e83435cd6d7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad457ae77cfce7a770432e83435cd6d7e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mergeOperationsQueueIsAppend</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html#ad457ae77cfce7a770432e83435cd6d7e">mergeOperationsQueueIsAppend</a> ()</td></tr>
+<tr class="memdesc:ad457ae77cfce7a770432e83435cd6d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit test for <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html">Internal::Transaction</a> 's mergeOperationsQueue method. <br /></td></tr>
 <tr class="separator:ad457ae77cfce7a770432e83435cd6d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -142,7 +151,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>mergeOperationsQueueI
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 28 2014 14:18:13 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 28 2014 20:06:34 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
