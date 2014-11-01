@@ -119,8 +119,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        int,</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        bool,</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        TaskPriority,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#ab69e378c604616c71310072c35b2e819">LexemeType</a>,</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_query_parser.html#ace7804899f81c39b8bfe849292331337">   38</a></span>&#160;        boost::posix_time::ptime&gt; <a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#ace7804899f81c39b8bfe849292331337">ValueType</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#a43e3e8eabdc5fbd901d3783d4f50f655">StringType</a>,</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_you_1_1_n_l_p_1_1_query_parser.html#a2b8efd5b48205c95c0f9c08baa65b41a">   38</a></span>&#160;        boost::posix_time::ptime&gt; <a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#a2b8efd5b48205c95c0f9c08baa65b41a">ValueType</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html">QueryParser</a>();</div>
@@ -186,7 +186,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_you_1_1_n_l_p_1_1_d_e_l_e_t_e___q_u_e_r_y.html">DELETE_QUERY</a> constructDeleteQuery(<span class="keyword">const</span> <span class="keywordtype">size_t</span> offset);</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keyword">static</span> boost::posix_time::ptime constructDateTime(<span class="keyword">const</span> LexemeType&amp; lexeme);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keyword">static</span> boost::posix_time::ptime constructDateTime(<span class="keyword">const</span> StringType&amp; lexeme);</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keyword">static</span> ValueType constructValue(ValueType value);</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
@@ -289,7 +289,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, boost::posix_time::ptime()&gt;</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        utilityTime;</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, LexemeType()&gt; utilityLexeme;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    boost::spirit::qi::rule&lt;IteratorType, StringType()&gt; utilityLexeme;</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    boost::spirit::qi::rule&lt;<a class="code" href="class_you_1_1_n_l_p_1_1_query_parser.html#a13814a307b4b38a17dae768407d56f8d">IteratorType</a>,</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        ParserCharEncoding::char_type()&gt; utilityLexemeContents;</div>
@@ -301,8 +301,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="preprocessor">#endif  // YOU_NLP_QUERY_PARSER_H_</span></div>
 <div class="ttc" id="struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y_html"><div class="ttname"><a href="struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html">You::NLP::ADD_QUERY</a></div><div class="ttdoc">Defines the synthesised value type of an add query. </div><div class="ttdef"><b>Definition:</b> add_query.h:16</div></div>
+<div class="ttc" id="class_you_1_1_n_l_p_1_1_query_parser_html_a2b8efd5b48205c95c0f9c08baa65b41a"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_query_parser.html#a2b8efd5b48205c95c0f9c08baa65b41a">You::NLP::QueryParser::ValueType</a></div><div class="ttdeci">boost::variant&lt; int, bool, TaskPriority, StringType, boost::posix_time::ptime &gt; ValueType</div><div class="ttdoc">The type of values on the RHS of any expression in the grammar. </div><div class="ttdef"><b>Definition:</b> query_parser.h:38</div></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_query_parser_html_a13814a307b4b38a17dae768407d56f8d"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_query_parser.html#a13814a307b4b38a17dae768407d56f8d">You::NLP::QueryParser::IteratorType</a></div><div class="ttdeci">ParserIteratorType IteratorType</div><div class="ttdoc">The type of the iterator used in this grammar. </div><div class="ttdef"><b>Definition:</b> query_parser.h:21</div></div>
-<div class="ttc" id="class_you_1_1_n_l_p_1_1_query_parser_html_ace7804899f81c39b8bfe849292331337"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_query_parser.html#ace7804899f81c39b8bfe849292331337">You::NLP::QueryParser::ValueType</a></div><div class="ttdeci">boost::variant&lt; int, bool, TaskPriority, LexemeType, boost::posix_time::ptime &gt; ValueType</div><div class="ttdoc">The type of values on the RHS of any expression in the grammar. </div><div class="ttdef"><b>Definition:</b> query_parser.h:38</div></div>
 <div class="ttc" id="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_html_a1734b62cd99ffec4742957c9636a3fe0"><div class="ttname"><a href="struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#a1734b62cd99ffec4742957c9636a3fe0">You::NLP::SHOW_QUERY::Predicate</a></div><div class="ttdeci">Predicate</div><div class="ttdoc">The predicate for filtering tasks. </div><div class="ttdef"><b>Definition:</b> show_query.h:28</div></div>
 <div class="ttc" id="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y_html"><div class="ttname"><a href="struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html">You::NLP::EDIT_QUERY</a></div><div class="ttdoc">Defines the synthesised value type of an edit query. </div><div class="ttdef"><b>Definition:</b> edit_query.h:17</div></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_query_parser_html_a112fa0a13e0a40d68ec60402a4c64db2"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_query_parser.html#a112fa0a13e0a40d68ec60402a4c64db2">You::NLP::QueryParser::SkipperType</a></div><div class="ttdeci">ParserSkipperType SkipperType</div><div class="ttdoc">The type of the skipper used in this grammar. </div><div class="ttdef"><b>Definition:</b> query_parser.h:24</div></div>
@@ -319,7 +319,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 1 2014 10:56:08 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 1 2014 15:53:34 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -107,10 +107,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a38609f04b4b91de55a3d87a9648357cd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_you_1_1_utils_1_1_log_message.html">LogMessage</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_you_1_1_utils_1_1_logger.html#a38609f04b4b91de55a3d87a9648357cd">operator[]</a> (const TCategory &amp;category)</td></tr>
 <tr class="memdesc:a38609f04b4b91de55a3d87a9648357cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new <a class="el" href="class_you_1_1_utils_1_1_log_message.html">LogMessage</a> that has the given category specified.  <a href="#a38609f04b4b91de55a3d87a9648357cd">More...</a><br /></td></tr>
 <tr class="separator:a38609f04b4b91de55a3d87a9648357cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9383a0e8bb77a12b739a45438fa3fa63"><td class="memTemplParams" colspan="2">template&lt;typename TMessage &gt; </td></tr>
-<tr class="memitem:a9383a0e8bb77a12b739a45438fa3fa63"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_you_1_1_utils_1_1_log_message.html">LogMessage</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_you_1_1_utils_1_1_logger.html#a9383a0e8bb77a12b739a45438fa3fa63">operator&lt;&lt;</a> (const TMessage &amp;message)</td></tr>
-<tr class="memdesc:a9383a0e8bb77a12b739a45438fa3fa63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new <a class="el" href="class_you_1_1_utils_1_1_log_message.html">LogMessage</a> that has no category.  <a href="#a9383a0e8bb77a12b739a45438fa3fa63">More...</a><br /></td></tr>
-<tr class="separator:a9383a0e8bb77a12b739a45438fa3fa63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f0abc92d9f234f0ad09b39044a4307"><td class="memTemplParams" colspan="2">template&lt;typename TMessage &gt; </td></tr>
+<tr class="memitem:a20f0abc92d9f234f0ad09b39044a4307"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_you_1_1_utils_1_1_log_message.html">LogMessage</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_you_1_1_utils_1_1_logger.html#a20f0abc92d9f234f0ad09b39044a4307">operator&lt;&lt;</a> (TMessage &amp;&amp;message)</td></tr>
+<tr class="memdesc:a20f0abc92d9f234f0ad09b39044a4307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new <a class="el" href="class_you_1_1_utils_1_1_log_message.html">LogMessage</a> that has no category.  <a href="#a20f0abc92d9f234f0ad09b39044a4307">More...</a><br /></td></tr>
+<tr class="separator:a20f0abc92d9f234f0ad09b39044a4307"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1cf64d982ab905329d911698cfecba5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_utils_1_1_logger.html#ab1cf64d982ab905329d911698cfecba5">isActive</a> () const </td></tr>
 <tr class="memdesc:ab1cf64d982ab905329d911698cfecba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the current logger is active, i.e.  <a href="#ab1cf64d982ab905329d911698cfecba5">More...</a><br /></td></tr>
 <tr class="separator:ab1cf64d982ab905329d911698cfecba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,7 +149,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Log</b></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9383a0e8bb77a12b739a45438fa3fa63"></a>
+<a class="anchor" id="a20f0abc92d9f234f0ad09b39044a4307"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -161,7 +161,7 @@ template&lt;typename TMessage &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="class_you_1_1_utils_1_1_log_message.html">LogMessage</a> You::Utils::Logger::operator&lt;&lt; </td>
           <td>(</td>
-          <td class="paramtype">const TMessage &amp;&#160;</td>
+          <td class="paramtype">TMessage &amp;&amp;&#160;</td>
           <td class="paramname"><em>message</em></td><td>)</td>
           <td></td>
         </tr>
@@ -261,7 +261,7 @@ template&lt;typename TCategory &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 1 2014 10:56:12 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 1 2014 15:53:36 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

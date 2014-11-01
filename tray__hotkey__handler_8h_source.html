@@ -94,41 +94,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef YOU_GUI_TRAY_HOTKEY_HANDLER_H_</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define YOU_GUI_TRAY_HOTKEY_HANDLER_H_</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QThread&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;windows.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>GUI {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>Thread {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html">TrayHotkeyHandler</a> : <span class="keyword">public</span> QThread {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html#a4423238413a645330eebd582b28e326c">TrayHotkeyHandler</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;signals:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html#a610fd607156df35e9eb05ede2627119a">hotkeyClicked</a>(QSystemTrayIcon::ActivationReason);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html#a5465af2f9a4ff0caa2aa391cc2e7997b">run</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> hotkey = 0x59;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}  <span class="comment">// namespace Thread</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}  <span class="comment">// namespace GUI</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif  // YOU_GUI_TRAY_HOTKEY_HANDLER_H_</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>GUI {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>Thread {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html">TrayHotkeyHandler</a> : <span class="keyword">public</span> QThread {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html#a4423238413a645330eebd582b28e326c">TrayHotkeyHandler</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;signals:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html#a610fd607156df35e9eb05ede2627119a">hotkeyClicked</a>(QSystemTrayIcon::ActivationReason);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html#a5465af2f9a4ff0caa2aa391cc2e7997b">run</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> hotkey = 0x59;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}  <span class="comment">// namespace Thread</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}  <span class="comment">// namespace GUI</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif  // YOU_GUI_TRAY_HOTKEY_HANDLER_H_</span></div>
 <div class="ttc" id="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler_html_a610fd607156df35e9eb05ede2627119a"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html#a610fd607156df35e9eb05ede2627119a">You::GUI::Thread::TrayHotkeyHandler::hotkeyClicked</a></div><div class="ttdeci">void hotkeyClicked(QSystemTrayIcon::ActivationReason)</div><div class="ttdoc">Signals to SystemTrayManager that hotkey has been pressed. </div></div>
-<div class="ttc" id="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler_html"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html">You::GUI::Thread::TrayHotkeyHandler</a></div><div class="ttdoc">TrayHotkeyHandler inherits from QThread, and runs on a separate thread as a listener for a hotkey eve...</div><div class="ttdef"><b>Definition:</b> tray_hotkey_handler.h:14</div></div>
-<div class="ttc" id="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler_html_a4423238413a645330eebd582b28e326c"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html#a4423238413a645330eebd582b28e326c">You::GUI::Thread::TrayHotkeyHandler::TrayHotkeyHandler</a></div><div class="ttdeci">TrayHotkeyHandler()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> tray_hotkey_handler.cpp:9</div></div>
-<div class="ttc" id="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler_html_a5465af2f9a4ff0caa2aa391cc2e7997b"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html#a5465af2f9a4ff0caa2aa391cc2e7997b">You::GUI::Thread::TrayHotkeyHandler::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">Loops in its own thread to check if hotkey is pressed. </div><div class="ttdef"><b>Definition:</b> tray_hotkey_handler.cpp:13</div></div>
+<div class="ttc" id="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler_html"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html">You::GUI::Thread::TrayHotkeyHandler</a></div><div class="ttdoc">TrayHotkeyHandler inherits from QThread, and runs on a separate thread as a listener for a hotkey eve...</div><div class="ttdef"><b>Definition:</b> tray_hotkey_handler.h:13</div></div>
+<div class="ttc" id="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler_html_a4423238413a645330eebd582b28e326c"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html#a4423238413a645330eebd582b28e326c">You::GUI::Thread::TrayHotkeyHandler::TrayHotkeyHandler</a></div><div class="ttdeci">TrayHotkeyHandler()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> tray_hotkey_handler.cpp:10</div></div>
+<div class="ttc" id="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler_html_a5465af2f9a4ff0caa2aa391cc2e7997b"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html#a5465af2f9a4ff0caa2aa391cc2e7997b">You::GUI::Thread::TrayHotkeyHandler::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">Loops in its own thread to check if hotkey is pressed. </div><div class="ttdef"><b>Definition:</b> tray_hotkey_handler.cpp:14</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 1 2014 10:56:07 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 1 2014 15:53:33 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
