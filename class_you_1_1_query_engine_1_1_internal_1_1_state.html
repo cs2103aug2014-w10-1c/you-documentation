@@ -136,9 +136,13 @@ std::stack&lt; std::unique_ptr<br class="typebreak" />
 Task::ID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html#abbe5ae530e26203a3874f71023e78581">inquireNewID</a> ()</td></tr>
 <tr class="memdesc:abbe5ae530e26203a3874f71023e78581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inquire a new and unique task id. <br /></td></tr>
 <tr class="separator:abbe5ae530e26203a3874f71023e78581"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70aa302615a7bf7772da7401170259ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html#a70aa302615a7bf7772da7401170259ab">commitMaxIDToDataStore</a> (bool isFirstTime)</td></tr>
-<tr class="memdesc:a70aa302615a7bf7772da7401170259ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save max id to datastore.  <a href="#a70aa302615a7bf7772da7401170259ab">More...</a><br /></td></tr>
-<tr class="separator:a70aa302615a7bf7772da7401170259ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac553e3e5d6b9801917318bf9f8a94bf8"><td class="memItemLeft" align="right" valign="top">std::int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html#ac553e3e5d6b9801917318bf9f8a94bf8">getMaxIDFromDataStore</a> ()</td></tr>
+<tr class="memdesc:ac553e3e5d6b9801917318bf9f8a94bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get max id from datastore.  <a href="#ac553e3e5d6b9801917318bf9f8a94bf8">More...</a><br /></td></tr>
+<tr class="separator:ac553e3e5d6b9801917318bf9f8a94bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab0a5b599a3779d638a25dde34188478"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab0a5b599a3779d638a25dde34188478"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html#aab0a5b599a3779d638a25dde34188478">commitMaxIDToDataStore</a> ()</td></tr>
+<tr class="memdesc:aab0a5b599a3779d638a25dde34188478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save max id to datastore. <br /></td></tr>
+<tr class="separator:aab0a5b599a3779d638a25dde34188478"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -182,27 +186,21 @@ Should be used only if necessary. </p>
 
 </div>
 </div>
-<a class="anchor" id="a70aa302615a7bf7772da7401170259ab"></a>
+<a class="anchor" id="ac553e3e5d6b9801917318bf9f8a94bf8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void You::QueryEngine::Internal::State::commitMaxIDToDataStore </td>
+          <td class="memname">std::int64_t You::QueryEngine::Internal::State::getMaxIDFromDataStore </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isFirstTime</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Save max id to datastore. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">isFirstTime</td><td>POST if true, PUT otherwise. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Get max id from datastore. </p>
+<p>Return -1 if not found. </p>
 
 </div>
 </div>
@@ -213,7 +211,7 @@ Should be used only if necessary. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 1 2014 08:57:59 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 1 2014 10:56:11 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -103,30 +103,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac61bf55968ee4ce2062f9e3688b8fc08"><td class="memItemLeft" align="right" valign="top">static Task::ID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#ac61bf55968ee4ce2062f9e3688b8fc08">loadFromFile</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph)</td></tr>
-<tr class="memdesc:ac61bf55968ee4ce2062f9e3688b8fc08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the xml and build an initial task graph.  <a href="#ac61bf55968ee4ce2062f9e3688b8fc08">More...</a><br /></td></tr>
-<tr class="separator:ac61bf55968ee4ce2062f9e3688b8fc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99f677465eb4ccc3d201055b93fbe32f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a99f677465eb4ccc3d201055b93fbe32f">isTaskExist</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph, const Task::ID id)</td></tr>
-<tr class="memdesc:a99f677465eb4ccc3d201055b93fbe32f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the task exist in the graph.  <a href="#a99f677465eb4ccc3d201055b93fbe32f">More...</a><br /></td></tr>
-<tr class="separator:a99f677465eb4ccc3d201055b93fbe32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77193c7ac5062d1851ddda98d2ffb6ff"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a77193c7ac5062d1851ddda98d2ffb6ff">addTask</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph, const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task)</td></tr>
-<tr class="memdesc:a77193c7ac5062d1851ddda98d2ffb6ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a task to the graph if it is not exist.  <a href="#a77193c7ac5062d1851ddda98d2ffb6ff">More...</a><br /></td></tr>
-<tr class="separator:a77193c7ac5062d1851ddda98d2ffb6ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62a3ad63156408362ce2dd4810cc97d5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a62a3ad63156408362ce2dd4810cc97d5">deleteTask</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph, const Task::ID id)</td></tr>
-<tr class="memdesc:a62a3ad63156408362ce2dd4810cc97d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a task from the graph.  <a href="#a62a3ad63156408362ce2dd4810cc97d5">More...</a><br /></td></tr>
-<tr class="separator:a62a3ad63156408362ce2dd4810cc97d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9149235e7ddf9b2054e12d04e6eae9f8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a9149235e7ddf9b2054e12d04e6eae9f8">updateTask</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph, const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task)</td></tr>
-<tr class="memdesc:a9149235e7ddf9b2054e12d04e6eae9f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a task from the graph Rebuilds the graph if there is a connection change.  <a href="#a9149235e7ddf9b2054e12d04e6eae9f8">More...</a><br /></td></tr>
-<tr class="separator:a9149235e7ddf9b2054e12d04e6eae9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41d6594d132abe513907aeafaf632b30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41d6594d132abe513907aeafaf632b30"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a41d6594d132abe513907aeafaf632b30">rebuildGraph</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph)</td></tr>
-<tr class="memdesc:a41d6594d132abe513907aeafaf632b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rebuild the graph based on task table. <br /></td></tr>
-<tr class="separator:a41d6594d132abe513907aeafaf632b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a855344c51d91230382c81bf4264e2746"><td class="memItemLeft" align="right" valign="top">static Task::ID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a855344c51d91230382c81bf4264e2746">loadFromFile</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph)</td></tr>
+<tr class="memdesc:a855344c51d91230382c81bf4264e2746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the xml and build an initial task graph.  <a href="#a855344c51d91230382c81bf4264e2746">More...</a><br /></td></tr>
+<tr class="separator:a855344c51d91230382c81bf4264e2746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb526938a395923a0f0a5f46444171fe"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#afb526938a395923a0f0a5f46444171fe">isTaskExist</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph, const Task::ID id)</td></tr>
+<tr class="memdesc:afb526938a395923a0f0a5f46444171fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the task exist in the graph.  <a href="#afb526938a395923a0f0a5f46444171fe">More...</a><br /></td></tr>
+<tr class="separator:afb526938a395923a0f0a5f46444171fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57346ec41a440d74ceca188c156cb506"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a57346ec41a440d74ceca188c156cb506">addTask</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph, const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task)</td></tr>
+<tr class="memdesc:a57346ec41a440d74ceca188c156cb506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a task to the graph if it is not exist.  <a href="#a57346ec41a440d74ceca188c156cb506">More...</a><br /></td></tr>
+<tr class="separator:a57346ec41a440d74ceca188c156cb506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305ef415bc3c1675aa064dbf989a52f9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a305ef415bc3c1675aa064dbf989a52f9">deleteTask</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph, const Task::ID id)</td></tr>
+<tr class="memdesc:a305ef415bc3c1675aa064dbf989a52f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a task from the graph.  <a href="#a305ef415bc3c1675aa064dbf989a52f9">More...</a><br /></td></tr>
+<tr class="separator:a305ef415bc3c1675aa064dbf989a52f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7f17fc7ce3f54c7eb841cda428317f8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#ad7f17fc7ce3f54c7eb841cda428317f8">updateTask</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph, const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task)</td></tr>
+<tr class="memdesc:ad7f17fc7ce3f54c7eb841cda428317f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a task from the graph Rebuilds the graph if there is a connection change.  <a href="#ad7f17fc7ce3f54c7eb841cda428317f8">More...</a><br /></td></tr>
+<tr class="separator:ad7f17fc7ce3f54c7eb841cda428317f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e0bbfaecaf89ff722f1e895c9d4564"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42e0bbfaecaf89ff722f1e895c9d4564"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a42e0bbfaecaf89ff722f1e895c9d4564">rebuildGraph</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph)</td></tr>
+<tr class="memdesc:a42e0bbfaecaf89ff722f1e895c9d4564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rebuild the graph based on task table. <br /></td></tr>
+<tr class="separator:a42e0bbfaecaf89ff722f1e895c9d4564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Static utility class to manage a graph. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a77193c7ac5062d1851ddda98d2ffb6ff"></a>
+<a class="anchor" id="a57346ec41a440d74ceca188c156cb506"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -134,7 +134,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void You::QueryEngine::Internal::TaskGraphController::addTask </td>
+          <td class="memname">void You::QueryEngine::Internal::TaskGraphController::addTask </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;&#160;</td>
           <td class="paramname"><em>graph</em>, </td>
@@ -170,7 +170,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a class="anchor" id="a62a3ad63156408362ce2dd4810cc97d5"></a>
+<a class="anchor" id="a305ef415bc3c1675aa064dbf989a52f9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -178,7 +178,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void You::QueryEngine::Internal::TaskGraphController::deleteTask </td>
+          <td class="memname">void You::QueryEngine::Internal::TaskGraphController::deleteTask </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;&#160;</td>
           <td class="paramname"><em>graph</em>, </td>
@@ -214,7 +214,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a class="anchor" id="a99f677465eb4ccc3d201055b93fbe32f"></a>
+<a class="anchor" id="afb526938a395923a0f0a5f46444171fe"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -222,7 +222,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool You::QueryEngine::Internal::TaskGraphController::isTaskExist </td>
+          <td class="memname">bool You::QueryEngine::Internal::TaskGraphController::isTaskExist </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;&#160;</td>
           <td class="paramname"><em>graph</em>, </td>
@@ -257,7 +257,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a class="anchor" id="ac61bf55968ee4ce2062f9e3688b8fc08"></a>
+<a class="anchor" id="a855344c51d91230382c81bf4264e2746"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -265,7 +265,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static Task::ID You::QueryEngine::Internal::TaskGraphController::loadFromFile </td>
+          <td class="memname">Task::ID You::QueryEngine::Internal::TaskGraphController::loadFromFile </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;&#160;</td>
           <td class="paramname"><em>graph</em></td><td>)</td>
@@ -290,7 +290,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a class="anchor" id="a9149235e7ddf9b2054e12d04e6eae9f8"></a>
+<a class="anchor" id="ad7f17fc7ce3f54c7eb841cda428317f8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -298,7 +298,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void You::QueryEngine::Internal::TaskGraphController::updateTask </td>
+          <td class="memname">void You::QueryEngine::Internal::TaskGraphController::updateTask </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;&#160;</td>
           <td class="paramname"><em>graph</em>, </td>
@@ -333,13 +333,14 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>You-QueryEngine/internal/controller/<a class="el" href="task__graph__controller_8h_source.html">task_graph_controller.h</a></li>
+<li>You-QueryEngine/internal/controller/task_graph_controller.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 1 2014 08:57:59 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 1 2014 10:56:11 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

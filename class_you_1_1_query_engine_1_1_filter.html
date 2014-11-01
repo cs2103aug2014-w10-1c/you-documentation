@@ -91,6 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_you_1_1_query_engine_1_1_filter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">You::QueryEngine::Filter Class Reference</div>  </div>
@@ -142,6 +143,26 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ad6a00029c918a8882c2cf2c96c14fc5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6a00029c918a8882c2cf2c96c14fc5c"></a>
+static <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html#ad6a00029c918a8882c2cf2c96c14fc5c">Filter::isRelatedTo</a> (Task::ID id)</td></tr>
+<tr class="memdesc:ad6a00029c918a8882c2cf2c96c14fc5c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base class for filter object. ">Filter</a> task that has relationship with a task. <br /></td></tr>
+<tr class="separator:ad6a00029c918a8882c2cf2c96c14fc5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dfdb30d4caa2dd4d849a1fc8889a981"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9dfdb30d4caa2dd4d849a1fc8889a981"></a>
+static <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html#a9dfdb30d4caa2dd4d849a1fc8889a981">isParentOf</a> (Task::ID id)</td></tr>
+<tr class="memdesc:a9dfdb30d4caa2dd4d849a1fc8889a981"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base class for filter object. ">Filter</a> task that match the parent of the task. <br /></td></tr>
+<tr class="separator:a9dfdb30d4caa2dd4d849a1fc8889a981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889988f9e61dbc941723630ec8dcc513"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a889988f9e61dbc941723630ec8dcc513"></a>
+static <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html#a889988f9e61dbc941723630ec8dcc513">isChildOf</a> (Task::ID id)</td></tr>
+<tr class="memdesc:a889988f9e61dbc941723630ec8dcc513"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base class for filter object. ">Filter</a> the subtasks. <br /></td></tr>
+<tr class="separator:a889988f9e61dbc941723630ec8dcc513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d525d55c4beadc270b93ecbf0e153fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d525d55c4beadc270b93ecbf0e153fc"></a>
+static <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html#a9d525d55c4beadc270b93ecbf0e153fc">isDependedBy</a> (Task::ID id)</td></tr>
+<tr class="memdesc:a9d525d55c4beadc270b93ecbf0e153fc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base class for filter object. ">Filter</a> the depedencies. <br /></td></tr>
+<tr class="separator:a9d525d55c4beadc270b93ecbf0e153fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe466140b2b783d36b4aa3c12ec7206e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe466140b2b783d36b4aa3c12ec7206e"></a>
+static <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html#abe466140b2b783d36b4aa3c12ec7206e">isDependOn</a> (Task::ID id)</td></tr>
+<tr class="memdesc:abe466140b2b783d36b4aa3c12ec7206e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base class for filter object. ">Filter</a> the depedendants. <br /></td></tr>
+<tr class="separator:abe466140b2b783d36b4aa3c12ec7206e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Commonly used filters</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p><a class="el" href="class_you_1_1_query_engine_1_1_filter.html" title="Base class for filter object. ">Filter</a> any task.</p>
 </div></td></tr>
@@ -330,7 +351,7 @@ static <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 1 2014 08:57:59 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 1 2014 10:56:11 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
