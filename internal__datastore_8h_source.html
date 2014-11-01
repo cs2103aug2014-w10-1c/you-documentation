@@ -134,29 +134,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    std::vector&lt;KeyValuePairs&gt; <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html#a4594b249d9c31fc10210ae628bd3ba01">getAll</a>(std::wstring nodeName);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html">DataStore</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html#afc65554bb8ef51da08d334872b065437">wipeData</a>();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">bool</span> saveData();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> loadData();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html">DataStore</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> saveData();</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> executeTransaction(<a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html">Transaction</a>&amp; transaction, pugi::xml_document&amp; xml);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::wstring FILE_PATH;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    pugi::xml_document document;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    std::stack&lt;std::weak_ptr&lt;Transaction&gt;&gt; transactionStack;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> loadData();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> executeTransaction(<a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html">Transaction</a>&amp; transaction, pugi::xml_document&amp; xml);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::string FILE_PATH;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    pugi::xml_document document;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::stack&lt;std::weak_ptr&lt;Transaction&gt;&gt; committedTransaction;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}  <span class="comment">// namespace Internal</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}  <span class="comment">// namespace DataStore</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif  // YOU_DATASTORE_INTERNAL_INTERNAL_DATASTORE_H_</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::stack&lt;std::weak_ptr&lt;Transaction&gt;&gt; transactionStack;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    std::stack&lt;std::weak_ptr&lt;Transaction&gt;&gt; committedTransaction;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}  <span class="comment">// namespace Internal</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}  <span class="comment">// namespace DataStore</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif  // YOU_DATASTORE_INTERNAL_INTERNAL_DATASTORE_H_</span></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_data_store_html_ab3b75a83952672e786bdf1d3f9a5a615"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html#ab3b75a83952672e786bdf1d3f9a5a615">You::DataStore::Internal::DataStore::erase</a></div><div class="ttdeci">void erase(std::wstring branch, std::wstring id)</div><div class="ttdoc">Pushes EraseOperation into the active Transaction. </div><div class="ttdef"><b>Definition:</b> internal_datastore.cpp:85</div></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_data_store_html_a4d176d4ab3f1976fa32763292d1bd085"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html#a4d176d4ab3f1976fa32763292d1bd085">You::DataStore::Internal::DataStore::post</a></div><div class="ttdeci">void post(std::wstring branch, std::wstring id, const KeyValuePairs &amp;kvp)</div><div class="ttdoc">Pushes PostOperation into the active Transaction. </div><div class="ttdef"><b>Definition:</b> internal_datastore.cpp:61</div></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_data_store_html_ada496918b1cc5429fd4b1c16a11700b0"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html#ada496918b1cc5429fd4b1c16a11700b0">You::DataStore::Internal::DataStore::begin</a></div><div class="ttdeci">You::DataStore::Transaction begin()</div><div class="ttdoc">Transaction management. </div><div class="ttdef"><b>Definition:</b> internal_datastore.cpp:23</div></div>
@@ -165,6 +167,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_transaction_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html">You::DataStore::Internal::Transaction</a></div><div class="ttdoc">The actual class that contains the logic for managing transactions. </div><div class="ttdef"><b>Definition:</b> internal_transaction.h:17</div></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_data_store_html_a03d0cb0bbbf7ce13ad5b24ae0be203e8"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html#a03d0cb0bbbf7ce13ad5b24ae0be203e8">You::DataStore::Internal::DataStore::put</a></div><div class="ttdeci">void put(std::wstring branch, std::wstring id, const KeyValuePairs &amp;kvp)</div><div class="ttdoc">Pushes PutOperation into the active Transaction. </div><div class="ttdef"><b>Definition:</b> internal_datastore.cpp:73</div></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_api_test_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_api_test.html">You::DataStore::UnitTests::DataStoreApiTest</a></div><div class="ttdoc">Unit test for DataStore API that is exposed to Query Engine, namely DataStore and Transaction...</div><div class="ttdef"><b>Definition:</b> datastore_api_test.cpp:18</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_data_store_html_afc65554bb8ef51da08d334872b065437"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html#afc65554bb8ef51da08d334872b065437">You::DataStore::Internal::DataStore::wipeData</a></div><div class="ttdeci">void wipeData()</div><div class="ttdoc">Wipe the datastore. </div><div class="ttdef"><b>Definition:</b> internal_datastore.cpp:106</div></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_transaction_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_transaction.html">You::DataStore::Transaction</a></div><div class="ttdoc">Represents a collection of operations that need to collectively succeed or fail. </div><div class="ttdef"><b>Definition:</b> transaction.h:18</div></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_data_store_html_ac8e1098a7826b04273cfd581734b6940"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html#ac8e1098a7826b04273cfd581734b6940">You::DataStore::Internal::DataStore::onTransactionCommit</a></div><div class="ttdeci">void onTransactionCommit(Transaction &amp;transaction)</div><div class="ttdoc">Notifies the data store that the given transaction is being committed. </div><div class="ttdef"><b>Definition:</b> internal_datastore.cpp:30</div></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_data_store_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html">You::DataStore::Internal::DataStore</a></div><div class="ttdoc">The most primitive class that does the changes to the actual xml file. </div><div class="ttdef"><b>Definition:</b> internal_datastore.h:26</div></div>
@@ -173,7 +176,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 29 2014 03:52:41 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 1 2014 03:13:53 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
