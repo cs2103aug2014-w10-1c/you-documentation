@@ -8,6 +8,8 @@ var searchData=
   ['option_3c_20taskpriority_20_3e',['Option&lt; TaskPriority &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]],
   ['option_3c_20you_3a_3aqueryengine_3a_3atask_3a_3adependencies_20_3e',['Option&lt; You::QueryEngine::Task::Dependencies &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]],
   ['option_3c_20you_3a_3aqueryengine_3a_3atask_3a_3adescription_20_3e',['Option&lt; You::QueryEngine::Task::Description &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]],
+  ['option_3c_20you_3a_3aqueryengine_3a_3atask_3a_3aid_20_3e',['Option&lt; You::QueryEngine::Task::ID &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]],
   ['option_3c_20you_3a_3aqueryengine_3a_3atask_3a_3apriority_20_3e',['Option&lt; You::QueryEngine::Task::Priority &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]],
+  ['option_3c_20you_3a_3aqueryengine_3a_3atask_3a_3asubtasks_20_3e',['Option&lt; You::QueryEngine::Task::Subtasks &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]],
   ['option_3c_20you_3a_3aqueryengine_3a_3atask_3a_3atime_20_3e',['Option&lt; You::QueryEngine::Task::Time &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]]
 ];

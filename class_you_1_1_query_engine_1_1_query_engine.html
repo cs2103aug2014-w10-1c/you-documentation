@@ -119,10 +119,10 @@ typedef <a class="el" href="namespace_you_1_1_query_engine.html#a651f8867d136784
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac6748da0e06aa63ab5be0fd4733a68cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6748da0e06aa63ab5be0fd4733a68cc"></a>
-static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#ac6748da0e06aa63ab5be0fd4733a68cc">AddTask</a> (Task::Description description, Task::Time deadline, Task::Priority priority, Task::Dependencies dependencies)</td></tr>
-<tr class="memdesc:ac6748da0e06aa63ab5be0fd4733a68cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct add task query. <br /></td></tr>
-<tr class="separator:ac6748da0e06aa63ab5be0fd4733a68cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af73af6d439414d70c73b080921e2dede"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af73af6d439414d70c73b080921e2dede"></a>
+static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#af73af6d439414d70c73b080921e2dede">AddTask</a> (const Task::Description &amp;description, const Task::Time &amp;deadline, const Task::Priority &amp;priority, const Task::Dependencies &amp;dependencies, const Task::Subtasks &amp;subtasks)</td></tr>
+<tr class="memdesc:af73af6d439414d70c73b080921e2dede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct add task query. <br /></td></tr>
+<tr class="separator:af73af6d439414d70c73b080921e2dede"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5df9b4b44117770c6a7dbea18fb8947b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5df9b4b44117770c6a7dbea18fb8947b"></a>
 static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a5df9b4b44117770c6a7dbea18fb8947b">GetTask</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a> &amp;filter)</td></tr>
 <tr class="memdesc:a5df9b4b44117770c6a7dbea18fb8947b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct filter task without sort query. <br /></td></tr>
@@ -135,10 +135,10 @@ static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_qu
 static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a3d3eb3346793caa0c303f39c03b13bd7">DeleteTask</a> (Task::ID id)</td></tr>
 <tr class="memdesc:a3d3eb3346793caa0c303f39c03b13bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct delete task query. <br /></td></tr>
 <tr class="separator:a3d3eb3346793caa0c303f39c03b13bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f2e86380f8171906afdc498967cc8b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f2e86380f8171906afdc498967cc8b2"></a>
-static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a6f2e86380f8171906afdc498967cc8b2">UpdateTask</a> (Task::ID id, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::Description &gt; description, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::Time &gt; deadline, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::Priority &gt; priority, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::Dependencies &gt; dependencies, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; bool &gt; completed)</td></tr>
-<tr class="memdesc:a6f2e86380f8171906afdc498967cc8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct update task query. <br /></td></tr>
-<tr class="separator:a6f2e86380f8171906afdc498967cc8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e90b942d57701438cde84c01e35000"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90e90b942d57701438cde84c01e35000"></a>
+static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a90e90b942d57701438cde84c01e35000">UpdateTask</a> (Task::ID id, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::Description &gt; description, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::Time &gt; deadline, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::Priority &gt; priority, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::Dependencies &gt; dependencies, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; bool &gt; completed, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::ID &gt; parent, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::Subtasks &gt; subtasks)</td></tr>
+<tr class="memdesc:a90e90b942d57701438cde84c01e35000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct update task query. <br /></td></tr>
+<tr class="separator:a90e90b942d57701438cde84c01e35000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a9ffc039b17b76152e5a626d5ef90b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a9ffc039b17b76152e5a626d5ef90b9"></a>
 static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a5a9ffc039b17b76152e5a626d5ef90b9">Undo</a> ()</td></tr>
 <tr class="memdesc:a5a9ffc039b17b76152e5a626d5ef90b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct undo query. <br /></td></tr>
@@ -185,7 +185,7 @@ This is the API which will be called by Controller. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 1 2014 03:14:03 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 1 2014 03:40:32 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

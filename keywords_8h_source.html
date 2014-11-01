@@ -101,34 +101,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">const</span> std::wstring COMMAND_DELETE = L<span class="stringliteral">&quot;/delete&quot;</span>;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">const</span> std::wstring COMMAND_EDIT = L<span class="stringliteral">&quot;/edit&quot;</span>;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">const</span> std::wstring COMMAND_SHOW = L<span class="stringliteral">&quot;/show&quot;</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">const</span> std::array&lt;std::wstring, 4&gt; COMMANDS = { COMMAND_SHOW, COMMAND_ADD,</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;COMMAND_DELETE, COMMAND_EDIT };</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">const</span> std::wstring PARAM_PREFIX = L<span class="stringliteral">&quot;set&quot;</span>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">const</span> std::wstring PARAM_DESCRIPTION = L<span class="stringliteral">&quot;description&quot;</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">const</span> std::wstring PARAM_DEADLINE = L<span class="stringliteral">&quot;deadline&quot;</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">const</span> std::wstring PARAM_PRIORITY = L<span class="stringliteral">&quot;priority&quot;</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">const</span> std::wstring PARAM_DEPENDENCIES = L<span class="stringliteral">&quot;dependencies&quot;</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">const</span> std::array&lt;std::wstring, 4&gt; PARAMS = { PARAM_DESCRIPTION, PARAM_DEADLINE,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;PARAM_PRIORITY, PARAM_DEPENDENCIES };</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">const</span> std::wstring ORDER_PREFIX = L<span class="stringliteral">&quot;order by&quot;</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">const</span> std::wstring ORDER_ASCENDING = L<span class="stringliteral">&quot;ascending&quot;</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">const</span> std::wstring ORDER_DESCENDING = L<span class="stringliteral">&quot;descending&quot;</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">const</span> std::array&lt;std::wstring, 2&gt; ORDERS = { ORDER_ASCENDING,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;ORDER_DESCENDING };</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}  <span class="comment">// namespace GUI</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif  // YOU_GUI_KEYWORDS_H_</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">const</span> std::wstring COMMAND_UNDO = L<span class="stringliteral">&quot;/undo&quot;</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">const</span> std::array&lt;std::wstring, 5&gt; COMMANDS = { COMMAND_SHOW, COMMAND_ADD,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;COMMAND_DELETE, COMMAND_EDIT, COMMAND_UNDO };</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">const</span> std::wstring PARAM_PREFIX = L<span class="stringliteral">&quot;set&quot;</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">const</span> std::wstring PARAM_DESCRIPTION = L<span class="stringliteral">&quot;description&quot;</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">const</span> std::wstring PARAM_DEADLINE = L<span class="stringliteral">&quot;deadline&quot;</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">const</span> std::wstring PARAM_PRIORITY = L<span class="stringliteral">&quot;priority&quot;</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">const</span> std::wstring PARAM_DEPENDENCIES = L<span class="stringliteral">&quot;dependencies&quot;</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">const</span> std::array&lt;std::wstring, 4&gt; PARAMS = { PARAM_DESCRIPTION, PARAM_DEADLINE,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;PARAM_PRIORITY, PARAM_DEPENDENCIES };</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">const</span> std::wstring ORDER_PREFIX = L<span class="stringliteral">&quot;order by&quot;</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">const</span> std::wstring ORDER_ASCENDING = L<span class="stringliteral">&quot;ascending&quot;</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">const</span> std::wstring ORDER_DESCENDING = L<span class="stringliteral">&quot;descending&quot;</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">const</span> std::array&lt;std::wstring, 2&gt; ORDERS = { ORDER_ASCENDING,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;ORDER_DESCENDING };</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}  <span class="comment">// namespace GUI</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif  // YOU_GUI_KEYWORDS_H_</span></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 1 2014 03:13:54 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 1 2014 03:40:20 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['parent',['parent',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a2de31753e18ec4b167c4e7c167ebf33a',1,'You::QueryEngine::Internal::TaskBuilder']]],
   ['parse',['parse',['../class_you_1_1_n_l_p_1_1_date_time_parser.html#a36ed456d5dc7b647a19872236007719f',1,'You::NLP::DateTimeParser::parse(const StringType &amp;string, boost::posix_time::ptime &amp;result)'],['../class_you_1_1_n_l_p_1_1_date_time_parser.html#ae3f33f59c8a9c975da7cf0b198776cfb',1,'You::NLP::DateTimeParser::parse(const StringType &amp;string)'],['../class_you_1_1_n_l_p_1_1_query_parser.html#a32946b8b1d8eb5e0ff807854243d1a0f',1,'You::NLP::QueryParser::parse(const StringType &amp;string, QUERY &amp;result)'],['../class_you_1_1_n_l_p_1_1_query_parser.html#a15387b3664c14a273fc24e0244920080',1,'You::NLP::QueryParser::parse(const StringType &amp;string)']]],
   ['parseerrorexception',['ParseErrorException',['../class_you_1_1_n_l_p_1_1_parse_error_exception.html#a0c1b35ff9e6776e4b566e8ef95cce8fc',1,'You::NLP::ParseErrorException']]],
   ['populatetaskpanel',['populateTaskPanel',['../class_you_1_1_g_u_i_1_1_main_window.html#a5fd32bc206ce56aeb3e9e2b5a48b2385',1,'You::GUI::MainWindow']]],

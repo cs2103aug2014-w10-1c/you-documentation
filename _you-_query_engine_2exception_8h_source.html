@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">exception.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<a href="_you-_query_engine_2exception_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef YOU_QUERYENGINE_EXCEPTION_H_</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define YOU_QUERYENGINE_EXCEPTION_H_</span></div>
@@ -115,14 +115,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_you_1_1_query_engine_1_1_exception_1_1_not_undo_able_exception.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_query_engine_1_1_exception_1_1_not_undo_able_exception.html">NotUndoAbleException</a> : <span class="keyword">public</span> <a class="code" href="class_you_1_1_query_engine_1_1_exception_1_1_base_exception.html">BaseException</a> {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}  <span class="comment">// namespace Exception</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}  <span class="comment">// namespace QueryEngine</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_EXCEPTION_H_</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_you_1_1_query_engine_1_1_exception_1_1_task_already_has_parent_exception.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_query_engine_1_1_exception_1_1_task_already_has_parent_exception.html">TaskAlreadyHasParentException</a> : <span class="keyword">public</span> <a class="code" href="class_you_1_1_query_engine_1_1_exception_1_1_base_exception.html">BaseException</a> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}  <span class="comment">// namespace Exception</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}  <span class="comment">// namespace QueryEngine</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_EXCEPTION_H_</span></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_exception_1_1_circular_dependency_exception_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_exception_1_1_circular_dependency_exception.html">You::QueryEngine::Exception::CircularDependencyException</a></div><div class="ttdoc">An exception thrown when dependency of two or more tasks is circular. </div><div class="ttdef"><b>Definition:</b> exception.h:31</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_exception_1_1_empty_task_description_exception_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_exception_1_1_empty_task_description_exception.html">You::QueryEngine::Exception::EmptyTaskDescriptionException</a></div><div class="ttdoc">An exception thrown when trying to create task with empty description. </div><div class="ttdef"><b>Definition:</b> exception.h:21</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_exception_1_1_base_exception_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_exception_1_1_base_exception.html">You::QueryEngine::Exception::BaseException</a></div><div class="ttdoc">Base exception class. </div><div class="ttdef"><b>Definition:</b> exception.h:16</div></div>
+<div class="ttc" id="class_you_1_1_query_engine_1_1_exception_1_1_task_already_has_parent_exception_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_exception_1_1_task_already_has_parent_exception.html">You::QueryEngine::Exception::TaskAlreadyHasParentException</a></div><div class="ttdoc">An exception thrown when trying to attach a task that already has a parent to another task...</div><div class="ttdef"><b>Definition:</b> exception.h:41</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">You::QueryEngine::Exception::TaskNotFoundException</a></div><div class="ttdoc">An exception thrown when trying to delete or edit a task that does not exists. </div><div class="ttdef"><b>Definition:</b> exception.h:26</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_exception_1_1_not_undo_able_exception_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_exception_1_1_not_undo_able_exception.html">You::QueryEngine::Exception::NotUndoAbleException</a></div><div class="ttdoc">An exception thrown when trying to undo an undoable query (e.g GetTask) </div><div class="ttdef"><b>Definition:</b> exception.h:36</div></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_exception_html"><div class="ttname"><a href="class_you_1_1_utils_1_1_exception.html">You::Utils::Exception</a></div><div class="ttdef"><b>Definition:</b> exception.h:15</div></div>
@@ -130,7 +134,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 1 2014 03:13:53 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 1 2014 03:40:20 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -116,7 +116,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a62a3ad63156408362ce2dd4810cc97d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a task from the graph.  <a href="#a62a3ad63156408362ce2dd4810cc97d5">More...</a><br /></td></tr>
 <tr class="separator:a62a3ad63156408362ce2dd4810cc97d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9149235e7ddf9b2054e12d04e6eae9f8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a9149235e7ddf9b2054e12d04e6eae9f8">updateTask</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph, const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task)</td></tr>
-<tr class="memdesc:a9149235e7ddf9b2054e12d04e6eae9f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a task from the graph Rebuilds the graph if there is a dependency change.  <a href="#a9149235e7ddf9b2054e12d04e6eae9f8">More...</a><br /></td></tr>
+<tr class="memdesc:a9149235e7ddf9b2054e12d04e6eae9f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a task from the graph Rebuilds the graph if there is a connection change.  <a href="#a9149235e7ddf9b2054e12d04e6eae9f8">More...</a><br /></td></tr>
 <tr class="separator:a9149235e7ddf9b2054e12d04e6eae9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41d6594d132abe513907aeafaf632b30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41d6594d132abe513907aeafaf632b30"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a41d6594d132abe513907aeafaf632b30">rebuildGraph</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph)</td></tr>
@@ -250,6 +250,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The id to be checked. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">graph</td><td>The graph to be checked. </td></tr>
   </table>
   </dd>
 </dl>
@@ -321,7 +322,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table>
 </div><div class="memdoc">
 
-<p>Update a task from the graph Rebuilds the graph if there is a dependency change. </p>
+<p>Update a task from the graph Rebuilds the graph if there is a connection change. </p>
 <p>May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">Exception::TaskNotFoundException</a> if trying to update non existent task. May throw CircularDependencyException if it causes circular dependency. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">graph</td><td>The graph to be modified. </td></tr>
@@ -338,7 +339,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 1 2014 03:14:04 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 1 2014 03:40:32 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

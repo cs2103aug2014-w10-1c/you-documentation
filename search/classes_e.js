@@ -1,6 +1,7 @@
 var searchData=
 [
   ['task',['Task',['../class_you_1_1_query_engine_1_1_task.html',1,'You::QueryEngine']]],
+  ['taskalreadyhasparentexception',['TaskAlreadyHasParentException',['../class_you_1_1_query_engine_1_1_exception_1_1_task_already_has_parent_exception.html',1,'You::QueryEngine::Exception']]],
   ['taskbuilder',['TaskBuilder',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html',1,'You::QueryEngine::Internal']]],
   ['taskgraph',['TaskGraph',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html',1,'You::QueryEngine::Internal']]],
   ['taskgraphcontroller',['TaskGraphController',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html',1,'You::QueryEngine::Internal']]],

@@ -121,13 +121,17 @@ typedef boost::posix_time::ptime&#160;</td><td class="memItemRight" valign="bott
 typedef std::unordered_set<br class="typebreak" />
 &lt; Task::ID &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Dependencies</b></td></tr>
 <tr class="separator:a8bb0d8814530193c4bef3e2e53809f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab614114d465eac602961996a5c24fce6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab614114d465eac602961996a5c24fce6"></a>
+typedef std::unordered_set<br class="typebreak" />
+&lt; Task::ID &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Subtasks</b></td></tr>
+<tr class="separator:ab614114d465eac602961996a5c24fce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a27c41adfa99810a5635302646651b5b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27c41adfa99810a5635302646651b5b3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_task.html#a27c41adfa99810a5635302646651b5b3">Task</a> ()</td></tr>
-<tr class="memdesc:a27c41adfa99810a5635302646651b5b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
-<tr class="separator:a27c41adfa99810a5635302646651b5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e344c0caad8d3af34481f50b29357d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71e344c0caad8d3af34481f50b29357d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_task.html#a71e344c0caad8d3af34481f50b29357d">Task</a> ()=default</td></tr>
+<tr class="memdesc:a71e344c0caad8d3af34481f50b29357d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Constructor. <br /></td></tr>
+<tr class="separator:a71e344c0caad8d3af34481f50b29357d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7cc1f2080ed6bb74d19fb528d73ab1b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_task.html#ad7cc1f2080ed6bb74d19fb528d73ab1b">isDependOn</a> (const Task::ID id) const </td></tr>
 <tr class="memdesc:ad7cc1f2080ed6bb74d19fb528d73ab1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check dependency.  <a href="#ad7cc1f2080ed6bb74d19fb528d73ab1b">More...</a><br /></td></tr>
 <tr class="separator:ad7cc1f2080ed6bb74d19fb528d73ab1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,15 +151,18 @@ Time&#160;</td><td class="memItemRight" valign="bottom"><b>getDeadline</b> () co
 <tr class="memitem:af46ed2d76737bf473cecfe8377c2f1dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af46ed2d76737bf473cecfe8377c2f1dc"></a>
 Dependencies&#160;</td><td class="memItemRight" valign="bottom"><b>getDependencies</b> () const </td></tr>
 <tr class="separator:af46ed2d76737bf473cecfe8377c2f1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2aeedff1febcc1f57b1bf83798c4f41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2aeedff1febcc1f57b1bf83798c4f41"></a>
-Dependencies&#160;</td><td class="memItemRight" valign="bottom"><b>getChildren</b> () const </td></tr>
-<tr class="separator:ab2aeedff1febcc1f57b1bf83798c4f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00b2640ab075bb983d13d56adb3313a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00b2640ab075bb983d13d56adb3313a4"></a>
 Priority&#160;</td><td class="memItemRight" valign="bottom"><b>getPriority</b> () const </td></tr>
 <tr class="separator:a00b2640ab075bb983d13d56adb3313a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bbca3777e80edd8c5b01a308b04b76a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bbca3777e80edd8c5b01a308b04b76a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCompleted</b> () const </td></tr>
 <tr class="separator:a8bbca3777e80edd8c5b01a308b04b76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eddae54fe9c9cf03c5b77814a2f564c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3eddae54fe9c9cf03c5b77814a2f564c"></a>
+ID&#160;</td><td class="memItemRight" valign="bottom"><b>getParent</b> () const </td></tr>
+<tr class="separator:a3eddae54fe9c9cf03c5b77814a2f564c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f4fe3acddd2b694948c469d17eaead2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f4fe3acddd2b694948c469d17eaead2"></a>
+Subtasks&#160;</td><td class="memItemRight" valign="bottom"><b>getSubtasks</b> () const </td></tr>
+<tr class="separator:a5f4fe3acddd2b694948c469d17eaead2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Field Setters</div></td></tr>
 <tr class="memitem:aa361342696b94d0ca5e3091933574f9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa361342696b94d0ca5e3091933574f9c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setDescription</b> (const Description &amp;description)</td></tr>
@@ -172,6 +179,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setPriority</b> (Prio
 <tr class="memitem:afe84d083c66a76845148804869f4f7cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe84d083c66a76845148804869f4f7cc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setCompleted</b> (bool completed)</td></tr>
 <tr class="separator:afe84d083c66a76845148804869f4f7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83708e3d045c615fecb744dfc74fa15d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83708e3d045c615fecb744dfc74fa15d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (const Task::ID parent)</td></tr>
+<tr class="separator:a83708e3d045c615fecb744dfc74fa15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4616a3966e9512265133f46fc1c885"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e4616a3966e9512265133f46fc1c885"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSubtasks</b> (const Subtasks &amp;subtasks)</td></tr>
+<tr class="separator:a3e4616a3966e9512265133f46fc1c885"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -194,12 +207,12 @@ static const Dependencies&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:a9201fc2c0342443b02d3785fb2ef860b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9201fc2c0342443b02d3785fb2ef860b"></a>
 static const Priority&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_PRIORITY</b> = Task::Priority::NORMAL</td></tr>
 <tr class="separator:a9201fc2c0342443b02d3785fb2ef860b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a141bc5279fb6aa1d732c911b4d02500d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a141bc5279fb6aa1d732c911b4d02500d"></a>
+static const Subtasks&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_SUBTASKS</b></td></tr>
+<tr class="separator:a141bc5279fb6aa1d732c911b4d02500d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a2f3f899ddefadaa2dca767ea8d268fd1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f3f899ddefadaa2dca767ea8d268fd1"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>Internal::TaskSerializer</b></td></tr>
-<tr class="separator:a2f3f899ddefadaa2dca767ea8d268fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d69ea69acc0f2c25c1efe11c90fdf94"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d69ea69acc0f2c25c1efe11c90fdf94"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Internal::TaskBuilder</b></td></tr>
 <tr class="separator:a8d69ea69acc0f2c25c1efe11c90fdf94"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,7 +286,7 @@ The task model has these following fields</p><ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 1 2014 03:14:03 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 1 2014 03:40:32 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

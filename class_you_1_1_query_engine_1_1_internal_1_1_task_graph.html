@@ -104,6 +104,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:abd69fe2e191d8263f664300cf14ecbac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd69fe2e191d8263f664300cf14ecbac"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#abd69fe2e191d8263f664300cf14ecbac">GraphType</a> { <b>DEPENDENCY</b>, 
+<b>SUBTASK</b>
+ }</td></tr>
+<tr class="memdesc:abd69fe2e191d8263f664300cf14ecbac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the graph. <br /></td></tr>
+<tr class="separator:abd69fe2e191d8263f664300cf14ecbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a629c6c559a2ec122073eee11cfd89fb1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a629c6c559a2ec122073eee11cfd89fb1"></a>
 typedef boost::adjacency_list<br class="typebreak" />
 &lt; boost::vecS, boost::vecS, <br class="typebreak" />
@@ -123,6 +128,10 @@ typedef boost::graph_traits<br class="typebreak" />
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:af4f0f3237b46d3b7ff07a3b2c45b6a6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4f0f3237b46d3b7ff07a3b2c45b6a6e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#af4f0f3237b46d3b7ff07a3b2c45b6a6e">TaskGraph</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#abd69fe2e191d8263f664300cf14ecbac">GraphType</a> type)</td></tr>
+<tr class="memdesc:af4f0f3237b46d3b7ff07a3b2c45b6a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a task graph with type. <br /></td></tr>
+<tr class="separator:af4f0f3237b46d3b7ff07a3b2c45b6a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ecb2af90ba47f56ba13fa2c85fddb31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a6ecb2af90ba47f56ba13fa2c85fddb31">getTask</a> (const Task::ID id) const </td></tr>
 <tr class="memdesc:a6ecb2af90ba47f56ba13fa2c85fddb31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a single task from the graph May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html" title="An exception thrown when trying to delete or edit a task that does not exists. ">Exception::TaskNotFoundException</a>.  <a href="#a6ecb2af90ba47f56ba13fa2c85fddb31">More...</a><br /></td></tr>
 <tr class="separator:a6ecb2af90ba47f56ba13fa2c85fddb31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,6 +142,9 @@ Public Member Functions</h2></td></tr>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a61eca2d1401f4026cc4c635f0548dce1">getTaskCount</a> () const </td></tr>
 <tr class="memdesc:a61eca2d1401f4026cc4c635f0548dce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of task resided in the graph. <br /></td></tr>
 <tr class="separator:a61eca2d1401f4026cc4c635f0548dce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ff18aa283fcc314c023169b8d206606"><td class="memItemLeft" align="right" valign="top">Task::Dependencies&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a9ff18aa283fcc314c023169b8d206606">getAdjacentTasks</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task) const </td></tr>
+<tr class="memdesc:a9ff18aa283fcc314c023169b8d206606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return either task dependency list or subtask list depends on the type of the graph.  <a href="#a9ff18aa283fcc314c023169b8d206606">More...</a><br /></td></tr>
+<tr class="separator:a9ff18aa283fcc314c023169b8d206606"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -161,6 +173,24 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TaskGraphController<
 
 </div>
 </div>
+<a class="anchor" id="a9ff18aa283fcc314c023169b8d206606"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task::Dependencies You::QueryEngine::Internal::TaskGraph::getAdjacentTasks </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return either task dependency list or subtask list depends on the type of the graph. </p>
+
+</div>
+</div>
 <a class="anchor" id="a6ecb2af90ba47f56ba13fa2c85fddb31"></a>
 <div class="memitem">
 <div class="memproto">
@@ -182,7 +212,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TaskGraphController<
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The task with id id </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The task with specified ID </dd></dl>
 
 </div>
 </div>
@@ -193,7 +223,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TaskGraphController<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 1 2014 03:14:03 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 1 2014 03:40:32 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
