@@ -20,7 +20,7 @@ var searchData=
   ['state',['State',['../class_you_1_1_query_engine_1_1_internal_1_1_state.html',1,'You::QueryEngine::Internal']]],
   ['state_2eh',['state.h',['../state_8h.html',1,'']]],
   ['stringtype',['StringType',['../class_you_1_1_n_l_p_1_1_date_time_parser.html#ad44734bb65ae0695eb9df717ce8ce52c',1,'You::NLP::DateTimeParser::StringType()'],['../class_you_1_1_n_l_p_1_1_query_parser.html#a43e3e8eabdc5fbd901d3783d4f50f655',1,'You::NLP::QueryParser::StringType()']]],
-  ['subtasks',['subtasks',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a36d49b06b1b6224b552f92c4d4470345',1,'You::QueryEngine::Internal::TaskBuilder']]],
+  ['subtasks',['subtasks',['../struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html#a7099ffcbfd1589846a612a84a4d16855',1,'You::NLP::ADD_QUERY::subtasks()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a36d49b06b1b6224b552f92c4d4470345',1,'You::QueryEngine::Internal::TaskBuilder::subtasks()']]],
   ['super_5fimportant_5ftask',['SUPER_IMPORTANT_TASK',['../namespace_you_1_1_query_engine_1_1_unit_tests.html#a6529b9b61e180d269363086205e7acb4',1,'You::QueryEngine::UnitTests']]],
   ['syntaxhighlighter',['SyntaxHighlighter',['../class_you_1_1_g_u_i_1_1_syntax_highlighter.html',1,'You::GUI']]],
   ['systemtraymanager',['SystemTrayManager',['../class_you_1_1_g_u_i_1_1_main_window_1_1_system_tray_manager.html#aaa8f72be054fd69b0126b0b9ccdd2978',1,'You::GUI::MainWindow::SystemTrayManager']]],
