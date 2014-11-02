@@ -17,6 +17,7 @@ var searchData=
   ['deletetask',['DeleteTask',['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html',1,'You::QueryEngine::Internal::Action']]],
   ['dependencies',['dependencies',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a3a34506739441ea71eaef517a551535b',1,'You::QueryEngine::Internal::TaskBuilder']]],
   ['dependencygraphtest',['DependencyGraphTest',['../class_you_1_1_query_engine_1_1_unit_tests_1_1_dependency_graph_test.html',1,'You::QueryEngine::UnitTests']]],
+  ['dependent',['dependent',['../struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html#a57634d6a83c74e37d377ec7f2cdce8d6',1,'You::NLP::ADD_QUERY']]],
   ['depends_5fon_5f1_5f2_5f3',['DEPENDS_ON_1_2_3',['../namespace_you_1_1_query_engine_1_1_unit_tests.html#a26e2840cd4ce5bf568cf892383e1c9ed',1,'You::QueryEngine::UnitTests']]],
   ['dependson',['dependsOn',['../class_you_1_1_query_engine_1_1_filter.html#a112fee920265676809f75c5ddca35056',1,'You::QueryEngine::Filter']]],
   ['descending',['descending',['../class_you_1_1_query_engine_1_1_comparator.html#aa76638a2e16a96349457a9bdfc9838e8',1,'You::QueryEngine::Comparator::descending()'],['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#aa1624ad34144e92b2c34d9ac70fafba3acff818f0ae4cef845577e39283886a53',1,'You::NLP::SHOW_QUERY::DESCENDING()']]],
