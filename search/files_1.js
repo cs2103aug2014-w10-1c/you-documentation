@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['comparator_2eh',['comparator.h',['../comparator_8h.html',1,'']]],
-  ['controller_2eh',['controller.h',['../_you-_query_engine_2internal_2controller_8h.html',1,'']]]
+  ['batch_5fadd_5fsubtasks_2eh',['batch_add_subtasks.h',['../batch__add__subtasks_8h.html',1,'']]],
+  ['batch_5fdelete_5fsubtasks_2eh',['batch_delete_subtasks.h',['../batch__delete__subtasks_8h.html',1,'']]]
 ];

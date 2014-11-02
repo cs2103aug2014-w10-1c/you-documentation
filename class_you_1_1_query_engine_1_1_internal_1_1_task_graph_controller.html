@@ -115,6 +115,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a305ef415bc3c1675aa064dbf989a52f9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a305ef415bc3c1675aa064dbf989a52f9">deleteTask</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph, const Task::ID id)</td></tr>
 <tr class="memdesc:a305ef415bc3c1675aa064dbf989a52f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a task from the graph.  <a href="#a305ef415bc3c1675aa064dbf989a52f9">More...</a><br /></td></tr>
 <tr class="separator:a305ef415bc3c1675aa064dbf989a52f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a12c53a0644bcb21f1f1f80582c3201"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a1a12c53a0644bcb21f1f1f80582c3201">deleteTaskTree</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;g, const Task::ID id)</td></tr>
+<tr class="memdesc:a1a12c53a0644bcb21f1f1f80582c3201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a task tree from the graph May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">Exception::TaskNotFoundException</a>.  <a href="#a1a12c53a0644bcb21f1f1f80582c3201">More...</a><br /></td></tr>
+<tr class="separator:a1a12c53a0644bcb21f1f1f80582c3201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7f17fc7ce3f54c7eb841cda428317f8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#ad7f17fc7ce3f54c7eb841cda428317f8">updateTask</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;graph, const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task)</td></tr>
 <tr class="memdesc:ad7f17fc7ce3f54c7eb841cda428317f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a task from the graph Rebuilds the graph if there is a connection change.  <a href="#ad7f17fc7ce3f54c7eb841cda428317f8">More...</a><br /></td></tr>
 <tr class="separator:ad7f17fc7ce3f54c7eb841cda428317f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,6 +207,50 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 <p>Delete a task from the graph. </p>
 <p>May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">Exception::TaskNotFoundException</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">graph</td><td>The graph to be modified. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The id of the to-be deleted task </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if success, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1a12c53a0644bcb21f1f1f80582c3201"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void You::QueryEngine::Internal::TaskGraphController::deleteTaskTree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html">TaskGraph</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Task::ID&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Delete a task tree from the graph May throw <a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">Exception::TaskNotFoundException</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">graph</td><td>The graph to be modified. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The id of the to-be deleted task </td></tr>
@@ -340,7 +387,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 2 2014 10:10:13 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 2 2014 13:04:25 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

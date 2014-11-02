@@ -15,6 +15,7 @@ var searchData=
   ['delete_5ftask_2eh',['delete_task.h',['../delete__task_8h.html',1,'']]],
   ['deletetask',['DeleteTask',['../class_you_1_1_query_engine_1_1_query_engine.html#a3d3eb3346793caa0c303f39c03b13bd7',1,'You::QueryEngine::QueryEngine::DeleteTask()'],['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html#ae7ff1907167ea4f6571fee545462f383',1,'You::QueryEngine::Internal::Action::DeleteTask::DeleteTask()'],['../class_you_1_1_g_u_i_1_1_main_window.html#ae3526d188f6c81a503eaccd9bfc4823a',1,'You::GUI::MainWindow::deleteTask()'],['../class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a395b14125259bdd97abe7b34f19ee8e7',1,'You::GUI::MainWindow::TaskPanelManager::deleteTask()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a305ef415bc3c1675aa064dbf989a52f9',1,'You::QueryEngine::Internal::TaskGraphController::deleteTask()']]],
   ['deletetask',['DeleteTask',['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html',1,'You::QueryEngine::Internal::Action']]],
+  ['deletetasktree',['deleteTaskTree',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a1a12c53a0644bcb21f1f1f80582c3201',1,'You::QueryEngine::Internal::TaskGraphController']]],
   ['dependencies',['dependencies',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a3a34506739441ea71eaef517a551535b',1,'You::QueryEngine::Internal::TaskBuilder']]],
   ['dependencygraphtest',['DependencyGraphTest',['../class_you_1_1_query_engine_1_1_unit_tests_1_1_dependency_graph_test.html',1,'You::QueryEngine::UnitTests']]],
   ['dependent',['dependent',['../struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html#a57634d6a83c74e37d377ec7f2cdce8d6',1,'You::NLP::ADD_QUERY']]],
@@ -30,6 +31,6 @@ var searchData=
   ['duethisweek',['dueThisWeek',['../class_you_1_1_query_engine_1_1_filter.html#a07071d1da4f01bb3fa9cd78545911723',1,'You::QueryEngine::Filter']]],
   ['duethisyear',['dueThisYear',['../class_you_1_1_query_engine_1_1_filter.html#a4c156bf7013a052cd63bfb94228314f7',1,'You::QueryEngine::Filter']]],
   ['duetoday',['dueToday',['../class_you_1_1_query_engine_1_1_filter.html#af8c5a01b7773d66c2d0ae23e58874c0b',1,'You::QueryEngine::Filter']]],
-  ['dummyqueryexecutor',['DummyQueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_unit_tests_1_1_dummy_query_executor.html#a16396943019655d7adb131a1bc2eb6ce',1,'You::Controller::Internal::UnitTests::DummyQueryExecutor']]],
-  ['dummyqueryexecutor',['DummyQueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_unit_tests_1_1_dummy_query_executor.html',1,'You::Controller::Internal::UnitTests']]]
+  ['dummyqueryexecutor',['DummyQueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_unit_tests_1_1_dummy_query_executor.html',1,'You::Controller::Internal::UnitTests']]],
+  ['dummyqueryexecutor',['DummyQueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_unit_tests_1_1_dummy_query_executor.html#a16396943019655d7adb131a1bc2eb6ce',1,'You::Controller::Internal::UnitTests::DummyQueryExecutor']]]
 ];

@@ -119,9 +119,15 @@ typedef <a class="el" href="namespace_you_1_1_query_engine.html#a651f8867d136784
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a82fefa8b0835554aa72257106ff86683"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a82fefa8b0835554aa72257106ff86683">BatchAddSubTasks</a> (const Task::Description &amp;description, const Task::Time &amp;deadline, const Task::Priority &amp;priority, const Task::Dependencies &amp;dependencies, std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&gt; &amp;&amp;subtasks)</td></tr>
+<tr class="memdesc:a82fefa8b0835554aa72257106ff86683"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a batch addition of task with its subtask.  <a href="#a82fefa8b0835554aa72257106ff86683">More...</a><br /></td></tr>
+<tr class="separator:a82fefa8b0835554aa72257106ff86683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae09600e11934fc3afb89d217876b4f35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae09600e11934fc3afb89d217876b4f35"></a>
+static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#ae09600e11934fc3afb89d217876b4f35">BatchDeleteSubTasks</a> (Task::ID id)</td></tr>
+<tr class="memdesc:ae09600e11934fc3afb89d217876b4f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a batch delete subtask query. <br /></td></tr>
+<tr class="separator:ae09600e11934fc3afb89d217876b4f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af73af6d439414d70c73b080921e2dede"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af73af6d439414d70c73b080921e2dede"></a>
-static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#af73af6d439414d70c73b080921e2dede">AddTask</a> (const Task::Description &amp;description, const Task::Time &amp;deadline, const Task::Priority &amp;priority, const Task::Dependencies &amp;dependencies, const Task::Subtasks &amp;subtasks)</td></tr>
-<tr class="memdesc:af73af6d439414d70c73b080921e2dede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct add task query. <br /></td></tr>
+static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>AddTask</b> (const Task::Description &amp;description, const Task::Time &amp;deadline, const Task::Priority &amp;priority, const Task::Dependencies &amp;dependencies, const Task::Subtasks &amp;subtasks)</td></tr>
 <tr class="separator:af73af6d439414d70c73b080921e2dede"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5df9b4b44117770c6a7dbea18fb8947b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5df9b4b44117770c6a7dbea18fb8947b"></a>
 static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a5df9b4b44117770c6a7dbea18fb8947b">GetTask</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a> &amp;filter)</td></tr>
@@ -151,6 +157,60 @@ static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_qu
 <div class="textblock"><p>Utility class for <a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html" title="Utility class for QueryEngine  This is the API which will be called by Controller. ">QueryEngine</a> <br />
 This is the API which will be called by Controller. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a82fefa8b0835554aa72257106ff86683"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt; You::QueryEngine::QueryEngine::BatchAddSubTasks </td>
+          <td>(</td>
+          <td class="paramtype">const Task::Description &amp;&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Task::Time &amp;&#160;</td>
+          <td class="paramname"><em>deadline</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Task::Priority &amp;&#160;</td>
+          <td class="paramname"><em>priority</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Task::Dependencies &amp;&#160;</td>
+          <td class="paramname"><em>dependencies</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>subtasks</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a batch addition of task with its subtask. </p>
+
+</div>
+</div>
 <a class="anchor" id="a3c0da26cc73943f9cbb0314b7ea9711d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -185,7 +245,7 @@ This is the API which will be called by Controller. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 2 2014 10:10:12 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 2 2014 13:04:25 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

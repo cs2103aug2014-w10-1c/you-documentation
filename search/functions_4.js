@@ -5,6 +5,6 @@ var searchData=
   ['eraseexistingid',['eraseExistingId',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_operations_test.html#a73c745e4c3559abb77e962fb09dc438a',1,'You::DataStore::UnitTests::DataStoreOperationsTest']]],
   ['erasenonexistentid',['eraseNonExistentId',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_operations_test.html#a1e6ea06451189505cf4a2f9a00a5d5ed',1,'You::DataStore::UnitTests::DataStoreOperationsTest']]],
   ['eraseoperation',['EraseOperation',['../class_you_1_1_data_store_1_1_internal_1_1_erase_operation.html#a8a4c3b9363c0d125d891a37255f4c44c',1,'You::DataStore::Internal::EraseOperation']]],
-  ['execute',['execute',['../class_you_1_1_controller_1_1_internal_1_1_query_executor.html#afcc72a085b85c71e80f108143d4b58e5',1,'You::Controller::Internal::QueryExecutor']]],
+  ['execute',['execute',['../class_you_1_1_controller_1_1_internal_1_1_query_executor.html#afcc72a085b85c71e80f108143d4b58e5',1,'You::Controller::Internal::QueryExecutor::execute()'],['../class_you_1_1_query_engine_1_1_query.html#ae8e02abb32fff52a71202add2cab3c1e',1,'You::QueryEngine::Query::execute()']]],
   ['executequery',['executeQuery',['../class_you_1_1_query_engine_1_1_query_engine.html#a3c0da26cc73943f9cbb0314b7ea9711d',1,'You::QueryEngine::QueryEngine']]]
 ];
