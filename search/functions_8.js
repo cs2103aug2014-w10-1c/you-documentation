@@ -11,6 +11,7 @@ var searchData=
   ['isdescendantof',['isDescendantOf',['../class_you_1_1_query_engine_1_1_filter.html#a23e89289bc0ef9bb7dd6088d3aa0ff0a',1,'You::QueryEngine::Filter']]],
   ['isdueafter',['isDueAfter',['../class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a3fdfed8aa28cf6e2d7724b8447c88d3c',1,'You::GUI::MainWindow::TaskPanelManager']]],
   ['isduewithin',['isDueWithin',['../class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#ae0eae6eda377eb40b04ed1c23c1b8752',1,'You::GUI::MainWindow::TaskPanelManager']]],
+  ['isduewithinexactly',['isDueWithinExactly',['../class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#af4e6aa71f25555777d1824f1f4e8350c',1,'You::GUI::MainWindow::TaskPanelManager']]],
   ['isparentof',['isParentOf',['../class_you_1_1_query_engine_1_1_filter.html#a9dfdb30d4caa2dd4d849a1fc8889a981',1,'You::QueryEngine::Filter']]],
   ['ispastdue',['isPastDue',['../class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#aa959d0e49defbf128bc5b1f69f77560f',1,'You::GUI::MainWindow::TaskPanelManager']]],
   ['istaskexist',['isTaskExist',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#afb526938a395923a0f0a5f46444171fe',1,'You::QueryEngine::Internal::TaskGraphController']]]

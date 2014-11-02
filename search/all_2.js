@@ -3,6 +3,7 @@ var searchData=
   ['circulardependencyexception',['CircularDependencyException',['../class_you_1_1_query_engine_1_1_exception_1_1_circular_dependency_exception.html',1,'You::QueryEngine::Exception']]],
   ['clear',['clear',['../class_you_1_1_query_engine_1_1_internal_1_1_state.html#a6403b9e84c91bead84931fb1a1ebf8df',1,'You::QueryEngine::Internal::State']]],
   ['cleartasks',['clearTasks',['../class_you_1_1_g_u_i_1_1_main_window.html#a633663d6a448ecc6e04e17221acf2637',1,'You::GUI::MainWindow']]],
+  ['colortask',['colorTask',['../class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a866bcaf9793a00c2dd0cac08c2735fe0',1,'You::GUI::MainWindow::TaskPanelManager']]],
   ['commandtextbox',['CommandTextBox',['../class_you_1_1_g_u_i_1_1_command_text_box.html',1,'You::GUI']]],
   ['commit',['commit',['../class_you_1_1_data_store_1_1_internal_1_1_transaction.html#a1da7601819d05c1d9e8acf421de1c3b0',1,'You::DataStore::Internal::Transaction::commit()'],['../class_you_1_1_data_store_1_1_transaction.html#a277f00d5732916e26233fdcf2024381c',1,'You::DataStore::Transaction::commit()']]],
   ['commitchangesxmldocumenttree',['commitChangesXmlDocumentTree',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html#ab1d59ba0b7b85a537a64cd20288a0de2',1,'You::DataStore::UnitTests::DataStoreTest']]],

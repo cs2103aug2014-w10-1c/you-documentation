@@ -136,12 +136,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a395b14125259bdd97abe7b34f19ee8e7">deleteTask</a> (Task::ID taskID)</td></tr>
 <tr class="memdesc:a395b14125259bdd97abe7b34f19ee8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a task. <br /></td></tr>
 <tr class="separator:a395b14125259bdd97abe7b34f19ee8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2b1160eeae9bc3c0a62aff94b73abfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#ae2b1160eeae9bc3c0a62aff94b73abfa">repaintTasks</a> ()</td></tr>
+<tr class="separator:ae2b1160eeae9bc3c0a62aff94b73abfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15bab18533a4ea754a0385abee1ffefe"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; QTreeWidgetItem &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a15bab18533a4ea754a0385abee1ffefe">makeTree</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task, const std::map&lt; Task::ID, <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &gt; taskMap)</td></tr>
-<tr class="memdesc:a15bab18533a4ea754a0385abee1ffefe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a single task, a map of all tasks, and produces a QTreeWidgetItem with all its subtasks, recursively.  <a href="#a15bab18533a4ea754a0385abee1ffefe">More...</a><br /></td></tr>
+<tr class="memdesc:a15bab18533a4ea754a0385abee1ffefe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a tree from a task and its subtasks.  <a href="#a15bab18533a4ea754a0385abee1ffefe">More...</a><br /></td></tr>
 <tr class="separator:a15bab18533a4ea754a0385abee1ffefe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e034fc2f7c0c3d52f69d2fb48debc9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e034fc2f7c0c3d52f69d2fb48debc9d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addSubtask</b> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;parentTask, const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;childTask)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a7e034fc2f7c0c3d52f69d2fb48debc9d">addSubtask</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;parentTask, const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;childTask)</td></tr>
+<tr class="memdesc:a7e034fc2f7c0c3d52f69d2fb48debc9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a child task to an existing parent task. <br /></td></tr>
 <tr class="separator:a7e034fc2f7c0c3d52f69d2fb48debc9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a866bcaf9793a00c2dd0cac08c2735fe0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a866bcaf9793a00c2dd0cac08c2735fe0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a866bcaf9793a00c2dd0cac08c2735fe0">colorTask</a> (QTreeWidgetItem *taskItem, QColor color, QFont font)</td></tr>
+<tr class="memdesc:a866bcaf9793a00c2dd0cac08c2735fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Colors a task. <br /></td></tr>
+<tr class="separator:a866bcaf9793a00c2dd0cac08c2735fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_you_1_1_g_u_i_1_1_main_window_1_1_base_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_you_1_1_g_u_i_1_1_main_window_1_1_base_manager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_base_manager.html">You::GUI::MainWindow::BaseManager</a></td></tr>
 <tr class="memitem:ab8a7839b21f9b952f30ccab1757248e6 inherit pub_methods_class_you_1_1_g_u_i_1_1_main_window_1_1_base_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8a7839b21f9b952f30ccab1757248e6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_base_manager.html#ab8a7839b21f9b952f30ccab1757248e6">BaseManager</a> (<a class="el" href="class_you_1_1_g_u_i_1_1_main_window.html">MainWindow</a> *<a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_base_manager.html#af49d31556a5f80e581634242702268e2">parentGUI</a>)</td></tr>
@@ -167,10 +174,12 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memdesc:ae0eae6eda377eb40b04ed1c23c1b8752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time function to check if a deadline is due within daysLeft days. <br /></td></tr>
 <tr class="separator:ae0eae6eda377eb40b04ed1c23c1b8752"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4e6aa71f25555777d1824f1f4e8350c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4e6aa71f25555777d1824f1f4e8350c"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDueWithinExactly</b> (Task::Time deadline, int days)</td></tr>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#af4e6aa71f25555777d1824f1f4e8350c">isDueWithinExactly</a> (Task::Time deadline, int days)</td></tr>
+<tr class="memdesc:af4e6aa71f25555777d1824f1f4e8350c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time function to check if a deadline is due within exactly daysLeft days. <br /></td></tr>
 <tr class="separator:af4e6aa71f25555777d1824f1f4e8350c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc89939846418c004159626f5b695c26"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc89939846418c004159626f5b695c26"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>getReadableDeadline</b> (<a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> task)</td></tr>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#abc89939846418c004159626f5b695c26">getReadableDeadline</a> (<a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> task)</td></tr>
+<tr class="memdesc:abc89939846418c004159626f5b695c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns human-readable form for a deadline. <br /></td></tr>
 <tr class="separator:abc89939846418c004159626f5b695c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -178,6 +187,27 @@ Friends</h2></td></tr>
 <tr class="memitem:aff452488e2240b0ac91fb98ef54a70c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff452488e2240b0ac91fb98ef54a70c2"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::MainWindowTests</b></td></tr>
 <tr class="separator:aff452488e2240b0ac91fb98ef54a70c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5646c20e369753ff3bcfaeb143b1dee2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5646c20e369753ff3bcfaeb143b1dee2"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>getIndexAsText</b> (QTreeWidgetItem item)</td></tr>
+<tr class="separator:a5646c20e369753ff3bcfaeb143b1dee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66d1cc5587830833182b502e0aff879e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66d1cc5587830833182b502e0aff879e"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>getHiddenIDAsText</b> (QTreeWidgetItem item)</td></tr>
+<tr class="separator:a66d1cc5587830833182b502e0aff879e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab76dec71211c2f036f6d3a720384430c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab76dec71211c2f036f6d3a720384430c"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>getDescriptionAsText</b> (QTreeWidgetItem item)</td></tr>
+<tr class="separator:ab76dec71211c2f036f6d3a720384430c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae21a97e5136f971a4f5085785b79179a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae21a97e5136f971a4f5085785b79179a"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>getDeadlineAsText</b> (QTreeWidgetItem item)</td></tr>
+<tr class="separator:ae21a97e5136f971a4f5085785b79179a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b64f8dfb49efcdbbef13e9c713a2654"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b64f8dfb49efcdbbef13e9c713a2654"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>getPriorityAsText</b> (QTreeWidgetItem item)</td></tr>
+<tr class="separator:a3b64f8dfb49efcdbbef13e9c713a2654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab090fb95739838d0871541f2f2b09b1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab090fb95739838d0871541f2f2b09b1b"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>getDependenciesAsText</b> (QTreeWidgetItem item)</td></tr>
+<tr class="separator:ab090fb95739838d0871541f2f2b09b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41445761fc6cd39bbf4519888a4e58be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41445761fc6cd39bbf4519888a4e58be"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>getCompletionAsText</b> (QTreeWidgetItem item)</td></tr>
+<tr class="separator:a41445761fc6cd39bbf4519888a4e58be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -215,7 +245,30 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Takes a single task, a map of all tasks, and produces a QTreeWidgetItem with all its subtasks, recursively. </p>
+<p>Constructs a tree from a task and its subtasks. </p>
+<p>Takes a single task, a map of all tasks, and produces a QTreeWidgetItem with all its subtasks, recursively.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae2b1160eeae9bc3c0a62aff94b73abfa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void You::GUI::MainWindow::TaskPanelManager::repaintTasks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Iterate through all tasks</p>
+<p>If task is not done</p>
+<p>Get selected task</p>
+<p>Get ID of iterated task</p>
+<p>If current task is a dependency of selected task</p>
+<p>No selection</p>
+<p>Overrides all other formats if task is already done </p>
 
 </div>
 </div>
@@ -244,7 +297,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 2 2014 13:04:24 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 2 2014 15:17:21 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
