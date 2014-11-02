@@ -136,6 +136,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a395b14125259bdd97abe7b34f19ee8e7">deleteTask</a> (Task::ID taskID)</td></tr>
 <tr class="memdesc:a395b14125259bdd97abe7b34f19ee8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a task. <br /></td></tr>
 <tr class="separator:a395b14125259bdd97abe7b34f19ee8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15bab18533a4ea754a0385abee1ffefe"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; QTreeWidgetItem &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a15bab18533a4ea754a0385abee1ffefe">makeTree</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task, const std::map&lt; Task::ID, <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &gt; taskMap)</td></tr>
+<tr class="memdesc:a15bab18533a4ea754a0385abee1ffefe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a single task, a map of all tasks, and produces a QTreeWidgetItem with all its subtasks, recursively.  <a href="#a15bab18533a4ea754a0385abee1ffefe">More...</a><br /></td></tr>
+<tr class="separator:a15bab18533a4ea754a0385abee1ffefe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e034fc2f7c0c3d52f69d2fb48debc9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e034fc2f7c0c3d52f69d2fb48debc9d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addSubtask</b> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;parentTask, const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;childTask)</td></tr>
+<tr class="separator:a7e034fc2f7c0c3d52f69d2fb48debc9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_you_1_1_g_u_i_1_1_main_window_1_1_base_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_you_1_1_g_u_i_1_1_main_window_1_1_base_manager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_base_manager.html">You::GUI::MainWindow::BaseManager</a></td></tr>
 <tr class="memitem:ab8a7839b21f9b952f30ccab1757248e6 inherit pub_methods_class_you_1_1_g_u_i_1_1_main_window_1_1_base_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8a7839b21f9b952f30ccab1757248e6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_base_manager.html#ab8a7839b21f9b952f30ccab1757248e6">BaseManager</a> (<a class="el" href="class_you_1_1_g_u_i_1_1_main_window.html">MainWindow</a> *<a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_base_manager.html#af49d31556a5f80e581634242702268e2">parentGUI</a>)</td></tr>
@@ -185,6 +191,34 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>The component that deals with everything in the task panel. </p>
 <p>It handles the presentation of logic of a set of tasks presented to it by the NLP engine. It inherits from the <a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_base_manager.html" title="The class from which all components inherit. ">BaseManager</a> class. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a15bab18533a4ea754a0385abee1ffefe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; QTreeWidgetItem &gt; You::GUI::MainWindow::TaskPanelManager::makeTree </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;&#160;</td>
+          <td class="paramname"><em>task</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; Task::ID, <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &gt;&#160;</td>
+          <td class="paramname"><em>taskMap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Takes a single task, a map of all tasks, and produces a QTreeWidgetItem with all its subtasks, recursively. </p>
+
+</div>
+</div>
 <a class="anchor" id="a6905d71f29a35531ee807e84f2a9ac82"></a>
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +244,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 1 2014 15:53:35 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 2 2014 04:33:34 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
