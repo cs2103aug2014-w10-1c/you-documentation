@@ -19,6 +19,7 @@ var searchData=
   ['dependencies',['dependencies',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a3a34506739441ea71eaef517a551535b',1,'You::QueryEngine::Internal::TaskBuilder']]],
   ['dependencygraphtest',['DependencyGraphTest',['../class_you_1_1_query_engine_1_1_unit_tests_1_1_dependency_graph_test.html',1,'You::QueryEngine::UnitTests']]],
   ['dependent',['dependent',['../struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html#a57634d6a83c74e37d377ec7f2cdce8d6',1,'You::NLP::ADD_QUERY']]],
+  ['dependingtask',['dependingTask',['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#aa312334c871b2aec6c651eed5f0109b8',1,'You::NLP::EDIT_QUERY']]],
   ['depends_5fon_5f1_5f2_5f3',['DEPENDS_ON_1_2_3',['../namespace_you_1_1_query_engine_1_1_unit_tests.html#a26e2840cd4ce5bf568cf892383e1c9ed',1,'You::QueryEngine::UnitTests']]],
   ['dependson',['dependsOn',['../class_you_1_1_query_engine_1_1_filter.html#a112fee920265676809f75c5ddca35056',1,'You::QueryEngine::Filter']]],
   ['descending',['descending',['../class_you_1_1_query_engine_1_1_comparator.html#aa76638a2e16a96349457a9bdfc9838e8',1,'You::QueryEngine::Comparator::descending()'],['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#aa1624ad34144e92b2c34d9ac70fafba3acff818f0ae4cef845577e39283886a53',1,'You::NLP::SHOW_QUERY::DESCENDING()']]],
@@ -31,6 +32,6 @@ var searchData=
   ['duethisweek',['dueThisWeek',['../class_you_1_1_query_engine_1_1_filter.html#a07071d1da4f01bb3fa9cd78545911723',1,'You::QueryEngine::Filter']]],
   ['duethisyear',['dueThisYear',['../class_you_1_1_query_engine_1_1_filter.html#a4c156bf7013a052cd63bfb94228314f7',1,'You::QueryEngine::Filter']]],
   ['duetoday',['dueToday',['../class_you_1_1_query_engine_1_1_filter.html#af8c5a01b7773d66c2d0ae23e58874c0b',1,'You::QueryEngine::Filter']]],
-  ['dummyqueryexecutor',['DummyQueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_unit_tests_1_1_dummy_query_executor.html',1,'You::Controller::Internal::UnitTests']]],
-  ['dummyqueryexecutor',['DummyQueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_unit_tests_1_1_dummy_query_executor.html#a16396943019655d7adb131a1bc2eb6ce',1,'You::Controller::Internal::UnitTests::DummyQueryExecutor']]]
+  ['dummyqueryexecutor',['DummyQueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_unit_tests_1_1_dummy_query_executor.html#a16396943019655d7adb131a1bc2eb6ce',1,'You::Controller::Internal::UnitTests::DummyQueryExecutor']]],
+  ['dummyqueryexecutor',['DummyQueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_unit_tests_1_1_dummy_query_executor.html',1,'You::Controller::Internal::UnitTests']]]
 ];

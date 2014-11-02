@@ -20,6 +20,7 @@ var searchData=
   ['option',['Option',['../class_you_1_1_utils_1_1_option.html#a5c212336d85d700fcfd42106a583291a',1,'You::Utils::Option::Option()'],['../class_you_1_1_utils_1_1_option.html#a5c91fc5eeda113998913e0e5a1a53cca',1,'You::Utils::Option::Option(const boost::none_t &amp;value)'],['../class_you_1_1_utils_1_1_option.html#acdf21950e74b8233309f375f297f6e6e',1,'You::Utils::Option::Option(T &amp;&amp;value)'],['../class_you_1_1_utils_1_1_option.html#af2225848527da4d9cb481fc688505424',1,'You::Utils::Option::Option(const T &amp;value)']]],
   ['option_3c_20bool_20_3e',['Option&lt; bool &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]],
   ['option_3c_20boost_3a_3aposix_5ftime_3a_3aptime_20_3e',['Option&lt; boost::posix_time::ptime &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]],
+  ['option_3c_20int_20_3e',['Option&lt; int &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]],
   ['option_3c_20std_3a_3awstring_20_3e',['Option&lt; std::wstring &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]],
   ['option_3c_20taskpriority_20_3e',['Option&lt; TaskPriority &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]],
   ['option_3c_20you_3a_3aqueryengine_3a_3atask_3a_3adependencies_20_3e',['Option&lt; You::QueryEngine::Task::Dependencies &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]],

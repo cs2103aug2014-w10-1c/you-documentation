@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['childtask',['childTask',['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#ac1bf2cb2a32a4c070294f6947062387d',1,'You::NLP::EDIT_QUERY']]],
   ['circulardependencyexception',['CircularDependencyException',['../class_you_1_1_query_engine_1_1_exception_1_1_circular_dependency_exception.html',1,'You::QueryEngine::Exception']]],
   ['clear',['clear',['../class_you_1_1_query_engine_1_1_internal_1_1_state.html#a6403b9e84c91bead84931fb1a1ebf8df',1,'You::QueryEngine::Internal::State']]],
   ['cleartasks',['clearTasks',['../class_you_1_1_g_u_i_1_1_main_window.html#a633663d6a448ecc6e04e17221acf2637',1,'You::GUI::MainWindow']]],
@@ -22,8 +23,8 @@ var searchData=
   ['contextindexoutofrangeexception',['ContextIndexOutOfRangeException',['../class_you_1_1_controller_1_1_context_index_out_of_range_exception.html',1,'You::Controller']]],
   ['contextindexoutofrangeexception',['ContextIndexOutOfRangeException',['../class_you_1_1_controller_1_1_context_index_out_of_range_exception.html#a44df5759c6ef9a5274e3fae29f820462',1,'You::Controller::ContextIndexOutOfRangeException::ContextIndexOutOfRangeException()'],['../class_you_1_1_controller_1_1_context_index_out_of_range_exception.html#a0da5f76038b669ff883d51eeb36b3553',1,'You::Controller::ContextIndexOutOfRangeException::ContextIndexOutOfRangeException(const std::out_of_range &amp;exception)'],['../class_you_1_1_controller_1_1_context_index_out_of_range_exception.html#a2079627aae63f45987e532d846d5c849',1,'You::Controller::ContextIndexOutOfRangeException::ContextIndexOutOfRangeException(const ContextIndexOutOfRangeException &amp;exception)']]],
   ['contextrequiredexception',['ContextRequiredException',['../class_you_1_1_controller_1_1_context_required_exception.html',1,'You::Controller']]],
-  ['controller',['Controller',['../class_you_1_1_query_engine_1_1_internal_1_1_controller.html',1,'You::QueryEngine::Internal']]],
   ['controller',['Controller',['../class_you_1_1_controller_1_1_controller.html',1,'You::Controller']]],
+  ['controller',['Controller',['../class_you_1_1_query_engine_1_1_internal_1_1_controller.html',1,'You::QueryEngine::Internal']]],
   ['controller_2eh',['controller.h',['../_you-_query_engine_2internal_2controller_8h.html',1,'']]],
   ['createnewnodewithbranchoperation',['createNewNodeWithBranchOperation',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_operations_test.html#add0bc3c645866c052718909c8d6c3773',1,'You::DataStore::UnitTests::DataStoreOperationsTest']]],
   ['critical',['critical',['../class_you_1_1_utils_1_1_log.html#a15f60ad05512c9ef99c147c398260b5b',1,'You::Utils::Log']]]
