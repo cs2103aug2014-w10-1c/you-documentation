@@ -17,5 +17,6 @@ var searchData=
   ['gettaskcount',['getTaskCount',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a61eca2d1401f4026cc4c635f0548dce1',1,'You::QueryEngine::Internal::TaskGraph']]],
   ['gettasklist',['getTaskList',['../class_you_1_1_g_u_i_1_1_main_window.html#a40b0984dff403f82fe47fec7fccddd93',1,'You::GUI::MainWindow']]],
   ['gettasks',['getTasks',['../class_you_1_1_controller_1_1_controller.html#a2077f4b38822094ba145eeb08a11054c',1,'You::Controller::Controller::getTasks(const std::vector&lt; Task::ID &gt; &amp;taskIDs) const '],['../class_you_1_1_controller_1_1_controller.html#a709e8cb25a30b3cc9e2b8e47b25406cf',1,'You::Controller::Controller::getTasks() const '],['../class_you_1_1_g_u_i_1_1_main_window_1_1_query_manager.html#ad0b20af783595e9b54862b302564ae27',1,'You::GUI::MainWindow::QueryManager::getTasks(const QList&lt; Task::ID &gt; &amp;taskIDs)'],['../class_you_1_1_g_u_i_1_1_main_window_1_1_query_manager.html#a0ba652a66143c1d06d3404ee01b6cb11',1,'You::GUI::MainWindow::QueryManager::getTasks()']]],
+  ['grandmother',['GRANDMOTHER',['../namespace_you_1_1_query_engine_1_1_unit_tests.html#ac976233672120462fb4f442af4083d1c',1,'You::QueryEngine::UnitTests']]],
   ['graph',['graph',['../class_you_1_1_query_engine_1_1_internal_1_1_state.html#a4b285e7045c96a1a9284df89268003cf',1,'You::QueryEngine::Internal::State']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['log',['log',['../class_you_1_1_n_l_p_1_1_parser_logger.html#a32f5b5eb8c72f1ab5d747f5cd0be90fa',1,'You::NLP::ParserLogger']]],
-  ['logcategory',['logCategory',['../class_you_1_1_query_engine_1_1_query.html#ac41d73c7383562be11fd3402263c23fa',1,'You::QueryEngine::Query::logCategory()'],['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html#aa987fddfa1d1529e2741aef3117dc493',1,'You::QueryEngine::Internal::Action::AddTask::logCategory()'],['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html#a36272439469075b925f944abae2e9d53',1,'You::QueryEngine::Internal::Action::DeleteTask::logCategory()'],['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_get_task.html#a8a926d866dee40e4fb1ef2c9a3a8a940',1,'You::QueryEngine::Internal::Action::GetTask::logCategory()'],['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html#ac696b5a16ede7ceebd5b90839764716e',1,'You::QueryEngine::Internal::Action::UpdateTask::logCategory()']]]
+  ['info',['info',['../class_you_1_1_utils_1_1_log.html#a9bd83e5b3e9ab2dc6d55a59fdf268042',1,'You::Utils::Log']]]
 ];
