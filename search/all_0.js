@@ -13,6 +13,7 @@ var searchData=
   ['ascending',['ascending',['../class_you_1_1_query_engine_1_1_comparator.html#a634402f6540c4eb148bd04ede4d28c39',1,'You::QueryEngine::Comparator::ascending()'],['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#aa1624ad34144e92b2c34d9ac70fafba3a83ec681a20197326c163ea3b39ef7c32',1,'You::NLP::SHOW_QUERY::ASCENDING()']]],
   ['astasklist',['asTaskList',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#aef5e7236e5e8a05c8d5bc688aeda65f1',1,'You::QueryEngine::Internal::TaskGraph']]],
   ['at',['at',['../class_you_1_1_controller_1_1_controller_1_1_context.html#ad4affd3558635c0a5ac26b82fa18363a',1,'You::Controller::Controller::Context']]],
+  ['attachment',['attachment',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a3e2680595f8a4c14b3a343ee32614dec',1,'You::QueryEngine::Internal::TaskBuilder']]],
   ['attachment_5faction',['ATTACHMENT_ACTION',['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y_1_1_a_t_t_a_c_h_m_e_n_t___a_c_t_i_o_n.html',1,'You::NLP::EDIT_QUERY']]],
   ['attachments',['attachments',['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#a42a70097e190713c4c9a8dcb369c7882',1,'You::NLP::EDIT_QUERY']]]
 ];

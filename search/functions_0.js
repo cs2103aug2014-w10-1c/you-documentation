@@ -6,5 +6,6 @@ var searchData=
   ['addtaskwithsubtasks',['addTaskWithSubtasks',['../class_you_1_1_g_u_i_1_1_main_window.html#a3865680f1b8714836c709dfd17e4fcd0',1,'You::GUI::MainWindow']]],
   ['ascending',['ascending',['../class_you_1_1_query_engine_1_1_comparator.html#a634402f6540c4eb148bd04ede4d28c39',1,'You::QueryEngine::Comparator']]],
   ['astasklist',['asTaskList',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#aef5e7236e5e8a05c8d5bc688aeda65f1',1,'You::QueryEngine::Internal::TaskGraph']]],
-  ['at',['at',['../class_you_1_1_controller_1_1_controller_1_1_context.html#ad4affd3558635c0a5ac26b82fa18363a',1,'You::Controller::Controller::Context']]]
+  ['at',['at',['../class_you_1_1_controller_1_1_controller_1_1_context.html#ad4affd3558635c0a5ac26b82fa18363a',1,'You::Controller::Controller::Context']]],
+  ['attachment',['attachment',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a3e2680595f8a4c14b3a343ee32614dec',1,'You::QueryEngine::Internal::TaskBuilder']]]
 ];
