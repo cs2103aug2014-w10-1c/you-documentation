@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,11 +83,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespace_you.html">You</a></li><li class="navelem"><a class="el" href="namespace_you_1_1_query_engine.html">QueryEngine</a></li><li class="navelem"><a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a></li>  </ul>
+<li class="navelem"><b>You</b></li><li class="navelem"><a class="el" href="namespace_you_1_1_query_engine.html">QueryEngine</a></li><li class="navelem"><a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
@@ -107,25 +108,28 @@ Inheritance diagram for You::QueryEngine::Query:</div>
  <div class="center">
   <img src="class_you_1_1_query_engine_1_1_query.png" usemap="#You::QueryEngine::Query_map" alt=""/>
   <map id="You::QueryEngine::Query_map" name="You::QueryEngine::Query_map">
-<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html" title="Action for adding a new task. " alt="You::QueryEngine::Internal::Action::AddTask" shape="rect" coords="0,56,334,80"/>
-<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html" title="Action for adding a new task. " alt="You::QueryEngine::Internal::Action::BatchAddSubTasks" shape="rect" coords="344,56,678,80"/>
-<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_delete_sub_tasks.html" title="Action for adding a new task. " alt="You::QueryEngine::Internal::Action::BatchDeleteSubTasks" shape="rect" coords="688,56,1022,80"/>
-<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html" title="Action for deleting an existing task. " alt="You::QueryEngine::Internal::Action::DeleteTask" shape="rect" coords="1032,56,1366,80"/>
-<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_get_task.html" title="Action for getting tasks by applying a filter and optionally a sorter. " alt="You::QueryEngine::Internal::Action::GetTask" shape="rect" coords="1376,56,1710,80"/>
-<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_undo.html" title="Undo last action, then reapply the current filter and comparator and return the task list as a respon..." alt="You::QueryEngine::Internal::Action::Undo" shape="rect" coords="1720,56,2054,80"/>
-<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html" title="Update a task task. " alt="You::QueryEngine::Internal::Action::UpdateTask" shape="rect" coords="2064,56,2398,80"/>
+<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html" title="Action for adding a new task. " alt="You::QueryEngine::Internal::Action::AddTask" shape="rect" coords="0,56,348,80"/>
+<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_dependencies.html" title="Action for adding a new task. " alt="You::QueryEngine::Internal::Action::BatchAddDependencies" shape="rect" coords="358,56,706,80"/>
+<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html" title="Action for adding a new task. " alt="You::QueryEngine::Internal::Action::BatchAddSubTasks" shape="rect" coords="716,56,1064,80"/>
+<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html" title="Action for deleting an existing task. " alt="You::QueryEngine::Internal::Action::DeleteTask" shape="rect" coords="1074,56,1422,80"/>
+<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_get_task.html" title="Action for getting tasks by applying a filter and optionally a sorter. " alt="You::QueryEngine::Internal::Action::GetTask" shape="rect" coords="1432,56,1780,80"/>
+<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_undo.html" title="Undo last action, then reapply the current filter and comparator and return the task list as a respon..." alt="You::QueryEngine::Internal::Action::Undo" shape="rect" coords="1790,56,2138,80"/>
+<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html" title="Update a task task. " alt="You::QueryEngine::Internal::Action::UpdateTask" shape="rect" coords="2148,56,2496,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae8e02abb32fff52a71202add2cab3c1e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_you_1_1_query_engine.html#a651f8867d13678410711e7f1c4672fce">Response</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query.html#ae8e02abb32fff52a71202add2cab3c1e">execute</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">Internal::State</a> &amp;state)=0</td></tr>
+<tr class="memdesc:ae8e02abb32fff52a71202add2cab3c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the query on a state.  <a href="#ae8e02abb32fff52a71202add2cab3c1e">More...</a><br /></td></tr>
+<tr class="separator:ae8e02abb32fff52a71202add2cab3c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:abee80d359d958d5ce1c4132d560068df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abee80d359d958d5ce1c4132d560068df"></a>
 virtual std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query.html#abee80d359d958d5ce1c4132d560068df">getReverse</a> ()</td></tr>
 <tr class="memdesc:abee80d359d958d5ce1c4132d560068df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reverse of this query for undo. <br /></td></tr>
 <tr class="separator:abee80d359d958d5ce1c4132d560068df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8e02abb32fff52a71202add2cab3c1e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_you_1_1_query_engine.html#a651f8867d13678410711e7f1c4672fce">Response</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query.html#ae8e02abb32fff52a71202add2cab3c1e">execute</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">Internal::State</a> &amp;state)=0</td></tr>
-<tr class="memdesc:ae8e02abb32fff52a71202add2cab3c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the query on a state.  <a href="#ae8e02abb32fff52a71202add2cab3c1e">More...</a><br /></td></tr>
-<tr class="separator:ae8e02abb32fff52a71202add2cab3c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
@@ -140,12 +144,6 @@ Friends</h2></td></tr>
 class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query.html#af93bbefe83d2a090b9fcec51a8c0c1f0">QueryEngine</a></td></tr>
 <tr class="memdesc:af93bbefe83d2a090b9fcec51a8c0c1f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the query engine utility class. <br /></td></tr>
 <tr class="separator:af93bbefe83d2a090b9fcec51a8c0c1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57116cb93dc67589ab40e3f8aa04d53e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57116cb93dc67589ab40e3f8aa04d53e"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>Internal::Action::Undo</b></td></tr>
-<tr class="separator:a57116cb93dc67589ab40e3f8aa04d53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed2b9fd35e911b9dbc7568401a347b2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed2b9fd35e911b9dbc7568401a347b2a"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>Internal::Action::BatchAddSubTasks</b></td></tr>
-<tr class="separator:aed2b9fd35e911b9dbc7568401a347b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for queries. </p>
@@ -169,13 +167,15 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Internal::Action::Ba
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Execute the query on a state. </p>
 <dl class="section pre"><dt>Precondition</dt><dd>The state has been loaded and valid. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html#ad08db7d257b49fe855de23e5e4ca572d">You::QueryEngine::Internal::Action::UpdateTask</a>.</p>
 
 </div>
 </div>
@@ -186,7 +186,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Internal::Action::Ba
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 4 2014 17:14:09 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 5 2014 02:08:11 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

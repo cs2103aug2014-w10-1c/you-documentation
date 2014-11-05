@@ -109,7 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -154,6 +154,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>getAllTasks()
 : <a class="el" href="class_you_1_1_data_store_1_1_data_store.html#afbc527b5285f60dc198466d9bbd9fbf3">You::DataStore::DataStore</a>
 </li>
+<li>getDependenciesObject()
+: <a class="el" href="class_you_1_1_query_engine_1_1_task.html#a89e3e3dd85cdc3a3d41d2ff02ccdb874">You::QueryEngine::Task</a>
+</li>
 <li>getExistingNodeWithBranchOperation()
 : <a class="el" href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_operations_test.html#a8988e47cb9c71bb462b3d84cc622d5a3">You::DataStore::UnitTests::DataStoreOperationsTest</a>
 </li>
@@ -168,11 +171,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>getReverse()
 : <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html#a3ebdcc92665496f5450a6b8d0c0f0be6">You::QueryEngine::Internal::Action::AddTask</a>
+, <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_dependencies.html#a0aa4a2796d243155ada3ff5edd1e7d6a">You::QueryEngine::Internal::Action::BatchAddDependencies</a>
 , <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html#a42a18fb7789527b0d9b7e743fdb2567e">You::QueryEngine::Internal::Action::BatchAddSubTasks</a>
-, <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_delete_sub_tasks.html#a6c36a80212ae3cc08ef4551bf03314d5">You::QueryEngine::Internal::Action::BatchDeleteSubTasks</a>
 , <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html#a25094a8f14c5af150b7e76e221f36558">You::QueryEngine::Internal::Action::DeleteTask</a>
 , <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html#af2f3e3c6871700c4a9be3e78396ee47c">You::QueryEngine::Internal::Action::UpdateTask</a>
 , <a class="el" href="class_you_1_1_query_engine_1_1_query.html#abee80d359d958d5ce1c4132d560068df">You::QueryEngine::Query</a>
+</li>
+<li>getSubtasksObject()
+: <a class="el" href="class_you_1_1_query_engine_1_1_task.html#a9108421d9cf4409605cc6edcdfb4b51d">You::QueryEngine::Task</a>
 </li>
 <li>GetTask()
 : <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_get_task.html#ac850ce051374923015710b4d1401315d">You::QueryEngine::Internal::Action::GetTask</a>
@@ -181,7 +187,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a6ecb2af90ba47f56ba13fa2c85fddb31">You::QueryEngine::Internal::TaskGraph</a>
 </li>
 <li>GetTask()
-: <a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a5df9b4b44117770c6a7dbea18fb8947b">You::QueryEngine::QueryEngine</a>
+: <a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a226deec125f6a1a1d4ae3c6309d5fdaa">You::QueryEngine::QueryEngine</a>
 </li>
 <li>getTaskCount()
 : <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a61eca2d1401f4026cc4c635f0548dce1">You::QueryEngine::Internal::TaskGraph</a>
@@ -209,7 +215,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 4 2014 17:14:10 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 5 2014 02:08:12 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

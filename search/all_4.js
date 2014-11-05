@@ -13,6 +13,6 @@ var searchData=
   ['error',['error',['../class_you_1_1_utils_1_1_log.html#a3aee5642a67db1b93eab4f13f4b28f6f',1,'You::Utils::Log']]],
   ['exception',['Exception',['../class_you_1_1_utils_1_1_exception.html',1,'You::Utils']]],
   ['exception_2eh',['exception.h',['../_you-_query_engine_2exception_8h.html',1,'']]],
-  ['execute',['execute',['../class_you_1_1_controller_1_1_internal_1_1_query_executor.html#afcc72a085b85c71e80f108143d4b58e5',1,'You::Controller::Internal::QueryExecutor::execute()'],['../class_you_1_1_query_engine_1_1_query.html#ae8e02abb32fff52a71202add2cab3c1e',1,'You::QueryEngine::Query::execute()']]],
+  ['execute',['execute',['../class_you_1_1_controller_1_1_internal_1_1_query_executor.html#afcc72a085b85c71e80f108143d4b58e5',1,'You::Controller::Internal::QueryExecutor::execute()'],['../class_you_1_1_query_engine_1_1_query.html#ae8e02abb32fff52a71202add2cab3c1e',1,'You::QueryEngine::Query::execute()'],['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html#ad08db7d257b49fe855de23e5e4ca572d',1,'You::QueryEngine::Internal::Action::UpdateTask::execute()']]],
   ['executequery',['executeQuery',['../class_you_1_1_query_engine_1_1_query_engine.html#a3c0da26cc73943f9cbb0314b7ea9711d',1,'You::QueryEngine::QueryEngine']]]
 ];

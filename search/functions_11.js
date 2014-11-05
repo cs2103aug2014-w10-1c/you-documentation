@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['istoplevel',['isTopLevel',['../class_you_1_1_query_engine_1_1_task.html#a91d70be0c4244384ebff3b836dba3faa',1,'You::QueryEngine::Task']]],
   ['task',['Task',['../class_you_1_1_query_engine_1_1_task.html#a71e344c0caad8d3af34481f50b29357d',1,'You::QueryEngine::Task']]],
   ['task_5fdescriptions',['TASK_DESCRIPTIONS',['../namespace_you_1_1_query_engine_1_1_unit_tests.html#a86b75f440bfbd91c743813b6575dd187',1,'You::QueryEngine::UnitTests']]],
   ['task_5fwith_5fid_5f1',['TASK_WITH_ID_1',['../namespace_you_1_1_query_engine_1_1_unit_tests.html#afe687afa0dce414323710c0b280750d5',1,'You::QueryEngine::UnitTests']]],

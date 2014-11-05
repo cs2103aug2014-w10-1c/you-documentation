@@ -2,6 +2,8 @@ var searchData=
 [
   ['rebuildgraph',['rebuildGraph',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html#a42e0bbfaecaf89ff722f1e895c9d4564',1,'You::QueryEngine::Internal::TaskGraphController']]],
   ['related_5fto_5f1',['RELATED_TO_1',['../namespace_you_1_1_query_engine_1_1_unit_tests.html#aa7be6cbf80779c1621e088f63d622231',1,'You::QueryEngine::UnitTests']]],
+  ['removedependency',['RemoveDependency',['../class_you_1_1_query_engine_1_1_query_engine.html#a269509d16a2311d6dbae85ee719a0e60',1,'You::QueryEngine::QueryEngine']]],
+  ['removesubtask',['RemoveSubtask',['../class_you_1_1_query_engine_1_1_query_engine.html#ad35750374daad0ab05f7122912c552f2',1,'You::QueryEngine::QueryEngine']]],
   ['repainttasks',['repaintTasks',['../class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#ae2b1160eeae9bc3c0a62aff94b73abfa',1,'You::GUI::MainWindow::TaskPanelManager']]],
   ['resizeevent',['resizeEvent',['../class_you_1_1_g_u_i_1_1_main_window.html#a5ab7bebced5d27d8c66c54816cc6f08e',1,'You::GUI::MainWindow']]],
   ['restoresink',['restoreSink',['../class_you_1_1_utils_1_1_log.html#a7a2f469d325b7d57f3cff25cf70fc42b',1,'You::Utils::Log']]],

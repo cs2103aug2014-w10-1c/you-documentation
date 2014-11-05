@@ -1,8 +1,8 @@
 var searchData=
 [
   ['_7eaddtask',['~AddTask',['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html#a5d0940da44dbfc91c1098af160273d95',1,'You::QueryEngine::Internal::Action::AddTask']]],
+  ['_7ebatchadddependencies',['~BatchAddDependencies',['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_dependencies.html#a92c5d47e7220ae8ed158dee93f31b21c',1,'You::QueryEngine::Internal::Action::BatchAddDependencies']]],
   ['_7ebatchaddsubtasks',['~BatchAddSubTasks',['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html#aa960081d82288983b4c1011961eb9e57',1,'You::QueryEngine::Internal::Action::BatchAddSubTasks']]],
-  ['_7ebatchdeletesubtasks',['~BatchDeleteSubTasks',['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_delete_sub_tasks.html#a1c75a13b683ce3d7733280ab844ce4b6',1,'You::QueryEngine::Internal::Action::BatchDeleteSubTasks']]],
   ['_7edeletetask',['~DeleteTask',['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html#a34c8a22a5676d3278e6a793b01c12c27',1,'You::QueryEngine::Internal::Action::DeleteTask']]],
   ['_7egettask',['~GetTask',['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_get_task.html#ad10b4925f0b2c7571a4ed53b921fbf7d',1,'You::QueryEngine::Internal::Action::GetTask']]],
   ['_7elogmessage',['~LogMessage',['../class_you_1_1_utils_1_1_log_message.html#a29d8148de4d3bc464fdbabdcdbe04871',1,'You::Utils::LogMessage']]],

@@ -17,8 +17,7 @@ var indexSectionsWithContent =
   7: "cgop",
   8: "acdeglnr",
   9: "qu",
-  10: "y",
-  11: "y"
+  10: "y"
 };
 
 var indexSectionNames =
@@ -33,8 +32,7 @@ var indexSectionNames =
   7: "enums",
   8: "enumvalues",
   9: "related",
-  10: "defines",
-  11: "pages"
+  10: "pages"
 };
 
 function convertToId(search)
