@@ -3,6 +3,8 @@ var searchData=
   ['datastore',['DataStore',['../class_you_1_1_data_store_1_1_data_store.html',1,'You::DataStore']]],
   ['datastore',['DataStore',['../class_you_1_1_data_store_1_1_internal_1_1_data_store.html',1,'You::DataStore::Internal']]],
   ['datastoreapitest',['DataStoreApiTest',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_api_test.html',1,'You::DataStore::UnitTests']]],
+  ['datastorecorruptexception',['DataStoreCorruptException',['../class_you_1_1_data_store_1_1_data_store_corrupt_exception.html',1,'You::DataStore']]],
+  ['datastoreexception',['DataStoreException',['../class_you_1_1_data_store_1_1_data_store_exception.html',1,'You::DataStore']]],
   ['datastoreoperationpushedtooperationsqueue',['dataStoreOperationPushedToOperationsQueue',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_api_test.html#ae56f261ba39b0893dff354d443b37440',1,'You::DataStore::UnitTests::DataStoreApiTest']]],
   ['datastoreoperationstest',['DataStoreOperationsTest',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_operations_test.html',1,'You::DataStore::UnitTests']]],
   ['datastoretest',['DataStoreTest',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html',1,'You::DataStore::UnitTests']]],
@@ -32,6 +34,6 @@ var searchData=
   ['duethisweek',['dueThisWeek',['../class_you_1_1_query_engine_1_1_filter.html#a07071d1da4f01bb3fa9cd78545911723',1,'You::QueryEngine::Filter']]],
   ['duethisyear',['dueThisYear',['../class_you_1_1_query_engine_1_1_filter.html#a4c156bf7013a052cd63bfb94228314f7',1,'You::QueryEngine::Filter']]],
   ['duetoday',['dueToday',['../class_you_1_1_query_engine_1_1_filter.html#af8c5a01b7773d66c2d0ae23e58874c0b',1,'You::QueryEngine::Filter']]],
-  ['dummyqueryexecutor',['DummyQueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_unit_tests_1_1_dummy_query_executor.html#a16396943019655d7adb131a1bc2eb6ce',1,'You::Controller::Internal::UnitTests::DummyQueryExecutor']]],
-  ['dummyqueryexecutor',['DummyQueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_unit_tests_1_1_dummy_query_executor.html',1,'You::Controller::Internal::UnitTests']]]
+  ['dummyqueryexecutor',['DummyQueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_unit_tests_1_1_dummy_query_executor.html',1,'You::Controller::Internal::UnitTests']]],
+  ['dummyqueryexecutor',['DummyQueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_unit_tests_1_1_dummy_query_executor.html#a16396943019655d7adb131a1bc2eb6ce',1,'You::Controller::Internal::UnitTests::DummyQueryExecutor']]]
 ];

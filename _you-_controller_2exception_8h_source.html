@@ -98,40 +98,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;exceptions/context_index_out_of_range_exception.h&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;You-NLP/exception.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_you-_query_engine_2exception_8h.html">You-QueryEngine/exception.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>Controller {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_utils_1_1_exception.html">You::Utils::Exception</a> Exception;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_query_engine_1_1_exception_1_1_empty_task_description_exception.html">You::QueryEngine::Exception::EmptyTaskDescriptionException</a></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    EmptyTaskDescriptionException;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">You::QueryEngine::Exception::TaskNotFoundException</a></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    TaskNotFoundException;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_query_engine_1_1_exception_1_1_circular_dependency_exception.html">You::QueryEngine::Exception::CircularDependencyException</a></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    CircularDependencyException;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_query_engine_1_1_exception_1_1_not_undo_able_exception.html">You::QueryEngine::Exception::NotUndoAbleException</a></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    NotUndoAbleException;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_n_l_p_1_1_parser_exception.html">You::NLP::ParserException</a> ParserException;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_n_l_p_1_1_parser_type_exception.html">You::NLP::ParserTypeException</a> ParserTypeException;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_n_l_p_1_1_parse_error_exception.html">You::NLP::ParseErrorException</a> ParseErrorException;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}  <span class="comment">// namespace Controller</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;You-DataStore/exception.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>Controller {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_utils_1_1_exception.html">You::Utils::Exception</a> Exception;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_query_engine_1_1_exception_1_1_empty_task_description_exception.html">You::QueryEngine::Exception::EmptyTaskDescriptionException</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    EmptyTaskDescriptionException;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">You::QueryEngine::Exception::TaskNotFoundException</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    TaskNotFoundException;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_query_engine_1_1_exception_1_1_circular_dependency_exception.html">You::QueryEngine::Exception::CircularDependencyException</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    CircularDependencyException;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_query_engine_1_1_exception_1_1_not_undo_able_exception.html">You::QueryEngine::Exception::NotUndoAbleException</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    NotUndoAbleException;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_n_l_p_1_1_parser_exception.html">You::NLP::ParserException</a> ParserException;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_n_l_p_1_1_parser_type_exception.html">You::NLP::ParserTypeException</a> ParserTypeException;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_n_l_p_1_1_parse_error_exception.html">You::NLP::ParseErrorException</a> ParseErrorException;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_data_store_1_1_i_o_exception.html">You::DataStore::IOException</a> IOException;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif  // YOU_CONTROLLER_EXCEPTION_H_</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_you_1_1_data_store_1_1_not_well_formed_xml_exception.html">You::DataStore::NotWellFormedXmlException</a> NotWellFormedXmlException;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}  <span class="comment">// namespace Controller</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif  // YOU_CONTROLLER_EXCEPTION_H_</span></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_i_o_exception_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_i_o_exception.html">You::DataStore::IOException</a></div><div class="ttdoc">The exception thrown if there is an I/O error when parsing data.xml. </div><div class="ttdef"><b>Definition:</b> exception.h:16</div></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_parser_exception_html"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_parser_exception.html">You::NLP::ParserException</a></div><div class="ttdef"><b>Definition:</b> parser_exception.h:11</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_exception_1_1_circular_dependency_exception_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_exception_1_1_circular_dependency_exception.html">You::QueryEngine::Exception::CircularDependencyException</a></div><div class="ttdoc">An exception thrown when dependency of two or more tasks is circular. </div><div class="ttdef"><b>Definition:</b> exception.h:31</div></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_parse_error_exception_html"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_parse_error_exception.html">You::NLP::ParseErrorException</a></div><div class="ttdoc">Represents a parse error in the NLP engine. </div><div class="ttdef"><b>Definition:</b> parse_error_exception.h:13</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_exception_1_1_empty_task_description_exception_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_exception_1_1_empty_task_description_exception.html">You::QueryEngine::Exception::EmptyTaskDescriptionException</a></div><div class="ttdoc">An exception thrown when trying to create task with empty description. </div><div class="ttdef"><b>Definition:</b> exception.h:21</div></div>
 <div class="ttc" id="class_you_1_1_n_l_p_1_1_parser_type_exception_html"><div class="ttname"><a href="class_you_1_1_n_l_p_1_1_parser_type_exception.html">You::NLP::ParserTypeException</a></div><div class="ttdoc">Represents a parser type mismatch in the NLP engine. </div><div class="ttdef"><b>Definition:</b> parser_type_exception.h:12</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html">You::QueryEngine::Exception::TaskNotFoundException</a></div><div class="ttdoc">An exception thrown when trying to delete or edit a task that does not exists. </div><div class="ttdef"><b>Definition:</b> exception.h:26</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_not_well_formed_xml_exception_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_not_well_formed_xml_exception.html">You::DataStore::NotWellFormedXmlException</a></div><div class="ttdoc">The exception thrown if data.xml is not well-formed XML. </div><div class="ttdef"><b>Definition:</b> datastore_corrupt_exception.h:16</div></div>
 <div class="ttc" id="_you-_query_engine_2exception_8h_html"><div class="ttname"><a href="_you-_query_engine_2exception_8h.html">exception.h</a></div><div class="ttdoc">Defines some exception classes. </div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_exception_1_1_not_undo_able_exception_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_exception_1_1_not_undo_able_exception.html">You::QueryEngine::Exception::NotUndoAbleException</a></div><div class="ttdoc">An exception thrown when trying to undo an undoable query (e.g GetTask) </div><div class="ttdef"><b>Definition:</b> exception.h:36</div></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_exception_html"><div class="ttname"><a href="class_you_1_1_utils_1_1_exception.html">You::Utils::Exception</a></div><div class="ttdef"><b>Definition:</b> exception.h:15</div></div>
@@ -139,7 +146,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 8 2014 13:44:37 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 8 2014 16:31:54 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

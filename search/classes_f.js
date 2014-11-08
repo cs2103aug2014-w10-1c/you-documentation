@@ -1,7 +1,16 @@
 var searchData=
 [
-  ['undo',['Undo',['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_undo.html',1,'You::QueryEngine::Internal::Action']]],
-  ['undo_5fquery',['UNDO_QUERY',['../struct_you_1_1_n_l_p_1_1_u_n_d_o___q_u_e_r_y.html',1,'You::NLP']]],
-  ['undo_5fresult',['UNDO_RESULT',['../struct_you_1_1_controller_1_1_u_n_d_o___r_e_s_u_l_t.html',1,'You::Controller']]],
-  ['updatetask',['UpdateTask',['../class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html',1,'You::QueryEngine::Internal::Action']]]
+  ['task',['Task',['../class_you_1_1_query_engine_1_1_task.html',1,'You::QueryEngine']]],
+  ['taskalreadyhasparentexception',['TaskAlreadyHasParentException',['../class_you_1_1_query_engine_1_1_exception_1_1_task_already_has_parent_exception.html',1,'You::QueryEngine::Exception']]],
+  ['taskbuilder',['TaskBuilder',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html',1,'You::QueryEngine::Internal']]],
+  ['taskgraph',['TaskGraph',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html',1,'You::QueryEngine::Internal']]],
+  ['taskgraphcontroller',['TaskGraphController',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph_controller.html',1,'You::QueryEngine::Internal']]],
+  ['tasklist',['TaskList',['../class_you_1_1_controller_1_1_unit_tests_1_1_mocks_1_1_task_list.html',1,'You::Controller::UnitTests::Mocks']]],
+  ['tasknotfoundexception',['TaskNotFoundException',['../class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html',1,'You::QueryEngine::Exception']]],
+  ['taskpanelmanager',['TaskPanelManager',['../class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html',1,'You::GUI::MainWindow']]],
+  ['taskserializer',['TaskSerializer',['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html',1,'You::QueryEngine::Internal']]],
+  ['tostringvisitor',['ToStringVisitor',['../struct_you_1_1_n_l_p_1_1_unit_tests_1_1_to_string_visitor.html',1,'You::NLP::UnitTests']]],
+  ['transaction',['Transaction',['../class_you_1_1_data_store_1_1_transaction.html',1,'You::DataStore']]],
+  ['transaction',['Transaction',['../class_you_1_1_data_store_1_1_internal_1_1_transaction.html',1,'You::DataStore::Internal']]],
+  ['trayhotkeyhandler',['TrayHotkeyHandler',['../class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html',1,'You::GUI::Thread']]]
 ];

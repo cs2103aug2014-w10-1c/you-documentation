@@ -5,6 +5,7 @@ var searchData=
   ['idisin',['idIsIn',['../class_you_1_1_query_engine_1_1_filter.html#a52f7eb9dc00bbb925e0bd78504e96a0e',1,'You::QueryEngine::Filter']]],
   ['info',['info',['../class_you_1_1_utils_1_1_log.html#a9bd83e5b3e9ab2dc6d55a59fdf268042',1,'You::Utils::Log']]],
   ['inquirenewid',['inquireNewID',['../class_you_1_1_query_engine_1_1_internal_1_1_state.html#abbe5ae530e26203a3874f71023e78581',1,'You::QueryEngine::Internal::State']]],
+  ['ioexception',['IOException',['../class_you_1_1_data_store_1_1_i_o_exception.html',1,'You::DataStore']]],
   ['isactive',['isActive',['../class_you_1_1_utils_1_1_logger.html#ab1cf64d982ab905329d911698cfecba5',1,'You::Utils::Logger']]],
   ['ischildof',['isChildOf',['../class_you_1_1_query_engine_1_1_filter.html#a889988f9e61dbc941723630ec8dcc513',1,'You::QueryEngine::Filter']]],
   ['isdependedby',['isDependedBy',['../class_you_1_1_query_engine_1_1_filter.html#a9d525d55c4beadc270b93ecbf0e153fc',1,'You::QueryEngine::Filter']]],
