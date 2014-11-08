@@ -159,6 +159,9 @@ ID&#160;</td><td class="memItemRight" valign="bottom"><b>getID</b> () const </td
 <tr class="memitem:aa474533e1b11402c6f4e8b92f2efd9f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa474533e1b11402c6f4e8b92f2efd9f7"></a>
 Description&#160;</td><td class="memItemRight" valign="bottom"><b>getDescription</b> () const </td></tr>
 <tr class="separator:aa474533e1b11402c6f4e8b92f2efd9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53edf510065053e2f773d96e98c0a7af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53edf510065053e2f773d96e98c0a7af"></a>
+Time&#160;</td><td class="memItemRight" valign="bottom"><b>getStartTime</b> () const </td></tr>
+<tr class="separator:a53edf510065053e2f773d96e98c0a7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bd8e45a984dbd45f0d232e81931e8da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2bd8e45a984dbd45f0d232e81931e8da"></a>
 Time&#160;</td><td class="memItemRight" valign="bottom"><b>getDeadline</b> () const </td></tr>
 <tr class="separator:a2bd8e45a984dbd45f0d232e81931e8da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,9 +187,12 @@ Attachment&#160;</td><td class="memItemRight" valign="bottom"><b>getAttachment</
 <tr class="memitem:aa361342696b94d0ca5e3091933574f9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa361342696b94d0ca5e3091933574f9c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setDescription</b> (const Description &amp;description)</td></tr>
 <tr class="separator:aa361342696b94d0ca5e3091933574f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2e17a1696d2837e88c2122e1d5e5bfb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2e17a1696d2837e88c2122e1d5e5bfb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setDeadline</b> (Time deadline)</td></tr>
-<tr class="separator:ab2e17a1696d2837e88c2122e1d5e5bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acac8e32e87df909366b9fe28aca5857d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acac8e32e87df909366b9fe28aca5857d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setStartTime</b> (const Time &amp;startTime)</td></tr>
+<tr class="separator:acac8e32e87df909366b9fe28aca5857d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb129dd2ff4c7c04484003ae9e4b7d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bb129dd2ff4c7c04484003ae9e4b7d0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDeadline</b> (const Time &amp;deadline)</td></tr>
+<tr class="separator:a6bb129dd2ff4c7c04484003ae9e4b7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38db74b170cc62fad73b41d2201ed97c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38db74b170cc62fad73b41d2201ed97c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setDependencies</b> (const Dependencies &amp;dependencies)</td></tr>
 <tr class="separator:a38db74b170cc62fad73b41d2201ed97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,6 +224,9 @@ static const Description&#160;</td><td class="memItemRight" valign="bottom"><b>D
 <tr class="memitem:a78a82188bb4be5edea1ada353fa52ede"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78a82188bb4be5edea1ada353fa52ede"></a>
 static const Time&#160;</td><td class="memItemRight" valign="bottom"><b>NEVER</b> = ptime(date(max_date_time), hours(0))</td></tr>
 <tr class="separator:a78a82188bb4be5edea1ada353fa52ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8406ef55a98a8fc6d213e072144eb6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a8406ef55a98a8fc6d213e072144eb6"></a>
+static const Time&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_START_TIME</b> = Task::NEVER</td></tr>
+<tr class="separator:a6a8406ef55a98a8fc6d213e072144eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ec65917598d661c5fb5f34ee15fd64e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ec65917598d661c5fb5f34ee15fd64e"></a>
 static const Time&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_DEADLINE</b> = Task::NEVER</td></tr>
 <tr class="separator:a1ec65917598d661c5fb5f34ee15fd64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -327,7 +336,7 @@ The task model has these following fields</p><ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 8 2014 04:11:15 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 8 2014 06:14:21 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

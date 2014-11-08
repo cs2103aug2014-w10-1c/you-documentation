@@ -113,14 +113,14 @@ Inheritance diagram for You::QueryEngine::Internal::Action::BatchAddSubTasks:</d
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae89d33a94e758d552291f8ba6af601a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae89d33a94e758d552291f8ba6af601a7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html#ae89d33a94e758d552291f8ba6af601a7">BatchAddSubTasks</a> (const Task::Description &amp;description, const Task::Time &amp;deadline, const Task::Priority &amp;priority, const Task::Dependencies &amp;dependencies, std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&gt; &amp;&amp;subtasks)</td></tr>
-<tr class="memdesc:ae89d33a94e758d552291f8ba6af601a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that use datastore to inquire new id. <br /></td></tr>
-<tr class="separator:ae89d33a94e758d552291f8ba6af601a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8b23ad31cc497e0aad4c34beae315c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8b23ad31cc497e0aad4c34beae315c3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html#ab8b23ad31cc497e0aad4c34beae315c3">BatchAddSubTasks</a> (Task::ID id, const Task::Description &amp;description, const Task::Time &amp;deadline, const Task::Priority &amp;priority, const Task::Dependencies &amp;dependencies, std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&gt; &amp;&amp;subtasks)</td></tr>
-<tr class="memdesc:ab8b23ad31cc497e0aad4c34beae315c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for already known id. <br /></td></tr>
-<tr class="separator:ab8b23ad31cc497e0aad4c34beae315c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7afedb7e685dcbc7ef51b54e58ad08ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7afedb7e685dcbc7ef51b54e58ad08ce"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html#a7afedb7e685dcbc7ef51b54e58ad08ce">BatchAddSubTasks</a> (const Task::Description &amp;description, const Task::Time &amp;startTime, const Task::Time &amp;deadline, const Task::Priority &amp;priority, const Task::Dependencies &amp;dependencies, std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&gt; &amp;&amp;subtasks)</td></tr>
+<tr class="memdesc:a7afedb7e685dcbc7ef51b54e58ad08ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that use datastore to inquire new id. <br /></td></tr>
+<tr class="separator:a7afedb7e685dcbc7ef51b54e58ad08ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4240defae7e417e0ff8bd717823213eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4240defae7e417e0ff8bd717823213eb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html#a4240defae7e417e0ff8bd717823213eb">BatchAddSubTasks</a> (Task::ID id, const Task::Description &amp;description, const Task::Time &amp;startTime, const Task::Time &amp;deadline, const Task::Priority &amp;priority, const Task::Dependencies &amp;dependencies, std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&gt; &amp;&amp;subtasks)</td></tr>
+<tr class="memdesc:a4240defae7e417e0ff8bd717823213eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for already known id. <br /></td></tr>
+<tr class="separator:a4240defae7e417e0ff8bd717823213eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19f1d290653ba5e05a38c1cb72e69346"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19f1d290653ba5e05a38c1cb72e69346"></a>
 <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html">BatchAddSubTasks</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html#a19f1d290653ba5e05a38c1cb72e69346">operator=</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html">BatchAddSubTasks</a> &amp;)=delete</td></tr>
 <tr class="memdesc:a19f1d290653ba5e05a38c1cb72e69346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable assignment operator. <br /></td></tr>
@@ -182,7 +182,7 @@ static const std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 8 2014 04:11:16 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 8 2014 06:14:21 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
