@@ -148,12 +148,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">template</span>&lt;&gt; <span class="keyword">static</span> std::wstring ToString&lt;long long&gt;(<span class="keywordtype">long</span> <span class="keywordtype">long</span>* t) {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    RETURN_WIDE_STRING(t);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}  <span class="comment">// namespace CppUnitTestFramework</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}  <span class="comment">// namespace VisualStudio</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}  <span class="comment">// namespace Microsoft</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif  // YOU_UTILS_TESTS_TEST_HELPERS_H_</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">template</span>&lt;&gt; <span class="keyword">static</span> std::wstring ToString&lt;unsigned short&gt;(  <span class="comment">// NOLINT(runtime/int)</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>&amp; t) {  <span class="comment">// NOLINT(runtime/int)</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    RETURN_WIDE_STRING(t);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">template</span>&lt;&gt; <span class="keyword">static</span> std::wstring ToString&lt;unsigned short&gt;(  <span class="comment">// NOLINT(runtime/int)</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>* t) {  <span class="comment">// NOLINT(runtime/int)</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    RETURN_WIDE_STRING(t);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">template</span>&lt;&gt; <span class="keyword">static</span> std::wstring ToString&lt;unsigned short&gt;(  <span class="comment">// NOLINT(runtime/int)</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>* t) {  <span class="comment">// NOLINT(runtime/int)</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    RETURN_WIDE_STRING(t);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}  <span class="comment">// namespace CppUnitTestFramework</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}  <span class="comment">// namespace VisualStudio</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}  <span class="comment">// namespace Microsoft</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif  // YOU_UTILS_TESTS_TEST_HELPERS_H_</span></div>
 <div class="ttc" id="namespaceboost_html"><div class="ttname"><a href="namespaceboost.html">boost</a></div><div class="ttdef"><b>Definition:</b> qt_helpers.h:9</div></div>
 <div class="ttc" id="namespace_microsoft_html"><div class="ttname"><a href="namespace_microsoft.html">Microsoft</a></div><div class="ttdef"><b>Definition:</b> controller_tests.cpp:8</div></div>
 <div class="ttc" id="struct_you_1_1_n_l_p_1_1_unit_tests_1_1_to_string_visitor_html"><div class="ttname"><a href="struct_you_1_1_n_l_p_1_1_unit_tests_1_1_to_string_visitor.html">You::NLP::UnitTests::ToStringVisitor</a></div><div class="ttdoc">Applies ToString to the element in the container. </div><div class="ttdef"><b>Definition:</b> test_helpers.h:17</div></div>
@@ -162,7 +175,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 8 2014 16:31:55 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 8 2014 19:01:51 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
