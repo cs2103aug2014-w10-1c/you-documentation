@@ -9,7 +9,7 @@ var searchData=
   ['dependson',['dependsOn',['../class_you_1_1_query_engine_1_1_filter.html#a112fee920265676809f75c5ddca35056',1,'You::QueryEngine::Filter']]],
   ['descending',['descending',['../class_you_1_1_query_engine_1_1_comparator.html#aa76638a2e16a96349457a9bdfc9838e8',1,'You::QueryEngine::Comparator']]],
   ['description',['description',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#a78497582f6b112727d381be31cca258a',1,'You::QueryEngine::Internal::TaskBuilder']]],
-  ['deserialize',['deserialize',['../class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#a3b3e2200b3da178d62c9102550c07676',1,'You::DataStore::Internal::SerializationOperation::deserialize()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a04da4c829368c9f3a7af3b27027c854b',1,'You::QueryEngine::Internal::TaskSerializer::deserialize()']]],
+  ['deserialize',['deserialize',['../class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#a3c5a3a22e35acb2c5f12ba55a33b1b06',1,'You::DataStore::Internal::SerializationOperation::deserialize()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a04da4c829368c9f3a7af3b27027c854b',1,'You::QueryEngine::Internal::TaskSerializer::deserialize()']]],
   ['deserializeoperation',['deserializeOperation',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_operations_test.html#a89fa35070c4da15f3232747fd700635f',1,'You::DataStore::UnitTests::DataStoreOperationsTest']]],
   ['duebefore',['dueBefore',['../class_you_1_1_query_engine_1_1_filter.html#af56bb3869c5c6733b5143e0377b60458',1,'You::QueryEngine::Filter']]],
   ['duenever',['dueNever',['../class_you_1_1_query_engine_1_1_filter.html#a5cebaf03f7df3b449fa0de8a53b1eefb',1,'You::QueryEngine::Filter']]],

@@ -157,7 +157,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DataStore
 <p>Merges the operationsQueue of the next transaction that is committed earlier. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">queue</td><td>The operations queue The queue will be empty at the end of the function call. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">queue</td><td>The operations queue </td></tr>
   </table>
   </dd>
 </dl>
@@ -182,7 +182,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DataStore
 <p>This is meant to be called by <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html">DataStore</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">operation</td><td>The operation to push, wrapped in a unique_ptr. The pointer will be invalidated at the end of the function call. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">operation</td><td>The operation to push. </td></tr>
   </table>
   </dd>
 </dl>
@@ -196,7 +196,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DataStore
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 9 2014 01:29:02 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 9 2014 02:00:25 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['saveandloadthesamething',['saveAndLoadTheSameThing',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html#a3c399433084201a531571b5c6af352d8',1,'You::DataStore::UnitTests::DataStoreTest']]],
-  ['serialize',['serialize',['../class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#a4fea4a1c53ae50b7a0d548cb584eb9cf',1,'You::DataStore::Internal::SerializationOperation::serialize()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#ae744108575aaea1ff9c60e58979b4bfe',1,'You::QueryEngine::Internal::TaskSerializer::serialize()']]],
+  ['serialize',['serialize',['../class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#ae80e42d3f83067877612750c86af0008',1,'You::DataStore::Internal::SerializationOperation::serialize()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#ae744108575aaea1ff9c60e58979b4bfe',1,'You::QueryEngine::Internal::TaskSerializer::serialize()']]],
   ['serializeoperation',['serializeOperation',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_operations_test.html#a9866e61c2af9247dc72e7866c6cdf527',1,'You::DataStore::UnitTests::DataStoreOperationsTest']]],
   ['sessionmanager',['SessionManager',['../class_you_1_1_g_u_i_1_1_main_window_1_1_session_manager.html#a0c8d7516fe8d4927ff34a1bb31b651a0',1,'You::GUI::MainWindow::SessionManager']]],
   ['setactivecomparator',['setActiveComparator',['../class_you_1_1_query_engine_1_1_internal_1_1_state.html#a29d0d35b845d9e5c3530b03ce5d4fee1',1,'You::QueryEngine::Internal::State']]],

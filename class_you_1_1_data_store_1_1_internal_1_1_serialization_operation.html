@@ -113,12 +113,14 @@ Inheritance diagram for You::DataStore::Internal::SerializationOperation:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4fea4a1c53ae50b7a0d548cb584eb9cf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#a4fea4a1c53ae50b7a0d548cb584eb9cf">serialize</a> (const KeyValuePairs &amp;kvp, pugi::xml_node &amp;node)</td></tr>
-<tr class="memdesc:a4fea4a1c53ae50b7a0d548cb584eb9cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize task to an xml node.  <a href="#a4fea4a1c53ae50b7a0d548cb584eb9cf">More...</a><br /></td></tr>
-<tr class="separator:a4fea4a1c53ae50b7a0d548cb584eb9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b3e2200b3da178d62c9102550c07676"><td class="memItemLeft" align="right" valign="top">static KeyValuePairs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#a3b3e2200b3da178d62c9102550c07676">deserialize</a> (const pugi::xml_node &amp;node)</td></tr>
-<tr class="memdesc:a3b3e2200b3da178d62c9102550c07676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize task from an xml node.  <a href="#a3b3e2200b3da178d62c9102550c07676">More...</a><br /></td></tr>
-<tr class="separator:a3b3e2200b3da178d62c9102550c07676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae80e42d3f83067877612750c86af0008"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae80e42d3f83067877612750c86af0008"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#ae80e42d3f83067877612750c86af0008">serialize</a> (const KeyValuePairs &amp;, pugi::xml_node &amp;)</td></tr>
+<tr class="memdesc:ae80e42d3f83067877612750c86af0008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize task to an xml node. <br /></td></tr>
+<tr class="separator:ae80e42d3f83067877612750c86af0008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5a3a22e35acb2c5f12ba55a33b1b06"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c5a3a22e35acb2c5f12ba55a33b1b06"></a>
+static KeyValuePairs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#a3c5a3a22e35acb2c5f12ba55a33b1b06">deserialize</a> (const pugi::xml_node &amp;)</td></tr>
+<tr class="memdesc:a3c5a3a22e35acb2c5f12ba55a33b1b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize task from an xml node. <br /></td></tr>
+<tr class="separator:a3c5a3a22e35acb2c5f12ba55a33b1b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -138,91 +140,14 @@ std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Intermediate parent class of <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">Operation</a> requiring serialization. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a3b3e2200b3da178d62c9102550c07676"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">KeyValuePairs You::DataStore::Internal::SerializationOperation::deserialize </td>
-          <td>(</td>
-          <td class="paramtype">const pugi::xml_node &amp;&#160;</td>
-          <td class="paramname"><em>node</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Deserialize task from an xml node. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">node</td><td>The xml_node to be deserialized </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>KeyValuePairs deserialized from node </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a4fea4a1c53ae50b7a0d548cb584eb9cf"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void You::DataStore::Internal::SerializationOperation::serialize </td>
-          <td>(</td>
-          <td class="paramtype">const KeyValuePairs &amp;&#160;</td>
-          <td class="paramname"><em>kvp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">pugi::xml_node &amp;&#160;</td>
-          <td class="paramname"><em>node</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Serialize task to an xml node. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">kvp</td><td>The KeyValuePairs to be serialized into the node </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">node</td><td>The xml_node to be modifed </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>You-DataStore/internal/operations/<a class="el" href="serialization__operation_8h_source.html">serialization_operation.h</a></li>
 <li>You-DataStore/internal/operations/serialization_operation.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 9 2014 01:29:02 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 9 2014 02:00:25 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

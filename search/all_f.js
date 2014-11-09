@@ -6,6 +6,7 @@ var searchData=
   ['removesubtask',['RemoveSubtask',['../class_you_1_1_query_engine_1_1_query_engine.html#ad35750374daad0ab05f7122912c552f2',1,'You::QueryEngine::QueryEngine']]],
   ['repainttasks',['repaintTasks',['../class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#ae2b1160eeae9bc3c0a62aff94b73abfa',1,'You::GUI::MainWindow::TaskPanelManager']]],
   ['resizeevent',['resizeEvent',['../class_you_1_1_g_u_i_1_1_main_window.html#a5ab7bebced5d27d8c66c54816cc6f08e',1,'You::GUI::MainWindow']]],
+  ['resources_5fnode',['RESOURCES_NODE',['../namespace_you_1_1_data_store_1_1_internal.html#a176618d8ec781b98c1ee861e3fd6b614',1,'You::DataStore::Internal']]],
   ['response',['Response',['../namespace_you_1_1_query_engine.html#a651f8867d13678410711e7f1c4672fce',1,'You::QueryEngine']]],
   ['restoresink',['restoreSink',['../class_you_1_1_utils_1_1_log.html#a7a2f469d325b7d57f3cff25cf70fc42b',1,'You::Utils::Log']]],
   ['rollback',['rollback',['../class_you_1_1_data_store_1_1_internal_1_1_transaction.html#a098ccd416b9f29485a5704a695e18476',1,'You::DataStore::Internal::Transaction::rollback()'],['../class_you_1_1_data_store_1_1_transaction.html#ae5e03610e9a5971223e6e0cb2c5e9b2e',1,'You::DataStore::Transaction::rollback()']]],
