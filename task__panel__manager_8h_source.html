@@ -137,120 +137,121 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">static</span> QString <a class="code" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#abc89939846418c004159626f5b695c26">getReadableDeadline</a>(<a class="code" href="class_you_1_1_query_engine_1_1_task.html">Task</a> task);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a866bcaf9793a00c2dd0cac08c2735fe0">colorTask</a>(QTreeWidgetItem *taskItem, QColor color, QFont font);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">static</span> QStringList taskToStrVec(<span class="keyword">const</span> <a class="code" href="class_you_1_1_query_engine_1_1_task.html">Task</a>&amp; task);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">static</span> std::unique_ptr&lt;QTreeWidgetItem&gt; createItem(</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_you_1_1_query_engine_1_1_task.html">You::Controller::Task</a>&amp; task);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">static</span> std::unique_ptr&lt;QTreeWidgetItem&gt; createItem(</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">const</span> QStringList&amp; cells);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    QList&lt;QTreeWidgetItem*&gt; findItems(Task::ID taskID) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a7e034fc2f7c0c3d52f69d2fb48debc9d">addSubtask</a>(QTreeWidgetItem* parent, <span class="keyword">const</span> QStringList&amp; rowStrings);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a395b14125259bdd97abe7b34f19ee8e7">deleteTask</a>(QTreeWidgetItem* task);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    QScopedPointer&lt;QMenu&gt; itemContextMenu;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    QAction addAction;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    QAction deleteAction;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    QAction editAction;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    QSignalMapper deleteSignalMapper;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    QSignalMapper editSignalMapper;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> contextMenu(<span class="keyword">const</span> QPoint &amp;pos);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> updateRowNumbers();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_0_TITLE;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_1_TITLE;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_2_TITLE;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_3_TITLE;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_4_TITLE;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_5_TITLE;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_6_TITLE;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_7_TITLE;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> COLUMN_INDEX;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> COLUMN_HIDDEN_ID;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> COLUMN_DESCRIPTION;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> COLUMN_DEADLINE;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> COLUMN_PRIORITY;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> COLUMN_DEPENDENCIES;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> COLUMN_COMPLETION;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> COLUMN_ATTACHMENT;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    QString getIndexAsText(QTreeWidgetItem item);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    QString getHiddenIDAsText(QTreeWidgetItem item);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    QString getDescriptionAsText(QTreeWidgetItem item);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    QString getDeadlineAsText(QTreeWidgetItem item);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    QString getPriorityAsText(QTreeWidgetItem item);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    QString getDependenciesAsText(QTreeWidgetItem item);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    QString getCompletionAsText(QTreeWidgetItem item);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    QString getAttachmentAsText(QTreeWidgetItem item);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;};</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}  <span class="comment">// namespace GUI</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#endif  // YOU_GUI_TASK_PANEL_MANAGER_H_</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a6ba728705433a37c0b1475f18b95b642">colorTask</a>(QTreeWidgetItem *taskItem, QColor color, QColor bgColor,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        QFont font);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">static</span> QStringList taskToStrVec(<span class="keyword">const</span> <a class="code" href="class_you_1_1_query_engine_1_1_task.html">Task</a>&amp; task);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">static</span> std::unique_ptr&lt;QTreeWidgetItem&gt; createItem(</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_you_1_1_query_engine_1_1_task.html">You::Controller::Task</a>&amp; task);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">static</span> std::unique_ptr&lt;QTreeWidgetItem&gt; createItem(</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">const</span> QStringList&amp; cells);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    QList&lt;QTreeWidgetItem*&gt; findItems(Task::ID taskID) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a7e034fc2f7c0c3d52f69d2fb48debc9d">addSubtask</a>(QTreeWidgetItem* parent, <span class="keyword">const</span> QStringList&amp; rowStrings);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a395b14125259bdd97abe7b34f19ee8e7">deleteTask</a>(QTreeWidgetItem* task);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    QScopedPointer&lt;QMenu&gt; itemContextMenu;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    QAction addAction;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    QAction deleteAction;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    QAction editAction;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    QSignalMapper deleteSignalMapper;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    QSignalMapper editSignalMapper;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> contextMenu(<span class="keyword">const</span> QPoint &amp;pos);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> updateRowNumbers();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_0_TITLE;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_1_TITLE;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_2_TITLE;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_3_TITLE;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_4_TITLE;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_5_TITLE;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_6_TITLE;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString TASK_COLUMN_7_TITLE;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> COLUMN_INDEX;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> COLUMN_HIDDEN_ID;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> COLUMN_DESCRIPTION;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> COLUMN_DEADLINE;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> COLUMN_PRIORITY;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> COLUMN_DEPENDENCIES;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> COLUMN_COMPLETION;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> COLUMN_ATTACHMENT;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    QString getIndexAsText(QTreeWidgetItem item);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    QString getHiddenIDAsText(QTreeWidgetItem item);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    QString getDescriptionAsText(QTreeWidgetItem item);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    QString getDeadlineAsText(QTreeWidgetItem item);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    QString getPriorityAsText(QTreeWidgetItem item);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    QString getDependenciesAsText(QTreeWidgetItem item);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    QString getCompletionAsText(QTreeWidgetItem item);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    QString getAttachmentAsText(QTreeWidgetItem item);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;};</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}  <span class="comment">// namespace GUI</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">#endif  // YOU_GUI_TASK_PANEL_MANAGER_H_</span></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_task_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_task.html">You::QueryEngine::Task</a></div><div class="ttdoc">Defines the task model. </div><div class="ttdef"><b>Definition:</b> task_model.h:32</div></div>
 <div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_a5895ba54776ebbf8823ebd493a58475e"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a5895ba54776ebbf8823ebd493a58475e">You::GUI::MainWindow::TaskPanelManager::addTask</a></div><div class="ttdeci">void addTask(const Task &amp;task)</div><div class="ttdoc">Adds a task to the taskTreePanel. Only deals with top-level tasks. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:79</div></div>
-<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_a3fdfed8aa28cf6e2d7724b8447c88d3c"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a3fdfed8aa28cf6e2d7724b8447c88d3c">You::GUI::MainWindow::TaskPanelManager::isDueAfter</a></div><div class="ttdeci">static bool isDueAfter(Task::Time deadline, int daysLeft)</div><div class="ttdoc">Time function to check if a deadline is due on the daysLeft&#39;th day. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:298</div></div>
-<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_af4e6aa71f25555777d1824f1f4e8350c"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#af4e6aa71f25555777d1824f1f4e8350c">You::GUI::MainWindow::TaskPanelManager::isDueWithinExactly</a></div><div class="ttdeci">static bool isDueWithinExactly(Task::Time deadline, int days)</div><div class="ttdoc">Time function to check if a deadline is due within exactly daysLeft days. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:291</div></div>
-<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_ae0eae6eda377eb40b04ed1c23c1b8752"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#ae0eae6eda377eb40b04ed1c23c1b8752">You::GUI::MainWindow::TaskPanelManager::isDueWithin</a></div><div class="ttdeci">static bool isDueWithin(Task::Time deadline, int daysLeft)</div><div class="ttdoc">Time function to check if a deadline is due within daysLeft days. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:305</div></div>
+<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_a3fdfed8aa28cf6e2d7724b8447c88d3c"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a3fdfed8aa28cf6e2d7724b8447c88d3c">You::GUI::MainWindow::TaskPanelManager::isDueAfter</a></div><div class="ttdeci">static bool isDueAfter(Task::Time deadline, int daysLeft)</div><div class="ttdoc">Time function to check if a deadline is due on the daysLeft&#39;th day. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:284</div></div>
+<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_af4e6aa71f25555777d1824f1f4e8350c"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#af4e6aa71f25555777d1824f1f4e8350c">You::GUI::MainWindow::TaskPanelManager::isDueWithinExactly</a></div><div class="ttdeci">static bool isDueWithinExactly(Task::Time deadline, int days)</div><div class="ttdoc">Time function to check if a deadline is due within exactly daysLeft days. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:277</div></div>
+<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_ae0eae6eda377eb40b04ed1c23c1b8752"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#ae0eae6eda377eb40b04ed1c23c1b8752">You::GUI::MainWindow::TaskPanelManager::isDueWithin</a></div><div class="ttdeci">static bool isDueWithin(Task::Time deadline, int daysLeft)</div><div class="ttdoc">Time function to check if a deadline is due within daysLeft days. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:291</div></div>
 <div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html">You::GUI::MainWindow::TaskPanelManager</a></div><div class="ttdoc">The component that deals with everything in the task panel. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.h:21</div></div>
-<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_a866bcaf9793a00c2dd0cac08c2735fe0"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a866bcaf9793a00c2dd0cac08c2735fe0">You::GUI::MainWindow::TaskPanelManager::colorTask</a></div><div class="ttdeci">void colorTask(QTreeWidgetItem *taskItem, QColor color, QFont font)</div><div class="ttdoc">Colors a task. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:278</div></div>
 <div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_a7e034fc2f7c0c3d52f69d2fb48debc9d"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a7e034fc2f7c0c3d52f69d2fb48debc9d">You::GUI::MainWindow::TaskPanelManager::addSubtask</a></div><div class="ttdeci">void addSubtask(const Task &amp;parentTask, const Task &amp;childTask)</div><div class="ttdoc">Appends a child task to an existing parent task. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:90</div></div>
-<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_a395b14125259bdd97abe7b34f19ee8e7"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a395b14125259bdd97abe7b34f19ee8e7">You::GUI::MainWindow::TaskPanelManager::deleteTask</a></div><div class="ttdeci">void deleteTask(Task::ID taskID)</div><div class="ttdoc">Deletes a task. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:121</div></div>
+<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_a395b14125259bdd97abe7b34f19ee8e7"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a395b14125259bdd97abe7b34f19ee8e7">You::GUI::MainWindow::TaskPanelManager::deleteTask</a></div><div class="ttdeci">void deleteTask(Task::ID taskID)</div><div class="ttdoc">Deletes a task. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:105</div></div>
 <div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_html"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window.html">You::GUI::MainWindow</a></div><div class="ttdoc">The entity that deals with all GUI operations, and makes calls to the NLP engine. ...</div><div class="ttdef"><b>Definition:</b> main_window.h:22</div></div>
 <div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_a60a9839b238792adea8315e7c6338f24"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a60a9839b238792adea8315e7c6338f24">You::GUI::MainWindow::TaskPanelManager::editTask</a></div><div class="ttdeci">void editTask(const Task &amp;task)</div><div class="ttdoc">Edits a task. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:97</div></div>
-<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_aa959d0e49defbf128bc5b1f69f77560f"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#aa959d0e49defbf128bc5b1f69f77560f">You::GUI::MainWindow::TaskPanelManager::isPastDue</a></div><div class="ttdeci">static bool isPastDue(Task::Time deadline)</div><div class="ttdoc">Time function to check if a deadline is past due. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:286</div></div>
+<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_aa959d0e49defbf128bc5b1f69f77560f"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#aa959d0e49defbf128bc5b1f69f77560f">You::GUI::MainWindow::TaskPanelManager::isPastDue</a></div><div class="ttdeci">static bool isPastDue(Task::Time deadline)</div><div class="ttdoc">Time function to check if a deadline is past due. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:272</div></div>
 <div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_ade65b04ab2a81c0e66c883b77da45de5"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#ade65b04ab2a81c0e66c883b77da45de5">You::GUI::MainWindow::TaskPanelManager::~TaskPanelManager</a></div><div class="ttdeci">~TaskPanelManager()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:41</div></div>
 <div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_base_manager_html_af49d31556a5f80e581634242702268e2"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_base_manager.html#af49d31556a5f80e581634242702268e2">You::GUI::MainWindow::BaseManager::parentGUI</a></div><div class="ttdeci">MainWindow *const parentGUI</div><div class="ttdoc">Pointer to the main GUI. </div><div class="ttdef"><b>Definition:</b> base_manager.h:22</div></div>
-<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_abc89939846418c004159626f5b695c26"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#abc89939846418c004159626f5b695c26">You::GUI::MainWindow::TaskPanelManager::getReadableDeadline</a></div><div class="ttdeci">static QString getReadableDeadline(Task task)</div><div class="ttdoc">Returns human-readable form for a deadline. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:346</div></div>
-<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_aafa4e67c55469c2d833de0f17f1df071"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#aafa4e67c55469c2d833de0f17f1df071">You::GUI::MainWindow::TaskPanelManager::addTaskTree</a></div><div class="ttdeci">std::unique_ptr&lt; QTreeWidgetItem &gt; addTaskTree(const Task &amp;task)</div><div class="ttdoc">Takes a single task, a map of all tasks, and produces a QTreeWidgetItem with all its subtasks...</div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:133</div></div>
+<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_abc89939846418c004159626f5b695c26"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#abc89939846418c004159626f5b695c26">You::GUI::MainWindow::TaskPanelManager::getReadableDeadline</a></div><div class="ttdeci">static QString getReadableDeadline(Task task)</div><div class="ttdoc">Returns human-readable form for a deadline. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:332</div></div>
+<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_a6ba728705433a37c0b1475f18b95b642"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a6ba728705433a37c0b1475f18b95b642">You::GUI::MainWindow::TaskPanelManager::colorTask</a></div><div class="ttdeci">void colorTask(QTreeWidgetItem *taskItem, QColor color, QColor bgColor, QFont font)</div><div class="ttdoc">Colors a task. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:263</div></div>
+<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_aafa4e67c55469c2d833de0f17f1df071"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#aafa4e67c55469c2d833de0f17f1df071">You::GUI::MainWindow::TaskPanelManager::addTaskTree</a></div><div class="ttdeci">std::unique_ptr&lt; QTreeWidgetItem &gt; addTaskTree(const Task &amp;task)</div><div class="ttdoc">Takes a single task, a map of all tasks, and produces a QTreeWidgetItem with all its subtasks...</div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:117</div></div>
 <div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_base_manager_html"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_base_manager.html">You::GUI::MainWindow::BaseManager</a></div><div class="ttdoc">The class from which all components inherit. </div><div class="ttdef"><b>Definition:</b> base_manager.h:11</div></div>
 <div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_a6905d71f29a35531ee807e84f2a9ac82"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#a6905d71f29a35531ee807e84f2a9ac82">You::GUI::MainWindow::TaskPanelManager::setup</a></div><div class="ttdeci">void setup()</div><div class="ttdoc">Initializes the taskTreePanel by setting column count and headers. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:44</div></div>
 <div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_afa04f3abde0ccc62a0eaae812344e801"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#afa04f3abde0ccc62a0eaae812344e801">You::GUI::MainWindow::TaskPanelManager::TaskPanelManager</a></div><div class="ttdeci">TaskPanelManager(MainWindow *const parentGUI)</div><div class="ttdoc">Constructor inherited from BaseManager. </div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:35</div></div>
-<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_ae2b1160eeae9bc3c0a62aff94b73abfa"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#ae2b1160eeae9bc3c0a62aff94b73abfa">You::GUI::MainWindow::TaskPanelManager::repaintTasks</a></div><div class="ttdeci">void repaintTasks()</div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:214</div></div>
+<div class="ttc" id="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager_html_ae2b1160eeae9bc3c0a62aff94b73abfa"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html#ae2b1160eeae9bc3c0a62aff94b73abfa">You::GUI::MainWindow::TaskPanelManager::repaintTasks</a></div><div class="ttdeci">void repaintTasks()</div><div class="ttdef"><b>Definition:</b> task_panel_manager.cpp:198</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> exceptions.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 9 2014 14:35:25 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 9 2014 15:05:21 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
