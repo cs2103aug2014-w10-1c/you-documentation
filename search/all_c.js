@@ -1,7 +1,7 @@
 var searchData=
 [
   ['one_5fsubtask',['ONE_SUBTASK',['../namespace_you_1_1_query_engine_1_1_unit_tests.html#a7260e8d1b5701a778cd33a66d8a671c5',1,'You::QueryEngine::UnitTests']]],
-  ['onlog',['onLog',['../class_you_1_1_utils_1_1_log_sink.html#aaffa5d392563574e8396f3d2341f43c7',1,'You::Utils::LogSink::onLog()'],['../class_you_1_1_utils_1_1_unit_tests_1_1_log_tester_sink.html#a7261bdbc3542f97ecc3d915b7ee2e2fc',1,'You::Utils::UnitTests::LogTesterSink::onLog()']]],
+  ['onlog',['onLog',['../class_you_1_1_g_u_i_log_sink.html#ae88bf68e443d4efc51eae5d3adcde5e3',1,'You::GUILogSink::onLog()'],['../class_you_1_1_utils_1_1_log_sink.html#aaffa5d392563574e8396f3d2341f43c7',1,'You::Utils::LogSink::onLog()'],['../class_you_1_1_utils_1_1_unit_tests_1_1_log_tester_sink.html#a7261bdbc3542f97ecc3d915b7ee2e2fc',1,'You::Utils::UnitTests::LogTesterSink::onLog()']]],
   ['ontransactioncommit',['onTransactionCommit',['../class_you_1_1_data_store_1_1_internal_1_1_data_store.html#ac8e1098a7826b04273cfd581734b6940',1,'You::DataStore::Internal::DataStore']]],
   ['ontransactionrollback',['onTransactionRollback',['../class_you_1_1_data_store_1_1_internal_1_1_data_store.html#a72fe644e00574a76c340f61e85aa414f',1,'You::DataStore::Internal::DataStore']]],
   ['operation',['Operation',['../class_you_1_1_data_store_1_1_internal_1_1_operation.html',1,'You::DataStore::Internal']]],
@@ -30,6 +30,6 @@ var searchData=
   ['option_3c_20you_3a_3aqueryengine_3a_3atask_3a_3apriority_20_3e',['Option&lt; You::QueryEngine::Task::Priority &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]],
   ['option_3c_20you_3a_3aqueryengine_3a_3atask_3a_3asubtasks_20_3e',['Option&lt; You::QueryEngine::Task::Subtasks &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]],
   ['option_3c_20you_3a_3aqueryengine_3a_3atask_3a_3atime_20_3e',['Option&lt; You::QueryEngine::Task::Time &gt;',['../class_you_1_1_utils_1_1_option.html',1,'You::Utils']]],
-  ['order',['Order',['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#aa1624ad34144e92b2c34d9ac70fafba3',1,'You::NLP::SHOW_QUERY::Order()'],['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_1_1_f_i_e_l_d___o_r_d_e_r.html#a21f3e5ebc1b8c9b98c82655d46cef772',1,'You::NLP::SHOW_QUERY::FIELD_ORDER::order()'],['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#a6638de661a65f03caf18dc7f6078e425',1,'You::NLP::SHOW_QUERY::order()']]],
+  ['order',['order',['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_1_1_f_i_e_l_d___o_r_d_e_r.html#a21f3e5ebc1b8c9b98c82655d46cef772',1,'You::NLP::SHOW_QUERY::FIELD_ORDER::order()'],['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#a6638de661a65f03caf18dc7f6078e425',1,'You::NLP::SHOW_QUERY::order()'],['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#aa1624ad34144e92b2c34d9ac70fafba3',1,'You::NLP::SHOW_QUERY::Order()']]],
   ['overdue',['overdue',['../class_you_1_1_query_engine_1_1_filter.html#a49d99b2534687ef1a811aa47be6aee4a',1,'You::QueryEngine::Filter::overdue()'],['../namespace_you_1_1_query_engine_1_1_unit_tests.html#a86a7995a5884eba717151e8f5ebf9f88',1,'You::QueryEngine::UnitTests::OVERDUE()']]]
 ];

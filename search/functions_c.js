@@ -1,7 +1,7 @@
 var searchData=
 [
   ['one_5fsubtask',['ONE_SUBTASK',['../namespace_you_1_1_query_engine_1_1_unit_tests.html#a7260e8d1b5701a778cd33a66d8a671c5',1,'You::QueryEngine::UnitTests']]],
-  ['onlog',['onLog',['../class_you_1_1_utils_1_1_log_sink.html#aaffa5d392563574e8396f3d2341f43c7',1,'You::Utils::LogSink::onLog()'],['../class_you_1_1_utils_1_1_unit_tests_1_1_log_tester_sink.html#a7261bdbc3542f97ecc3d915b7ee2e2fc',1,'You::Utils::UnitTests::LogTesterSink::onLog()']]],
+  ['onlog',['onLog',['../class_you_1_1_g_u_i_log_sink.html#ae88bf68e443d4efc51eae5d3adcde5e3',1,'You::GUILogSink::onLog()'],['../class_you_1_1_utils_1_1_log_sink.html#aaffa5d392563574e8396f3d2341f43c7',1,'You::Utils::LogSink::onLog()'],['../class_you_1_1_utils_1_1_unit_tests_1_1_log_tester_sink.html#a7261bdbc3542f97ecc3d915b7ee2e2fc',1,'You::Utils::UnitTests::LogTesterSink::onLog()']]],
   ['ontransactioncommit',['onTransactionCommit',['../class_you_1_1_data_store_1_1_internal_1_1_data_store.html#ac8e1098a7826b04273cfd581734b6940',1,'You::DataStore::Internal::DataStore']]],
   ['ontransactionrollback',['onTransactionRollback',['../class_you_1_1_data_store_1_1_internal_1_1_data_store.html#a72fe644e00574a76c340f61e85aa414f',1,'You::DataStore::Internal::DataStore']]],
   ['operator_20bool',['operator bool',['../class_you_1_1_utils_1_1_option.html#a71746464f9c081e3af7428fb344e6737',1,'You::Utils::Option']]],

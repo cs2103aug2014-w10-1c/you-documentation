@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>You: You-Utils/log/log_sink.h Source File</title>
+<title>You: You/log_sink.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_f335c911f56b38df1b81a65633149205.html">You-Utils</a></li><li class="navelem"><a class="el" href="dir_1e822ea7f82b47f95b1ae9a10c653c13.html">log</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_8f88c7c59f1e0ef0ac2da67fe89da961.html">You</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -88,36 +88,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">log_sink.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//@author A0097630B</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//@author A0094446X</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef YOU_UTILS_LOG_LOG_SINK_H_</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define YOU_UTILS_LOG_LOG_SINK_H_</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;log_severity.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef YOU_LOG_SINK_H_</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define YOU_LOG_SINK_H_</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;You-Utils/log.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;You-Utils/log/log_severity.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_you.html">You</a> {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>Utils {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_you_1_1_utils_1_1_log_sink.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_utils_1_1_log_sink.html">LogSink</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_you_1_1_utils_1_1_log_sink.html">LogSink</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_utils_1_1_log_sink.html#aaffa5d392563574e8396f3d2341f43c7">onLog</a>(LogSeverity severity,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">const</span> std::wstring&amp; category,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">const</span> std::wstring&amp; message) = 0;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}  <span class="comment">// namespace Utils</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif  // YOU_UTILS_LOG_LOG_SINK_H_</span></div>
-<div class="ttc" id="class_you_1_1_utils_1_1_log_sink_html_aaffa5d392563574e8396f3d2341f43c7"><div class="ttname"><a href="class_you_1_1_utils_1_1_log_sink.html#aaffa5d392563574e8396f3d2341f43c7">You::Utils::LogSink::onLog</a></div><div class="ttdeci">virtual void onLog(LogSeverity severity, const std::wstring &amp;category, const std::wstring &amp;message)=0</div><div class="ttdoc">The method which will be called when a new log message is received. </div></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using</span> LogSeverity = You::Utils::LogSeverity;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_you_1_1_g_u_i_log_sink.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_g_u_i_log_sink.html">GUILogSink</a> : <span class="keyword">public</span> <a class="code" href="class_you_1_1_utils_1_1_log_sink.html">You::Utils::LogSink</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_you_1_1_g_u_i_log_sink.html">GUILogSink</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    ~<a class="code" href="class_you_1_1_g_u_i_log_sink.html">GUILogSink</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_g_u_i_log_sink.html#ae88bf68e443d4efc51eae5d3adcde5e3">onLog</a>(LogSeverity severity,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">const</span> std::wstring&amp; category,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">const</span> std::wstring&amp; message);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> QString LOG_FILENAME;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::shared_ptr&lt;QFile&gt; file;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif  // YOU_LOG_SINK_H_</span></div>
+<div class="ttc" id="class_you_1_1_g_u_i_log_sink_html_ae88bf68e443d4efc51eae5d3adcde5e3"><div class="ttname"><a href="class_you_1_1_g_u_i_log_sink.html#ae88bf68e443d4efc51eae5d3adcde5e3">You::GUILogSink::onLog</a></div><div class="ttdeci">void onLog(LogSeverity severity, const std::wstring &amp;category, const std::wstring &amp;message)</div><div class="ttdoc">The method which will be called when a new log message is received. </div><div class="ttdef"><b>Definition:</b> log_sink.cpp:18</div></div>
+<div class="ttc" id="class_you_1_1_g_u_i_log_sink_html"><div class="ttname"><a href="class_you_1_1_g_u_i_log_sink.html">You::GUILogSink</a></div><div class="ttdoc">The log sink, inheriting from You::Utils::LogSink. </div><div class="ttdef"><b>Definition:</b> log_sink.h:14</div></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_log_sink_html"><div class="ttname"><a href="class_you_1_1_utils_1_1_log_sink.html">You::Utils::LogSink</a></div><div class="ttdoc">This represents the functions an abstract Log Sink must implement. </div><div class="ttdef"><b>Definition:</b> log_sink.h:13</div></div>
-<div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:11</div></div>
+<div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> exceptions.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 9 2014 10:23:56 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 9 2014 10:56:11 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

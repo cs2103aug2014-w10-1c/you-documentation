@@ -26,5 +26,6 @@ var searchData=
   ['graph',['graph',['../class_you_1_1_query_engine_1_1_internal_1_1_state.html#a4b285e7045c96a1a9284df89268003cf',1,'You::QueryEngine::Internal::State::graph()'],['../class_you_1_1_query_engine_1_1_internal_1_1_controller.html#a88acc97223c07c10cc0473db1f451df5',1,'You::QueryEngine::Internal::Controller::Graph()'],['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#a629c6c559a2ec122073eee11cfd89fb1',1,'You::QueryEngine::Internal::TaskGraph::Graph()']]],
   ['graphtype',['GraphType',['../class_you_1_1_query_engine_1_1_internal_1_1_task_graph.html#abd69fe2e191d8263f664300cf14ecbac',1,'You::QueryEngine::Internal::TaskGraph']]],
   ['greater_5fthan',['GREATER_THAN',['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#a1734b62cd99ffec4742957c9636a3fe0a1625ef4fe09f68fa20d3ff6e02cd5c8e',1,'You::NLP::SHOW_QUERY']]],
-  ['greater_5fthan_5feq',['GREATER_THAN_EQ',['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#a1734b62cd99ffec4742957c9636a3fe0aeb25c4fe79089f5549c491729af0a8d2',1,'You::NLP::SHOW_QUERY']]]
+  ['greater_5fthan_5feq',['GREATER_THAN_EQ',['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#a1734b62cd99ffec4742957c9636a3fe0aeb25c4fe79089f5549c491729af0a8d2',1,'You::NLP::SHOW_QUERY']]],
+  ['guilogsink',['GUILogSink',['../class_you_1_1_g_u_i_log_sink.html',1,'You']]]
 ];

@@ -4,6 +4,7 @@ var searchData=
   ['id_5fone_5fto_5ffive',['ID_ONE_TO_FIVE',['../namespace_you_1_1_query_engine_1_1_unit_tests.html#a97a2a1621fc06e9f96afcd72d4f78ba5',1,'You::QueryEngine::UnitTests']]],
   ['idisin',['idIsIn',['../class_you_1_1_query_engine_1_1_filter.html#a52f7eb9dc00bbb925e0bd78504e96a0e',1,'You::QueryEngine::Filter']]],
   ['info',['info',['../class_you_1_1_utils_1_1_log.html#a9bd83e5b3e9ab2dc6d55a59fdf268042',1,'You::Utils::Log']]],
+  ['initlogfilefailedexception',['InitLogFileFailedException',['../class_you_1_1_exception_1_1_init_log_file_failed_exception.html',1,'You::Exception']]],
   ['inquirenewid',['inquireNewID',['../class_you_1_1_query_engine_1_1_internal_1_1_state.html#abbe5ae530e26203a3874f71023e78581',1,'You::QueryEngine::Internal::State']]],
   ['ioexception',['IOException',['../class_you_1_1_data_store_1_1_i_o_exception.html',1,'You::DataStore']]],
   ['isactive',['isActive',['../class_you_1_1_utils_1_1_logger.html#ab1cf64d982ab905329d911698cfecba5',1,'You::Utils::Logger']]],
