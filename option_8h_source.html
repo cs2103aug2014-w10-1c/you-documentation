@@ -116,21 +116,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    : <a class="code" href="namespaceboost.html">boost</a>::optional&lt;T&gt;(value) {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_you_1_1_utils_1_1_option.html#a71746464f9c081e3af7428fb344e6737">   39</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">operator</span> bool() <span class="keyword">const</span> throw() {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> boost::optional&lt;T&gt;::operator bool();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... ParamTypes&gt;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">inline</span> Option&lt;T&gt; make_option(ParamTypes&amp;&amp;... arguments) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> T(std::forward&lt;ParamTypes&gt;(arguments)...);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_you_1_1_utils_1_1_option.html#a6d680b0fc50963971e89d7b172a785fc">   38</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_you_1_1_utils_1_1_option.html#a6d680b0fc50963971e89d7b172a785fc">Option</a>(<span class="keyword">const</span> boost::optional&lt;T&gt;&amp;&amp; value)  <span class="comment">// NOLINT(runtime/explicit)</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    : <a class="code" href="namespaceboost.html">boost</a>::optional&lt;T&gt;(value) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_you_1_1_utils_1_1_option.html#a71746464f9c081e3af7428fb344e6737">   44</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">operator</span> bool() <span class="keyword">const</span> throw() {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> boost::optional&lt;T&gt;::operator bool();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}  <span class="comment">// namespace Utils</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif  // YOU_UTILS_OPTION_H_</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... ParamTypes&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">inline</span> Option&lt;T&gt; make_option(ParamTypes&amp;&amp;... arguments) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> T(std::forward&lt;ParamTypes&gt;(arguments)...);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}  <span class="comment">// namespace Utils</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif  // YOU_UTILS_OPTION_H_</span></div>
 <div class="ttc" id="namespaceboost_html"><div class="ttname"><a href="namespaceboost.html">boost</a></div><div class="ttdef"><b>Definition:</b> qt_helpers.h:9</div></div>
+<div class="ttc" id="class_you_1_1_utils_1_1_option_html_a6d680b0fc50963971e89d7b172a785fc"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html#a6d680b0fc50963971e89d7b172a785fc">You::Utils::Option::Option</a></div><div class="ttdeci">Option(const boost::optional&lt; T &gt; &amp;&amp;value)</div><div class="ttdoc">Move constructor. </div><div class="ttdef"><b>Definition:</b> option.h:38</div></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_option_html_a5c212336d85d700fcfd42106a583291a"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html#a5c212336d85d700fcfd42106a583291a">You::Utils::Option::Option</a></div><div class="ttdeci">Option()</div><div class="ttdoc">Default constructor. This initialises a None value. </div><div class="ttdef"><b>Definition:</b> option.h:19</div></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_option_html_a5c91fc5eeda113998913e0e5a1a53cca"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html#a5c91fc5eeda113998913e0e5a1a53cca">You::Utils::Option::Option</a></div><div class="ttdeci">Option(const boost::none_t &amp;value)</div><div class="ttdoc">Copy construct from boost::none. </div><div class="ttdef"><b>Definition:</b> option.h:23</div></div>
 <div class="ttc" id="class_you_1_1_utils_1_1_option_html"><div class="ttname"><a href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a></div><div class="ttdoc">Implements an option type. </div><div class="ttdef"><b>Definition:</b> option.h:16</div></div>
@@ -140,7 +145,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 9 2014 13:06:07 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 9 2014 14:06:04 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

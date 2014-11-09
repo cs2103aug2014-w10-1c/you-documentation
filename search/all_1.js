@@ -19,5 +19,6 @@ var searchData=
   ['bydependenciescount',['byDependenciesCount',['../class_you_1_1_query_engine_1_1_comparator.html#aa0a80bac2bfa204b1bd6a8357a9d5efc',1,'You::QueryEngine::Comparator']]],
   ['bydescription',['byDescription',['../class_you_1_1_query_engine_1_1_comparator.html#a6fecd1bb3fe6437124c97b6a916e1391',1,'You::QueryEngine::Comparator']]],
   ['bypriority',['byPriority',['../class_you_1_1_query_engine_1_1_comparator.html#a34fc507091520031b8fbd07acb131c32',1,'You::QueryEngine::Comparator']]],
-  ['byrelationship',['byRelationship',['../class_you_1_1_query_engine_1_1_comparator.html#ae321a10ad37d994543cd6ee461c10691',1,'You::QueryEngine::Comparator']]]
+  ['byrelationship',['byRelationship',['../class_you_1_1_query_engine_1_1_comparator.html#ae321a10ad37d994543cd6ee461c10691',1,'You::QueryEngine::Comparator']]],
+  ['bystarttime',['byStartTime',['../class_you_1_1_query_engine_1_1_comparator.html#a64a6af6ea8e07d419c5ebdd6a4f8cf81',1,'You::QueryEngine::Comparator']]]
 ];

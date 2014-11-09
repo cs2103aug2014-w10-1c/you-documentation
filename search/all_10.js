@@ -16,6 +16,7 @@ var searchData=
   ['show_5fquery',['SHOW_QUERY',['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html',1,'You::NLP']]],
   ['show_5fresult',['SHOW_RESULT',['../struct_you_1_1_controller_1_1_s_h_o_w___r_e_s_u_l_t.html',1,'You::Controller']]],
   ['skippertype',['SkipperType',['../class_you_1_1_n_l_p_1_1_date_time_parser.html#a8ef6acc06aede1b16238e988488475cc',1,'You::NLP::DateTimeParser::SkipperType()'],['../class_you_1_1_n_l_p_1_1_query_parser.html#a112fa0a13e0a40d68ec60402a4c64db2',1,'You::NLP::QueryParser::SkipperType()']]],
+  ['start',['start',['../struct_you_1_1_n_l_p_1_1_a_d_d___q_u_e_r_y.html#a8fdc00a9dc963eaa8bbd1174874517ff',1,'You::NLP::ADD_QUERY::start()'],['../struct_you_1_1_n_l_p_1_1_e_d_i_t___q_u_e_r_y.html#a1c0748f8f16b4a1da4fc001d1507574a',1,'You::NLP::EDIT_QUERY::start()']]],
   ['starttime',['startTime',['../class_you_1_1_query_engine_1_1_internal_1_1_task_builder.html#ab9ba12b1e476438b8d4bf9ce710d1e15',1,'You::QueryEngine::Internal::TaskBuilder']]],
   ['state',['State',['../class_you_1_1_query_engine_1_1_internal_1_1_state.html',1,'You::QueryEngine::Internal']]],
   ['statusupdate',['StatusUpdate',['../struct_you_1_1_g_u_i_1_1_main_window_1_1_status_update.html',1,'You::GUI::MainWindow']]],
