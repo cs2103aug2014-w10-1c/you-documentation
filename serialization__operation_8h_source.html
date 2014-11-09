@@ -101,25 +101,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html">SerializationOperation</a> : <span class="keyword">public</span> <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">Operation</a> {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#ae80e42d3f83067877612750c86af0008">serialize</a>(<span class="keyword">const</span> KeyValuePairs&amp;, pugi::xml_node&amp;);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static</span> KeyValuePairs <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#a3c5a3a22e35acb2c5f12ba55a33b1b06">deserialize</a>(<span class="keyword">const</span> pugi::xml_node&amp;);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}  <span class="comment">// namespace Internal</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}  <span class="comment">// namespace DataStore</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif  // YOU_DATASTORE_INTERNAL_OPERATIONS_SERIALIZATION_OPERATION_H_</span></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation_html_a3c5a3a22e35acb2c5f12ba55a33b1b06"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#a3c5a3a22e35acb2c5f12ba55a33b1b06">You::DataStore::Internal::SerializationOperation::deserialize</a></div><div class="ttdeci">static KeyValuePairs deserialize(const pugi::xml_node &amp;)</div><div class="ttdoc">Deserialize task from an xml node. </div><div class="ttdef"><b>Definition:</b> serialization_operation.cpp:20</div></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation_html_ae80e42d3f83067877612750c86af0008"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#ae80e42d3f83067877612750c86af0008">You::DataStore::Internal::SerializationOperation::serialize</a></div><div class="ttdeci">static void serialize(const KeyValuePairs &amp;, pugi::xml_node &amp;)</div><div class="ttdoc">Serialize task to an xml node. </div><div class="ttdef"><b>Definition:</b> serialization_operation.cpp:9</div></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#a4fea4a1c53ae50b7a0d548cb584eb9cf">serialize</a>(<span class="keyword">const</span> KeyValuePairs&amp; kvp, pugi::xml_node&amp; node);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">static</span> KeyValuePairs <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#a3b3e2200b3da178d62c9102550c07676">deserialize</a>(<span class="keyword">const</span> pugi::xml_node&amp; node);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}  <span class="comment">// namespace Internal</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}  <span class="comment">// namespace DataStore</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif  // YOU_DATASTORE_INTERNAL_OPERATIONS_SERIALIZATION_OPERATION_H_</span></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation_html_a3b3e2200b3da178d62c9102550c07676"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#a3b3e2200b3da178d62c9102550c07676">You::DataStore::Internal::SerializationOperation::deserialize</a></div><div class="ttdeci">static KeyValuePairs deserialize(const pugi::xml_node &amp;node)</div><div class="ttdoc">Deserialize task from an xml node. </div><div class="ttdef"><b>Definition:</b> serialization_operation.cpp:20</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation_html_a4fea4a1c53ae50b7a0d548cb584eb9cf"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#a4fea4a1c53ae50b7a0d548cb584eb9cf">You::DataStore::Internal::SerializationOperation::serialize</a></div><div class="ttdeci">static void serialize(const KeyValuePairs &amp;kvp, pugi::xml_node &amp;node)</div><div class="ttdoc">Serialize task to an xml node. </div><div class="ttdef"><b>Definition:</b> serialization_operation.cpp:9</div></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_operation_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">You::DataStore::Internal::Operation</a></div><div class="ttdoc">A pure virtual class of operations to be put into transaction stack. </div><div class="ttdef"><b>Definition:</b> operation.h:14</div></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html">You::DataStore::Internal::SerializationOperation</a></div><div class="ttdoc">Intermediate parent class of Operation requiring serialization. </div><div class="ttdef"><b>Definition:</b> serialization_operation.h:13</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 9 2014 00:25:53 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 9 2014 00:57:29 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

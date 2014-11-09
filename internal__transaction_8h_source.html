@@ -115,23 +115,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html#a098ccd416b9f29485a5704a695e18476">rollback</a>();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html#aa11265c3d625b3dac6079c3343542304">push</a>(std::unique_ptr&lt;Operation&gt; operation);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html#a55a8005c1e7a4f1c48f681dae148743b">mergeOperationsQueue</a>(boost::ptr_deque&lt;Operation&gt;&amp; queue);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> operator==(<a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html">Transaction</a>&amp;);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    boost::ptr_deque&lt;Operation&gt; operationsQueue;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    boost::ptr_deque&lt;Operation&gt; mergedOperationsQueue;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html#aa11265c3d625b3dac6079c3343542304">push</a>(std::unique_ptr&lt;Operation&gt; operation);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html#a55a8005c1e7a4f1c48f681dae148743b">mergeOperationsQueue</a>(boost::ptr_deque&lt;Operation&gt;&amp; queue);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> operator==(<a class="code" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html">Transaction</a>&amp;);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    boost::ptr_deque&lt;Operation&gt; operationsQueue;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}  <span class="comment">// namespace Internal</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}  <span class="comment">// namespace DataStore</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif  // YOU_DATASTORE_INTERNAL_INTERNAL_TRANSACTION_H_</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    boost::ptr_deque&lt;Operation&gt; mergedOperationsQueue;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}  <span class="comment">// namespace Internal</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}  <span class="comment">// namespace DataStore</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif  // YOU_DATASTORE_INTERNAL_INTERNAL_TRANSACTION_H_</span></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_transaction_html_a1da7601819d05c1d9e8acf421de1c3b0"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html#a1da7601819d05c1d9e8acf421de1c3b0">You::DataStore::Internal::Transaction::commit</a></div><div class="ttdeci">void commit()</div><div class="ttdoc">Commits the set of operations made. </div><div class="ttdef"><b>Definition:</b> internal_transaction.cpp:10</div></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_transaction_html_a55a8005c1e7a4f1c48f681dae148743b"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html#a55a8005c1e7a4f1c48f681dae148743b">You::DataStore::Internal::Transaction::mergeOperationsQueue</a></div><div class="ttdeci">void mergeOperationsQueue(boost::ptr_deque&lt; Operation &gt; &amp;queue)</div><div class="ttdoc">Merges the operationsQueue of the next transaction that is committed earlier. </div><div class="ttdef"><b>Definition:</b> internal_transaction.cpp:26</div></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_transaction_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html">You::DataStore::Internal::Transaction</a></div><div class="ttdoc">The actual class that contains the logic for managing transactions. </div><div class="ttdef"><b>Definition:</b> internal_transaction.h:17</div></div>
@@ -140,12 +140,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_api_test_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_api_test.html">You::DataStore::UnitTests::DataStoreApiTest</a></div><div class="ttdoc">Unit test for DataStore API that is exposed to Query Engine, namely DataStore and Transaction...</div><div class="ttdef"><b>Definition:</b> datastore_api_test.cpp:19</div></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_transaction_html_a4c8875c67bbdf13bac9e580f9df67811"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html#a4c8875c67bbdf13bac9e580f9df67811">You::DataStore::Internal::Transaction::Transaction</a></div><div class="ttdeci">Transaction()=default</div><div class="ttdoc">Default constructor. This is meant to be called by DataStore. </div></div>
 <div class="ttc" id="class_you_1_1_data_store_1_1_internal_1_1_data_store_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html">You::DataStore::Internal::DataStore</a></div><div class="ttdoc">The most primitive class that does the changes to the actual xml file. </div><div class="ttdef"><b>Definition:</b> internal_datastore.h:26</div></div>
-<div class="ttc" id="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html">You::DataStore::UnitTests::DataStoreTest</a></div><div class="ttdoc">Unit Test Class for Internal::DataStore class. </div><div class="ttdef"><b>Definition:</b> internal_datastore_test.cpp:24</div></div>
+<div class="ttc" id="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test_html"><div class="ttname"><a href="class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html">You::DataStore::UnitTests::DataStoreTest</a></div><div class="ttdoc">Unit Test Class for Internal::DataStore class. </div><div class="ttdef"><b>Definition:</b> internal_datastore_test.cpp:23</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> controller.cpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 9 2014 00:25:53 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 9 2014 00:57:29 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

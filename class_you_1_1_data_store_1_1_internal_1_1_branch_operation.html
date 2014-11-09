@@ -112,7 +112,7 @@ Inheritance diagram for You::DataStore::Internal::BranchOperation:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a66b8c25caad4ae742f935334851a8684"><td class="memItemLeft" align="right" valign="top">static pugi::xml_node&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_branch_operation.html#a66b8c25caad4ae742f935334851a8684">get</a> (pugi::xml_document &amp;document, std::wstring nodeName)</td></tr>
-<tr class="memdesc:a66b8c25caad4ae742f935334851a8684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the handler of the XML node with the specified name in the specified XML document.  <a href="#a66b8c25caad4ae742f935334851a8684">More...</a><br /></td></tr>
+<tr class="memdesc:a66b8c25caad4ae742f935334851a8684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the handler of the XML node with the specified name in the specified XML document Creates the XML node if none exists.  <a href="#a66b8c25caad4ae742f935334851a8684">More...</a><br /></td></tr>
 <tr class="separator:a66b8c25caad4ae742f935334851a8684"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -166,14 +166,15 @@ std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 
-<p>Get the handler of the XML node with the specified name in the specified XML document. </p>
+<p>Get the handler of the XML node with the specified name in the specified XML document Creates the XML node if none exists. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">document</td><td>the XML document to get the handler from </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">document</td><td>the XML document to get the handler from </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nodeName</td><td>the name of the node to get the handler of </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the pugi::xml_node handler </dd></dl>
 
 </div>
 </div>
@@ -184,7 +185,7 @@ std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 9 2014 00:25:54 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 9 2014 00:57:30 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
