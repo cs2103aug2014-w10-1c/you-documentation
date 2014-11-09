@@ -155,8 +155,9 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window.html#a5fd32bc206ce56aeb3e9e2b5a48b2385">populateTaskPanel</a> ()</td></tr>
 <tr class="memdesc:a5fd32bc206ce56aeb3e9e2b5a48b2385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates the task panel with data. <br /></td></tr>
 <tr class="separator:a5fd32bc206ce56aeb3e9e2b5a48b2385"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3865680f1b8714836c709dfd17e4fcd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window.html#a3865680f1b8714836c709dfd17e4fcd0">addTaskWithSubtasks</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task, const TaskList &amp;tl)</td></tr>
-<tr class="memdesc:a3865680f1b8714836c709dfd17e4fcd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html" title="The component that deals with everything in the task panel. ">TaskPanelManager</a> and requests addition of a single task, with its subtasks.  <a href="#a3865680f1b8714836c709dfd17e4fcd0">More...</a><br /></td></tr>
+<tr class="memitem:a3865680f1b8714836c709dfd17e4fcd0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3865680f1b8714836c709dfd17e4fcd0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window.html#a3865680f1b8714836c709dfd17e4fcd0">addTaskWithSubtasks</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task, const TaskList &amp;tl)</td></tr>
+<tr class="memdesc:a3865680f1b8714836c709dfd17e4fcd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html" title="The component that deals with everything in the task panel. ">TaskPanelManager</a> and requests addition of a single task, with its subtasks. <br /></td></tr>
 <tr class="separator:a3865680f1b8714836c709dfd17e4fcd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa9c55547735b26d8d604373cb16446b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa9c55547735b26d8d604373cb16446b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addTask</b> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task)</td></tr>
@@ -184,6 +185,9 @@ const TaskList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class
 <tr class="memitem:a601896879ccaa50e652e75c922126e26"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a601896879ccaa50e652e75c922126e26"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>showErrorAndExit</b> (QString message, QString title)</td></tr>
 <tr class="separator:a601896879ccaa50e652e75c922126e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee7501c09123122e85afaad14b388163"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee7501c09123122e85afaad14b388163"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>expandAllSubtasks</b> (QTreeWidgetItem *item)</td></tr>
+<tr class="separator:aee7501c09123122e85afaad14b388163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -201,35 +205,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::MainWindo
 <div class="textblock"><p>The entity that deals with all GUI operations, and makes calls to the NLP engine. </p>
 <p>It deals with basic tasks regarding GUI initialization, passes all user input to the NLP engine and listens for any return instructions. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a3865680f1b8714836c709dfd17e4fcd0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void You::GUI::MainWindow::addTaskWithSubtasks </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;&#160;</td>
-          <td class="paramname"><em>task</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const TaskList &amp;&#160;</td>
-          <td class="paramname"><em>tl</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calls <a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html" title="The component that deals with everything in the task panel. ">TaskPanelManager</a> and requests addition of a single task, with its subtasks. </p>
-<p>This function adds a task to the task panel, along with all of its subtasks. </p>
-
-</div>
-</div>
 <a class="anchor" id="a5ab7bebced5d27d8c66c54816cc6f08e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +239,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::MainWindo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 9 2014 15:05:23 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 9 2014 22:29:26 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
