@@ -90,7 +90,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="class_you_1_1_data_store_1_1_internal_1_1_data_store-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">You::DataStore::Internal::DataStore Class Reference</div>  </div>
@@ -104,9 +103,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4d176d4ab3f1976fa32763292d1bd085"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d176d4ab3f1976fa32763292d1bd085"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html#a4d176d4ab3f1976fa32763292d1bd085">post</a> (std::wstring branch, std::wstring id, const KeyValuePairs &amp;kvp)</td></tr>
-<tr class="memdesc:a4d176d4ab3f1976fa32763292d1bd085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_post_operation.html">PostOperation</a> into the active <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html">Transaction</a>. <br /></td></tr>
+<tr class="memitem:a4d176d4ab3f1976fa32763292d1bd085"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html#a4d176d4ab3f1976fa32763292d1bd085">post</a> (std::wstring branch, std::wstring id, const KeyValuePairs &amp;kvp)</td></tr>
+<tr class="memdesc:a4d176d4ab3f1976fa32763292d1bd085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_post_operation.html">PostOperation</a> into the active <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html">Transaction</a>.  <a href="#a4d176d4ab3f1976fa32763292d1bd085">More...</a><br /></td></tr>
 <tr class="separator:a4d176d4ab3f1976fa32763292d1bd085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03d0cb0bbbf7ce13ad5b24ae0be203e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03d0cb0bbbf7ce13ad5b24ae0be203e8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html#a03d0cb0bbbf7ce13ad5b24ae0be203e8">put</a> (std::wstring branch, std::wstring id, const KeyValuePairs &amp;kvp)</td></tr>
@@ -123,9 +121,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html#afc65554bb8ef51da08d334872b065437">wipeData</a> ()</td></tr>
 <tr class="memdesc:afc65554bb8ef51da08d334872b065437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wipe the datastore. <br /></td></tr>
 <tr class="separator:afc65554bb8ef51da08d334872b065437"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Transaction management.</div></td></tr>
 <tr class="memitem:ada496918b1cc5429fd4b1c16a11700b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_you_1_1_data_store_1_1_transaction.html">You::DataStore::Transaction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html#ada496918b1cc5429fd4b1c16a11700b0">begin</a> ()</td></tr>
-<tr class="memdesc:ada496918b1cc5429fd4b1c16a11700b0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html" title="The actual class that contains the logic for managing transactions. ">Transaction</a> management.  <a href="#ada496918b1cc5429fd4b1c16a11700b0">More...</a><br /></td></tr>
+<tr class="memdesc:ada496918b1cc5429fd4b1c16a11700b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a new transaction.  <a href="#ada496918b1cc5429fd4b1c16a11700b0">More...</a><br /></td></tr>
 <tr class="separator:ada496918b1cc5429fd4b1c16a11700b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8e1098a7826b04273cfd581734b6940"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html#ac8e1098a7826b04273cfd581734b6940">onTransactionCommit</a> (<a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html">Transaction</a> &amp;transaction)</td></tr>
 <tr class="memdesc:ac8e1098a7826b04273cfd581734b6940"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the data store that the given transaction is being committed.  <a href="#ac8e1098a7826b04273cfd581734b6940">More...</a><br /></td></tr>
@@ -142,9 +140,9 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Test classes</div></td></tr>
 <tr class="memitem:a0ac69b7bacd7b2f194d5536a18b42c83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ac69b7bacd7b2f194d5536a18b42c83"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html#a0ac69b7bacd7b2f194d5536a18b42c83">UnitTests::DataStoreTest</a></td></tr>
-<tr class="memdesc:a0ac69b7bacd7b2f194d5536a18b42c83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test classes. <br /></td></tr>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DataStoreTest</b></td></tr>
 <tr class="separator:a0ac69b7bacd7b2f194d5536a18b42c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ea0f25282f40c00566d64b370ce6539"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ea0f25282f40c00566d64b370ce6539"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DataStoreApiTest</b></td></tr>
@@ -166,8 +164,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DataStore
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html" title="The actual class that contains the logic for managing transactions. ">Transaction</a> management. </p>
-<p>Starts a new transaction.</p>
+<p>Starts a new transaction. </p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to a new DataStrore::Transaction </dd></dl>
 
 </div>
@@ -244,6 +241,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DataStore
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_you_1_1_data_store_1_1_i_o_exception.html" title="The exception thrown if there is an I/O error when parsing data.xml. ">IOException</a></td><td>if I/O error occurs </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -271,6 +274,48 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DataStore
 
 </div>
 </div>
+<a class="anchor" id="a4d176d4ab3f1976fa32763292d1bd085"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void You::DataStore::Internal::DataStore::post </td>
+          <td>(</td>
+          <td class="paramtype">std::wstring&#160;</td>
+          <td class="paramname"><em>branch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::wstring&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const KeyValuePairs &amp;&#160;</td>
+          <td class="paramname"><em>kvp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pushes <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_post_operation.html">PostOperation</a> into the active <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html">Transaction</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">branch</td><td>The name of the XML branch to be modified </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The ID of the data to be added </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kvp</td><td>The KeyValuePairs of the data to be added </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>You-DataStore/internal/<a class="el" href="internal__datastore_8h_source.html">internal_datastore.h</a></li>
 <li>You-DataStore/internal/internal_datastore.cpp</li>
@@ -278,7 +323,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DataStore
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 10 2014 03:16:06 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 10 2014 07:01:49 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>The internal components of <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html" title="The most primitive class that does the changes to the actual xml file. ">DataStore</a>.  
+<p>The internal components of data store.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -111,16 +111,16 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pure virtual class of operations to be put into transaction stack.  <a href="class_you_1_1_data_store_1_1_internal_1_1_operation.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_post_operation.html">PostOperation</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">Operation</a> class for post operation Adds a node to the XML when <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_post_operation.html#aeba2f78cb427362897bc51f7d208a8f9">run</a> is called.  <a href="class_you_1_1_data_store_1_1_internal_1_1_post_operation.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">Operation</a> class for post operation.  <a href="class_you_1_1_data_store_1_1_internal_1_1_post_operation.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_put_operation.html">PutOperation</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">Operation</a> class for put operation Edits the XML when <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#aa34056f091c6b31eecc52805048069d7">run</a> is called.  <a href="class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">Operation</a> class for put operation.  <a href="class_you_1_1_data_store_1_1_internal_1_1_put_operation.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html">SerializationOperation</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intermediate parent class of <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">Operation</a> requiring serialization.  <a href="class_you_1_1_data_store_1_1_internal_1_1_serialization_operation.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html">Transaction</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actual class that contains the logic for managing transactions.  <a href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class that stores a group of <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_operation.html">Operation</a> s that need to collectively succeed or fail.  <a href="class_you_1_1_data_store_1_1_internal_1_1_transaction.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -130,11 +130,11 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Log</b> = <a class="
 <tr class="separator:aedbfa87ee2ff4ca0f6cabd8cd6bf1f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The internal components of <a class="el" href="class_you_1_1_data_store_1_1_internal_1_1_data_store.html" title="The most primitive class that does the changes to the actual xml file. ">DataStore</a>. </p>
+<div class="textblock"><p>The internal components of data store. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 10 2014 03:16:06 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 10 2014 07:01:49 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

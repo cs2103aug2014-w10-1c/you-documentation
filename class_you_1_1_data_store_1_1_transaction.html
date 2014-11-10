@@ -155,7 +155,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DataStore
 </div><div class="memdoc">
 
 <p>Move constructor. </p>
-<p>We only allow a transaction to have one strong reference. </p>
+<p>We only allow a transaction to have one strong reference. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_you_1_1_data_store_1_1_data_store.html" title="The public methods of the data store. ">DataStore</a></dd></dl>
+<p>Usage: </p><pre class="fragment">Transaction t(DataStore::get().begin());
+</pre><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">transaction</td><td>The transaction returned from <a class="el" href="class_you_1_1_data_store_1_1_data_store.html#ad8a6c062b75734c85e0afe742e8e8e5a" title="Get the instance of DataStore. ">DataStore::get()</a>.begin() </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -221,7 +228,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::DataStore
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 10 2014 03:16:06 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 10 2014 07:01:49 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
