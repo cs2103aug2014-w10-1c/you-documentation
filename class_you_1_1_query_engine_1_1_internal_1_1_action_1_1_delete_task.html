@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="namespace_you_1_1_query_engine_1_1_internal_1_1_action.html" title="Several classes that implements Query actions. ">Action</a> for deleting an existing task.  
+<p><a class="el" href="namespace_you_1_1_query_engine_1_1_internal_1_1_action.html" title="Contains various queries that is constructed via the API. ">Action</a> for deleting an existing task Executing this action on non-existing task will throw TaskNotFoundException.  
  <a href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="delete__task_8h_source.html">delete_task.h</a>&gt;</code></p>
@@ -108,7 +108,7 @@ Inheritance diagram for You::QueryEngine::Internal::Action::DeleteTask:</div>
  <div class="center">
   <img src="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.png" usemap="#You::QueryEngine::Internal::Action::DeleteTask_map" alt=""/>
   <map id="You::QueryEngine::Internal::Action::DeleteTask_map" name="You::QueryEngine::Internal::Action::DeleteTask_map">
-<area href="class_you_1_1_query_engine_1_1_query.html" title="Interface for queries. " alt="You::QueryEngine::Query" shape="rect" coords="0,0,274,24"/>
+<area href="class_you_1_1_query_engine_1_1_query.html" title="Interface for queries (or in our terms, actions). " alt="You::QueryEngine::Query" shape="rect" coords="0,0,274,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -116,7 +116,7 @@ Inheritance diagram for You::QueryEngine::Internal::Action::DeleteTask:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae7ff1907167ea4f6571fee545462f383"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7ff1907167ea4f6571fee545462f383"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html#ae7ff1907167ea4f6571fee545462f383">DeleteTask</a> (Task::ID id)</td></tr>
-<tr class="memdesc:ae7ff1907167ea4f6571fee545462f383"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="memdesc:ae7ff1907167ea4f6571fee545462f383"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the action using the task ID. <br /></td></tr>
 <tr class="separator:ae7ff1907167ea4f6571fee545462f383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceca056ac7a7a68087b9e898c1bef28c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aceca056ac7a7a68087b9e898c1bef28c"></a>
 <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html">DeleteTask</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html#aceca056ac7a7a68087b9e898c1bef28c">operator=</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html">DeleteTask</a> &amp;)=delete</td></tr>
@@ -129,9 +129,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a25094a8f14c5af150b7e76e221f36558"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25094a8f14c5af150b7e76e221f36558"></a>
-std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html#a25094a8f14c5af150b7e76e221f36558">getReverse</a> () override</td></tr>
-<tr class="memdesc:a25094a8f14c5af150b7e76e221f36558"><td class="mdescLeft">&#160;</td><td class="mdescRight">The reverse of deletion is adding. <br /></td></tr>
+<tr class="memitem:a25094a8f14c5af150b7e76e221f36558"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html#a25094a8f14c5af150b7e76e221f36558">getReverse</a> () override</td></tr>
+<tr class="memdesc:a25094a8f14c5af150b7e76e221f36558"><td class="mdescLeft">&#160;</td><td class="mdescRight">The reverse of deletion is adding.  <a href="#a25094a8f14c5af150b7e76e221f36558">More...</a><br /></td></tr>
 <tr class="separator:a25094a8f14c5af150b7e76e221f36558"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
@@ -152,8 +151,37 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BatchDeleteSubTasks<
 <tr class="separator:ae40810c47f6226591f9f1df9067366e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="namespace_you_1_1_query_engine_1_1_internal_1_1_action.html" title="Several classes that implements Query actions. ">Action</a> for deleting an existing task. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+<div class="textblock"><p><a class="el" href="namespace_you_1_1_query_engine_1_1_internal_1_1_action.html" title="Contains various queries that is constructed via the API. ">Action</a> for deleting an existing task Executing this action on non-existing task will throw TaskNotFoundException. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a25094a8f14c5af150b7e76e221f36558"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt; You::QueryEngine::Internal::Action::DeleteTask::getReverse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The reverse of deletion is adding. </p>
+<dl class="section return"><dt>Returns</dt><dd>The query for adding the tasks (and their subtasks) back. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_you_1_1_query_engine_1_1_query.html#abee80d359d958d5ce1c4132d560068df">You::QueryEngine::Query</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a36272439469075b925f944abae2e9d53"></a>
 <div class="memitem">
 <div class="memproto">
@@ -185,7 +213,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BatchDeleteSubTasks<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 10 2014 13:09:39 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 10 2014 15:20:46 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

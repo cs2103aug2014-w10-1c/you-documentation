@@ -2,7 +2,7 @@ var searchData=
 [
   ['istoplevel',['isTopLevel',['../class_you_1_1_query_engine_1_1_task.html#a91d70be0c4244384ebff3b836dba3faa',1,'You::QueryEngine::Task']]],
   ['task',['Task',['../class_you_1_1_query_engine_1_1_task.html',1,'You::QueryEngine']]],
-  ['task',['Task',['../class_you_1_1_query_engine_1_1_task.html#a71e344c0caad8d3af34481f50b29357d',1,'You::QueryEngine::Task::Task()'],['../struct_you_1_1_controller_1_1_a_d_d___r_e_s_u_l_t.html#aaac76375df4639dd247f99c95ba86497',1,'You::Controller::ADD_RESULT::task()'],['../struct_you_1_1_controller_1_1_d_e_l_e_t_e___r_e_s_u_l_t.html#a08e2cb101347f18117a9c4e3017ff287',1,'You::Controller::DELETE_RESULT::task()'],['../struct_you_1_1_controller_1_1_e_d_i_t___r_e_s_u_l_t.html#ac48d2598f935a7ea0887e19e9126e6ae',1,'You::Controller::EDIT_RESULT::task()']]],
+  ['task',['Task',['../class_you_1_1_query_engine_1_1_query_engine.html#a44af72a48eb6c2a1c32f99543c066281',1,'You::QueryEngine::QueryEngine::Task()'],['../class_you_1_1_query_engine_1_1_task.html#a71e344c0caad8d3af34481f50b29357d',1,'You::QueryEngine::Task::Task()'],['../struct_you_1_1_controller_1_1_a_d_d___r_e_s_u_l_t.html#aaac76375df4639dd247f99c95ba86497',1,'You::Controller::ADD_RESULT::task()'],['../struct_you_1_1_controller_1_1_d_e_l_e_t_e___r_e_s_u_l_t.html#a08e2cb101347f18117a9c4e3017ff287',1,'You::Controller::DELETE_RESULT::task()'],['../struct_you_1_1_controller_1_1_e_d_i_t___r_e_s_u_l_t.html#ac48d2598f935a7ea0887e19e9126e6ae',1,'You::Controller::EDIT_RESULT::task()']]],
   ['task_5fbuilder_2eh',['task_builder.h',['../task__builder_8h.html',1,'']]],
   ['task_5fdescriptions',['TASK_DESCRIPTIONS',['../namespace_you_1_1_query_engine_1_1_unit_tests.html#a86b75f440bfbd91c743813b6575dd187',1,'You::QueryEngine::UnitTests']]],
   ['task_5fgraph_2eh',['task_graph.h',['../task__graph_8h.html',1,'']]],
@@ -32,5 +32,5 @@ var searchData=
   ['trayhotkeyhandler',['TrayHotkeyHandler',['../class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html#a4423238413a645330eebd582b28e326c',1,'You::GUI::Thread::TrayHotkeyHandler']]],
   ['trayhotkeyhandler',['TrayHotkeyHandler',['../class_you_1_1_g_u_i_1_1_thread_1_1_tray_hotkey_handler.html',1,'You::GUI::Thread']]],
   ['try_5fconvert',['try_convert',['../structboost_1_1detail_1_1lexical__converter__impl_3_01_q_string_00_01_source_01_4.html#a0299d35511f2aa9c9311b53903b2d1fa',1,'boost::detail::lexical_converter_impl&lt; QString, Source &gt;']]],
-  ['type',['type',['../struct_you_1_1_query_engine_1_1_query_engine_1_1_delta.html#a793804a503e3ab3fc31ec5611cd42f00',1,'You::QueryEngine::QueryEngine::Delta']]]
+  ['type',['Type',['../struct_you_1_1_query_engine_1_1_query_engine_1_1_delta.html#a6329b1f44d561a58de2fc6f90241b2af',1,'You::QueryEngine::QueryEngine::Delta::Type()'],['../struct_you_1_1_query_engine_1_1_query_engine_1_1_delta.html#a793804a503e3ab3fc31ec5611cd42f00',1,'You::QueryEngine::QueryEngine::Delta::type()']]]
 ];

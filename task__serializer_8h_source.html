@@ -140,54 +140,55 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">static</span> Value serializeSubtasks(<span class="keyword">const</span> Task::Subtasks&amp; subtasks);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">static</span> Value serializeAttachment(<span class="keyword">const</span> Task::Attachment&amp; attachment);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">static</span> T deserializeOrDefault(</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        T (*deserializer)(<span class="keyword">const</span> Value&amp;),</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keyword">const</span> STask&amp; stask,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">const</span> std::wstring&amp; field,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">const</span> T&amp; defaultValue) {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">auto</span> value = stask.find(field);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">if</span> (value == stask.end()) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">return</span> defaultValue;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            T result = deserializer(value-&gt;second);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> boost::bad_lexical_cast&amp;) {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">return</span> defaultValue;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">static</span> Task::ID deserializeID(<span class="keyword">const</span> Value&amp; <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">static</span> Task::Description deserializeDescription(<span class="keyword">const</span> Value&amp; description);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">static</span> Task::Time deserializeTime(<span class="keyword">const</span> Value&amp; deadline);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">static</span> Task::Priority deserializePriority(<span class="keyword">const</span> Value&amp; priority);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">static</span> Task::Dependencies deserializeDependencies(<span class="keyword">const</span> Value&amp; dependencies);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> deserializeCompleted(<span class="keyword">const</span> Value&amp; completed);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">static</span> Task::ID deserializeParent(<span class="keyword">const</span> Value&amp; parent);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">static</span> Task::Subtasks deserializeSubtasks(<span class="keyword">const</span> Value&amp; subtasks);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">static</span> Task::Attachment deserializeAttachment(<span class="keyword">const</span> Value&amp; subtasks);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">static</span> std::vector&lt;std::wstring&gt; tokenize(<span class="keyword">const</span> Value&amp; input);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::unordered_map&lt;Value, Task::Priority&gt; strPrioTable;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::unordered_map&lt;Task::Priority, Value&gt; prioStrTable;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}  <span class="comment">// namespace Internal</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}  <span class="comment">// namespace QueryEngine</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_INTERNAL_CONTROLLER_TASK_SERIALIZER_H_</span></div>
-<div class="ttc" id="class_you_1_1_query_engine_1_1_task_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_task.html">You::QueryEngine::Task</a></div><div class="ttdoc">Defines the task model. </div><div class="ttdef"><b>Definition:</b> task_model.h:32</div></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">static</span> T deserializeOrDefault(</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        T (*deserializer)(<span class="keyword">const</span> Value&amp;),</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">const</span> STask&amp; stask,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">const</span> std::wstring&amp; field,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">const</span> T&amp; defaultValue) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keyword">auto</span> value = stask.find(field);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">if</span> (value == stask.end()) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">return</span> defaultValue;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            T result = deserializer(value-&gt;second);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> boost::bad_lexical_cast&amp;) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">return</span> defaultValue;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">static</span> Task::ID deserializeID(<span class="keyword">const</span> Value&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">static</span> Task::Description deserializeDescription(<span class="keyword">const</span> Value&amp; description);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">static</span> Task::Time deserializeTime(<span class="keyword">const</span> Value&amp; deadline);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">static</span> Task::Priority deserializePriority(<span class="keyword">const</span> Value&amp; priority);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">static</span> Task::Dependencies deserializeDependencies(<span class="keyword">const</span> Value&amp; dependencies);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> deserializeCompleted(<span class="keyword">const</span> Value&amp; completed);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">static</span> Task::ID deserializeParent(<span class="keyword">const</span> Value&amp; parent);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">static</span> Task::Subtasks deserializeSubtasks(<span class="keyword">const</span> Value&amp; subtasks);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">static</span> Task::Attachment deserializeAttachment(<span class="keyword">const</span> Value&amp; subtasks);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keyword">static</span> std::vector&lt;std::wstring&gt; tokenize(<span class="keyword">const</span> Value&amp; input);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::unordered_map&lt;Value, Task::Priority&gt; strPrioTable;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::unordered_map&lt;Task::Priority, Value&gt; prioStrTable;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;};</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}  <span class="comment">// namespace Internal</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}  <span class="comment">// namespace QueryEngine</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_INTERNAL_CONTROLLER_TASK_SERIALIZER_H_</span></div>
+<div class="ttc" id="class_you_1_1_query_engine_1_1_task_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_task.html">You::QueryEngine::Task</a></div><div class="ttdoc">Defines the task model. </div><div class="ttdef"><b>Definition:</b> task_model.h:22</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_task_serializer_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html">You::QueryEngine::Internal::TaskSerializer</a></div><div class="ttdoc">Utility class to serialize and deserialize tasks. </div><div class="ttdef"><b>Definition:</b> task_serializer.h:17</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_task_serializer_html_a3570c9c84cce8b99de0c28f01052a164"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a3570c9c84cce8b99de0c28f01052a164">You::QueryEngine::Internal::TaskSerializer::VALUE_DELIMITER</a></div><div class="ttdeci">static const Value VALUE_DELIMITER</div><div class="ttdoc">Delimiter for dependencies and deadlines. </div><div class="ttdef"><b>Definition:</b> task_serializer.h:57</div></div>
-<div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_task_serializer_html_ae744108575aaea1ff9c60e58979b4bfe"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#ae744108575aaea1ff9c60e58979b4bfe">You::QueryEngine::Internal::TaskSerializer::serialize</a></div><div class="ttdeci">static STask serialize(const Task &amp;task)</div><div class="ttdoc">Serialize a task model. </div><div class="ttdef"><b>Definition:</b> task_serializer.cpp:33</div></div>
+<div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_task_serializer_html_ae744108575aaea1ff9c60e58979b4bfe"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#ae744108575aaea1ff9c60e58979b4bfe">You::QueryEngine::Internal::TaskSerializer::serialize</a></div><div class="ttdeci">static STask serialize(const Task &amp;task)</div><div class="ttdoc">Serialize a task model. </div><div class="ttdef"><b>Definition:</b> task_serializer.cpp:34</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> exceptions.h:8</div></div>
-<div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_task_serializer_html_a04da4c829368c9f3a7af3b27027c854b"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a04da4c829368c9f3a7af3b27027c854b">You::QueryEngine::Internal::TaskSerializer::deserialize</a></div><div class="ttdeci">static Task deserialize(const STask &amp;serialized)</div><div class="ttdoc">Deserialize a serialized form of task model. </div><div class="ttdef"><b>Definition:</b> task_serializer.cpp:59</div></div>
+<div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_task_serializer_html_a04da4c829368c9f3a7af3b27027c854b"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_task_serializer.html#a04da4c829368c9f3a7af3b27027c854b">You::QueryEngine::Internal::TaskSerializer::deserialize</a></div><div class="ttdeci">static Task deserialize(const STask &amp;serialized)</div><div class="ttdoc">Deserialize a serialized form of task model. </div><div class="ttdef"><b>Definition:</b> task_serializer.cpp:60</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 10 2014 13:09:36 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 10 2014 15:20:43 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

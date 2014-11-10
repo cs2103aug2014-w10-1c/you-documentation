@@ -1,7 +1,7 @@
 var searchData=
 [
   ['query',['Query',['../class_you_1_1_query_engine_1_1_query.html',1,'You::QueryEngine']]],
-  ['query',['query',['../class_you_1_1_controller_1_1_controller.html#a556e94e66610181dc386c054441ae754',1,'You::Controller::Controller::query()'],['../class_you_1_1_g_u_i_1_1_main_window_1_1_query_manager.html#a07bd69c623114774ffa768c5aefe017f',1,'You::GUI::MainWindow::QueryManager::query()']]],
+  ['query',['Query',['../class_you_1_1_query_engine_1_1_query_engine.html#a5a6d66d1e927d593134d374910d0a699',1,'You::QueryEngine::QueryEngine::Query()'],['../class_you_1_1_controller_1_1_controller.html#a556e94e66610181dc386c054441ae754',1,'You::Controller::Controller::query()'],['../class_you_1_1_g_u_i_1_1_main_window_1_1_query_manager.html#a07bd69c623114774ffa768c5aefe017f',1,'You::GUI::MainWindow::QueryManager::query()']]],
   ['queryengine',['QueryEngine',['../class_you_1_1_query_engine_1_1_query_engine.html',1,'You::QueryEngine']]],
   ['queryengine',['QueryEngine',['../class_you_1_1_query_engine_1_1_query.html#af93bbefe83d2a090b9fcec51a8c0c1f0',1,'You::QueryEngine::Query']]],
   ['queryexecutor',['QueryExecutor',['../class_you_1_1_controller_1_1_internal_1_1_query_executor.html#a8062c76c0319fd9264cdb2c455478e6b',1,'You::Controller::Internal::QueryExecutor']]],

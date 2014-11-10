@@ -104,7 +104,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_you_1_1_g_u_i_1_1_syntax_highlighter.html">SyntaxHighlighter</a>(QTextDocument *parent = 0);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> highlightBlock(<span class="keyword">const</span> QString &amp;text);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_you_1_1_g_u_i_1_1_syntax_highlighter.html#af408b1b9d0d0fa1b357dc3871a678d62">highlightBlock</a>(<span class="keyword">const</span> QString &amp;text);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">struct </span>HighlightingRule {</div>
@@ -121,26 +121,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    QVector&lt;HighlightingRule&gt; paramHighlightingRules;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QVector&lt;HighlightingRule&gt; orderHighlightingRules;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QVector&lt;HighlightingRule&gt; orderPrefixHighlightingRule;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QVector&lt;HighlightingRule&gt; hashtagHighlightingRule;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QVector&lt;HighlightingRule&gt; symbolHighlightingRule;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    QTextCharFormat commandNameFormat;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QTextCharFormat parameterNameFormat;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QTextCharFormat parameterPrefixFormat;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QTextCharFormat orderPrefixFormat;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    QTextCharFormat orderNameFormat;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QTextCharFormat hashtagFormat;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QTextCharFormat symbolFormat;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}  <span class="comment">// namespace GUI</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}  <span class="comment">// namespace You</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif  // YOU_GUI_SYNTAX_HIGHLIGHTER_H_</span></div>
+<div class="ttc" id="class_you_1_1_g_u_i_1_1_syntax_highlighter_html_af408b1b9d0d0fa1b357dc3871a678d62"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_syntax_highlighter.html#af408b1b9d0d0fa1b357dc3871a678d62">You::GUI::SyntaxHighlighter::highlightBlock</a></div><div class="ttdeci">void highlightBlock(const QString &amp;text)</div><div class="ttdef"><b>Definition:</b> syntax_highlighter.cpp:88</div></div>
 <div class="ttc" id="class_you_1_1_g_u_i_1_1_syntax_highlighter_html"><div class="ttname"><a href="class_you_1_1_g_u_i_1_1_syntax_highlighter.html">You::GUI::SyntaxHighlighter</a></div><div class="ttdef"><b>Definition:</b> syntax_highlighter.h:10</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> exceptions.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 10 2014 13:09:36 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 10 2014 15:20:42 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

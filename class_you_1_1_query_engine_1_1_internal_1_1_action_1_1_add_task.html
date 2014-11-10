@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="namespace_you_1_1_query_engine_1_1_internal_1_1_action.html" title="Several classes that implements Query actions. ">Action</a> for adding a new task.  
+<p><a class="el" href="namespace_you_1_1_query_engine_1_1_internal_1_1_action.html" title="Contains various queries that is constructed via the API. ">Action</a> for adding a new task.  
  <a href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="add__task_8h_source.html">add_task.h</a>&gt;</code></p>
@@ -108,19 +108,17 @@ Inheritance diagram for You::QueryEngine::Internal::Action::AddTask:</div>
  <div class="center">
   <img src="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.png" usemap="#You::QueryEngine::Internal::Action::AddTask_map" alt=""/>
   <map id="You::QueryEngine::Internal::Action::AddTask_map" name="You::QueryEngine::Internal::Action::AddTask_map">
-<area href="class_you_1_1_query_engine_1_1_query.html" title="Interface for queries. " alt="You::QueryEngine::Query" shape="rect" coords="0,0,261,24"/>
+<area href="class_you_1_1_query_engine_1_1_query.html" title="Interface for queries (or in our terms, actions). " alt="You::QueryEngine::Query" shape="rect" coords="0,0,261,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac380c8017323795efb8b3480c23463fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac380c8017323795efb8b3480c23463fa"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html#ac380c8017323795efb8b3480c23463fa">AddTask</a> (Task::Description description, Task::Time startTime, Task::Time deadline, Task::Priority priority, Task::Dependencies dependencies, Task::Subtasks subtasks)</td></tr>
-<tr class="memdesc:ac380c8017323795efb8b3480c23463fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that use datastore to inquire new id. <br /></td></tr>
+<tr class="memitem:ac380c8017323795efb8b3480c23463fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html#ac380c8017323795efb8b3480c23463fa">AddTask</a> (Task::Description description, Task::Time startTime, Task::Time deadline, Task::Priority priority, Task::Dependencies dependencies, Task::Subtasks subtasks)</td></tr>
+<tr class="memdesc:ac380c8017323795efb8b3480c23463fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for new <a class="el" href="class_you_1_1_query_engine_1_1_task.html" title="Defines the task model. ">Task</a>, i.e the one without ID known.  <a href="#ac380c8017323795efb8b3480c23463fa">More...</a><br /></td></tr>
 <tr class="separator:ac380c8017323795efb8b3480c23463fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d766447916958796682bab191d9e94f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d766447916958796682bab191d9e94f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html#a2d766447916958796682bab191d9e94f">AddTask</a> (Task::ID id, Task::Description description, Task::Time startTime, Task::Time deadline, Task::Priority priority, Task::Dependencies dependencies, Task::Subtasks subtasks)</td></tr>
-<tr class="memdesc:a2d766447916958796682bab191d9e94f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for already known id. <br /></td></tr>
+<tr class="memitem:a2d766447916958796682bab191d9e94f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html#a2d766447916958796682bab191d9e94f">AddTask</a> (Task::ID id, Task::Description description, Task::Time startTime, Task::Time deadline, Task::Priority priority, Task::Dependencies dependencies, Task::Subtasks subtasks)</td></tr>
+<tr class="memdesc:a2d766447916958796682bab191d9e94f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for already known ID.  <a href="#a2d766447916958796682bab191d9e94f">More...</a><br /></td></tr>
 <tr class="separator:a2d766447916958796682bab191d9e94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb335a4eda013ef204408e8a1462e162"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb335a4eda013ef204408e8a1462e162"></a>
 <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html">AddTask</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html#afb335a4eda013ef204408e8a1462e162">operator=</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html">AddTask</a> &amp;)=delete</td></tr>
@@ -133,16 +131,14 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a3ebdcc92665496f5450a6b8d0c0f0be6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ebdcc92665496f5450a6b8d0c0f0be6"></a>
-std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html#a3ebdcc92665496f5450a6b8d0c0f0be6">getReverse</a> () override</td></tr>
-<tr class="memdesc:a3ebdcc92665496f5450a6b8d0c0f0be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The reverse of addition is deletion. <br /></td></tr>
+<tr class="memitem:a3ebdcc92665496f5450a6b8d0c0f0be6"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html#a3ebdcc92665496f5450a6b8d0c0f0be6">getReverse</a> () override</td></tr>
+<tr class="memdesc:a3ebdcc92665496f5450a6b8d0c0f0be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The reverse of addition is deletion.  <a href="#a3ebdcc92665496f5450a6b8d0c0f0be6">More...</a><br /></td></tr>
 <tr class="separator:a3ebdcc92665496f5450a6b8d0c0f0be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
-<tr class="memitem:aa987fddfa1d1529e2741aef3117dc493"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa987fddfa1d1529e2741aef3117dc493"></a>
-static const std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html#aa987fddfa1d1529e2741aef3117dc493">logCategory</a> = Query::logCategory + L&quot;[AddTask]&quot;</td></tr>
-<tr class="memdesc:aa987fddfa1d1529e2741aef3117dc493"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header of the log string. <br /></td></tr>
+<tr class="memitem:aa987fddfa1d1529e2741aef3117dc493"><td class="memItemLeft" align="right" valign="top">static const std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html#aa987fddfa1d1529e2741aef3117dc493">logCategory</a> = Query::logCategory + L&quot;[AddTask]&quot;</td></tr>
+<tr class="memdesc:aa987fddfa1d1529e2741aef3117dc493"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header of the log string.  <a href="#aa987fddfa1d1529e2741aef3117dc493">More...</a><br /></td></tr>
 <tr class="separator:aa987fddfa1d1529e2741aef3117dc493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_attribs_class_you_1_1_query_engine_1_1_query"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_you_1_1_query_engine_1_1_query')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_you_1_1_query_engine_1_1_query.html">You::QueryEngine::Query</a></td></tr>
 <tr class="memitem:ac41d73c7383562be11fd3402263c23fa inherit pro_static_attribs_class_you_1_1_query_engine_1_1_query"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac41d73c7383562be11fd3402263c23fa"></a>
@@ -163,15 +159,210 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>BatchAddDependencies
 <tr class="separator:a5ac51cb74299f0212d1ccc1d362e7c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="namespace_you_1_1_query_engine_1_1_internal_1_1_action.html" title="Several classes that implements Query actions. ">Action</a> for adding a new task. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<div class="textblock"><p><a class="el" href="namespace_you_1_1_query_engine_1_1_internal_1_1_action.html" title="Contains various queries that is constructed via the API. ">Action</a> for adding a new task. </p>
+<p>Three types of addition are supported.</p><ol type="1">
+<li>Adding single task.</li>
+<li>Adding single task alongside its dependencies.</li>
+<li>Adding single task alongside its subtasks. </li>
+</ol>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ac380c8017323795efb8b3480c23463fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">You::QueryEngine::Internal::Action::AddTask::AddTask </td>
+          <td>(</td>
+          <td class="paramtype">Task::Description&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Task::Time&#160;</td>
+          <td class="paramname"><em>startTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Task::Time&#160;</td>
+          <td class="paramname"><em>deadline</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Task::Priority&#160;</td>
+          <td class="paramname"><em>priority</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Task::Dependencies&#160;</td>
+          <td class="paramname"><em>dependencies</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Task::Subtasks&#160;</td>
+          <td class="paramname"><em>subtasks</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor for new <a class="el" href="class_you_1_1_query_engine_1_1_task.html" title="Defines the task model. ">Task</a>, i.e the one without ID known. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a9a01ca1b1f6e5a82100ff476a4da6bbe" title="Construct a query to add a task, possibly along with its dependencies and subtasks. ">QueryEngine::AddTask</a> </dd>
+<dd>
+QueryEngine::BatchAddDependencies </dd>
+<dd>
+QueryEngine::BatchAddSubtasks </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2d766447916958796682bab191d9e94f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">You::QueryEngine::Internal::Action::AddTask::AddTask </td>
+          <td>(</td>
+          <td class="paramtype">Task::ID&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Task::Description&#160;</td>
+          <td class="paramname"><em>description</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Task::Time&#160;</td>
+          <td class="paramname"><em>startTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Task::Time&#160;</td>
+          <td class="paramname"><em>deadline</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Task::Priority&#160;</td>
+          <td class="paramname"><em>priority</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Task::Dependencies&#160;</td>
+          <td class="paramname"><em>dependencies</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Task::Subtasks&#160;</td>
+          <td class="paramname"><em>subtasks</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor for already known ID. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a9a01ca1b1f6e5a82100ff476a4da6bbe" title="Construct a query to add a task, possibly along with its dependencies and subtasks. ">QueryEngine::AddTask</a> </dd>
+<dd>
+QueryEngine::BatchAddDependencies </dd>
+<dd>
+QueryEngine::BatchAddSubtasks </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a3ebdcc92665496f5450a6b8d0c0f0be6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt; You::QueryEngine::Internal::Action::AddTask::getReverse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The reverse of addition is deletion. </p>
+<dl class="section return"><dt>Returns</dt><dd>The delete query as a reverse of this action. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_you_1_1_query_engine_1_1_query.html#abee80d359d958d5ce1c4132d560068df">You::QueryEngine::Query</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aa987fddfa1d1529e2741aef3117dc493"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::wstring You::QueryEngine::Internal::Action::AddTask::logCategory = Query::logCategory + L&quot;[AddTask]&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The header of the log string. </p>
+<dl class="section return"><dt>Returns</dt><dd>The log category string. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>You-QueryEngine/internal/action/<a class="el" href="add__task_8h_source.html">add_task.h</a></li>
 <li>You-QueryEngine/internal/action/add_task.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 10 2014 13:09:39 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 10 2014 15:20:46 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

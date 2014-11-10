@@ -102,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_base_exception.html">You::QueryEngine::Exception::BaseException</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base exception class.  <a href="class_you_1_1_query_engine_1_1_exception_1_1_base_exception.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base exception class that will be thrown by <a class="el" href="class_you_1_1_query_engine_1_1_query.html" title="Interface for queries (or in our terms, actions). ">Query</a> Engine.  <a href="class_you_1_1_query_engine_1_1_exception_1_1_base_exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_empty_task_description_exception.html">You::QueryEngine::Exception::EmptyTaskDescriptionException</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An exception thrown when trying to create task with empty description.  <a href="class_you_1_1_query_engine_1_1_exception_1_1_empty_task_description_exception.html#details">More...</a><br /></td></tr>
@@ -111,7 +111,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An exception thrown when trying to delete or edit a task that does not exists.  <a href="class_you_1_1_query_engine_1_1_exception_1_1_task_not_found_exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_circular_dependency_exception.html">You::QueryEngine::Exception::CircularDependencyException</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An exception thrown when dependency of two or more tasks is circular.  <a href="class_you_1_1_query_engine_1_1_exception_1_1_circular_dependency_exception.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An exception thrown when dependency/subtasks of two or more tasks is circular.  <a href="class_you_1_1_query_engine_1_1_exception_1_1_circular_dependency_exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_exception_1_1_not_undo_able_exception.html">You::QueryEngine::Exception::NotUndoAbleException</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An exception thrown when trying to undo an undoable query (e.g GetTask)  <a href="class_you_1_1_query_engine_1_1_exception_1_1_not_undo_able_exception.html#details">More...</a><br /></td></tr>
@@ -123,7 +123,10 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_you_1_1_query_engine"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_you_1_1_query_engine.html">You::QueryEngine</a></td></tr>
-<tr class="memdesc:namespace_you_1_1_query_engine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsible mainly for implementing and accepting high level queries from NLP and forward it to DataStore. <br /></td></tr>
+<tr class="memdesc:namespace_you_1_1_query_engine"><td class="mdescLeft">&#160;</td><td class="mdescRight">The exposed functionalities of the <a class="el" href="class_you_1_1_query_engine_1_1_query.html" title="Interface for queries (or in our terms, actions). ">Query</a> Engine. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_you_1_1_query_engine_1_1_exception"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_you_1_1_query_engine_1_1_exception.html">You::QueryEngine::Exception</a></td></tr>
+<tr class="memdesc:namespace_you_1_1_query_engine_1_1_exception"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains various exceptions that may be thrown by <a class="el" href="class_you_1_1_query_engine_1_1_query.html" title="Interface for queries (or in our terms, actions). ">Query</a> Engine. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -131,7 +134,7 @@ Namespaces</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 10 2014 13:09:37 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 10 2014 15:20:44 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

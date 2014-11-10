@@ -6,7 +6,7 @@ var searchData=
   ['field_5ffilter',['FIELD_FILTER',['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_1_1_f_i_e_l_d___f_i_l_t_e_r.html',1,'You::NLP::SHOW_QUERY']]],
   ['field_5forder',['FIELD_ORDER',['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y_1_1_f_i_e_l_d___o_r_d_e_r.html',1,'You::NLP::SHOW_QUERY']]],
   ['filter',['Filter',['../class_you_1_1_query_engine_1_1_filter.html',1,'You::QueryEngine']]],
-  ['filter',['Filter',['../class_you_1_1_query_engine_1_1_filter.html#a572898f3dc469df11723435c8a6443ff',1,'You::QueryEngine::Filter::Filter(const FFilter &amp;ffilter)'],['../class_you_1_1_query_engine_1_1_filter.html#ad20786a3c8edebd680ca546da5885f1e',1,'You::QueryEngine::Filter::Filter(const Filter &amp;filter)']]],
+  ['filter',['Filter',['../class_you_1_1_query_engine_1_1_query_engine.html#a9f964051099fd1f4a1aa75a46d09b8e3',1,'You::QueryEngine::QueryEngine::Filter()'],['../class_you_1_1_query_engine_1_1_filter.html#a572898f3dc469df11723435c8a6443ff',1,'You::QueryEngine::Filter::Filter(const FFilter &amp;ffilter)'],['../class_you_1_1_query_engine_1_1_filter.html#ad20786a3c8edebd680ca546da5885f1e',1,'You::QueryEngine::Filter::Filter(const Filter &amp;filter)']]],
   ['filter_2eh',['filter.h',['../filter_8h.html',1,'']]],
   ['firstloaddoesnotthrowexception',['firstLoadDoesNotThrowException',['../class_you_1_1_data_store_1_1_unit_tests_1_1_data_store_test.html#a3fec54c7914879bc02793eba623bb46d',1,'You::DataStore::UnitTests::DataStoreTest']]],
   ['for_5ftommorow',['FOR_TOMMOROW',['../namespace_you_1_1_query_engine_1_1_unit_tests.html#a22c3e0b9b8cd8ca77b78a579c5387a77',1,'You::QueryEngine::UnitTests']]],

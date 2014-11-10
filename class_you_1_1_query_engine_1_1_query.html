@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Interface for queries.  
+<p>Interface for queries (or in our terms, actions).  
  <a href="class_you_1_1_query_engine_1_1_query.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="api_8h_source.html">api.h</a>&gt;</code></p>
@@ -109,18 +109,18 @@ Inheritance diagram for You::QueryEngine::Query:</div>
   <img src="class_you_1_1_query_engine_1_1_query.png" usemap="#You::QueryEngine::Query_map" alt=""/>
   <map id="You::QueryEngine::Query_map" name="You::QueryEngine::Query_map">
 <area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_add_task.html" title="Action for adding a new task. " alt="You::QueryEngine::Internal::Action::AddTask" shape="rect" coords="0,56,348,80"/>
-<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_dependencies.html" title="Action for adding a new task. " alt="You::QueryEngine::Internal::Action::BatchAddDependencies" shape="rect" coords="358,56,706,80"/>
+<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_dependencies.html" title="Action for adding a new task alongside dependencies. " alt="You::QueryEngine::Internal::Action::BatchAddDependencies" shape="rect" coords="358,56,706,80"/>
 <area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html" title="Action for adding a new task. " alt="You::QueryEngine::Internal::Action::BatchAddSubTasks" shape="rect" coords="716,56,1064,80"/>
-<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html" title="Action for deleting an existing task. " alt="You::QueryEngine::Internal::Action::DeleteTask" shape="rect" coords="1074,56,1422,80"/>
+<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_delete_task.html" title="Action for deleting an existing task Executing this action on non-existing task will throw TaskNotFou..." alt="You::QueryEngine::Internal::Action::DeleteTask" shape="rect" coords="1074,56,1422,80"/>
 <area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_get_task.html" title="Action for getting tasks by applying a filter and optionally a sorter. " alt="You::QueryEngine::Internal::Action::GetTask" shape="rect" coords="1432,56,1780,80"/>
 <area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_undo.html" title="Undo last action, then reapply the current filter and comparator and return the task list as a respon..." alt="You::QueryEngine::Internal::Action::Undo" shape="rect" coords="1790,56,2138,80"/>
-<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html" title="Update a task task. " alt="You::QueryEngine::Internal::Action::UpdateTask" shape="rect" coords="2148,56,2496,80"/>
+<area href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_update_task.html" title="Update a task. " alt="You::QueryEngine::Internal::Action::UpdateTask" shape="rect" coords="2148,56,2496,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae8e02abb32fff52a71202add2cab3c1e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_you_1_1_query_engine.html#a651f8867d13678410711e7f1c4672fce">Response</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query.html#ae8e02abb32fff52a71202add2cab3c1e">execute</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">Internal::State</a> &amp;state)=0</td></tr>
+<tr class="memitem:ae8e02abb32fff52a71202add2cab3c1e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_you_1_1_query_engine.html#a0776d8bfcb1d4a4bf6067083cd17d7b8">Response</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query.html#ae8e02abb32fff52a71202add2cab3c1e">execute</a> (<a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">Internal::State</a> &amp;state)=0</td></tr>
 <tr class="memdesc:ae8e02abb32fff52a71202add2cab3c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the query on a state.  <a href="#ae8e02abb32fff52a71202add2cab3c1e">More...</a><br /></td></tr>
 <tr class="separator:ae8e02abb32fff52a71202add2cab3c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -146,9 +146,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <tr class="separator:af93bbefe83d2a090b9fcec51a8c0c1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface for queries. </p>
-<p>Implement execute method which takes a State as a parameter and return a Response<br />
- </p>
+<div class="textblock"><p>Interface for queries (or in our terms, actions). </p>
+<p>Actions have execute method which modifies the state and return a response object. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae8e02abb32fff52a71202add2cab3c1e"></a>
 <div class="memitem">
@@ -158,7 +157,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespace_you_1_1_query_engine.html#a651f8867d13678410711e7f1c4672fce">Response</a> You::QueryEngine::Query::execute </td>
+          <td class="memname">virtual <a class="el" href="namespace_you_1_1_query_engine.html#a0776d8bfcb1d4a4bf6067083cd17d7b8">Response</a> You::QueryEngine::Query::execute </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">Internal::State</a> &amp;&#160;</td>
           <td class="paramname"><em>state</em></td><td>)</td>
@@ -186,7 +185,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 10 2014 13:09:38 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 10 2014 15:20:46 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
