@@ -124,6 +124,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The component that handles all session-related data of the application.  <a href="class_you_1_1_g_u_i_1_1_main_window_1_1_session_manager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_you_1_1_g_u_i_1_1_main_window_1_1_status_update.html">StatusUpdate</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct to assist in building a status update to indicate program state.  <a href="struct_you_1_1_g_u_i_1_1_main_window_1_1_status_update.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_system_tray_manager.html">SystemTrayManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The component that handles all interactions with the tray icon.  <a href="class_you_1_1_g_u_i_1_1_main_window_1_1_system_tray_manager.html#details">More...</a><br /></td></tr>
@@ -159,9 +160,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window.html#a3865680f1b8714836c709dfd17e4fcd0">addTaskWithSubtasks</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task, const TaskList &amp;tl)</td></tr>
 <tr class="memdesc:a3865680f1b8714836c709dfd17e4fcd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html" title="The component that deals with everything in the task panel. ">TaskPanelManager</a> and requests addition of a single task, with its subtasks. <br /></td></tr>
 <tr class="separator:a3865680f1b8714836c709dfd17e4fcd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa9c55547735b26d8d604373cb16446b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa9c55547735b26d8d604373cb16446b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addTask</b> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;task)</td></tr>
-<tr class="separator:aaa9c55547735b26d8d604373cb16446b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacba75e36b5fe07cf8693aa459d4a5a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacba75e36b5fe07cf8693aa459d4a5a0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window.html#aacba75e36b5fe07cf8693aa459d4a5a0">addTasks</a> (const TaskList &amp;tl)</td></tr>
 <tr class="memdesc:aacba75e36b5fe07cf8693aa459d4a5a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="class_you_1_1_g_u_i_1_1_main_window_1_1_task_panel_manager.html" title="The component that deals with everything in the task panel. ">TaskPanelManager</a> and requests addition of a list of tasks. <br /></td></tr>
@@ -191,9 +189,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>expandAllSubtasks</b>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a5ab7bebced5d27d8c66c54816cc6f08e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_g_u_i_1_1_main_window.html#a5ab7bebced5d27d8c66c54816cc6f08e">resizeEvent</a> (QResizeEvent *event)</td></tr>
-<tr class="memdesc:a5ab7bebced5d27d8c66c54816cc6f08e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reimplementation of QMainWindow's resizeEvent to try and preserve task panel proportions on resize.  <a href="#a5ab7bebced5d27d8c66c54816cc6f08e">More...</a><br /></td></tr>
-<tr class="separator:a5ab7bebced5d27d8c66c54816cc6f08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a647007d657c965f907530931a8309b14"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a647007d657c965f907530931a8309b14"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>changeEvent</b> (QEvent *event)</td></tr>
+<tr class="separator:a647007d657c965f907530931a8309b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -204,34 +202,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::MainWindo
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The entity that deals with all GUI operations, and makes calls to the NLP engine. </p>
 <p>It deals with basic tasks regarding GUI initialization, passes all user input to the NLP engine and listens for any return instructions. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a5ab7bebced5d27d8c66c54816cc6f08e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void You::GUI::MainWindow::resizeEvent </td>
-          <td>(</td>
-          <td class="paramtype">QResizeEvent *&#160;</td>
-          <td class="paramname"><em>event</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplementation of QMainWindow's resizeEvent to try and preserve task panel proportions on resize. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>You-GUI/<a class="el" href="main__window_8h_source.html">main_window.h</a></li>
 <li>You-GUI/main_window.cpp</li>
 <li>You-GUI/<a class="el" href="main__window__messages_8h_source.html">main_window_messages.h</a></li>
@@ -239,7 +210,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UnitTests::MainWindo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 10 2014 12:45:41 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 10 2014 13:09:38 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
