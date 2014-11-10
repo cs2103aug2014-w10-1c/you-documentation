@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_you_1_1_query_engine_1_1_query_engine-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -101,6 +102,12 @@ This is the API which will be called by Controller.
 
 <p><code>#include &lt;<a class="el" href="api_8h_source.html">api.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_you_1_1_query_engine_1_1_query_engine_1_1_delta.html">Delta</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_you_1_1_query_engine_1_1_query_engine_1_1_delta.html" title="Delta data structure to denote insertion/deletion of elements. ">Delta</a> data structure to denote insertion/deletion of elements.  <a href="struct_you_1_1_query_engine_1_1_query_engine_1_1_delta.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">All types used in this component.</div></td></tr>
@@ -119,9 +126,14 @@ typedef <a class="el" href="namespace_you_1_1_query_engine.html#a651f8867d136784
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9a01ca1b1f6e5a82100ff476a4da6bbe"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a9a01ca1b1f6e5a82100ff476a4da6bbe">AddTask</a> (const Task::Description &amp;description, const Task::Time &amp;startTime, const Task::Time &amp;deadline, const Task::Priority &amp;priority, std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&gt; &amp;&amp;dependencies, std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&gt; &amp;&amp;subtasks)</td></tr>
-<tr class="memdesc:a9a01ca1b1f6e5a82100ff476a4da6bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a batch addition of task with its subtask.  <a href="#a9a01ca1b1f6e5a82100ff476a4da6bbe">More...</a><br /></td></tr>
+<tr class="memitem:a9a01ca1b1f6e5a82100ff476a4da6bbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a01ca1b1f6e5a82100ff476a4da6bbe"></a>
+static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a9a01ca1b1f6e5a82100ff476a4da6bbe">AddTask</a> (const Task::Description &amp;description, const Task::Time &amp;startTime, const Task::Time &amp;deadline, const Task::Priority &amp;priority, std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&gt; &amp;&amp;dependencies, std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&gt; &amp;&amp;subtasks)</td></tr>
+<tr class="memdesc:a9a01ca1b1f6e5a82100ff476a4da6bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the query for adding tasks. <br /></td></tr>
 <tr class="separator:a9a01ca1b1f6e5a82100ff476a4da6bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2054e702891c56efddd8c82efa0c485f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2054e702891c56efddd8c82efa0c485f"></a>
+static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a2054e702891c56efddd8c82efa0c485f">GetTask</a> ()</td></tr>
+<tr class="memdesc:a2054e702891c56efddd8c82efa0c485f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reapply current filter and sorter to the task lists. <br /></td></tr>
+<tr class="separator:a2054e702891c56efddd8c82efa0c485f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5df9b4b44117770c6a7dbea18fb8947b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5df9b4b44117770c6a7dbea18fb8947b"></a>
 static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a5df9b4b44117770c6a7dbea18fb8947b">GetTask</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_filter.html">Filter</a> &amp;filter)</td></tr>
 <tr class="memdesc:a5df9b4b44117770c6a7dbea18fb8947b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct filter task without sort query. <br /></td></tr>
@@ -134,10 +146,10 @@ static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_qu
 static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a3d3eb3346793caa0c303f39c03b13bd7">DeleteTask</a> (Task::ID id)</td></tr>
 <tr class="memdesc:a3d3eb3346793caa0c303f39c03b13bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct delete task query. <br /></td></tr>
 <tr class="separator:a3d3eb3346793caa0c303f39c03b13bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f013e5c345591709738c26ac5b4c23f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f013e5c345591709738c26ac5b4c23f"></a>
-static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a3f013e5c345591709738c26ac5b4c23f">UpdateTask</a> (Task::ID id, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::Description &gt; description, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::Time &gt; startTime, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::Time &gt; deadline, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::Priority &gt; priority, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::Dependencies &gt; dependencies, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; bool &gt; completed, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::ID &gt; parent, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::Subtasks &gt; subtasks, <a class="el" href="class_you_1_1_utils_1_1_option.html">You::Utils::Option</a>&lt; Task::Attachment &gt; attachment)</td></tr>
-<tr class="memdesc:a3f013e5c345591709738c26ac5b4c23f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct update task query. <br /></td></tr>
-<tr class="separator:a3f013e5c345591709738c26ac5b4c23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d42becad882ba07229bf812f38f718"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22d42becad882ba07229bf812f38f718"></a>
+static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#a22d42becad882ba07229bf812f38f718">UpdateTask</a> (Task::ID id, <a class="el" href="class_you_1_1_utils_1_1_option.html">Option</a>&lt; Task::Description &gt; description, <a class="el" href="class_you_1_1_utils_1_1_option.html">Option</a>&lt; Task::Time &gt; startTime, <a class="el" href="class_you_1_1_utils_1_1_option.html">Option</a>&lt; Task::Time &gt; deadline, <a class="el" href="class_you_1_1_utils_1_1_option.html">Option</a>&lt; Task::Priority &gt; priority, <a class="el" href="struct_you_1_1_query_engine_1_1_query_engine_1_1_delta.html">Delta</a>&lt; Task::Dependencies::value_type &gt; dependencies, <a class="el" href="class_you_1_1_utils_1_1_option.html">Option</a>&lt; bool &gt; completed, <a class="el" href="class_you_1_1_utils_1_1_option.html">Option</a>&lt; Task::ID &gt; parent, <a class="el" href="struct_you_1_1_query_engine_1_1_query_engine_1_1_delta.html">Delta</a>&lt; Task::Subtasks::value_type &gt; subtasks, <a class="el" href="struct_you_1_1_query_engine_1_1_query_engine_1_1_delta.html">Delta</a>&lt; Task::Attachment::value_type &gt; attachment)</td></tr>
+<tr class="memdesc:a22d42becad882ba07229bf812f38f718"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct update task query. <br /></td></tr>
+<tr class="separator:a22d42becad882ba07229bf812f38f718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac26ad9b2e199f5da8551308b5d95d2fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac26ad9b2e199f5da8551308b5d95d2fb"></a>
 static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html#ac26ad9b2e199f5da8551308b5d95d2fb">AddDependency</a> (Task::ID id, Task::ID dependency)</td></tr>
 <tr class="memdesc:ac26ad9b2e199f5da8551308b5d95d2fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct adding dependency query. <br /></td></tr>
@@ -170,66 +182,6 @@ static std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_qu
 <div class="textblock"><p>Utility class for <a class="el" href="class_you_1_1_query_engine_1_1_query_engine.html" title="Utility class for QueryEngine  This is the API which will be called by Controller. ">QueryEngine</a> <br />
 This is the API which will be called by Controller. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a9a01ca1b1f6e5a82100ff476a4da6bbe"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt; You::QueryEngine::QueryEngine::AddTask </td>
-          <td>(</td>
-          <td class="paramtype">const Task::Description &amp;&#160;</td>
-          <td class="paramname"><em>description</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Task::Time &amp;&#160;</td>
-          <td class="paramname"><em>startTime</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Task::Time &amp;&#160;</td>
-          <td class="paramname"><em>deadline</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Task::Priority &amp;&#160;</td>
-          <td class="paramname"><em>priority</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>dependencies</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_you_1_1_query_engine_1_1_query.html">Query</a> &gt;&gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>subtasks</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Construct a batch addition of task with its subtask. </p>
-
-</div>
-</div>
 <a class="anchor" id="a3c0da26cc73943f9cbb0314b7ea9711d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +216,7 @@ This is the API which will be called by Controller. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 9 2014 23:24:21 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 10 2014 02:52:14 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

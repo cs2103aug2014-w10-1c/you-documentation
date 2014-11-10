@@ -5,6 +5,7 @@ var searchData=
   ['nodeid',['nodeId',['../class_you_1_1_data_store_1_1_internal_1_1_operation.html#a8d1106ebd31972a6d9f778204635475e',1,'You::DataStore::Internal::Operation']]],
   ['normalpriority',['normalPriority',['../class_you_1_1_query_engine_1_1_filter.html#a0d95897c621105886525febe58455472',1,'You::QueryEngine::Filter']]],
   ['not_5feq',['NOT_EQ',['../struct_you_1_1_n_l_p_1_1_s_h_o_w___q_u_e_r_y.html#a1734b62cd99ffec4742957c9636a3fe0aea2e21c0ebbb16890e38e397b77daaa6',1,'You::NLP::SHOW_QUERY']]],
+  ['notsorted',['notSorted',['../class_you_1_1_query_engine_1_1_comparator.html#a9af407ecce9de88d07120c01a8ed3994',1,'You::QueryEngine::Comparator']]],
   ['notundoableexception',['NotUndoAbleException',['../class_you_1_1_query_engine_1_1_exception_1_1_not_undo_able_exception.html',1,'You::QueryEngine::Exception']]],
   ['notwellformedxmlexception',['NotWellFormedXmlException',['../class_you_1_1_data_store_1_1_not_well_formed_xml_exception.html',1,'You::DataStore']]]
 ];

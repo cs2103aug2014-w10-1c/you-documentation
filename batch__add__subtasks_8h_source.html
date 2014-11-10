@@ -136,24 +136,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html#a03bc38d087a347936b46fa9ddf8b242e">   55</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> std::wstring <a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html#a03bc38d087a347936b46fa9ddf8b242e">logCategory</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="namespace_you_1_1_query_engine.html#a651f8867d13678410711e7f1c4672fce">Response</a> execute(<a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">State</a>&amp; tasks) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    Task::ID insertedID;   </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">const</span> Task::Description description;  </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">const</span> Task::Time startTime;  </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">const</span> Task::Time deadline;  </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">const</span> Task::Priority priority;  </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">const</span> Task::Dependencies dependencies;  </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    std::vector&lt;std::unique_ptr&lt;Query&gt;&gt; subtasks;    </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}  <span class="comment">// namespace Action</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}  <span class="comment">// namespace Internal</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}  <span class="comment">// namespace QueryEngine</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}  <span class="comment">// namespace You</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_INTERNAL_ACTION_BATCH_ADD_SUBTASKS_H_</span></div>
-<div class="ttc" id="class_you_1_1_query_engine_1_1_query_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_query.html">You::QueryEngine::Query</a></div><div class="ttdoc">Interface for queries. </div><div class="ttdef"><b>Definition:</b> api.h:46</div></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    Task::Subtasks executeSubtasksAddQuery(<a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">State</a>&amp; state) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_you_1_1_query_engine_1_1_task.html">Task</a> executeParentAddQuery(<a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">State</a>&amp; state,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">const</span> Task::Subtasks&amp; subtasks) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="namespace_you_1_1_query_engine.html#a651f8867d13678410711e7f1c4672fce">Response</a> execute(<a class="code" href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">State</a>&amp; tasks) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    Task::ID insertedID;   </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">const</span> Task::Description description;  </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">const</span> Task::Time startTime;  </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">const</span> Task::Time deadline;  </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">const</span> Task::Priority priority;  </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">const</span> Task::Dependencies dependencies;  </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    std::vector&lt;std::unique_ptr&lt;Query&gt;&gt; subtasks;    </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}  <span class="comment">// namespace Action</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}  <span class="comment">// namespace Internal</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}  <span class="comment">// namespace QueryEngine</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}  <span class="comment">// namespace You</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif  // YOU_QUERYENGINE_INTERNAL_ACTION_BATCH_ADD_SUBTASKS_H_</span></div>
+<div class="ttc" id="class_you_1_1_query_engine_1_1_task_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_task.html">You::QueryEngine::Task</a></div><div class="ttdoc">Defines the task model. </div><div class="ttdef"><b>Definition:</b> task_model.h:32</div></div>
+<div class="ttc" id="class_you_1_1_query_engine_1_1_query_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_query.html">You::QueryEngine::Query</a></div><div class="ttdoc">Interface for queries. </div><div class="ttdef"><b>Definition:</b> api.h:48</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks_html_aa960081d82288983b4c1011961eb9e57"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html#aa960081d82288983b4c1011961eb9e57">You::QueryEngine::Internal::Action::BatchAddSubTasks::~BatchAddSubTasks</a></div><div class="ttdeci">virtual ~BatchAddSubTasks()=default</div><div class="ttdoc">Destructor. </div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks_html_a7afedb7e685dcbc7ef51b54e58ad08ce"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html#a7afedb7e685dcbc7ef51b54e58ad08ce">You::QueryEngine::Internal::Action::BatchAddSubTasks::BatchAddSubTasks</a></div><div class="ttdeci">BatchAddSubTasks(const Task::Description &amp;description, const Task::Time &amp;startTime, const Task::Time &amp;deadline, const Task::Priority &amp;priority, const Task::Dependencies &amp;dependencies, std::vector&lt; std::unique_ptr&lt; Query &gt;&gt; &amp;&amp;subtasks)</div><div class="ttdoc">Constructor that use datastore to inquire new id. </div><div class="ttdef"><b>Definition:</b> batch_add_subtasks.h:20</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_state_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_state.html">You::QueryEngine::Internal::State</a></div><div class="ttdoc">Singleton class to store TaskGraph instance. </div><div class="ttdef"><b>Definition:</b> state.h:22</div></div>
@@ -162,12 +167,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks_html"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html">You::QueryEngine::Internal::Action::BatchAddSubTasks</a></div><div class="ttdoc">Action for adding a new task. </div><div class="ttdef"><b>Definition:</b> batch_add_subtasks.h:17</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks_html_a03bc38d087a347936b46fa9ddf8b242e"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html#a03bc38d087a347936b46fa9ddf8b242e">You::QueryEngine::Internal::Action::BatchAddSubTasks::logCategory</a></div><div class="ttdeci">static const std::wstring logCategory</div><div class="ttdoc">The header of the log string. </div><div class="ttdef"><b>Definition:</b> batch_add_subtasks.h:55</div></div>
 <div class="ttc" id="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks_html_a19f1d290653ba5e05a38c1cb72e69346"><div class="ttname"><a href="class_you_1_1_query_engine_1_1_internal_1_1_action_1_1_batch_add_sub_tasks.html#a19f1d290653ba5e05a38c1cb72e69346">You::QueryEngine::Internal::Action::BatchAddSubTasks::operator=</a></div><div class="ttdeci">BatchAddSubTasks &amp; operator=(const BatchAddSubTasks &amp;)=delete</div><div class="ttdoc">Disable assignment operator. </div></div>
-<div class="ttc" id="namespace_you_1_1_query_engine_html_a651f8867d13678410711e7f1c4672fce"><div class="ttname"><a href="namespace_you_1_1_query_engine.html#a651f8867d13678410711e7f1c4672fce">You::QueryEngine::Response</a></div><div class="ttdeci">boost::variant&lt; std::vector&lt; Task &gt;, Task, Task::ID, std::wstring &gt; Response</div><div class="ttdoc">A synthesized type for holding query responses. </div><div class="ttdef"><b>Definition:</b> api.h:41</div></div>
+<div class="ttc" id="namespace_you_1_1_query_engine_html_a651f8867d13678410711e7f1c4672fce"><div class="ttname"><a href="namespace_you_1_1_query_engine.html#a651f8867d13678410711e7f1c4672fce">You::QueryEngine::Response</a></div><div class="ttdeci">boost::variant&lt; std::vector&lt; Task &gt;, Task, Task::ID, std::wstring &gt; Response</div><div class="ttdoc">A synthesized type for holding query responses. </div><div class="ttdef"><b>Definition:</b> api.h:43</div></div>
 <div class="ttc" id="namespace_you_html"><div class="ttname"><a href="namespace_you.html">You</a></div><div class="ttdef"><b>Definition:</b> exceptions.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 9 2014 23:24:18 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 10 2014 02:52:12 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

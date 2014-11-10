@@ -122,6 +122,10 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_comparator.html#a1b57ef6fac28cb2c6f2d1eecd0c39125">Comparator</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_comparator.html#a2000fb269924b16f8122823c74319e0f">ComparatorFunc</a> &amp;func)</td></tr>
 <tr class="memdesc:a1b57ef6fac28cb2c6f2d1eecd0c39125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor using binary function. <br /></td></tr>
 <tr class="separator:a1b57ef6fac28cb2c6f2d1eecd0c39125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea7b4fb142f78bd76d5b3dd6d3abd844"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea7b4fb142f78bd76d5b3dd6d3abd844"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_comparator.html#aea7b4fb142f78bd76d5b3dd6d3abd844">isDefault</a> () const </td></tr>
+<tr class="memdesc:aea7b4fb142f78bd76d5b3dd6d3abd844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether this is the default comparator. <br /></td></tr>
+<tr class="separator:aea7b4fb142f78bd76d5b3dd6d3abd844"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21b029ec032b173f8ad4776a05bc2ca6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_comparator.html#a21b029ec032b173f8ad4776a05bc2ca6">operator()</a> (const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;lhs, const <a class="el" href="class_you_1_1_query_engine_1_1_task.html">Task</a> &amp;rhs) const </td></tr>
 <tr class="memdesc:a21b029ec032b173f8ad4776a05bc2ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast to binary comparison function used by std::sort and the others.  <a href="#a21b029ec032b173f8ad4776a05bc2ca6">More...</a><br /></td></tr>
 <tr class="separator:a21b029ec032b173f8ad4776a05bc2ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,11 +142,14 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Commonly used comparators</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Do not sort.</p>
-</div></td></tr>
 <tr class="memitem:a9af407ecce9de88d07120c01a8ed3994"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9af407ecce9de88d07120c01a8ed3994"></a>
-static <a class="el" href="class_you_1_1_query_engine_1_1_comparator.html">Comparator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>notSorted</b> ()</td></tr>
+static <a class="el" href="class_you_1_1_query_engine_1_1_comparator.html">Comparator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_comparator.html#a9af407ecce9de88d07120c01a8ed3994">notSorted</a> ()</td></tr>
+<tr class="memdesc:a9af407ecce9de88d07120c01a8ed3994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not sort. <br /></td></tr>
 <tr class="separator:a9af407ecce9de88d07120c01a8ed3994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a294c97671bce9e6742c7b7488f630adc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a294c97671bce9e6742c7b7488f630adc"></a>
+static <a class="el" href="class_you_1_1_query_engine_1_1_comparator.html">Comparator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_comparator.html#a294c97671bce9e6742c7b7488f630adc">byTimeCreated</a> ()</td></tr>
+<tr class="memdesc:a294c97671bce9e6742c7b7488f630adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort by time the task is created. <br /></td></tr>
+<tr class="separator:a294c97671bce9e6742c7b7488f630adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fecd1bb3fe6437124c97b6a916e1391"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fecd1bb3fe6437124c97b6a916e1391"></a>
 static <a class="el" href="class_you_1_1_query_engine_1_1_comparator.html">Comparator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_you_1_1_query_engine_1_1_comparator.html#a6fecd1bb3fe6437124c97b6a916e1391">byDescription</a> ()</td></tr>
 <tr class="memdesc:a6fecd1bb3fe6437124c97b6a916e1391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort lexicographically by description. <br /></td></tr>
@@ -260,7 +267,7 @@ static <a class="el" href="class_you_1_1_query_engine_1_1_comparator.html">Compa
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 9 2014 23:24:21 for You by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 10 2014 02:52:14 for You by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
